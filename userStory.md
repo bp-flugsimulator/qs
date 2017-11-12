@@ -12,3 +12,4 @@
     * **Velocity**: Speed of light
     * **Bemerkungen**: 
         * Der Master Server wird aufgesetzt
+        * hier fehlt eine bemerkung
