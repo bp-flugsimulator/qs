@@ -1,0 +1,59 @@
+\documentclass[accentcolor=tud9c,12pt,paper=a4]{tudreport}
+
+\usepackage[utf8]{inputenc}
+\usepackage{ngerman}
+\usepackage{parcolumns}
+
+\newcommand{\titlerow}[2]{
+	\begin{parcolumns}[colwidths={1=.17\linewidth}]{2}
+		\colchunk[1]{#1:}
+		\colchunk[2]{#2}
+	\end{parcolumns}
+	\vspace{0.2cm}
+}
+
+\title{Projektthema}
+\subtitle{Qualitätssicherungsdokument}
+\subsubtitle{%
+	\titlerow{19}{%
+		Frederik Bark <frederikalexander.bark@stud.tu-darmstadt.de>\\
+		Heiko Carrasco <heiko.carrasco@stud.tu-darmstadt.de>\\
+		Jonas Meurer <jonas.meurer@stud.tu-darmstadt.de>\\
+		Tim Weißmantel <tim.weissmantel@stud.tu-darmstadt.de>\\
+		Leonardo Zaninelli <leonardo.zaninelli@stud.tu-darmstadt.de>}
+	\titlerow{Teamleiter}{Henrik Bode <hendrik.bode@stud.tu-darmstadt.de>}
+	\titlerow{Auftraggeber}{%
+		Jonas Schulze <Schulze@fsr.tu-darmstadt.de>\\
+		Torben Bernatzky <Bernatzky@fsr.tu-darmstadt.de>\\
+		Technische Universität Darmstadt\\
+		Flugsysteme und Regelungstechnik}
+	\titlerow{Abgabedatum}{31.03.2018}}
+\institution{Bachelor-Praktikum WS~2017/18\\ Fachbereich Informatik}
+
+\begin{document}
+
+	\maketitle
+	\tableofcontents
+
+	\chapter{Einleitung}
+		Kurze Projektbeschreibung
+
+	\chapter{Qualitätsziele}
+        \section{Ziel 1}
+
+		Beschreibung eines QS-Ziels und wieso dieses in diesem Projekt wichtig ist.\\
+		Maßnahme zum Erreichen des Ziels.\\
+		Prozessbeschreibung - wer führt wann die oben genannte Maßnahme durch und wie wird auf Probleme reagiert.\\
+		Weitere Anforderungen sind den Unterlagen und der Vorlesung zur Projektbegleitung zu entnehmen.
+
+        \section{Ziel xyz}
+	        \ldots
+
+
+\appendix
+	\chapter{Anhang}
+		(Am Ende des Projekts nachzureichen)\\
+		Beleg für durchgeführte Maßnahmen, bzw. falls nicht durchgeführt eine Begründung wieso die Durchführung nicht möglich oder nicht erfolgt ist. \\
+		Weitere Anforderungen sind den Unterlagen und der Vorlesung zur Projektbegleitung zu entnehmen.
+
+\end{document}
