@@ -8,4 +8,4 @@
 |Iteration   |?|
 |Stunden     |?|
 |Velocity    |?|
-|Bemerkung   |Maser Server wird benötigt|
+|Bemerkung   |Master Server wird benötigt|
