@@ -3,7 +3,7 @@
 |Name        |Hochfahren der Slaves|
 |Beschreibung|Über das Kontextmenü eines Slaves kann dieser gestartet werden|
 |Akzeptanz   |Nachdem die Aktion aus dem Kontextmenü Slave ausgewählt wurde, fährt nur dieser Slave hoch|
-|Story Points|?|
+|Story Points|3|
 |Entwickler  |?|
 |Iteration   |?|
 |Stunden     |?|

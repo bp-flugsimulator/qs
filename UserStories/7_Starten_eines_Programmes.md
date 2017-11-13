@@ -3,7 +3,7 @@
 |Name        |Starten eines Programmes|
 |Beschreibung|Der User kann über das Kontextmenü eines Slaves ein Programm auf diesem Starten|
 |Akzeptanz   |Nachdem die Aktion im Kontextmenu ausgewählt wurde, wird der angegebene Prozess auf dem Slave gestartet|
-|Story Points|?|
+|Story Points|8|
 |Entwickler  |?|
 |Iteration   |?|
 |Stunden     |?|

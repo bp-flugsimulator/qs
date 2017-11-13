@@ -1,9 +1,9 @@
 | ID         |8|
 |------------|-|
 |Name        |Statusabfrage eines Programmes|
-|Beschreibung|Der User kann den Status von einem Prozess, den er auf einem Slave gestartet hat abzufragen| 
+|Beschreibung|Der User kann den Status von einem Prozess, den er auf einem Slave gestartet hat abzufragen|
 |Akzeptanz   |Der Status wird korrekt angezeigt|
-|Story Points|?|
+|Story Points|4|
 |Entwickler  |?|
 |Iteration   |?|
 |Stunden     |?|
