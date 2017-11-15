@@ -1,4 +1,4 @@
-| ID         |2|
+| ID         |14|
 |-|-|
 |Name        | Slaves Löschen |
 |Beschreibung| Slaves können mithilfe des Webinterfaces gelöscht werden. |
