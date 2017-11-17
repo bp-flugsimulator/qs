@@ -1,4 +1,4 @@
-| KW | implimentieren | anderes | 
+| KW | implementieren | anderes | 
 |----|----------------|---------| 
 |44  | 0 | 0.5|
 |45| 0 | 9 |
