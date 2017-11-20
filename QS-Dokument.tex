@@ -28,7 +28,7 @@
 		Technische Universität Darmstadt\\
 		Flugsysteme und Regelungstechnik}
 	\titlerow{Abgabedatum}{31.03.2018}}
-\institution{Bachelor-Praktikum WS~2017/18\\ Fachbereich Informatik}
+\institution{Bachelor-Praktikum WS-2017/18\\ Fachbereich Informatik}
 
 \begin{document}
 
@@ -36,19 +36,49 @@
 	\tableofcontents
 
 	\chapter{Einleitung}
-		Kurze Projektbeschreibung
+		Die Arbeitgeber wünschen sich eine Software die, die Bedienung des
+		Flugsimlators vereinfacht. Es wird sich eine Software gewünscht
+		in der man Programme auf verschiedenen Rechner von einander Abhängig
+		starten kann. Es ist wichtig dass die Software auf verschieden
+		Windows Versionen und ggf. auf Linux läuft. Die Software ist in Python
+		geschrieben und benutzt Django und RPC um mit den Slaves zu
+		kommunizieren. Die Software sollte so generisch wie Möglich sein
+		damit in Zukunft andere Software einfach mit aufgenommen werden kann.
 
 	\chapter{Qualitätsziele}
-        \section{Ziel 1}
+		\section{Portabilität}
+			Es ist dem Benutzer möglich die Software auf allen verwendeten
+			Geräten bzw. von ihm spezifizierten Geräten (WindowsXP, Windows 7,
+			Windows 10, ggf. Linux). Auch läuft die Software auf diesen
+			Plattformen wie vom Arbeitgeber abgenommen. Wobei im Vorraus
+			geklärt ist, dass der Master nicht unbedingt auf älteren Systemen
+			(WindowsXP) laufen muss.
 
-		Beschreibung eines QS-Ziels und wieso dieses in diesem Projekt wichtig ist.\\
-		Maßnahme zum Erreichen des Ziels.\\
-		Prozessbeschreibung - wer führt wann die oben genannte Maßnahme durch und wie wird auf Probleme reagiert.\\
-		Weitere Anforderungen sind den Unterlagen und der Vorlesung zur Projektbegleitung zu entnehmen.
+			Um das Ziel zu erreichen werden mehrere Testumgebungen verwendet
+			(Travis, Jenkins, AppVeyor), auf denen verschieden Windows
+			Versionen und Linux Versionen laufen. Sollte ein Problem auftreten
+			wird der zugeteilten Entwickler benachrichtigt. Die Problembehebung
+			wird vom jeweiligen zugeteilten Entwickler geändert bzw.
+			beaufsichtigt. Dieser kann sich auch Hilfe bzw. Meinungen von
+			anderen holen.
 
-        \section{Ziel xyz}
-	        \ldots
+			Die Tests werden automatisch bei jeder neuen Änderung ausgeführt.
+			Sobald die Änderung nicht lauffähig ist wird diese nicht akzeptiert
+			und muss abgeändert werden.
+		\section{Bedienbarkeit}
+			Die Bedienoberfläche soll leicht verständlich sein und von jedem
+			belieben Mitarbeiter bedient werden können.
 
+			Um das Ziel zu erreichen werden Userstudien durchgeführt.
+			Diese werden aber nicht in regelmäßigen Abständen durchgeführt,
+			sonder nur wenn eine mindest Anzahl von Features bereits
+			verfügbar ist. Die Testkandiaten kommen vorzugsweise aus dem
+			Bereich des Arbeitgebers. Aber auch Kanidaten aus anderen
+			Fachrichtungen werden miteinbezogen.
+
+			Durch die Auswertung der Studie erhält die Gruppe Feedback.
+			Falls dem Benutzer die Bedienung nicht möglich ist, muss die
+			Oberfläche nach dem Feedback angepasst werden.
 
 \appendix
 	\chapter{Anhang}
