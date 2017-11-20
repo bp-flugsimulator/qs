@@ -7,12 +7,11 @@ Martin| 21.21.21 | 2h | 02
 
 - [x] Test Coverage (auf unseren Files) mindestens 90%
 - [ ] Jede Klasse und Funktion ist grob Dokumentiert
-- [ ] Magic Stuff direkt im Code dokumentieren
+- [ ] Schwierige Codestellen dokumentiert
 - [ ] Alles Tests laufen durch
 - [ ] Code ist korrekt formatiert
 - [ ] Erfüllt die Userstory und nur die Userstory (Akzeptanzkriterium)?
 - [ ] Ist die Userstory ausgefüllt? (Datum, Zeit)
-- [ ] Läuft auf WindowsXP
 
 ## Konsequenzen
 #### Abgelehnt/Akzeptiert?
