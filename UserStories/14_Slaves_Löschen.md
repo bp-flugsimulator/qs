@@ -8,4 +8,4 @@
 |Iteration   |?|
 |Stunden     |?|
 |Velocity    |?|
-|Bemerkung   |Master Server wird ben?tigt|
+|Bemerkung   |Master Server wird benötigt|
