@@ -1,4 +1,4 @@
-# Software engineering
+# Qualitätssicherung
 Datum | Stunden
 ---|---
 31.10.17 | 1h
@@ -12,3 +12,5 @@ Datum | Stunden
 6.11.17| 3h
 7.11.17 | 1h
 17.11.17 | 4h
+21.11.17 | 4h
+22.11.17 | 1h
