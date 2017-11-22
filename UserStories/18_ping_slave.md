@@ -2,7 +2,7 @@
 |------------|-|
 |Name        |Ping Slave|
 |Beschreibung|Der User kann über das Kontextmenu einen registrierten Slave an pingen und so Abfragen ob dieser hochgefahren ist.|
-|Akzeptanz   |Sobald der Slave antwortet bekommt der User ein Feedback auf der Website. Dies sollte ohne reload der Seite gesehen.|
+|Akzeptanz   |Sobald der Slave antwortet bekommt der User ein Feedback auf der Website. Dies sollte ohne reload der Seite geschehen.|
 |Story Points|8|
 |Entwickler  |?|
 |Iteration   |?|
