@@ -11,11 +11,11 @@ digraph G {
     10 [label="Datei herunterladen?"];
     11 [label="Datei löschen"];
     12 [label="Interface am start"];
-    13 [label="Persistenz der Slaves"];
     14 [label="Slaves löschen"];
     15 [label="Slaves Bearbeiten"];
     16 [label="Slaves Anzeigen"];
-    17 [label="Webseit Navigation"];
+    17 [label="Website Navigation"];
+    18 [label="Ping Slaves"];
 
     1 -> 16;
     1 -> 17;
@@ -26,11 +26,14 @@ digraph G {
     16 -> 14;
     16 -> 15;
 
+    6 -> 3;
+    6 -> 5;
     6 -> 7;
     6 -> 9;
     6 -> 10;
     6 -> 11;
     6 -> 18;
+
 
     4 -> 8;
 
