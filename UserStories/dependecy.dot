@@ -1,0 +1,37 @@
+digraph G {
+    1 [label="Willkommensnachricht"];
+    2 [label="Slaves Registrieren"];
+    3 [label="Slave Hochfahren"];
+    4 [label="Status der Slaves"];
+    5 [label="Slave Herunterfahren"];
+    6 [label="Kontextmenu"];
+    7 [label="Starten eines Programmes"];
+    8 [label="Statusabfrage eines Programmes"];
+    9 [label="Datei bewegen"];
+    10 [label="Datei herunterladen?"];
+    11 [label="Datei löschen"];
+    12 [label="Interface am start"];
+    13 [label="Persistenz der Slaves"];
+    14 [label="Slaves löschen"];
+    15 [label="Slaves Bearbeiten"];
+    16 [label="Slaves Anzeigen"];
+    17 [label="Webseit Navigation"];
+
+    1 -> 16;
+    1 -> 17;
+
+    16 -> 2;
+    16 -> 4;
+    16 -> 6;
+    16 -> 14;
+    16 -> 15;
+
+    6 -> 7;
+    6 -> 9;
+    6 -> 10;
+    6 -> 11;
+    6 -> 18;
+
+    4 -> 8;
+
+}
