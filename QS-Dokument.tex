@@ -36,24 +36,45 @@
 	\tableofcontents
 
 	\chapter{Einleitung}
+		1. Try:\\ \\	
 		Die Arbeitgeber wünschen sich eine Software die, die Bedienung des
-		Flugsimlators vereinfacht. Es wird sich eine Software gewünscht
+		Flugsimulators vereinfacht. Es wird sich eine Software gewünscht
 		in der man Programme auf verschiedenen Rechner von einander Abhängig
 		starten kann. Es ist wichtig dass die Software auf verschieden
 		Windows Versionen und ggf. auf Linux läuft. Die Software ist in Python
 		geschrieben und benutzt Django und RPC um mit den Slaves zu
 		kommunizieren. Die Software sollte so generisch wie Möglich sein
 		damit in Zukunft andere Software einfach mit aufgenommen werden kann.
+		\\
+		\\
+		2. Try:\\ \\	
+		Die Auftraggeber sind im Besitz eines Flugsimulators, der aus vielen 
+		Teilprogrammen besteht. Diese Teilprogramme sind verteilt über mehrere Systeme im
+		gleichen Netzwerk und müssen alle in einer komplexen Reihenfolge einzeln per Hand 
+		gestartet werden. Daher ist eine Software gewünscht, die das Starten des ganzen
+		Simulators automatisiert.\\[5pt]
+		Es muss darauf geachtet werden, dass auf den Teilsystemen unterschiedliche 
+		Betriebsysteme laufen (verschiedene Windowsversionen und ggf. Linux). Ebenfalls 
+		soll ein sehr generischer Ansatz gewählt werden, damit es einfach ist neue 
+		Startreihenfolgen im nachhinein hinzuzufügen.\\[5pt]
+		Hierzu wird ein Master/Slave-System eingesetzt, wobei über einen Rechner alle 
+		Systeme, die Teil des Simulators sind gesteuert werden. Ein Nutzer kann dann über
+		ein Webinterface diesen Master konfigurieren und steuern.\\[5pt]
+		Die Software für den Master und die Slaves ist in Python geschrieben, und benutzt
+		das Django Framework für das Webinterface, sowie RPC zur Kommunikation zwischen 
+		dem Master und den Slaves.
+		
 
 	\chapter{Qualitätsziele}
 		\section{Portabilität}
+			1. Try:\\ \\
 			Es ist dem Benutzer möglich die Software auf allen verwendeten
 			Geräten bzw. von ihm spezifizierten Geräten (WindowsXP, Windows 7,
 			Windows 10, ggf. Linux). Auch läuft die Software auf diesen
 			Plattformen wie vom Arbeitgeber abgenommen. Wobei im Vorraus
 			geklärt ist, dass der Master nicht unbedingt auf älteren Systemen
 			(WindowsXP) laufen muss.
-
+			\\
 			Um das Ziel zu erreichen werden mehrere Testumgebungen verwendet
 			(Travis, Jenkins, AppVeyor), auf denen verschieden Windows
 			Versionen und Linux Versionen laufen. Sollte ein Problem auftreten
@@ -61,24 +82,65 @@
 			wird vom jeweiligen zugeteilten Entwickler geändert bzw.
 			beaufsichtigt. Dieser kann sich auch Hilfe bzw. Meinungen von
 			anderen holen.
-
+			\\
 			Die Tests werden automatisch bei jeder neuen Änderung ausgeführt.
 			Sobald die Änderung nicht lauffähig ist wird diese nicht akzeptiert
 			und muss abgeändert werden.
+			\\
+			\\	
+			2. Try:\\ \\
+			Wie in der Einleitung erwähnt muss die Software auf vielen verschiedenen 
+			Betriebsystemen laufen (Windows XP, Windows 7, Windows 10 und ggf. Linux),
+			wobei im Vorraus besprochen wurde, dass die Software für den Master nicht 
+			unbedingt auf älteren Systemen laufen muss (Windows XP).
+			\\[5pt]
+			Um gute Portabilität zu erreichen, setzten wir auf gute Testabdeckung 
+			(mindestens 90\% für nicht generierte Dateien) und eine Umfangreiche 
+			Testumgebung. Dazu verwenden wir:
+			\begin{itemize}	
+				\item coveralls zum bestimmen der Testabdeckung
+				\item Travis CI zum testen unter Linux
+				\item AppVeyor zum testen für Windowsversionen ab Windows 7
+				\item Jenkins zum testen auf Windows XP
+			\end{itemize}
+			Alle Tools sind in das Githubprojekt integriert und werden nach jedem Push auf 
+			Origin ausgeführt.
+			\\[5pt]
+			Die Userstorys werden in Github über Pullrequests gehandhabt. Wenn der/die 
+			Entwickler der Meinung ist/sind das Akzeptanzkriterium zu erfüllen geben sie 
+			den Pullrequest zum Review frei, in von mindestens einem anderen Entwickler 
+			folgende Liste abgearbeitet wird, und als Kommentar im Pullrequest 
+			veröffentlicht wird:
+			\begin{itemize}	
+				\item Test Coverage (auf unseren Files) mindestens 90%
+				\item Jede Klasse und Funktion ist grob Dokumentiert
+				\item Schwierige Codestellen dokumentiert
+				\item Alles Tests laufen durch
+				\item Code ist korrekt formatiert
+				\item  Erfüllt die Userstory und nur die Userstory (Akzeptanzkriterium)?
+				\item Ist die Userstory ausgefüllt? (Datum, Zeit)
+			\end{itemize}
+			Falls Teile der Liste nicht erfüllt werden, muss/müssen der/die Entwickler 
+			der Userstory die Probleme beheben, wobei danach wieder ein Review 
+			durchgeführt wird. Danach wird die Userstory in den Master Rebased/Gemerged.
+		
 		\section{Bedienbarkeit}
 			Die Bedienoberfläche soll leicht verständlich sein und von jedem
 			belieben Mitarbeiter bedient werden können.
-
+			\\[5pt]
 			Um das Ziel zu erreichen werden Userstudien durchgeführt.
 			Diese werden aber nicht in regelmäßigen Abständen durchgeführt,
 			sonder nur wenn eine mindest Anzahl von Features bereits
-			verfügbar ist. Die Testkandiaten kommen vorzugsweise aus dem
-			Bereich des Arbeitgebers. Aber auch Kanidaten aus anderen
+			verfügbar ist. Die Testkandidaten kommen vorzugsweise aus dem
+			Bereich des Arbeitgebers. Aber auch Kandidaten aus anderen
 			Fachrichtungen werden miteinbezogen.
-
+			\\[5pt]
 			Durch die Auswertung der Studie erhält die Gruppe Feedback.
 			Falls dem Benutzer die Bedienung nicht möglich ist, muss die
 			Oberfläche nach dem Feedback angepasst werden.
+			\\[5pt]
+			Des Weiteren wird eine Anleitung geschrieben, die an die Anwender der Software
+			gerichtet ist.
 
 \appendix
 	\chapter{Anhang}
