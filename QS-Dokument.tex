@@ -36,18 +36,6 @@
 	\tableofcontents
 
 	\chapter{Einleitung}
-		1. Try:\\ \\	
-		Die Arbeitgeber wünschen sich eine Software die, die Bedienung des
-		Flugsimulators vereinfacht. Es wird sich eine Software gewünscht
-		in der man Programme auf verschiedenen Rechner von einander Abhängig
-		starten kann. Es ist wichtig dass die Software auf verschieden
-		Windows Versionen und ggf. auf Linux läuft. Die Software ist in Python
-		geschrieben und benutzt Django und RPC um mit den Slaves zu
-		kommunizieren. Die Software sollte so generisch wie Möglich sein
-		damit in Zukunft andere Software einfach mit aufgenommen werden kann.
-		\\
-		\\
-		2. Try:\\ \\	
 		Die Auftraggeber sind im Besitz eines Flugsimulators, der aus vielen 
 		Teilprogrammen besteht. Diese Teilprogramme sind verteilt über mehrere Systeme im
 		gleichen Netzwerk und müssen alle in einer komplexen Reihenfolge einzeln per Hand 
@@ -67,28 +55,6 @@
 
 	\chapter{Qualitätsziele}
 		\section{Portabilität}
-			1. Try:\\ \\
-			Es ist dem Benutzer möglich die Software auf allen verwendeten
-			Geräten bzw. von ihm spezifizierten Geräten (WindowsXP, Windows 7,
-			Windows 10, ggf. Linux). Auch läuft die Software auf diesen
-			Plattformen wie vom Arbeitgeber abgenommen. Wobei im Vorraus
-			geklärt ist, dass der Master nicht unbedingt auf älteren Systemen
-			(WindowsXP) laufen muss.
-			\\
-			Um das Ziel zu erreichen werden mehrere Testumgebungen verwendet
-			(Travis, Jenkins, AppVeyor), auf denen verschieden Windows
-			Versionen und Linux Versionen laufen. Sollte ein Problem auftreten
-			wird der zugeteilten Entwickler benachrichtigt. Die Problembehebung
-			wird vom jeweiligen zugeteilten Entwickler geändert bzw.
-			beaufsichtigt. Dieser kann sich auch Hilfe bzw. Meinungen von
-			anderen holen.
-			\\
-			Die Tests werden automatisch bei jeder neuen Änderung ausgeführt.
-			Sobald die Änderung nicht lauffähig ist wird diese nicht akzeptiert
-			und muss abgeändert werden.
-			\\
-			\\	
-			2. Try:\\ \\
 			Wie in der Einleitung erwähnt muss die Software auf vielen verschiedenen 
 			Betriebsystemen laufen (Windows XP, Windows 7, Windows 10 und ggf. Linux),
 			wobei im Vorraus besprochen wurde, dass die Software für den Master nicht 
@@ -112,7 +78,7 @@
 			folgende Liste abgearbeitet wird, und als Kommentar im Pullrequest 
 			veröffentlicht wird:
 			\begin{itemize}	
-				\item Test Coverage (auf unseren Files) mindestens 90%
+				\item Test Coverage (auf unseren Dateien) mindestens 90%
 				\item Jede Klasse und Funktion ist grob Dokumentiert
 				\item Schwierige Codestellen dokumentiert
 				\item Alles Tests laufen durch
