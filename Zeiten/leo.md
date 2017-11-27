@@ -5,6 +5,7 @@ Datum | Stunden
 06.11.17 | 2h
 12.11.17 | 1.5h
 13.11.17 | 0.5h
+27.11.17 | 2h
   
 # Implementation
  Datum | Stunden
@@ -14,3 +15,4 @@ Datum | Stunden
 17.11.17 | 4h
 21.11.17 | 4h
 22.11.17 | 1h
+27.11.17 | 3h
