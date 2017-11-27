@@ -2,7 +2,7 @@
 # Zeiten
 
 Date|Dauer (h)|Beschreibung
--|-|-|-
+-|-|-
 6.11.17|02:00:00|Arbeitgebertreffen
 6.11.17|01:00:00|Gruppentreffen
 8.11.17|01:00:00|Dokumentation
