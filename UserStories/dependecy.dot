@@ -1,22 +1,23 @@
 digraph G {
-    1 [label="Willkommensnachricht"];
-    2 [label="Slaves Registrieren"];
-    3 [label="Slave Hochfahren"];
+    1 [label="Willkommensnachricht", style=filled, fillcolor = yellow];
+    2 [label="Slaves Registrieren", style=filled, fillcolor = yellow];
     4 [label="Status der Slaves"];
-    5 [label="Slave Herunterfahren"];
-    6 [label="Kontextmenu"];
-    7 [label="Starten eines Programmes"];
+    6 [label="Kontextmenue", style=filled, fillcolor = yellow];
     8 [label="Statusabfrage eines Programmes"];
-    9 [label="Datei bewegen"];
-    10 [label="Datei herunterladen?"];
-    11 [label="Datei löschen"];
     12 [label="Interface am start"];
-    14 [label="Slaves löschen"];
-    15 [label="Slaves Bearbeiten"];
-    16 [label="Slaves Anzeigen"];
+    14 [label="Slaves löschen", style=filled, fillcolor = yellow];
+    15 [label="Slaves Bearbeiten", style=filled, fillcolor = yellow];
+    16 [label="Slaves Anzeigen", style=filled, fillcolor = yellow];
     17 [label="Website Navigation"];
+    
+    3 [label="Slave Hochfahren"];
+    5 [label="Slave Herunterfahren"];
+    7 [label="Starten eines Programmes"];
+    9 [label="Datei bewegen"];
+    10 [label="Datei herunterladen"];
+    11 [label="Datei löschen"];
     18 [label="Ping Slaves"];
-
+    
     1 -> 16;
     1 -> 17;
 
