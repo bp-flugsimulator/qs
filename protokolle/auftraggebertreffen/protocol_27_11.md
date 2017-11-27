@@ -1,18 +1,17 @@
 # Anwesende:
 Jonas  
-leo 
-freddy 
-tim
+Leonardo  
+Frederik  
+Tim
 Torben
 
 # Besprechung der Userstorys
 alle Usestorys wurden akzteptiert
 
-Alle Texte auf englisch
 
 Kontextmenue wird erweitert, da eine besser Idee gefunden wurde:  
 
-Clientname start stop details edit remove Status  programme details:  
+Clientname start stop details edit remove Status  programme details  
     ip:  xxx        mac: xxx  
     Programm 1  start stop restart edit remove  
     Programm 2  start stop restart edit remove  
@@ -20,22 +19,23 @@ Clientname start stop details edit remove Status  programme details:
 start/stop  als ein button (farbe anpassen)  
 
 wenn fertig -> Screenshot per mail
-# userstorys für nächste woche
-überarbeiten vom Kontextmenü
+# Userstorys für nächste Woche
+Überarbeiten vom Kontextmenü
 
-status von Clients
+Status der Slaves (4)
 
-programme auf Clients:
-    add edit remove
-    run/stop
-    status
+Programme auf Clients: 
+* add edit remove  
+* run/stop  
+* Status  
 
-Navigationsleiste  
+Website Navigation (17)
 
 # Generelles
-Slaves = Clients
+Alle Texte auf englisch
+Anstelle von Slaves wird nun der Begriff Clients verwendet
 Userstory Ping wird entfernt
-Verwendung kann von 2 Seiten gleichzeitig
+Interface sollten von 2 PCs aus gleichzeitig verwendet werden können
 interne Sicherheit egal (keine Passwörter)
 
 # nächstes Treffen
