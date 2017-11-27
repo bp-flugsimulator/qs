@@ -3,7 +3,7 @@
 |Name        |Statusabfrage von Programmen auf einem Slave|
 |Beschreibung|Der User kann den Status von Prozessen, den er auf einem Slave gestartet hat abzufragen|
 |Akzeptanz| Neben dem Eintrag eines Programmes im Kontextmenü wird der derzeitige Status korrekt angezeigt|
-|Story Points|10|
+|Story Points|8|
 |Entwickler  |?|
 |Iteration   |?|
 |Stunden     |?|

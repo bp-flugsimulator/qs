@@ -2,15 +2,13 @@
 Jonas  
 Leonardo  
 Frederik  
-Tim
+Tim  
 Torben
 
 # Besprechung der Userstorys
-alle Usestorys wurden akzteptiert
+alle Userstorys außer Kontextmenü wurden akzeptiert
 
-
-Kontextmenue wird erweitert, da eine besser Idee gefunden wurde:  
-
+Kontextmenü wird erweitert, da eine besser Idee gefunden wurde:  
 Clientname start stop details edit remove Status  programme details  
     ip:  xxx        mac: xxx  
     Programm 1  start stop restart edit remove  
@@ -19,17 +17,25 @@ Clientname start stop details edit remove Status  programme details
 start/stop  als ein button (farbe anpassen)  
 
 wenn fertig -> Screenshot per mail
-# Userstorys für nächste Woche
-Überarbeiten vom Kontextmenü
-
-Status der Slaves (4)
-
+# neue Userstorys
 Programme auf Clients: 
 * add edit remove  
 * run/stop  
 * Status  
 
-Website Navigation (17)
+
+# Userstorys für nächste Woche
+|ID|Name|Storypoints|
+|--|----|-----------|
+|6 | Kontextmenü |noch 3 zusätzlich|
+|19| Programme anzeigen |8| 
+|20| Programme hinzufügen|6| 
+|21| Programme löschen |4|
+|22| Programme bearbeiten |5|
+|7| Starten eines Programmes |8|
+|8| Statusabfrage von Programmen |8|
+|17| Website Navigation|1|
+
 
 # Generelles
 Alle Texte auf englisch
