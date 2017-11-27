@@ -1,8 +1,8 @@
 | ID         |4|
 |------------|-|
 |Name        |Status der Slaves|
-|Beschreibung|Der aktuelle Status (WOL gesendet, Verbindung aufgebaut, Command wird ausgeführt) wird für die einzelnen Slaves angezeigt.|
-|Akzeptanz   |Der Status wird korrekt angezeigt und ist eindeutig lesbar für den User. Der Status darf eine gewisse Verzögerung beinhalten.|
+|Beschreibung|Der aktuelle Status (Wake on Lan gesendet, Verbindung aufgebaut) wird für die einzelnen Slaves angezeigt.|
+|Akzeptanz   |Der Status wird angezeigt. Der Status darf eine gewisse Verzögerung beinhalten. Der Status wird in der Liste aller Slaves angezeigt mit dem entsprechenden Slave angezeigt.|
 |Story Points|8|
 |Entwickler  |?|
 |Iteration   |?|
