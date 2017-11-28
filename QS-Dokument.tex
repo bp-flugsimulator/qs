@@ -21,7 +21,7 @@
 		Jonas Meurer <jonas.meurer@stud.tu-darmstadt.de>\\
 		Tim Weißmantel <tim.weissmantel@stud.tu-darmstadt.de>\\
 		Leonardo Zaninelli <leonardo.zaninelli@stud.tu-darmstadt.de>}
-	\titlerow{Teamleiter}{Henrik Bode <hendrik.bode@stud.tu-darmstadt.de>}
+	\titlerow{Teamleiter}{Hendrik Bode <hendrik.bode@stud.tu-darmstadt.de>}
 	\titlerow{Auftraggeber}{%
 		Jonas Schulze <Schulze@fsr.tu-darmstadt.de>\\
 		Torben Bernatzky <Bernatzky@fsr.tu-darmstadt.de>\\
@@ -37,73 +37,70 @@
 
 	\chapter{Einleitung}
 		Die Auftraggeber sind im Besitz eines Flugsimulators, der aus vielen 
-		Teilprogrammen besteht. Diese Teilprogramme sind verteilt über mehrere Systeme im
-		gleichen Netzwerk und müssen alle in einer komplexen Reihenfolge einzeln per Hand 
-		gestartet werden. Daher ist eine Software gewünscht, die das Starten des ganzen
+		Teilprogrammen besteht. Diese Teilprogramme sind über mehrere Systeme im
+		gleichen Netzwerk verteilt und müssen alle in einer komplexen Reihenfolge per Hand 
+		gestartet werden. Aus diesem Grund ist eine Software gewünscht, die das Starten des gesamten
 		Simulators automatisiert.\\[5pt]
-		Es muss darauf geachtet werden, dass auf den Teilsystemen unterschiedliche 
-		Betriebsysteme laufen (verschiedene Windowsversionen und ggf. Linux). Ebenfalls 
-		soll ein sehr generischer Ansatz gewählt werden, damit es einfach ist neue 
-		Startreihenfolgen im nachhinein hinzuzufügen.\\[5pt]
+		Es ist dabei zu beachten, dass auf den Teilsystemen unterschiedliche 
+		Betriebsysteme benutzt werden (verschiedene Windowsversionen und ggf. Linux). Ebenfalls 
+		soll ein generischer Ansatz gewählt werden, um das Einfügen einer neuen Startreihenfolge im Nachhinein zu vereinfachen.\\[5pt]
 		Hierzu wird ein Master/Slave-System eingesetzt, wobei über einen Rechner alle 
-		Systeme, die Teil des Simulators sind gesteuert werden. Ein Nutzer kann dann über
+		Systeme, die Teil des Simulators sind, gesteuert werden. Ein Nutzer kann dann über
 		ein Webinterface diesen Master konfigurieren und steuern.\\[5pt]
-		Die Software für den Master und die Slaves ist in Python geschrieben, und benutzt
+		Die Software für Master und Slaves ist in Python geschrieben, und benutzt
 		das Django Framework für das Webinterface, sowie RPC zur Kommunikation zwischen 
-		dem Master und den Slaves.
+		Master und Slaves.
 		
 
 	\chapter{Qualitätsziele}
 		\section{Portabilität}
-			Wie in der Einleitung erwähnt muss die Software auf vielen verschiedenen 
-			Betriebsystemen laufen (Windows XP, Windows 7, Windows 10 und ggf. Linux),
-			wobei im Vorraus besprochen wurde, dass die Software für den Master nicht 
-			unbedingt auf älteren Systemen laufen muss (Windows XP).
-			\\[5pt]
-			Um gute Portabilität zu erreichen, setzten wir auf gute Testabdeckung 
-			(mindestens 90\% für nicht generierte Dateien) und eine Umfangreiche 
+		Wie in der Einleitung erwähnt, muss die Software auf vielen verschiedenen 
+		Betriebsystemen laufen. (Windows XP, Windows 7, Windows 10 und ggf. Linux)
+		Dabei wurde im Vorraus besprochen, dass die Software für den Master nicht 
+		unbedingt auf älteren Systemen laufen muss (Windows XP).
+		\\[5pt]
+		Um gute Portabilität zu erreichen, setzen wir auf gute Testabdeckung 
+			(mindestens 90\% für nicht generierte Dateien) und eine umfangreiche 
 			Testumgebung. Dazu verwenden wir:
 			\begin{itemize}	
-				\item coveralls zum bestimmen der Testabdeckung
-				\item Travis CI zum testen unter Linux
-				\item AppVeyor zum testen für Windowsversionen ab Windows 7
-				\item Jenkins zum testen auf Windows XP
+				\item Coveralls zum Bestimmen der Testabdeckung
+				\item Travis CI zum Testen unter Linux
+				\item AppVeyor zum Testen für Windowsversionen ab Windows 7
+				\item Jenkins zum Testen auf Windows XP
 			\end{itemize}
 			Alle Tools sind in das Githubprojekt integriert und werden nach jedem Push auf 
 			Origin ausgeführt.
 			\\[5pt]
 			Die Userstorys werden in Github über Pullrequests gehandhabt. Wenn der/die 
-			Entwickler der Meinung ist/sind das Akzeptanzkriterium zu erfüllen geben sie 
-			den Pullrequest zum Review frei, in von mindestens einem anderen Entwickler 
-			folgende Liste abgearbeitet wird, und als Kommentar im Pullrequest 
-			veröffentlicht wird:
+			Entwickler der Meinung ist/sind, dass das Akzeptanzkriterium erfüllt ist, geben sie 
+			den Pullrequest zum Review frei. Ein Review muss von mindestens einem anderen Entwickler erstellt werden. Er arbeitet dabei folgende Liste ab und fügt sie als Kommentar im Pullrequest ein:
 			\begin{itemize}	
-				\item Test Coverage (auf unseren Dateien) mindestens 90%
+				\item Test Coverage (auf unseren Dateien) mindestens 90\%
 				\item Jede Klasse und Funktion ist grob Dokumentiert
-				\item Schwierige Codestellen dokumentiert
-				\item Alles Tests laufen durch
-				\item Code ist korrekt formatiert
-				\item  Erfüllt die Userstory und nur die Userstory (Akzeptanzkriterium)?
-				\item Ist die Userstory ausgefüllt? (Datum, Zeit)
+				\item Schwierige Codestellen sind dokumentiert
+				\item Alle Test laufen fehlerfrei durch
+				\item Der Code ist korrekt formatiert
+				\item Der Code erfüllt das Akzeptanzkriterium der Userstory (und dabei spezifisch nur das Akzeptanzkriterium dieser Userstory)
+				\item Die Userstory ist ausgefüllt (Datum, Zeit)
 			\end{itemize}
 			Falls Teile der Liste nicht erfüllt werden, muss/müssen der/die Entwickler 
-			der Userstory die Probleme beheben, wobei danach wieder ein Review 
-			durchgeführt wird. Danach wird die Userstory in den Master Rebased/Gemerged.
-		
+			der Userstory die Probleme beheben. Danach muss erneut ein Review 
+			durchgeführt werden. Erst danach wird die Userstory in den Master Rebased/Gemerged.
+				
 		\section{Bedienbarkeit}
-			Die Bedienoberfläche soll leicht verständlich sein und von jedem
-			belieben Mitarbeiter bedient werden können.
+		Die Bedienoberfläche soll leicht verständlich sein und jeder
+		Mitarbeiter soll sie bedienen können.
 			\\[5pt]
-			Um das Ziel zu erreichen werden Userstudien durchgeführt.
-			Diese werden aber nicht in regelmäßigen Abständen durchgeführt,
+			Um diese Ziel zu erreichen, werden Nutzerstudien durchgeführt.
+			Diese werden nicht in regelmäßigen Abständen durchgeführt,
 			sonder nur wenn eine mindest Anzahl von Features bereits
 			verfügbar ist. Die Testkandidaten kommen vorzugsweise aus dem
-			Bereich des Arbeitgebers. Aber auch Kandidaten aus anderen
-			Fachrichtungen werden miteinbezogen.
+			Fachbereich/Fachgebiet des Arbeitgebers. Aber auch Kandidaten aus anderen
+			Fachgebieten sollen miteinbezogen werden.
 			\\[5pt]
 			Durch die Auswertung der Studie erhält die Gruppe Feedback.
-			Falls dem Benutzer die Bedienung nicht möglich ist, muss die
-			Oberfläche nach dem Feedback angepasst werden.
+			Falls die Benutzer Probleme bei der Bedienung der Oberfläche haben, muss 
+			diese nach dem Feedback angepasst werden.
 			\\[5pt]
 			Des Weiteren wird eine Anleitung geschrieben, die an die Anwender der Software
 			gerichtet ist.
@@ -111,7 +108,7 @@
 \appendix
 	\chapter{Anhang}
 		(Am Ende des Projekts nachzureichen)\\
-		Beleg für durchgeführte Maßnahmen, bzw. falls nicht durchgeführt eine Begründung wieso die Durchführung nicht möglich oder nicht erfolgt ist. \\
+		Belege für durchgeführte Maßnahmen, bzw. falls nicht durchgeführt eine Begründung wieso die Durchführung nicht möglich oder nicht erfolgt ist. \\
 		Weitere Anforderungen sind den Unterlagen und der Vorlesung zur Projektbegleitung zu entnehmen.
 
 \end{document}
