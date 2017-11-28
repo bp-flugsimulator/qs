@@ -13,7 +13,8 @@ Clientname start stop details edit remove Status  programme details
     ip:  xxx        mac: xxx  
     Programm 1  start stop restart edit remove  
     Programm 2  start stop restart edit remove  
-    + 
+    +  
+
 start/stop  als ein button (farbe anpassen)  
 
 wenn fertig -> Screenshot per mail
