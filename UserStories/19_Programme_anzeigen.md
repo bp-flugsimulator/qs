@@ -1,8 +1,8 @@
 | ID         |19|
 |------------|-|
 |Name        |Programme anzeigen|
-|Beschreibung|Alle derzeit gespeicherten Programme auf einem Slave werden im Kontextmenü dieses Slaves angezeigt| 
-|Akzeptanz   |Nachdem das Kontextmenü geöffnet wurde, wird eine Liste aller in der Datenbank gespeicherten Programme angezeigt|
+|Beschreibung|Alle derzeit gespeicherten Programme eines Slaves werden im Kontextmenü dieses Slaves angezeigt| 
+|Akzeptanz   |Nachdem das Kontextmenü geöffnet wurde, wird eine Liste aller in der Datenbank gespeicherten Programme dieses Slaves angezeigt|
 |Story Points|8|
 |Entwickler  |Leonardo,Tim|
 |Iteration   |2|
