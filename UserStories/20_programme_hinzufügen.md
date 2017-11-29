@@ -4,8 +4,8 @@
 |Beschreibung|Es gibt die möglichkeit auf einem Client Programme zu registrieren| 
 |Akzeptanz   |Nachdem auf den Hinzufügenknopf gedrückt wurde öffnet sich ein Popup, in dass man den Programmpfad und die Programmargumente eingeben kann. Das eingetragene Programm wird danach in der richtigen Liste angezeigt.|
 |Story Points|6|
-|Entwickler  |?|
-|Iteration   |?|
-|Stunden     |?|
-|Velocity    |?|
+|Entwickler  |Tim|
+|Iteration   |2|
+|Stunden     |2,5|
+|Velocity    |2,4 sp/std|
 |Bemerkung   ||
