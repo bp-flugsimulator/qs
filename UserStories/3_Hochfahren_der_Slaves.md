@@ -4,8 +4,8 @@
 |Beschreibung|Über das Kontextmenü eines Slaves kann dieser gestartet werden|
 |Akzeptanz   |Nachdem die Aktion aus dem Kontextmenü Slave ausgewählt wurde, fährt nur dieser Slave hoch|
 |Story Points|3|
-|Entwickler  |?|
-|Iteration   |?|
+|Entwickler  |Heiko|
+|Iteration   |2|
 |Stunden     |?|
 |Velocity    |?|
 |Bemerkungen |Maser Server wird benötigt, Kontextmenü wird benötigt|
