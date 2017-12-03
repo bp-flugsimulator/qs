@@ -1,0 +1,90 @@
+digraph {
+	rankdir=TB;
+
+	01 [style=invis];
+	02 [style=invis];
+	03 [style=invis];
+
+	subgraph cluster_master {
+		nodesep=1;
+		ranksep=0;
+		{
+			db_slave [label="Slaves", shape=box];
+			db_proc [label="Programs", shape=box];
+		}
+
+		subgraph cluster_websocket {
+			label = "Websocket";
+			{
+				notification [label="Notifications", shape=diamond];
+				commands [label="Command Interface", shape=diamond];
+			}
+		}
+
+
+		{
+			db [label="SQLite Database"];
+			django [label="Django"];
+			status [label="Status"];
+		}
+
+
+		label = "Master";
+		db -> django [dir=both];
+		db_slave -> db[arrowhead="dot"];
+		db_proc -> db[arrowhead="dot"];
+	}
+	
+   subgraph cluster_slave_1 {
+      conn_s1 [label="Websocket"];
+      {
+         rank=same;
+         prog_s1_1 [label="Process #1", shape=diamond];
+         prog_s1_n [label="Process #N", shape=diamond];
+      }
+      label = "Slave #1";
+
+      conn_s1 -> prog_s1_1;
+      conn_s1 -> prog_s1_n;
+      prog_s1_1 -> prog_s1_n[style="dotted", dir="none"];
+   }
+
+   subgraph cluster_slave_n {
+      conn_sn [label="Websocket"];
+      {
+         rank=same;
+         prog_sn_1 [label="Process #1", shape=diamond];
+         prog_sn_n [label="Process #N", shape=diamond];
+      }
+      label = "Slave #N";
+
+      prog_sn_1 -> prog_sn_n[style="dotted", dir="none"];
+      conn_sn -> prog_sn_1;
+      conn_sn -> prog_sn_n;
+   }
+
+
+	user [label="Webinterface", shape=box];
+	user -> django[dir=both];
+	user -> notification[dir=both];
+
+   django->commands; 
+
+   notification -> user[style=invis];
+   commands -> user[style=invis];
+	02 -> db[style=invis];
+	03 -> conn_s1[style=invis];
+	03 -> conn_sn[style=invis];
+	
+   status -> django[dir=both];
+	status -> notification[dir=both];
+
+	conn_s1 -> commands [dir=both];
+	conn_s1 -> notification;
+
+	conn_sn -> commands [dir=both];
+	conn_sn -> notification;
+
+   prog_s1_n -> conn_sn[style=invis];
+
+}
