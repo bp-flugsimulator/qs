@@ -6,6 +6,6 @@
 |Story Points|3|
 |Entwickler  |Heiko|
 |Iteration   |2|
-|Stunden     |6|
-|Velocity    |0.5|
+|Stunden     |7|
+|Velocity    |0.42|
 |Bemerkungen |Master Server wird benötigt, Kontextmenü wird benötigt|
