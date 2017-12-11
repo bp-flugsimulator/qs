@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2017 bp-flugsimulator
+Copyright (c) 2017 Frederik Bark, Heiko Carrasco, Jonas Meurer, Tim Weißmantel und Leonardo Zaninelli
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
