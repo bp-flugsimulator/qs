@@ -1,5 +1,7 @@
 *
 !.gitignore
 !auftraggebertreffen/
-!auftraggebertreffen/*.tex
-!auftraggebertreffen/*.md
+!auftraggebertreffen/*
+!auftraggebertreffen/*/*
+!auftraggebertreffen/*/*.tex
+!auftraggebertreffen/*/*.md
