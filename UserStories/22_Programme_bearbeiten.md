@@ -6,6 +6,6 @@
 |Story Points|5|
 |Entwickler  |Tim|
 |Iteration   |3|
-|Stunden     |1.5|
-|Velocity    |2 StoryPoints/Stunde|
+|Stunden     |3|
+|Velocity    |1.7 StoryPoints/Stunde|
 |Bemerkung   ||
