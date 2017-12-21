@@ -4,7 +4,7 @@
 |Beschreibung|Der User kann über das Kontextmenü eines Slaves ein vorher eingetragenes Programm auf diesem Starten|
 |Akzeptanz   |Nachdem die Aktion im Kontextmenu ausgewählt wurde startet das Programm auf dem richtigen Client|
 |Story Points|25|
-|Entwickler  |Jonas, Time|
+|Entwickler  |Jonas, Tim|
 |Iteration   |3|
 |Stunden     |50|
 |Velocity    |0.5|
