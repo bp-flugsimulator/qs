@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{ngerman}
 \usepackage{parcolumns}
+\usepackage{hyperref}
 
 \newcommand{\titlerow}[2]{
 	\begin{parcolumns}[colwidths={1=.17\linewidth}]{2}
@@ -12,10 +13,10 @@
 	\vspace{0.2cm}
 }
 
-\title{Projektthema}
+\title{Steuerungsprogramm für einen Flugsimulator}
 \subtitle{Qualitätssicherungsdokument}
 \subsubtitle{%
-	\titlerow{19}{%
+	\titlerow{Gruppe 19}{%
 		Frederik Bark <frederikalexander.bark@stud.tu-darmstadt.de>\\
 		Heiko Carrasco <heiko.carrascohuertas@stud.tu-darmstadt.de>\\
 		Jonas Meurer <jonas.meurer@stud.tu-darmstadt.de>\\
@@ -37,16 +38,16 @@
 
 	\chapter{Einleitung}
 		Die Auftraggeber sind im Besitz eines Flugsimulators, der aus vielen 
-		Teilprogrammen besteht. Diese Teilprogramme sind über mehrere Systeme im
+		Teilprogrammen besteht. Diese Teilprogramme sind über mehrere Computer im
 		gleichen Netzwerk verteilt und müssen alle in einer komplexen Reihenfolge per Hand 
-		gestartet werden. Aus diesem Grund ist eine Software gewünscht, die das Starten 
-		des gesamten Simulators automatisiert.\\[5pt]
+		gestartet werden. Aus diesem Grund wünschen sich die Auftraggeber eine Software, welche
+		das Starten des Simulators automatisiert.\\[5pt]
 		Es ist dabei zu beachten, dass auf den Teilsystemen unterschiedliche 
 		Betriebsysteme benutzt werden (verschiedene Windowsversionen und ggf. Linux). 
-		Des Weiteren ist es erwünscht einen generischer Ansatz zu wählen, um das Einfügen 
+		Des Weiteren ist es erwünscht, einen generischer Ansatz zu wählen, um das Einfügen 
 		einer neuen Startreihenfolge im Nachhinein zu vereinfachen.\\[5pt]
 		Hierzu wird ein Master/Slave-System eingesetzt, wobei über einen Rechner alle 
-		Systeme, die Teil des Simulators sind, gesteuert werden. Ein Nutzer kann dann über
+		Systeme, die Teil des Simulators sind, zentral gesteuert werden. Ein Nutzer kann dann über
 		ein Webinterface diesen Master konfigurieren und steuern.\\[5pt]
 		Die Software für Master und Slaves ist in Python geschrieben und benutzt
 		das Django Framework für das Webinterface, sowie RPC zur Kommunikation zwischen 
@@ -55,55 +56,87 @@
 
 	\chapter{Qualitätsziele}
 		\section{Portabilität}
-		Wie in der Einleitung erwähnt, muss die Software auf vielen verschiedenen 
-		Betriebsystemen laufen. (Windows XP, Windows 7, Windows 10 und ggf. Linux)
-		Dabei wurde im Vorraus besprochen, dass die Software für den Master nicht 
-		unbedingt auf älteren Systemen laufen muss (Windows XP).
+		Wie in der Einleitung erwähnt, muss die Slave Software unter verschiedenen 
+		Betriebsystemen laufen (Windows XP, Windows 7, Windows 10 und ggf. Linux).
+		Mit den Auftraggebern wurde abgesprochen, dass der Master keine 
+		Betriebsystemversion unter Windows 7 einsetzt, weswegen die Tests für Windows
+		XP hier entfallen.
 		\\[5pt]
-		Um Portabilität zu erreichen, setzen wir auf eine hohe Testabdeckung 
-		(mindestens 90\% für nicht generierte Dateien) und eine umfangreiche 
-		Testumgebung. Dazu verwenden wir:
-		\begin{itemize}	
+		Vorraussetzung für die Abnahme ist eine 90\% Testabdeckung des durch das
+		BP-Teams geschriebenen Codes.
+		Um Portabilität sicherzustellen, werden alle Tests auf allen eingesetzten
+		Betriebssystemen nach jedem Commit ausgeführt. Spätestens zur Abgabe einer
+		US müssen diese Tests fehlerfrei durchlaufen, sonst wird die Userstory nicht
+		zur Abnahme präsentiert. Die Entscheidung zur Präsentation trifft der für diese
+		Userstory bestimmte Reviwer. Der/die zuständigen Entwickler behebt/beheben dann die Fehler
+		in der nächsten Iteration.
+		Als Testumgebung wird verwendet:
+		\begin{itemize}
 			\item Coveralls zum Bestimmen der Testabdeckung
 			\item Travis CI zum Testen unter Linux
 			\item AppVeyor zum Testen für Windowsversionen ab Windows 7
 			\item Jenkins zum Testen auf Windows XP
 		\end{itemize}
-		Die Userstorys werden in Github über Pullrequests gehandhabt, da hier die 
-		Ergebnisse aller Tools direkt einsehbar sind. Wenn der/die Entwickler der Meinung 
-		ist/sind, dass das Akzeptanzkriterium erfüllt ist, geben 
-		sie den Pullrequest zum Review frei. Ein Review muss von mindestens einem anderen 
-		Entwickler erstellt werden. Er arbeitet dabei folgende Liste ab und fügt sie als 
-		Kommentar im Pullrequest ein:
-		\begin{itemize}	
-			\item Die Test Coverage (auf unseren Dateien) muss mindestens 90\% betragen
-			\item Jede Klasse und Funktion ist grob Dokumentiert
-			\item Schwierige Codestellen sind dokumentiert
-			\item Alle Tests laufen fehlerfrei durch
-			\item Der Code ist korrekt formatiert
-			\item Der Code erfüllt das Akzeptanzkriterium der Userstory (und dabei 
-			spezifisch nur das Akzeptanzkriterium dieser Userstory)
-			\item Die Userstory ist ausgefüllt (Datum, Zeit)
-		\end{itemize}
-		Falls Teile der Liste nicht erfüllt werden, muss/müssen der/die Entwickler 
-		der Userstory die Probleme beheben. Danach muss erneut ein Review 
-		durchgeführt werden. Erst danach wird die Userstory in den Master rebased/gemerged.
+		Um die Installation auf allen Betriebssystemen zu vereinfachen werden alle benötigten
+		Bibliotheken mitgeliefert. Diese werden von den Testumgebungen verwendet, sodass
+		auch die Installation auf den verschiedenen Betriebsystemen getestet wird.
+		\section{Korrektheit}
+		Der Flugsimulator ist ein komplexes System, welches aus mehreren verbundenen Komponenten besteht.
+		Sollten zum Beispiel beim Start Fehler auftreten und werden diese nicht korrekt behandelt, so
+		ist ein korrekter Start des Simulators nicht möglich. Daher ist es für das Projekt
+		sehr wichtig, dass alle Komponenten korrekt spezifiziert und implementiert sind,
+		sodass z.B. eventuell auftretende Fehler richtig behandelt werden können.
+		\\[5pt]
+		Der QS Prozess für dieses Projekt sieht dementsprechend wie folgt aus:
+		Der Entwickler entwirft auf Basis der Userstory eine Spezifikation, welche am Ende
+		in der Codedokumentation und in Unittests festgehalten wird.
+		Nach der Implementierung wird die Userstory von mindestens einem weiteren
+		Entwickler geprüft. Dabei wird sichergestellt, dass die Testabdeckung des Projekts
+		nicht unter 90\% fällt.
+		\\[5pt]
+		Zudem wird überprüft, ob die Dokumentation aller implementierten
+		Codeteile mit dem zugehörigen Code übereinstimmen und ob die Implementierung der
+		Userstory entspricht. Dabei wird die angehängte Checkliste als Grundlage verwendet.
+		Sollten Punkte nicht eingehalten werden, wird die Userstory nicht den Auftraggebern zur
+		Abnahme vorgestellt. Der/die verantwortliche/n Entwickler beheben dann die Anmerkungen.
+		Erst wenn alle Punkte der Checkliste erfüllt sind, wird die Userstory den Auftraggebern
+		zur Abnahme empfohlen.
 				
 		\section{Bedienbarkeit}
-		Damit auch weitere Mitarbeiter die Software problemlos verwenden können, muss die 
-		Bedienoberfläche verständlich und leicht bedienbar sein.
+		Damit auch weitere, eventuell nicht technisch versierte, Mitarbeiter die Software
+		problemlos verwenden können, muss die 
+		Bedienoberfläche verständlich und leicht bedienbar sein. Eine Benutzung wird ohne
+		vorherige längere Einarbeitung möglich sein.
 		\\[5pt]
-		Um dieses Ziel zu erreichen, werden Nutzerstudien durchgeführt, sobald die 
-		wichtigsten Features der Bedienoberfläche verfügbar sind.
-		Die Testkandidaten kommen vorzugsweise aus dem
+		Durch die Verwendung des Webframeworks Bootstrap\footnote{\url{https://getbootstrap.com/}}
+		wird das Design der Seite vereinheitlicht. Dies wird durch die Checkliste (im Anhang)
+		vor der Präsentation einer Userstory für die Auftraggeber durch den Reviewer überprüft. 
+		Die Icons\footnote{\url{https://material.io/icons/}}
+		stammen aus dem Material Design, welches zur Zeit auf über 79.8\% der Android Geräte
+		verwendet wird\footnote{\url{https://developer.android.com/about/dashboards/index.html#Platform}}. 
+		Damit ist es einer Vielzahl an Nutzern bereits bekannt.
+		\\[5pt]
+		Da die Bedienbarkeit nicht objektiv messbar ist, werden zusätzlich Nutzerstudien durchgeführt.
+		Diese sind für Anfang Februar und März 2018 angesetzt.
+		Die Testkandidaten kommen vorzugsweise auf dem
 		Fachbereich/Fachgebiet des Arbeitgebers, aber auch Kandidaten aus anderen
 		Fachbereichen werden miteinbezogen.
 		\\[5pt]
-		Falls die Benutzer Probleme bei der Bedienung der Oberfläche haben, muss 
-		diese anhand des Feedbacks angepasst werden.
+		Für die Studie erhalten die Nutzer eine Auswahl an Aufgaben (siehe Anhang), 
+		welche sie zunächst ohne Anleitung durchführen sollen. 
+		Gibt es bei einer Aufgabe Probleme, so wird die Bedienungsanleitung 
+		der Software zur Verfügung gestellt.
+		Am Ende wird ein Fragebogen ausgehändigt (ebenfalls im Anhang),
+		in welchem die Nutzer das Design (z.B. Farbschema, Größe und Beschriftung von Buttons), den
+		durch die Software vorgegeben Arbeitsablauf sowie die Anleitung bewerten können. Zudem
+		besteht die Möglichkeit allgemeines Feedback abzugeben.
 		\\[5pt]
-		Des Weiteren wird eine Anleitung geschrieben, die an die Anwender der Software
-		gerichtet ist.
+		Mithilfe der ausgefüllten Fragebögen erstellt das Team einen Katalog an
+		Maßnahmen bezüglich des Designs, Workflows oder der Anleitung, 
+		welche den Auftraggebern beim nächsten Treffen präsentiert werden. 
+		Diese entscheiden, welche Maßnahmen umgesetzt werden, woraufhin ein
+		Entwickler diese in der nächsten Iteration umsetzt. Die Abnahme erfolgt dann
+		wiederum durch die Auftraggeber.
 
 \appendix
 	\chapter{Anhang}
