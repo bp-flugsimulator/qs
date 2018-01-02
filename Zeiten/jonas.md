@@ -1,7 +1,6 @@
-
 # Zeiten
 
-Date|Dauer (h)|Beschreibung
+Date|Dauer (hh:mm:ss)|Beschreibung
 -|-|-
 6.11.17|02:00:00|Arbeitgebertreffen
 6.11.17|01:00:00|Gruppentreffen
@@ -12,13 +11,32 @@ Date|Dauer (h)|Beschreibung
 13.11.17|00:30:00|Teamleitertreffen
 13.11.17|00:45:00|Arbeitgebertreffen
 13.11.17|00:25:00|Gruppentreffen
-15.11.17|02:49:00|Impl U2
-15.11.17|00:31:00|Impl U2
+15.11.17|03:20:00|Impl U2
 16.11.17|02:04:00|Impl U16
 17.11.17|00:57:00|Impl U16
-17.11.17|01:40:00|Impl U16/U2
-17.11.17|03:01:00|Impl U16/U2
+17.11.17|04:41:00|Impl U16.U2
 20.11.17|02:45:00|Design
 20.11.17|01:00:00|Design
 22.11.17|02:56:00|Design
 23.11.17|01:57:00|Design
+27.11.17|02:00:00|Design
+27.11.17|01:18:00|Auftraggebertreffen
+28.11.17|02:00:00|Design
+28.11.17|03:45:00|Impl
+30.11.17|02:57:00|Impl
+1.12.17|03:01:00|Impl
+2.12.17|03:34:00|Impl
+3.12.17|02:01:00|Impl
+7.12.17|03:25:00|Impl
+8.12.17|06:53:00|Impl
+10.12.17|03:00:00|Impl
+11.12.17|02:15:00|Auftraggebertreffen
+16.12.17|03:13:00|Impl
+17.12.17|02:39:00|Impl
+18.12.17|02:52:00|Testing
+20.12.17|02:38:00|Impl
+21.12.17|02:35:00|Impl
+22.12.17|01:00:00|Impl
+23.12.17|02:01:00|Impl
+---
+Total: ~80h
