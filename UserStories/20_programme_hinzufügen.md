@@ -1,6 +1,6 @@
 | ID         |20|
 |------------|-|
-|Name        |Programme hinzfügen|
+|Name        |Programme hinzufügen|
 |Beschreibung|Es gibt die Möglichkeit auf einem Client Programme zu registrieren| 
 |Akzeptanz   |Nachdem auf den Hinzufügenknopf gedrückt wurde, öffnet sich ein Popup in das man den Programmpfad und die Programmargumente eingeben kann. Das eingetragene Programm wird danach in der richtigen Liste angezeigt.|
 |Story Points|6|
