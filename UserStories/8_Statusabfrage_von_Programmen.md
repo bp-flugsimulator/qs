@@ -1,11 +1,12 @@
+# User Story
+
 | ID         |8|
-|------------|-|
-|Name        |Statusabfrage von Programmen auf einem Slave|
-|Beschreibung|Der User kann den Status von Prozessen, den er auf einem Slave gestartet hat abzufragen|
-|Akzeptanz| Neben dem Eintrag eines Programmes im Kontextmenü wird der derzeitige Status korrekt angezeigt|
+|-|-|
+|Name        |Statusabfrage von Programmen auf einem Client|
+|Beschreibung|Der Benutzer kann den Status eines Prozesses einsehen. Dieser Prozess wird durch den Benutzer gestartet indem ein Programm seiner Wahl startet.|
+|Akzeptanz   |Der Status des Prozesses ist aktuell, korrekt und wird bei dem entsprechendem Programm auf dem Webinterface angezeigt wird.|
 |Story Points|8|
 |Entwickler  |?|
 |Iteration   |?|
 |Stunden     |?|
 |Velocity    |?|
-|Bemerkung   |Master Server wird benötigt, Sollte auf allen Platformen laufen, Status definiert als (started, stopped,Error, Running,Finished)|
