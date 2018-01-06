@@ -1,12 +1,13 @@
+# User Story
+
 | ID         |9|
-|------------|-|
-|Name        |Dateien Kopieren|
-|Beschreibung|Ein User kann über das Kontextmenü Dateien  auf dem Slave bewegen|
-|Akzeptanz   |Nach dem klick auf die Aktion im Kontextmenü öffnet sich ein Popup in dem  zwei Pfade angegeben werden können. Die Datei wird an die korrekte Stelle auf dem richtigen Slave kopiert|
+|-|-|
+|Name        |Datei bewegen|
+|Beschreibung|Der Benutzer kann eine Datei auf dem Client bewegen. Dazu muss er zuvor einen entsprechenden Eintrag hinzufügen und kann diesen dann über den entsprechenden Knopf bewegen.|
+|Akzeptanz   |Nachdem der Benutzer den Kopf betätigt hat wird die Datei auf dem Client verschoben und der Benutzer wird darüber benachrichtigt.|
 |Story Points|6|
 |Entwickler  |?|
 |Iteration   |?|
 |Stunden     |?|
 |Velocity    |?|
-|Bemerkung   |Kontextmenü wird benötigt, Sollte auf allen Platformen laufen|
 
