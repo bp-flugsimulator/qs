@@ -1,11 +1,12 @@
-| ID         |30|
+# User Story
+
+|ID          |30|
 |-|-|
-|Name        | Skript bearbeiten |
-|Beschreibung| Der User kann ein bereits erstelltest Skript bearbeiten und so die z.B. die Reihnfolge der Blöcke ändern. |
-|Akzeptanz   | Nach dem Speichern der Änderung ist diese Änderung fest und wird beim nächsten Bearbeiten auch so angezeigt. |
+|Name        |Skript bearbeiten|
+|Beschreibung|Der Benutzer kann durch das betätigen kann des entsprechenden Knopfes ein Skript seiner Wahl bearbeiten. Der Benutzer wird auf eine weiter Seite weitergeleitet auf der das momentane Skript angezeigt wird und bearbeiten werden kann. |
+|Akzeptanz   |Der Benutzer wird auf die Seite weitergeleitet auf der der Benutzer das Skript bearbeiten kann. Falls der Benutzer ein valides Skript angibt und speichert wird die Änderung übernommen. Falls die Angaben invalide sind wird der Benutzer darauf hingewiesen.|
 |Story Points|5|
 |Entwickler  ||
 |Iteration   ||
 |Stunden     ||
 |Velocity    ||
-|Bemerkung   ||
