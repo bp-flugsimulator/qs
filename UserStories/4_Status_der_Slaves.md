@@ -1,11 +1,13 @@
+# User Story
+
 | ID         |4|
-|------------|-|
-|Name        |Status der Slaves|
-|Beschreibung|Der aktuelle Status (connected/disconnected) wird für die einzelnen Slaves angezeigt.|
-|Akzeptanz   |Der Status wird angezeigt. Der Status darf eine gewisse Verzögerung beinhalten. Der Status wird in der Liste aller Slaves angezeigt mit dem entsprechenden Slave angezeigt.|
+|-|-|
+|Name        |Status eines Clients|
+|Beschreibung|Der User kann auf dem Webinterface einsehen in welchem Status sich der Client befindet.|
+|Akzeptanz   |Der Status wird korrekt angezeigt und wird erneuert sobald sich der Status des Clients geändert hat.|
 |Story Points|4|
 |Entwickler  |?|
 |Iteration   |3|
 |Stunden     |2|
 |Velocity    |?|
-|Bemerkung   |Master Server wird benötigt|
+|Bemerkung   |Der Master Server wird benötigt|
