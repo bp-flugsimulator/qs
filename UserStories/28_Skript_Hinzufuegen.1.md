@@ -1,9 +1,11 @@
-| ID         | 28 |
+# User Story
+
+|ID          |28|
 |-|-|
-|Name        | Skript hinzufügen |
-|Beschreibung| Der User kann über ein Block System die einzlenen Komponenten des Systems miteinander verbinden und so ein Start Skript erstellen. |
-|Akzeptanz   | Es sind alle Systemkomponenten als Blöcke verfügbar.|
-|Story Points| 5 |
+|Name        |Skript hinzufügen|
+|Beschreibung|Der Benutzer kann mit dem betätigen des entsprechenden Knopfes ein Skript hinzufügen. Dabei wird er auf eine Seite weitergeleitet wo der Benutzer das Skript erstellen kann. Nachdem der Benutzer ein valides Skript erstellt hat kann dieses gespeichert werden.|
+|Akzeptanz   |Der Benutzer wird nachdem betätigen des Knopfs weitergeleitet. Ein valides Skript wird gespeichert. Ein invalides Skript wird abgelehnt und muss ggf. überarbeitet werden.|
+|Story Points|7|
 |Entwickler  ||
 |Iteration   ||
 |Stunden     ||
