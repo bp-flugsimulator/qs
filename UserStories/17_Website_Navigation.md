@@ -9,4 +9,4 @@
 |Entwickler  |Jonas|
 |Iteration   |3|
 |Stunden     |1|
-|Velocity    |?|
+|Velocity    |1|
