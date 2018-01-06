@@ -1,11 +1,12 @@
-| ID         |17|
+# User Story
+
+|ID          |17|
 |-|-|
-|Name        | Website Navigation |
-|Beschreibung| Der User kann über eine Navigationsleiste verschiedene Seite ansteuern. |
-|Akzeptanz   | Alle für den User relevanten Seiten sind in dieser Navigationsleiste vertreten. |
-|Story Points| 1 |
-|Entwickler  |?|
-|Iteration   |?|
-|Stunden     |?|
+|Name        |Website Navigation|
+|Beschreibung|Der Benutzer kann über ein Menu in der Titelleiste zwischen den verschieden Seiten des Webinterfaces navigieren.|
+|Akzeptanz   |Der Benutzer sieht alle für ihn zugängliche Seiten inder Titelleiste und kann mit diesen auch zu den Seiten navigieren.|
+|Story Points|1|
+|Entwickler  |Jonas|
+|Iteration   |3|
+|Stunden     |1|
 |Velocity    |?|
-|Bemerkung   |Master Server wird benötigt|
