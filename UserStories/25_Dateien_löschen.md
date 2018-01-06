@@ -5,7 +5,7 @@
 |Akzeptanz   |Es öffnet sich ein PopUp in dem der User das Löschen bestätigen muss. Danach hat der Master keine Informationen mehr, über diese Datei.|
 |Story Points|3|
 |Entwickler  |Frederik|
-|Iteration   |4|
+|Iteration   |3|
 |Stunden     ||
 |Velocity    ||
 |Bemerkung   |Benötigt Us 23 Dateien anzeigen|
