@@ -4,7 +4,7 @@
 |-|-|
 |Name        |Programm bearbeiten|
 |Beschreibung|Der Benutzer kann durch das betätigen des entsprechenden Knopfes ein bereits erstelltes Programm bearbeiten. In einem PopUp sieht der Benutzer die momentane konfiguration. Diese kann er bearbeiten und speichern.|
-|Akzeptanz   |Nachdem betätigen des Knopfes öffnet sich ein PopUp in dem die momentane Konfiguration angezeigt wird. Die Daten werden nur gespeichert wenn der Benutzer die Daten zu immer noch validen Daten bearbeitet hat. Die Änderung wird auf dem Master Server gespeichert.|
+|Akzeptanz   |Nachdem betätigen des Knopfes öffnet sich ein PopUp in dem die momentane Konfiguration angezeigt wird. Die Daten werden nur gespeichert wenn der Benutzer die Daten zu immer noch validen Daten bearbeitet hat. Die Änderung wird auf dem Master Server gespeichert. Falls die Daten invalide sind wird dies dem Benutzer angezeigt.|
 |Story Points|5|
 |Entwickler  |Tim|
 |Iteration   |3|
