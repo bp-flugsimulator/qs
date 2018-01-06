@@ -1,11 +1,12 @@
+# User Story
+
 | ID         |21|
 |-|-|
-|Name        | Dateien löschen |
-|Beschreibung| Dateien können mit Hilfe des Webinterfaces gelöscht werden. |
-|Akzeptanz   |Es öffnet sich ein PopUp in dem der User das Löschen bestätigen muss. Danach hat der Master keine Informationen mehr, über diese Datei.|
-|Story Points||
+|Name        |Datei löschen |
+|Beschreibung|Der Benutzer kann mit dem betätigen des entsprechenden Knopfes eine Datei löschen. Dies muss im nächsten Schritt erneut bestätigt werden.|
+|Akzeptanz   |Nachdem betätigten des Knopfes öffnet sich ein PopUp indem nachgefragt wird ob der Benutzer wirklich die entsprechende Datei löschen will. Falls der Benutzer dies bestätigt wird die Datei gelöscht. Falls nicht wird die Datei nicht gelöscht.|
+|Story Points|5|
 |Entwickler  ||
 |Iteration   ||
 |Stunden     ||
 |Velocity    ||
-|Bemerkung   |Benötigt Us 23 Dateien anzeigen|
