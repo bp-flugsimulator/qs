@@ -1,11 +1,12 @@
+# User Story
+
 | ID         |23|
-|------------|-|
-|Name        |Dateien anzeigen|
-|Beschreibung|Alle derzeit gespeicherten Dateien eines Clients werden im Kontextmenü dieses Slaves angezeigt| 
-|Akzeptanz   |Nachdem das Kontextmenü geöffnet wurde, wird eine Liste aller in der Datenbank gespeicherten Dateien dieses Slaves/Clients angezeigt|
+|-|-|
+|Name        |Datei anzeigen|
+|Beschreibung|Der Benutzer kann im Webinterface alle registrierte Dateien einsehen. Eine Datei gehört zu einem spezifischen Client.|
+|Akzeptanz   |Der Benutzer sieht die Dateien korrekt bei den dazugehörigen Client.|
 |Story Points|3|
 |Entwickler  |Frederik|
 |Iteration   |3|
 |Stunden     |3|
 |Velocity    |1 Sp/h|
-|Bemerkung   ||
