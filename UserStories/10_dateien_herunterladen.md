@@ -1,5 +1,7 @@
+# User Story
+
 | ID         |10|
-|------------|-|
+|-|-|
 |Name        |Dateien herunterladen|
 |Beschreibung|Über das Kontextmenü kann eine Datei vom Master auf den Slave geladen werden.|
 |Akzeptanz   |Die Datei wird vollständig ohne Fehler auf den richtigen Slave geladen|
@@ -8,4 +10,4 @@
 |Iteration   |?|
 |Stunden     |?|
 |Velocity    |?|
-|Bemerkung   |Kontextmenü wird benötigt, Platform unabhängig|
+|Bemerkung   |Obsolet|
