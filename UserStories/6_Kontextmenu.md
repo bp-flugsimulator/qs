@@ -1,3 +1,5 @@
+# User Story
+
 | ID         |6|
 |------------|-|
 |Name        |Kontextmenu|
@@ -8,4 +10,4 @@
 |Iteration   |1|
 |Stunden     |10|
 |Velocity    |1|
-|Bemerkung   ||
+|Bemerkung   |Obsolet|
