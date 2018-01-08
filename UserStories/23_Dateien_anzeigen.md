@@ -3,8 +3,8 @@
 | ID         |23|
 |-|-|
 |Name        |Datei anzeigen|
-|Beschreibung|Der Benutzer kann im Webinterface alle registrierte Dateien einsehen. Eine Datei gehört zu einem spezifischen Client.|
-|Akzeptanz   |Der Benutzer sieht die Dateien korrekt bei den dazugehörigen Client.|
+|Beschreibung|Als Benutzer will ich die Möglichkeit haben eine registrierte Datei, die zu einem Client gehört, im Webinterface einzusehen.|
+|Akzeptanz   |Der Benutzer sieht die Dateien korrekt bei dem dazugehörigen Client.|
 |Story Points|3|
 |Entwickler  |Frederik|
 |Iteration   |3|
