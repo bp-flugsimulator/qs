@@ -3,8 +3,8 @@
 | ID         |22|
 |-|-|
 |Name        |Programm bearbeiten|
-|Beschreibung|Der Benutzer kann durch das betätigen des entsprechenden Knopfes ein bereits erstelltes Programm bearbeiten. In einem PopUp sieht der Benutzer die momentane konfiguration. Diese kann er bearbeiten und speichern.|
-|Akzeptanz   |Nachdem betätigen des Knopfes öffnet sich ein PopUp in dem die momentane Konfiguration angezeigt wird. Die Daten werden nur gespeichert wenn der Benutzer die Daten zu immer noch validen Daten bearbeitet hat. Die Änderung wird auf dem Master Server gespeichert. Falls die Daten invalide sind wird dies dem Benutzer angezeigt.|
+|Beschreibung|Als Benutzer will ich die Möglichkeit haben ein bereits registriertes Programm zu bearbeiten.|
+|Akzeptanz   |Nachdem betätigen des entsprechenden Knopfes öffnet sich ein Dialog in dem die momentane Konfiguration angezeigt wird. Die Änderungen werden nur gespeichert sofern die Änderung immer noch eine korrekte Konfiguration darstellt. Bei fehlerhaften Daten wird der Benutzer drauf hingewiesen.|
 |Story Points|5|
 |Entwickler  |Tim|
 |Iteration   |3|
