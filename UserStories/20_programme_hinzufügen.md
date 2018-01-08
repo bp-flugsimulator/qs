@@ -3,8 +3,8 @@
 | ID         |20|
 |-|-|
 |Name        |Programm hinzufügen|
-|Beschreibung|Durch das betätigen des entsprechenden Knopfes kann der Benutzer ein neues Programm hinzufügen. Der Benutzer muss valide Angaben in die entsprechenden Felder eintragen damit diese gespeichert werden können.|
-|Akzeptanz   |Nachdem der Benutzer den entsprechenden Knopf betätigt hat öffnet sich ein PopUp welches die entsprechenden Felder beinhaltet die die benötigten Information abfragen. Nachdem Speichern wird das Programm ordnungsgemäß für den Benutzer angezeigt. Falls der Benutzer invalide Dateien angibt, wird dies dem Benutzer angezeigt.|
+|Beschreibung|Als Benutzer will ich die Möglichkeit haben ein Programm, welches auf einem Client liegt, mit bestimmten Parametern zu registrieren.|
+|Akzeptanz   |Nachdem der Benutzer den entsprechenden Knopf betätigt hat öffnet sich ein Dialog welches die entsprechenden Felder beinhaltet, die die benötigten Information abfragen. Falls der Benutzer invalide Dateien angibt, wird dies dem Benutzer mitgeteilt.|
 |Story Points|6|
 |Entwickler  |Tim|
 |Iteration   |2|
