@@ -3,7 +3,7 @@
 | ID         |27|
 |-|-|
 |Name        |Skript anzeigen|
-|Beschreibung|Als Benutzer will ich die Möglichkeit haben ein registriertes Skript im Webinterface einzusehen.|
+|Beschreibung|Als Benutzer will ich die Möglichkeit haben ein registriertes Skript im Webinterface einzusehen. Damit ich einen Überblick über alle vorhanden Skripte bekomme.|
 |Akzeptanz   |Das Skript wird korrekt angezeigt.|
 |Story Points|15|
 |Entwickler  |Jonas|
