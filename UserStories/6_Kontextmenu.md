@@ -1,10 +1,10 @@
 # User Story
 
 | ID         |6|
-|------------|-|
-|Name        |Kontextmenu|
-|Beschreibung|Um eine Aktion auf einem Slave auszuführen, wird beim Klicken auf den Eintrag eines Slaves ein Menü angezeigt, in der Nutzer alle derzeit möglichen Aktionen auf dem Slave auswählen kann|
-|Akzeptanz   |Nach dem Klicken auf den Eintrag werden alle derzeit möglichen Aktionen richtig angezeigt.|
+|-|-|
+|Name        |Kontextmenü|
+|Beschreibung|Als Benutzer will ich die Möglichkeit haben alle Befehle für einen Client einzusehen.|
+|Akzeptanz   |Alle Befehle sind visuell mit einem Client assoziiert.|
 |Story Points|10|
 |Entwickler  |Leonardo, Jonas, Tim|
 |Iteration   |1|
