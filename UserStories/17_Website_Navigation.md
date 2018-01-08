@@ -3,8 +3,8 @@
 |ID          |17|
 |-|-|
 |Name        |Website Navigation|
-|Beschreibung|Der Benutzer kann über ein Menu in der Titelleiste zwischen den verschieden Seiten des Webinterfaces navigieren.|
-|Akzeptanz   |Der Benutzer sieht alle für ihn zugängliche Seiten inder Titelleiste und kann mit diesen auch zu den Seiten navigieren.|
+|Beschreibung|Als Benutzer will ich die Möglichkeit haben die verschiedenen Seiten über eine Navigationsleiste zu erreichen.|
+|Akzeptanz   |Der Benutzer sieht alle für ihn zugängliche Seiten in der Navigationsleiste und kann mit diesen auch zu den Seiten navigieren.|
 |Story Points|1|
 |Entwickler  |Jonas|
 |Iteration   |3|
