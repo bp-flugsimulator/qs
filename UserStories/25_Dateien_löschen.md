@@ -2,9 +2,9 @@
 
 | ID         |21|
 |-|-|
-|Name        |Datei löschen |
-|Beschreibung|Der Benutzer kann mit dem betätigen des entsprechenden Knopfes eine Datei löschen. Dies muss im nächsten Schritt erneut bestätigt werden.|
-|Akzeptanz   |Nachdem betätigten des Knopfes öffnet sich ein PopUp indem nachgefragt wird ob der Benutzer wirklich die entsprechende Datei löschen will. Falls der Benutzer dies bestätigt wird die Datei gelöscht. Falls nicht wird die Datei nicht gelöscht.|
+|Name        |Datei löschen|
+|Beschreibung|Als Benutzer will ich die Möglichkeit haben eine bereits registrierte Datei wieder zu löschen (aus der Datenbank).|
+|Akzeptanz   |Nachdem Betätigten des entsprechenden Knopfes öffnet sich ein Dialog, indem der Benutzer den Löschvorgang bestätigen muss. Nur falls der Benutzer den Löschvorgang bestätigt wird die registrierte Datei aus der Datenbank gelöscht.|
 |Story Points|3|
 |Entwickler  |Frederik|
 |Iteration   |3|
