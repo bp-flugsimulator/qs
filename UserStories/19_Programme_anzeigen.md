@@ -3,8 +3,8 @@
 | ID         |19|
 |-|-|
 |Name        |Programm anzeigen|
-|Beschreibung|Der Benutzer kann seine registrierten Programme auf dem Webinterface einsehen. Dabei sind die Programme nur auf den einzelnen Clients verfügbar.|
-|Akzeptanz   |Die Programme werden korrekt zu dem zugehörigen Client angezeigt. Auch sind alle Programme die der Benutzer registriert hat zu sehen.|
+|Beschreibung|Als Benutzer will ich die Möglichkeit haben alle registrierten Programme, zugeordnet zu ihrem jeweiligen Client, einzusehen.|
+|Akzeptanz   |Die Programme werden korrekt zu dem zugehörigen Client angezeigt. Auch sind alle Programme, die der Benutzer registriert hat, zu sehen.|
 |Story Points|8|
 |Entwickler  |Leonardo,Tim|
 |Iteration   |2|
