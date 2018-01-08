@@ -3,8 +3,8 @@
 |ID          |30|
 |-|-|
 |Name        |Skript bearbeiten|
-|Beschreibung|Der Benutzer kann durch das betätigen kann des entsprechenden Knopfes ein Skript seiner Wahl bearbeiten. Der Benutzer wird auf eine weiter Seite weitergeleitet auf der das momentane Skript angezeigt wird und bearbeiten werden kann. |
-|Akzeptanz   |Der Benutzer wird auf die Seite weitergeleitet auf der der Benutzer das Skript bearbeiten kann. Falls der Benutzer ein valides Skript angibt und speichert wird die Änderung übernommen. Falls die Angaben invalide sind wird der Benutzer darauf hingewiesen.|
+|Beschreibung|Als Benutzer will ich die Möglichkeit haben ein bereits registriertes Skript zu bearbeiten.|
+|Akzeptanz   |Der Benutzer wird auf die Seite weitergeleitet, nachdem der Benutzer den entsprechenden Knopf betätigt hat. Auf dieser Seite kann der der Benutzer das Skript bearbeiten kann. Falls die Änderungen des Benutzers korrekt sind, wird das Skript gespeichert. Falls das nicht der Fall ist wird dem Benutzer das mitgeteilt.|
 |Story Points|5|
 |Entwickler  ||
 |Iteration   ||
