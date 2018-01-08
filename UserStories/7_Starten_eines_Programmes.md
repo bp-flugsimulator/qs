@@ -3,8 +3,8 @@
 | ID         |7|
 |-|-|
 |Name        |Starten eines Programmes|
-|Beschreibung|Der Benutzer kann ein Programm starten indem er den dafür vorgesehenen Knopf betätigt. Das Programm muss im Vorhinein hinzugefügt werden.|
-|Akzeptanz   |Nachdem der Benutzer das Programm seiner Wahl gestartet hat, in dem |er den Knopf betätigt hat, ändert sich der Status des Programmes und der Benutzer bekommt eine Rückmeldung.|
+|Beschreibung|Als Benutzer will ich die Möglichkeit haben, ein bereits registriertes Programm starten zu können.|
+|Akzeptanz   |Nachdem der Benutzer das Programm seiner Wahl gestartet hat, in dem er den entsprechenden Knopf betätigt hat, ändert sich der Status des Programmes und der Benutzer bekommt ggf. eine Rückmeldung über den Endstatus des Programmes.|
 |Story Points|25|
 |Entwickler  |Jonas, Tim|
 |Iteration   |3|
