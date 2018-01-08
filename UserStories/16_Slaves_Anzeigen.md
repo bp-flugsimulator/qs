@@ -3,7 +3,7 @@
 | ID         |16|
 |-|-|
 |Name        |Client Anzeigen|
-|Beschreibung|Der Benutzer kann Information über einen registrierten Client im Webinterface einsehen.|
+|Beschreibung|Als Benutzer will ich die Möglichkeit haben einen Client mit seiner IP Adresse und seiner MAC Adresse, im Webinterface zu sehen.|
 |Akzeptanz   |Der Benutzer sieht die Ip Adresse und die MAC Adresse des entsprechenden Clients und dessen Status.|
 |Story Points|4|
 |Entwickler  |Jonas, Tim|
