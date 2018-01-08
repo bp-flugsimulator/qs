@@ -3,11 +3,10 @@
 | ID         |4|
 |-|-|
 |Name        |Status eines Clients|
-|Beschreibung|Der User kann auf dem Webinterface einsehen in welchem Status sich der Client befindet.|
+|Beschreibung|Als Benutzer will ich den Status jedes bereits registrierten Clients einsehen können.|
 |Akzeptanz   |Der Status wird korrekt angezeigt und wird erneuert sobald sich der Status des Clients geändert hat.|
 |Story Points|4|
-|Entwickler  |?|
+|Entwickler  |Tim|
 |Iteration   |3|
 |Stunden     |2|
-|Velocity    |?|
-|Bemerkung   |Der Master Server wird benötigt|
+|Velocity    |2|
