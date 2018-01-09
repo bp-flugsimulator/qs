@@ -7,6 +7,6 @@
 |Akzeptanz   |Der Status wird korrekt angezeigt und wird erneuert sobald sich der Status des Clients geändert hat.|
 |Story Points|4|
 |Entwickler  |Tim|
-|Iteration   |3|
+|Iteration   |3 und 4|
 |Stunden     |6|
 |Velocity    |0.666 Storypoints/Stunde|
