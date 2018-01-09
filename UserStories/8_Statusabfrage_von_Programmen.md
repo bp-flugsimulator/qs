@@ -7,6 +7,6 @@
 |Akzeptanz   |Der Status des Prozesses ist aktuell, korrekt und wird bei dem entsprechenden Programm, auf dem Webinterface angezeigt wird.|
 |Story Points|4|
 |Entwickler  |Tim|
-|Iteration   |3|
-|Stunden     |2|
-|Velocity    |0.5|
+|Iteration   |3 und 4|
+|Stunden     |6|
+|Velocity    |0.666 Storypoints/Stunde|
