@@ -15,3 +15,4 @@ IT | QS | IM
 * **IM** = Implementation
 
 training zählt dazu
+![alt text](http://i0.kym-cdn.com/photos/images/facebook/001/243/083/519)
