@@ -13,3 +13,5 @@ IT | QS | IM
 * **IT** = Iteration = 2 Wochen
 * **QS** = Qualitätssicherung
 * **IM** = Implementation
+
+training zählt dazu
