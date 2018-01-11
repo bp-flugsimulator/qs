@@ -30,19 +30,17 @@
 \date{\today}
 
 \newcommand{\ftitle}{
-
 	\frametitle{\insertsectionhead \\ {\small \insertsubsectionhead}}
 }
 
 
 \pgfplotstableread[row sep=\\,col sep=&]{
-    Iteration & Implementierung & Storypoints & Sonstiges\\
-    1         & 1.2  & 40  & 0.2  \\
-    2         & 12.8 & 18  & 4.9  \\
-    3         & 15.5 & 50 & 13.4 \\
-    4         & 0 & 0 & 0 \\
-    5         & 0 & 0 & 0 \\
-    6         & 0 & 0 & 0 \\
+	Iteration & Implementierung & Sonstiges & Storypoints\\
+	0         &  6   & 29  & 0   \\
+    1         &  51  & 26  & 40  \\
+    2         &  64  & 17  & 18  \\
+    3         &  88  & 29  & 50  \\
+    4         &  0   & 0   & 0   \\
 }\mydata
 
 
@@ -230,16 +228,18 @@
             		width=\textwidth,
 					height=.5\textwidth,
 					legend style={at={(0.5,1)}, anchor=north,legend columns=-1},
-            		symbolic x coords={1,2,3,4,5,6},
+            		symbolic x coords={0,1,2,3,4},
             		xtick=data,
             		nodes near coords,
             		nodes near coords align={vertical},
             		ylabel={Stunden},
-            		xlabel={Iteration},
+					xlabel={Iteration},
+					ymax=120,
         		]
         		\addplot table[x=Iteration,y=Implementierung]{\mydata};
         		\addplot table[x=Iteration,y=Sonstiges]{\mydata};
-        		\addplot table[x=Iteration,y=Vorhergesagt]{\mydata};
+				\addplot table[x=Iteration,y=Storypoints]{\mydata};
+				\legend{Implementierung, Sonstiges, Storypoints}
     		\end{axis}
 		\end{tikzpicture}
 	\end{figure}
