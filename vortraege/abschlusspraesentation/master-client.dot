@@ -1,0 +1,18 @@
+digraph hierachy { 
+	node [shape=box color="green"]
+	Webinterface
+	node [shape=box color="red"]
+	Master
+	Webinterface->Master[fontcolor="black" label="Befehle" color="black"]
+	node [shape=box color="blue"]
+	Client1
+	Client2
+	Client3
+	Client4
+	Master->{Client1, Client2, Client3, Client4}[label="Kommandos" color="red" fontcolor="red" style=""]
+	edge [splines=curved style=dashed fontcolor="blue" label="Status, Ergebnis" color="blue"]
+	Client1->Master
+	Client2->Master
+	Client3->Master
+	Client4->Master
+}

@@ -20,7 +20,7 @@
 
 \usetikzlibrary{shapes.misc, positioning, scopes}
 
-\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.svg}
 \graphicspath{ {./img/} }
 
 \title[]{Entwicklung eines zentralen \\Steuerungsprogramms für einen \\Forschungsflugsimulator}
@@ -32,19 +32,6 @@
 \newcommand{\ftitle}{
 	\frametitle{\insertsectionhead \\ {\small \insertsubsectionhead}}
 }
-
-
-\pgfplotstableread[row sep=\\,col sep=&]{
-	Iteration & Implementierung & Sonstiges & Storypoints\\
-	0         &  6   & 29  & 0   \\
-    1         &  51  & 26  & 40  \\
-    2         &  64  & 17  & 18  \\
-    3         &  88  & 29  & 50  \\
-    4         &  0   & 0   & 0   \\
-}\mydata
-
-
-
 \begin{document}
 %Deckblatt
 \begin{titleframe}
@@ -56,29 +43,9 @@
 	\pnote{Gruppe 19}
 \end{titleframe}
 
+
 \section{Der Simulator}
 \subsection{Aktuelle Situation}
-\begin{frame}
-\ftitle
-\begin{itemize}
-	\item Flugsimulator am Fachbereich Flugsysteme und Regelungstechnik\pause
-	\item Testen von Thesisthemen\pause
-	\item Komplexes System bestehend aus mehreren Computern
-\end{itemize}
-\end{frame}
-\subsection{Aufbau des Systems}
-\begin{frame}
-\ftitle
-\begin{itemize}
-	\item 9 Computer mit drei verschiedenen Betriebssystemen\pause
-	\item Diverse selbstgeschriebene Programme\pause
-\begin{itemize}
-	 \item Abhängigkeiten über Computer hinweg\pause
-	 \item Verschiedene Programmiersprachen
-	 \end{itemize}
-\end{itemize}
-\end{frame}
-
 \begin{frame}
 	\ftitle
 	\begin{figure}
@@ -91,16 +58,20 @@
 	\pnote{wird zum Forschen im Bereich Führungsysteme (Flugverkehr) verwendet}
 \end{frame}
 
+
 \subsection{Aufbau des Systems}
 \begin{frame}
 	\ftitle
 	\centering
-	\begin{tikzpicture}[overlay]
+	\begin{tikzpicture}[remember picture,overlay]
 	\node[inner sep=0] at (current page.center)
 	{		\includegraphics[scale=0.23]{aufbau_gesamt}};
+	 \node (round) [line width=0.8pt,color=red, draw, rounded rectangle, yshift=-0.9cm, minimum height=1.3cm, minimum width=10cm] {};
+		\node [color=red, below right= of round, yshift=0.9cm, xshift=-0.6cm] {Rechner};
 	\end{tikzpicture}
 
 \end{frame}
+
 
 \begin{frame}
 	\ftitle
@@ -108,54 +79,75 @@
 	\begin{tikzpicture}[remember picture,overlay]
 	\node[inner sep=0] at (current page.center)
 	{		\includegraphics[scale=0.23]{aufbau_gesamt}};
-	 \node () [draw, rounded rectangle, yshift=-0.9cm, minimum height=1.3cm, minimum width=10cm] {};
+	 \node (round) [line width=0.8pt,color=blue, draw, rounded rectangle, yshift=-2.2cm, minimum height=1.3cm, minimum width=10cm] {};
+		\node [color=blue, below = of round, yshift=0.9cm, xshift=-0.0cm] {Ein- und Ausgabe};
 	\end{tikzpicture}
 
 \end{frame}
 
+\subsection{Bisheriger Zustand}
 \begin{frame}
 	\ftitle
+	\begin{itemize}
+		\item Jeder Rechner muss per Hand gestartet werden\pause
+		\item Programme müssen einzeln gestartet werden\pause
+			\begin{itemize}
+				\item Nicht immer wird alles benötigt/darf gestartet werden\pause
+				\item Viel Wechsel zwischen den Rechnern nötig\pause
+			\end{itemize}
+	\end{itemize}
 	\centering
-	\begin{tikzpicture}
-	\node[inner sep=0] at (current page.center)
-	{		\includegraphics[scale=0.23]{aufbau_gesamt}};
-	\end{tikzpicture}
-
+	\vspace{0.5cm}
+	\tikz[]\node[draw,minimum width=10cm,minimum height=3cm] {Bild vom KVM Switch};
 \end{frame}
 
 \section{Software}
-\subsection{}
+\subsection{Gewünschte Features}
 \begin{frame}
 	\ftitle
 	Features:
 	\begin{itemize}
-		\item starten/steuern eines einzelnen Clients über eine Benutzeroberfläche
-		\item erstellen und ausführen von Scripts zur Automatisierung des Startvorgangs
+		\item Steuern von Rechnern und Programmen über eine Oberfläche\pause
+		\item Erstellen von Ablaufplänen zum automatischen Start\pause
+			\begin{itemize}
+				\item Szenarien (Flugplatz, Flugzeug, \dots) wählbar machen\pause
+				\item Plugins laden oder deaktivieren
+			\end{itemize}
 	\end{itemize}
-	\vspace{0.5cm}
-	Sprache:
-	\begin{figure}
-		\centering
-		\includegraphics[scale=0.05]{python}
-	\end{figure}
 \end{frame}
 
-\subsection{Aufbau}
+\subsection{Anforderungen}
+\begin{frame}
+	\ftitle
+	\begin{itemize}
+		\item Muss auf vielen unterschiedlichen Betriebssystem laufen\pause
+		\item Einfache Bedienung für Mitarbeiter*innen\pause
+		\item Muss weiterentwickelbar sein
+	\end{itemize}
+\end{frame}
+
+\subsection{Lösung}
 \begin{frame}
 	\ftitle
 	\begin{figure}
-		\includegraphics[scale=0.35]{master-client}
+		\begin{overlayarea}{\textwidth}{4cm}
+		\centering
+		\only<1>{\includegraphics[scale=0.42]{1}}
+		\only<2>{\includegraphics[scale=0.42]{2}}
+		\only<3>{\includegraphics[scale=0.42]{3}}
+		\only<4>{\includegraphics[scale=0.42]{4}}
+		\only<5>{\includegraphics[scale=0.42]{6}}
+		\end{overlayarea}
 	\end{figure}
-	\pnote{Interface als Website}
-	\pnote{Kommunikation über Websockets}
 \end{frame}
 
 
 \subsection{Fortschritt}
 \begin{frame}
 	\ftitle
+	\vspace{-0.8cm}
 	\begin{figure}
-		\includegraphics[scale=0.18]{screenshoot}
+		\includegraphics[scale=0.24]{interface}
 	\end{figure}
 
 	\pnote{hinzufügen von Clients im Webinterface}
@@ -165,40 +157,102 @@
 \end{frame}
 
 \section{Qualitätssicherung}
-\subsection{Portabilität}
+\subsection{Gesetzte Ziele}
 \begin{frame}
 	\ftitle
-	Die Software für die Clients muss auf vielen verschiedenen Systemen laufen:\\[5pt]
-	\begin{enumerate}
-		\item Hohe Testabdeckung (mindestens 90\%):
-		\begin{itemize}
-			\item \includegraphics[scale=0.1]{coveralls}
-		\end{itemize}
-		\item Viele Testumgebungen:
-		\begin{itemize}
-			\item \includegraphics[scale=0.1]{travisci} \hspace*{2cm} (Linux)
-			\item \includegraphics[scale=0.1]{appveyor} \hspace*{1.55cm} (modernes Windows)
-			\item \includegraphics[scale=0.1]{jenkins} \hspace*{2.5cm} (Windows XP)
-		\end{itemize}
-	\end{enumerate}
+	\begin{itemize}
+		\item Muss auf vielen unterschiedlichen Betriebssystem laufen
+			\begin{itemize}
+				\item <2->\textbf{Portabilität}
+			\end{itemize}
+		\item Einfache Bedienung für Mitarbeiter*innen
+			\begin{itemize}
+				\item <3->\textbf{Bedienbarkeit}
+			\end{itemize}
+		\item Muss weiterentwickelbar sein
+			\begin{itemize}
+				\item <4->\textbf{Korrektheit}
+			\end{itemize}
+	\end{itemize}
 
-	\pnote{Software für Master wird auf modernem System laufen}
 \end{frame}
 
+\section{QS-Prozess}
+\subsection{1. Automatisierte Tests}
 \begin{frame}
 	\ftitle
-	Zusammengefasst in Pullrequests von Github für jede Userstory:\\
+	\centering
+	\vspace{-1.2cm}
+	\begin{tikzpicture}
+\node[inner sep=0pt] (marker) at (-4.45,2.3)
+    {\includegraphics[scale=0.06]{marker}};
+\node[inner sep=0pt] (timeline) at (0,0)
+    {\includegraphics[width=.8\textwidth]{qs-process}};
+\end{tikzpicture}\pause
+	\vspace{-4.5cm}
+	\begin{itemize}
+		\item QS-Ziele: \textbf{Portabilität, Korrekheit}\pause
+	\end{itemize}
+	\vspace{0.2cm}
+	\includegraphics[scale=0.2]{travisci}
+	\hspace{0.1cm}
+	\includegraphics[scale=0.2]{appveyor}
+	\includegraphics[scale=0.18]{jenkins}
+\end{frame}
+
+\subsection{2. Coverage und Stilüberprüfung}
+\begin{frame}
+	\ftitle
+	\centering
+	\vspace{-1.2cm}
+	\begin{tikzpicture}
+\node[inner sep=0pt] (marker) at (-2.5,2.3)
+    {\includegraphics[scale=0.06]{marker}};
+\node[inner sep=0pt] (timeline) at (0,0)
+    {\includegraphics[width=.8\textwidth]{qs-process}};
+\end{tikzpicture}\pause
+	\vspace{-4.5cm}
+	\begin{itemize}
+		\item QS-Ziel: \textbf{Korrektheit}\pause
+	\end{itemize}
+	\vspace{0.2cm}
+	\includegraphics[scale=0.2]{coveralls}
+	\hspace{0.1cm}
+	\includegraphics[scale=0.14]{codacy}
+\end{frame}
+
+
+\begin{frame}
+	\ftitle
+	\vspace{-0.5cm}
 	\begin{figure}
-		\includegraphics[scale=0.3]{github_integration}
+		\includegraphics[scale=0.4]{github_integration}
 	\end{figure}
 
 	\pnote{für jede Userstory wird ein Pullrequests auf Github gemacht}
 	\pnote{dient auch als Forum für Implementierungen}
 \end{frame}
 
+\subsection{3. Review durch anderen Entwickler}
 \begin{frame}
 	\ftitle
-	Vor dem mergen einer Userstory wird eine Liste abgearbeitet:
+	\centering
+	\vspace{-1.2cm}
+	\begin{tikzpicture}
+\node[inner sep=0pt] (marker) at (-0.55,2.3)
+    {\includegraphics[scale=0.06]{marker}};
+\node[inner sep=0pt] (timeline) at (0,0)
+    {\includegraphics[width=.8\textwidth]{qs-process}};
+\end{tikzpicture}
+	\vspace{-4.5cm}
+	\begin{itemize}
+		\item Review wird von einem anderen Entwickler durchgeführt\pause
+		\item Checkliste mit Punkten wie z.B. Dokumentation
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\ftitle
 	\begin{figure}
 		\includegraphics[scale=0.29]{github_list}
 	\end{figure}
@@ -206,53 +260,43 @@
 		das Problem beheben}
 \end{frame}
 
-\subsection{Benutzbarkeit}
+\subsection{4. Nutzerstudie am Fachgebiet}
 \begin{frame}
 	\ftitle
-	Auch andere Personen am Institut müssen das Interface verwenden können.
-	\begin{enumerate}
-		\item Nutzerstudie
-		\item Benutzeranleitung
-	\end{enumerate}
+	\centering
+	\vspace{-1.2cm}
+	\begin{tikzpicture}
+\node[inner sep=0pt] (marker) at (1.42,2.3)
+    {\includegraphics[scale=0.06]{marker}};
+\node[inner sep=0pt] (timeline) at (0,0)
+    {\includegraphics[width=.8\textwidth]{qs-process}};
+\end{tikzpicture}
+	\vspace{-4.5cm}
+	\begin{itemize}
+		\item Nutzerstudie zum Test der Bedienbarkeit\pause
+		\item Durchführung Anfang 2018\pause
+		\item QS-Ziel: \textbf{Bedienbarkeit}
+	\end{itemize}
 \end{frame}
 
-\section{Zeiterfassung}
+
+\subsection{5. Abnahme durch die Auftraggeber}
 \begin{frame}
 	\ftitle
-	\begin{figure}
-			\begin{tikzpicture}
-				\begin{axis}
-					[
-            		ybar,
-            		bar width=.5cm,
-            		width=\textwidth,
-					height=.5\textwidth,
-					legend style={at={(0.5,1)}, anchor=north,legend columns=-1},
-            		symbolic x coords={0,1,2,3,4},
-            		xtick=data,
-            		nodes near coords,
-            		nodes near coords align={vertical},
-            		ylabel={Stunden},
-					xlabel={Iteration},
-					ymax=120,
-        		]
-        		\addplot table[x=Iteration,y=Implementierung]{\mydata};
-        		\addplot table[x=Iteration,y=Sonstiges]{\mydata};
-				\addplot table[x=Iteration,y=Storypoints]{\mydata};
-				\legend{Implementierung, Sonstiges, Storypoints}
-    		\end{axis}
-		\end{tikzpicture}
-	\end{figure}
-
-	\pnote{Willkommensnachricht wurde stark überschätzt}
-	\pnote{für Slaves registrieren gab es 3 verschiedenen Ansätze die viel Diskutiert wurden}
-	\pnote{in Slaves löschen und Slaves registrieren wurde viel Vorarbeit für Slaves bearbeiten  gemacht}
+	\centering
+	\vspace{-1.2cm}
+	\begin{tikzpicture}
+\node[inner sep=0pt] (marker) at (3.39,2.3)
+    {\includegraphics[scale=0.06]{marker}};
+\node[inner sep=0pt] (timeline) at (0,0)
+    {\includegraphics[width=.8\textwidth]{qs-process}};
+\end{tikzpicture}
+	\vspace{-4.5cm}
+	\begin{itemize}
+		\item Auftraggeber erhalten Zusammenfassung\pause
+		\item Anmerkungen für die nächste Iteration
+	\end{itemize}
 \end{frame}
 
-\section{}
-\begin{frame}
-	\begin{center}
-		\textbf{\LARGE{Fragen?}}
-	\end{center}
-\end{frame}
+
 \end{document}
