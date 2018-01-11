@@ -8,3 +8,8 @@ IT | QS | IM
 4 | - |15
 5 | - | -
 6 | - | -
+
+### Legende:
+* **IT** = Iteration = 2 Wochen
+* **QS** = Qualitätssicherung
+* **IM** = Implementation
