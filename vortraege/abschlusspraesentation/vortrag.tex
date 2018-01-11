@@ -32,6 +32,16 @@
 \newcommand{\ftitle}{
 	\frametitle{\insertsectionhead \\ {\small \insertsubsectionhead}}
 }
+
+\pgfplotstableread[row sep=\\,col sep=&]{
+	Iteration & Implementierung & Sonstiges & Storypoints\\
+	0         &  6   & 29  & 0   \\
+    1         &  51  & 26  & 40  \\
+    2         &  64  & 17  & 18  \\
+    3         &  88  & 29  & 50  \\
+    4         &  0   & 0   & 0   \\
+}\mydata
+
 \begin{document}
 %Deckblatt
 \begin{titleframe}
@@ -297,6 +307,41 @@
 		\item Anmerkungen für die nächste Iteration
 	\end{itemize}
 \end{frame}
+
+\section{Zeiterfassung}
+
+\begin{frame}
+	\ftitle
+	\begin{figure}
+			\begin{tikzpicture}
+				\begin{axis}
+					[
+            		ybar,
+            		bar width=.5cm,
+            		width=\textwidth,
+					height=.5\textwidth,
+					legend style={at={(0.5,1)}, anchor=north,legend columns=-1},
+            		symbolic x coords={0,1,2,3,4},
+            		xtick=data,
+            		nodes near coords,
+            		nodes near coords align={vertical},
+            		ylabel={Stunden},
+					xlabel={Iteration},
+					ymax=120,
+        		]
+        		\addplot table[x=Iteration,y=Implementierung]{\mydata};
+        		\addplot table[x=Iteration,y=Sonstiges]{\mydata};
+				\addplot table[x=Iteration,y=Storypoints]{\mydata};
+				\legend{Implementierung, Sonstiges, Storypoints}
+    		\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+
+	\pnote{Willkommensnachricht wurde stark überschätzt}
+	\pnote{für Slaves registrieren gab es 3 verschiedenen Ansätze die viel Diskutiert wurden}
+	\pnote{in Slaves löschen und Slaves registrieren wurde viel Vorarbeit für Slaves bearbeiten  gemacht}
+\end{frame}
+
 
 
 \end{document}
