@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.22)  10 JAN 2018 17:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.17)  11 JAN 2018 17:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -949,7 +949,175 @@ e
 \WF@everypar=\toks48
 Package: wrapfig 2003/01/31  v 3.6
 )
-(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+(/usr/share/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2017/06/05 v1.15 Data Visualization (1.15)
+
+(/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box64
+)
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen198
+\pgf@nodesepend=\dimen199
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen256
+\pgffor@skip=\dimen257
+\pgffor@stack=\toks49
+\pgffor@toks=\toks50
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.te
+x
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count167
+\pgfplotmarksize=\dimen258
+)
+\tikz@lastx=\dimen259
+\tikz@lasty=\dimen260
+\tikz@lastxsaved=\dimen261
+\tikz@lastysaved=\dimen262
+\tikzleveldistance=\dimen263
+\tikzsiblingdistance=\dimen264
+\tikz@figbox=\box65
+\tikz@figbox@bg=\box66
+\tikz@tempbox=\box67
+\tikz@tempbox@bg=\box68
+\tikztreelevel=\count168
+\tikznumberofchildren=\count169
+\tikznumberofcurrentchild=\count170
+\tikz@fig@count=\count171
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count172
+\pgfmatrixcurrentcolumn=\count173
+\pgf@matrix@numberofcolumns=\count174
+)
+\tikz@expandcount=\count175
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+topaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks51
+\t@pgfplots@tokb=\toks52
+\t@pgfplots@tokc=\toks53
+\pgfplots@tmpa=\dimen265
+\c@pgfplots@coordindex=\count176
+\c@pgfplots@scanlineindex=\count177
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_l
+oader.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_p
+gflibraryfpu.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_p
+gfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count178
+))
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure
+.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure
+ext.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.te
+x
+\c@pgfplotsarray@tmp=\count179
+)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.t
+ex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.t
+ex
+\c@pgfplotstable@counta=\count180
+\t@pgfplotstable@a=\toks54
+)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.te
+x) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading
+.code.tex
+\c@pgfplotslibrarysurf@no=\count181
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.
+pgfsys-pdftex.def)))
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex)))
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+decorations.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen266
+\pgfdecoratedremainingdistance=\dimen267
+\pgfdecoratedinputsegmentcompleteddistance=\dimen268
+\pgfdecoratedinputsegmentremainingdistance=\dimen269
+\pgf@decorate@distancetomove=\dimen270
+\pgf@decorate@repeatstate=\count182
+\pgfdecorationsegmentamplitude=\dimen271
+\pgfdecorationsegmentlength=\dimen272
+)
+\tikz@lib@dec@box=\box69
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+decorations.pathmorphing.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorati
+ons.pathmorphing.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+decorations.pathreplacing.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorati
+ons.pathreplacing.code.tex))
+\pgfplots@numplots=\count183
+\pgfplots@xmin@reg=\dimen273
+\pgfplots@xmax@reg=\dimen274
+\pgfplots@ymin@reg=\dimen275
+\pgfplots@ymax@reg=\dimen276
+\pgfplots@zmin@reg=\dimen277
+\pgfplots@zmax@reg=\dimen278
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+plotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+))) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2017/11/03 3.15 The Babel package
 
 (/usr/share/texmf-dist/tex/generic/babel/switch.def
@@ -969,8 +1137,8 @@ File: babel.def 2017/11/03 3.15 Babel common definitions
 (/usr/share/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2017/11/03 3.15 Babel switching mechanism
 )
-\babel@savecnt=\count167
-\U@D=\dimen198
+\babel@savecnt=\count184
+\U@D=\dimen279
 LaTeX Info: Redefining \textlatin on input line 1741.
 )
 Package babel Info: Making " an active character on input line 139.
@@ -983,8 +1151,8 @@ Language: ngermanb 2016/11/02 v2.9 German support for babel (new orthography)
 )))
 (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks49
-\inpenc@posthook=\toks50
+\inpenc@prehook=\toks55
+\inpenc@posthook=\toks56
 
 (/usr/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -1388,101 +1556,33 @@ Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
 
 (/usr/share/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box64
+\collectedbox=\box70
 )
-\tc@llx=\dimen199
-\tc@lly=\dimen256
-\tc@urx=\dimen257
-\tc@ury=\dimen258
+\tc@llx=\dimen280
+\tc@lly=\dimen281
+\tc@urx=\dimen282
+\tc@ury=\dimen283
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
 (/usr/share/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen259
-\adjbox@Height=\dimen260
-\adjbox@Depth=\dimen261
-\adjbox@Totalheight=\dimen262
+\adjbox@Width=\dimen284
+\adjbox@Height=\dimen285
+\adjbox@Depth=\dimen286
+\adjbox@Totalheight=\dimen287
 
 (/usr/share/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count168
+\c@checkoddpage=\count185
 )
 (/usr/share/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box65
-\sift@deathcycles=\count169
-\@vwid@loff=\dimen263
-\@vwid@roff=\dimen264
-))
-(/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
-
-(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box66
-)
-(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
-)
-(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen265
-\pgf@nodesepend=\dimen266
-)
-(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-))
-(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
-
-(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen267
-\pgffor@skip=\dimen268
-\pgffor@stack=\toks51
-\pgffor@toks=\toks52
-))
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
-
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.te
-x
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count170
-\pgfplotmarksize=\dimen269
-)
-\tikz@lastx=\dimen270
-\tikz@lasty=\dimen271
-\tikz@lastxsaved=\dimen272
-\tikz@lastysaved=\dimen273
-\tikzleveldistance=\dimen274
-\tikzsiblingdistance=\dimen275
-\tikz@figbox=\box67
-\tikz@figbox@bg=\box68
-\tikz@tempbox=\box69
-\tikz@tempbox@bg=\box70
-\tikztreelevel=\count171
-\tikznumberofchildren=\count172
-\tikznumberofcurrentchild=\count173
-\tikz@fig@count=\count174
- (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count175
-\pgfmatrixcurrentcolumn=\count176
-\pgf@matrix@numberofcolumns=\count177
-)
-\tikz@expandcount=\count178
-
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-topaths.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-))) (./pdfpcnotes.sty
+\@vwid@box=\box71
+\sift@deathcycles=\count186
+\@vwid@loff=\dimen288
+\@vwid@roff=\dimen289
+)) (./pdfpcnotes.sty
 Package: pdfpcnotes 
 \pdfpcnotesfile=\write6
 )
@@ -1504,29 +1604,29 @@ File: tikzlibraryscopes.code.tex 2008/06/27 v3.0.1a (rcs-revision 1.2)
 ) (./vortrag.aux)
 \openout1 = `vortrag.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 50.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.40002pt on input line 36.
+(Font)              scaled to size 9.40002pt on input line 50.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1564,20 +1664,20 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count179
-\scratchdimen=\dimen276
-\scratchbox=\box71
-\nofMPsegments=\count180
-\nofMParguments=\count181
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count182
-\MPscratchDim=\dimen277
-\MPnumerator=\count183
-\makeMPintoPDFobject=\count184
-\everyMPtoPDFconversion=\toks54
+\scratchcounter=\count187
+\scratchdimen=\dimen290
+\scratchbox=\box72
+\nofMPsegments=\count188
+\nofMParguments=\count189
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count190
+\MPscratchDim=\dimen291
+\MPnumerator=\count191
+\makeMPintoPDFobject=\count192
+\everyMPtoPDFconversion=\toks58
 ) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box72
-Package hyperref Info: Link coloring OFF on input line 36.
+\AtBeginShipoutBox=\box73
+Package hyperref Info: Link coloring OFF on input line 50.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1585,11 +1685,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count185
+\c@section@level=\count193
 )
-LaTeX Info: Redefining \ref on input line 36.
-LaTeX Info: Redefining \pageref on input line 36.
-LaTeX Info: Redefining \nameref on input line 36.
+LaTeX Info: Redefining \ref on input line 50.
+LaTeX Info: Redefining \pageref on input line 50.
+LaTeX Info: Redefining \nameref on input line 50.
  (./vortrag.out) (./vortrag.out)
 \@outlinefile=\write7
 \openout7 = `vortrag.out'.
@@ -1643,79 +1743,86 @@ Dictionary: translator-theorem-dictionary, Language: English
 tionary/translator-theorem-dictionary-German.dict
 Dictionary: translator-theorem-dictionary, Language: German 
 )
-\c@lstlisting=\count186
+\c@lstlisting=\count194
+
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.15} into 
+your preamble.
+ on input line 50.
+
 \openout6 = `vortrag.pdfpc'.
 
- (./vortrag.nav)
+(./vortrag.nav)
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.70001pt on input line 36.
+(Font)              scaled to size 4.70001pt on input line 50.
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--36
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
 
  []
 
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 36.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 50.
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 4.70001pt on input line 36.
-LaTeX Font Info:    Try loading font information for U+msa on input line 36.
+(Font)              scaled to size 4.70001pt on input line 50.
+LaTeX Font Info:    Try loading font information for U+msa on input line 50.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 36.
+LaTeX Font Info:    Try loading font information for U+msb on input line 50.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 4.70001pt on input line 36.
+(Font)              scaled to size 4.70001pt on input line 50.
 <./img/simulator_3_intro.jpg, id=66, 1647.756pt x 599.23875pt>
 File: ./img/simulator_3_intro.jpg Graphic file (type jpg)
 <use ./img/simulator_3_intro.jpg>
-Package pdftex.def Info: ./img/simulator_3_intro.jpg  used on input line 46. on
- input line 46.
+Package pdftex.def Info: ./img/simulator_3_intro.jpg  used on input line 59. on
+ input line 59.
 Package pdftex.def Info: Requested size: 346.03897pt x 125.84384pt on input lin
-e 46.
+e 59.
 
-Overfull \hbox (1.83873pt too wide) in paragraph at lines 46--46
+Overfull \hbox (1.83873pt too wide) in paragraph at lines 59--59
  [] 
  []
 
 
-Overfull \vbox (16.13988pt too high) detected at line 46
+Overfull \vbox (16.13988pt too high) detected at line 59
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 3.76001pt on input line 46.
+(Font)              scaled to size 3.76001pt on input line 59.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.28003pt on input line 46.
+(Font)              scaled to size 11.28003pt on input line 59.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 46.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 59.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.28003pt on input line 46.
+(Font)              scaled to size 11.28003pt on input line 59.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 46.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 59.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 9.40002pt on input line 46.
+(Font)              scaled to size 9.40002pt on input line 59.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 46.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 59.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.58002pt on input line 46.
+(Font)              scaled to size 6.58002pt on input line 59.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 11.28003pt on input line 46.
+(Font)              scaled to size 11.28003pt on input line 59.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 7.52002pt on input line 46.
+(Font)              scaled to size 7.52002pt on input line 59.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 5.64001pt on input line 46.
+(Font)              scaled to size 5.64001pt on input line 59.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 11.28003pt on input line 46.
+(Font)              scaled to size 11.28003pt on input line 59.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 7.52002pt on input line 46.
+(Font)              scaled to size 7.52002pt on input line 59.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 5.64001pt on input line 46.
+(Font)              scaled to size 5.64001pt on input line 59.
 
 Overfull \hbox (6.00092pt too wide) has occurred while \output is active
 [][] 
@@ -1734,15 +1841,15 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  </usr/share/texmf/tex/latex/tuddesign/logo/tud_logo.pdf> <./img/simulator_3_in
 tro.jpg>]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.58002pt on input line 57.
+(Font)              scaled to size 6.58002pt on input line 70.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 6.58002pt on input line 57.
+(Font)              scaled to size 6.58002pt on input line 70.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 6.58002pt on input line 57.
+(Font)              scaled to size 6.58002pt on input line 70.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 57.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 70.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.46002pt on input line 57.
+(Font)              scaled to size 8.46002pt on input line 70.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
@@ -1766,7 +1873,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.46002pt on input line 69.
+(Font)              scaled to size 8.46002pt on input line 82.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
@@ -1799,12 +1906,12 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 <./img/simulator_4.jpg, id=130, 5267.68pt x 2963.07pt>
 File: ./img/simulator_4.jpg Graphic file (type jpg)
 <use ./img/simulator_4.jpg>
-Package pdftex.def Info: ./img/simulator_4.jpg  used on input line 81. on input
- line 81.
+Package pdftex.def Info: ./img/simulator_4.jpg  used on input line 94. on input
+ line 94.
 Package pdftex.def Info: Requested size: 289.6831pt x 162.94675pt on input line
- 81.
+ 94.
 
-Overfull \vbox (10.82579pt too high) detected at line 81
+Overfull \vbox (10.82579pt too high) detected at line 94
  []
 
 
@@ -1818,10 +1925,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 <./img/aufbau_gesamt.png, id=138, 1089.06876pt x 563.10374pt>
 File: ./img/aufbau_gesamt.png Graphic file (type png)
 <use ./img/aufbau_gesamt.png>
-Package pdftex.def Info: ./img/aufbau_gesamt.png  used on input line 92. on inp
-ut line 92.
+Package pdftex.def Info: ./img/aufbau_gesamt.png  used on input line 105. on in
+put line 105.
 Package pdftex.def Info: Requested size: 250.48055pt x 129.51114pt on input lin
-e 92.
+e 105.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
@@ -1832,10 +1939,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  <./img/aufbau_gesamt.png (PNG copy)>]
 File: ./img/aufbau_gesamt.png Graphic file (type png)
 <use ./img/aufbau_gesamt.png>
-Package pdftex.def Info: ./img/aufbau_gesamt.png  used on input line 103. on in
-put line 103.
+Package pdftex.def Info: ./img/aufbau_gesamt.png  used on input line 116. on in
+put line 116.
 Package pdftex.def Info: Requested size: 250.48055pt x 129.51114pt on input lin
-e 103.
+e 116.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
@@ -1846,10 +1953,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 ]
 File: ./img/aufbau_gesamt.png Graphic file (type png)
 <use ./img/aufbau_gesamt.png>
-Package pdftex.def Info: ./img/aufbau_gesamt.png  used on input line 113. on in
-put line 113.
+Package pdftex.def Info: ./img/aufbau_gesamt.png  used on input line 126. on in
+put line 126.
 Package pdftex.def Info: Requested size: 250.48055pt x 129.51114pt on input lin
-e 113.
+e 126.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
@@ -1861,9 +1968,9 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 <./img/python.png, id=161, 1027.84pt x 1027.84pt>
 File: ./img/python.png Graphic file (type png)
 <use ./img/python.png>
-Package pdftex.def Info: ./img/python.png  used on input line 130. on input lin
-e 130.
-Package pdftex.def Info: Requested size: 51.395pt x 51.395pt on input line 130.
+Package pdftex.def Info: ./img/python.png  used on input line 143. on input lin
+e 143.
+Package pdftex.def Info: Requested size: 51.395pt x 51.395pt on input line 143.
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1876,10 +1983,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 <./img/master-client.jpg, id=172, 914.41624pt x 292.09125pt>
 File: ./img/master-client.jpg Graphic file (type jpg)
 <use ./img/master-client.jpg>
-Package pdftex.def Info: ./img/master-client.jpg  used on input line 140. on in
-put line 140.
+Package pdftex.def Info: ./img/master-client.jpg  used on input line 153. on in
+put line 153.
 Package pdftex.def Info: Requested size: 320.05048pt x 102.23346pt on input lin
-e 140.
+e 153.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
@@ -1891,17 +1998,17 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 <./img/screenshoot.jpg, id=180, 1926.19624pt x 953.5625pt>
 File: ./img/screenshoot.jpg Graphic file (type jpg)
 <use ./img/screenshoot.jpg>
-Package pdftex.def Info: ./img/screenshoot.jpg  used on input line 154. on inpu
-t line 154.
+Package pdftex.def Info: ./img/screenshoot.jpg  used on input line 167. on inpu
+t line 167.
 Package pdftex.def Info: Requested size: 346.70036pt x 171.63383pt on input lin
-e 154.
+e 167.
 
-Overfull \hbox (2.50012pt too wide) in paragraph at lines 154--154
+Overfull \hbox (2.50012pt too wide) in paragraph at lines 167--167
  [] 
  []
 
 
-Overfull \vbox (31.51288pt too high) detected at line 154
+Overfull \vbox (31.51288pt too high) detected at line 167
  []
 
 
@@ -1915,31 +2022,31 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 <./img/coveralls.png, id=188, 544.0325pt x 153.57375pt>
 File: ./img/coveralls.png Graphic file (type png)
 <use ./img/coveralls.png>
-Package pdftex.def Info: ./img/coveralls.png  used on input line 175. on input 
-line 175.
+Package pdftex.def Info: ./img/coveralls.png  used on input line 188. on input 
+line 188.
 Package pdftex.def Info: Requested size: 54.40643pt x 15.35826pt on input line 
-175.
+188.
 <./img/travisci.png, id=189, 644.4075pt x 201.75375pt>
 File: ./img/travisci.png Graphic file (type png)
 <use ./img/travisci.png>
-Package pdftex.def Info: ./img/travisci.png  used on input line 175. on input l
-ine 175.
+Package pdftex.def Info: ./img/travisci.png  used on input line 188. on input l
+ine 188.
 Package pdftex.def Info: Requested size: 64.44452pt x 20.17654pt on input line 
-175.
+188.
 <./img/appveyor.png, id=190, 772.8875pt x 140.525pt>
 File: ./img/appveyor.png Graphic file (type png)
 <use ./img/appveyor.png>
-Package pdftex.def Info: ./img/appveyor.png  used on input line 175. on input l
-ine 175.
+Package pdftex.def Info: ./img/appveyor.png  used on input line 188. on input l
+ine 188.
 Package pdftex.def Info: Requested size: 77.29327pt x 14.05331pt on input line 
-175.
+188.
 <./img/jenkins.png, id=191, 508.90125pt x 309.40594pt>
 File: ./img/jenkins.png Graphic file (type png)
 <use ./img/jenkins.png>
-Package pdftex.def Info: ./img/jenkins.png  used on input line 175. on input li
-ne 175.
-Package pdftex.def Info: Requested size: 50.8931pt x 30.9424pt on input line 17
-5.
+Package pdftex.def Info: ./img/jenkins.png  used on input line 188. on input li
+ne 188.
+Package pdftex.def Info: Requested size: 50.8931pt x 30.9424pt on input line 18
+8.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
@@ -1952,10 +2059,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 <./img/github_integration.png, id=202, 800.9925pt x 416.55624pt>
 File: ./img/github_integration.png Graphic file (type png)
 <use ./img/github_integration.png>
-Package pdftex.def Info: ./img/github_integration.png  used on input line 186. 
-on input line 186.
+Package pdftex.def Info: ./img/github_integration.png  used on input line 199. 
+on input line 199.
 Package pdftex.def Info: Requested size: 240.29959pt x 124.96783pt on input lin
-e 186.
+e 199.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
@@ -1967,12 +2074,12 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 <./img/github_list.png, id=211, 819.06pt x 536.0025pt>
 File: ./img/github_list.png Graphic file (type png)
 <use ./img/github_list.png>
-Package pdftex.def Info: ./img/github_list.png  used on input line 196. on inpu
-t line 196.
+Package pdftex.def Info: ./img/github_list.png  used on input line 209. on inpu
+t line 209.
 Package pdftex.def Info: Requested size: 237.52132pt x 155.43674pt on input lin
-e 196.
+e 209.
 
-Overfull \vbox (17.40726pt too high) detected at line 196
+Overfull \vbox (17.40726pt too high) detected at line 209
  []
 
 
@@ -1990,10 +2097,30 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [19
 
 ]
+
+! Package pgfplots Error: Sorry, could not retrieve column 'Vorhergesagt' from 
+table '<inline_table>'. Please check spelling (or introduce name aliases)..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.250 \end{frame}
+                 
+? 
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 250.
+
+ [warning /pgfplots/warning/plot without coordinates]
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 9.40002pt on input line 228.
+(Font)              scaled to size 9.40002pt on input line 250.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 9.40002pt on input line 228.
+(Font)              scaled to size 9.40002pt on input line 250.
+
+Overfull \vbox (7.61992pt too high) detected at line 250
+ []
+
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
@@ -2003,9 +2130,9 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 235.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 257.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 16.24324pt on input line 235.
+(Font)              scaled to size 16.24324pt on input line 257.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
@@ -2023,27 +2150,27 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \tf@snm=\write10
 \openout10 = `vortrag.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 236.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 236.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 258.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 258.
  (./vortrag.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 236.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 236.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 258.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 258.
 Package rerunfilecheck Info: File `vortrag.out' has not changed.
 (rerunfilecheck)             Checksum: 7B0AFE102869A30A91957CA5D00A444B;731.
  ) 
 Here is how much of TeX's memory you used:
- 24759 strings out of 492985
- 466626 string characters out of 6138637
- 547102 words of memory out of 5000000
- 27599 multiletter control sequences out of 15000+600000
+ 34957 strings out of 492985
+ 808448 string characters out of 6138637
+ 993187 words of memory out of 5000000
+ 37660 multiletter control sequences out of 15000+600000
  45740 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,22n,83p,775b,709s stack positions out of 30000i,500n,10000p,200000b,80000s
+ 64i,22n,102p,775b,2301s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msam5.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/amsfonts/symbols/msam7.pfb></usr/share/texmf-dist/fonts/type1/urw/helveti
 c/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on vortrag.pdf (21 pages, 11609378 bytes).
+Output written on vortrag.pdf (21 pages, 11610228 bytes).
 PDF statistics:
  271 PDF objects out of 1000 (max. 8388607)
  216 compressed objects within 3 object streams

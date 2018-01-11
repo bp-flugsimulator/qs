@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{epstopdf}
 \usepackage{wrapfig}
+\usepackage{pgfplots}
 %Deutsche Silbentrennung
 \usepackage[ngerman]{babel}
 %Deutsche Umlaute
@@ -33,8 +34,20 @@
 	\frametitle{\insertsectionhead \\ {\small \insertsubsectionhead}}
 }
 
-\begin{document}
 
+\pgfplotstableread[row sep=\\,col sep=&]{
+    Iteration & Implementierung & Storypoints & Sonstiges\\
+    1         & 1.2  & 40  & 0.2  \\
+    2         & 12.8 & 18  & 4.9  \\
+    3         & 15.5 & 50 & 13.4 \\
+    4         & 0 & 0 & 0 \\
+    5         & 0 & 0 & 0 \\
+    6         & 0 & 0 & 0 \\
+}\mydata
+
+
+
+\begin{document}
 %Deckblatt
 \begin{titleframe}
 	\begin{figure}
@@ -208,18 +221,27 @@
 \section{Zeiterfassung}
 \begin{frame}
 	\ftitle
-	Userstorys der ersten Iteration:
 	\begin{figure}
-		\begin{tabular}{|c|l|c|c|}
-			\hline
-			ID&Namen&Storypoints&Stunden \\ \hline \hline
-			1 &Willkommensnachricht&10&2 \\ \hline
-			16&Slaves anzeigen&4&4\\ \hline
-			2 &Slaves registrieren&8&30\\ \hline
-			6&Kontextmenü&10&10\\ \hline
-			14&Slaves löschen&4&9\\ \hline
-			15&Slaves bearbeiten&4&3\\ \hline
-		\end{tabular}
+			\begin{tikzpicture}
+				\begin{axis}
+					[
+            		ybar,
+            		bar width=.5cm,
+            		width=\textwidth,
+					height=.5\textwidth,
+					legend style={at={(0.5,1)}, anchor=north,legend columns=-1},
+            		symbolic x coords={1,2,3,4,5,6},
+            		xtick=data,
+            		nodes near coords,
+            		nodes near coords align={vertical},
+            		ylabel={Stunden},
+            		xlabel={Iteration},
+        		]
+        		\addplot table[x=Iteration,y=Implementierung]{\mydata};
+        		\addplot table[x=Iteration,y=Sonstiges]{\mydata};
+        		\addplot table[x=Iteration,y=Vorhergesagt]{\mydata};
+    		\end{axis}
+		\end{tikzpicture}
 	\end{figure}
 
 	\pnote{Willkommensnachricht wurde stark überschätzt}
