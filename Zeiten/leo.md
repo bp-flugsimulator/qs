@@ -1,5 +1,5 @@
 # ZEITEN IN STUNDEN
-Iteration | QS | IMP
+IT | QS | IM
 -|-|-
 0 | 1 | -
 1 | 10 | 30
