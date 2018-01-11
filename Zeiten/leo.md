@@ -13,3 +13,5 @@ IT | QS | IM
 * **IT** = Iteration = 2 Wochen
 * **QS** = Qualitätssicherung
 * **IM** = Implementation
+
+Nein, tut es nicht
