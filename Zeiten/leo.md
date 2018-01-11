@@ -1,12 +1,16 @@
 # Qualitätssicherung
-Monat | Stunden
+Iteration | Stunden
 ---|---
-Okt | 1h
-Nov | 10h
-Dec | 25h
+0 | 1h
+1 | 10h
+2 | 25h
+3 | 5h
+4 | -
 
 # Implementation
- Monat | Stunden
+ Iteration | Stunden
 ---|---
-Nov | 30h
-Dec | 10h
+1 | 30h
+2 | 10h
+3 | 20h
+4 | 15h
