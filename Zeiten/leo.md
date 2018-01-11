@@ -1,16 +1,10 @@
 # Qualitätssicherung
-Iteration | Stunden
----|---
-0 | 1h
-1 | 10h
-2 | 25h
-3 | 5h
-4 | -
-
-# Implementation
- Iteration | Stunden
----|---
-1 | 30h
-2 | 10h
-3 | 20h
-4 | 15h
+Iteration | QS | IMP
+-|-|-
+0 | 1 | -
+1 | 10 | 30
+2 | 25 |10
+3 | 5 |20
+4 | - |15
+5 | - | -
+6 | - | -
