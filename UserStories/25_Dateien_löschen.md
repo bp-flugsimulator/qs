@@ -7,6 +7,6 @@
 |Akzeptanz   |Nachdem Betätigten des entsprechenden Knopfes öffnet sich ein Dialog, indem der Benutzer den Löschvorgang bestätigen muss. Nur falls der Benutzer den Löschvorgang bestätigt wird die registrierte Datei aus der Datenbank gelöscht.|
 |Story Points|3|
 |Entwickler  |Frederik|
-|Iteration   |3|
-|Stunden     |3|
-|Velocity    |1|
+|Iteration   |4|
+|Stunden     | |
+|Velocity    | |
