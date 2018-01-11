@@ -1,0 +1,27 @@
+[notes]
+### 1
+Willkommen
+Gruppe 19
+### 4
+Auftraggeber Institut für Flugsysteme und Regelungstechnik
+an der Lichtwiese
+wird zum Forschen im Bereich Führungsysteme (Flugverkehr) verwendet
+### 9
+Interface als Website
+Kommunikation über Websockets
+### 10
+hinzufügen von Clients im Webinterface
+hinzufügen von Programmen auf Clients im Webinterface
+wake on Lan
+grobe Implementierung von Master/Slave system
+### 11
+Software für Master wird auf modernem System laufen
+### 12
+für jede Userstory wird ein Pullrequests auf Github gemacht
+dient auch als Forum für Implementierungen
+### 13
+falls eine Punkt nicht erfüllt wird, muss der Entwickler der Userstory das Problem beheben
+### 15
+Willkommensnachricht wurde stark überschätzt
+für Slaves registrieren gab es 3 verschiedenen Ansätze die viel Diskutiert wurden
+in Slaves löschen und Slaves registrieren wurde viel Vorarbeit für Slaves bearbeiten gemacht
