@@ -7,7 +7,7 @@
 |Akzeptanz   |Nachdem der Benutzer das Programm seiner Wahl beendet hat, in dem er den entsprechenden Knopf betätigt hat, ändert sich der Status des Programmes und der Benutzer bekommt ggf. eine Rückmeldung über den Endstatus des Programmes.|
 |Story Points|1|
 |Akzeptanz   |Nachdem der Benutzer den entsprechenden Knopf zum hinzufügen/editieren eines Programmes betätigt hat, gibt es in dem jeweiligen Dialog ein weiteres Feld, in dem die Zeit in Sekunden eingetragen werden kann. Nach dem dies bestätigen wurde, wird der Eingrag korrekt in der Datenbank gespeichert.|
-|Entwickler  ||
-|Iteration   ||
-|Stunden     ||
-|Velocity    ||
+|Entwickler  |Jonas|
+|Iteration   |4|
+|Stunden     |1|
+|Velocity    |1|
