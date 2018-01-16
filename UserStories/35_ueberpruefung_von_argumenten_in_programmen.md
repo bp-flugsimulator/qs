@@ -9,5 +9,5 @@
 |Akzeptanz   |Nachdem der Benutzer den entsprechenden Knopf zum hinzufügen/editieren eines Programmes betätigt hat, gibt es in dem jeweiligen Dialog ein weiteres Feld, in dem die Zeit in Sekunden eingetragen werden kann. Nach dem dies bestätigen wurde, wird der Eingrag korrekt in der Datenbank gespeichert.|
 |Entwickler  |Tim|
 |Iteration   |4|
-|Stunden     |0.5|
-|Velocity    |2 Storypoints/Stunde|
+|Stunden     |1|
+|Velocity    |1 Storypoints/Stunde|
