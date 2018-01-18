@@ -84,29 +84,25 @@
 
 \end{frame}
 
-\begin{frame}
-	\ftitle
-	\begin{figure}
-		\centering
-		\vspace{-.4cm}
-		\includegraphics[scale=0.65]{server-small}	
-	\end{figure}
-\end{frame}
-
 \subsection{Bisheriger Zustand}
 \begin{frame}
 	\ftitle
+	\begin{overlayarea}{\textwidth}{.5\hsize}
+	\begin{minipage}[t]{.7\textwidth}
 	\begin{itemize}
 		\item Jeder Rechner muss per Hand gestartet werden\pause
 		\item Programme müssen einzeln gestartet werden\pause
 			\begin{itemize}
 				\item Nicht immer wird alles benötigt/darf gestartet werden\pause
-				\item Viel Wechsel zwischen den Rechnern nötig\pause
+				\item Viel Wechsel zwischen den Rechnern nötig
 			\end{itemize}
 	\end{itemize}
-	\centering
-	\vspace{0.5cm}
-	\tikz[]\node[draw,minimum width=10cm,minimum height=3cm] {Bild vom KVM Switch};
+	\end{minipage}
+	\begin{minipage}[t]{.2\textwidth}
+		\onslide<1->\includegraphics[scale=0.55]{server-small}
+	\end{minipage}
+
+	\end{overlayarea}
 \end{frame}
 
 \section{Software}
@@ -281,9 +277,9 @@
 \end{tikzpicture}
 	\vspace{-4.5cm}
 	\begin{itemize}
+		\item QS-Ziel: \textbf{Bedienbarkeit}\pause
 		\item Nutzerstudie zum Test der Bedienbarkeit\pause
-		\item Durchführung Anfang 2018\pause
-		\item QS-Ziel: \textbf{Bedienbarkeit}
+		\item Durchführung Anfang 2018
 	\end{itemize}
 \end{frame}
 
