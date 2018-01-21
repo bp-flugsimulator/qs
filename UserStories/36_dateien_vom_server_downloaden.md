@@ -5,8 +5,8 @@
 |Name        |Dateien vom Server herunterladen|
 |Beschreibung|Als Benutzer will ich die Möglichkeit haben, Dateien, die auf dem Server in einem definierten Ordner liegen herunterzuladen.|
 |Akzeptanz   |Nachdem der Benutzer in der Navigationsleiste auf den ensprechenden Knopf gedrückt hat, werden alle Dateien die in dem definierten Ordner liegen mit ihrer Größe zusammen angezeigt. Diese wird dann nach dem Drücken des entsprechenden Knopfes heruntergeladen.|
-|Story Points|4|
-|Entwickler  ||
-|Iteration   ||
-|Stunden     ||
-|Velocity    ||
+|Story Points|3|
+|Entwickler  |Tim|
+|Iteration   |4|
+|Stunden     |2.5|
+|Velocity    |1.2 Storypoints/Stunde|
