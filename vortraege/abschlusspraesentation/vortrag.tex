@@ -25,7 +25,7 @@
 
 \title[]{Entwicklung eines zentralen \\Steuerungsprogramms für einen \\Forschungsflugsimulator}
 \subtitle{{\scriptsize Vortragender: Frederik Bark, Heiko Carrasco
-        \\Team: Frederik Bark, Heiko Carrasco, Jonas Meurer, Tim Weißmantel \\und Leonardo Zaninelli}}
+	\\Team: Frederik Bark, Heiko Carrasco, Jonas Meurer, Tim Weißmantel und Leonardo Zaninelli}}
 \institute{BP WS 2017/18 | Entwicklung eines zentralen Steuerungsprogramms für einen Forschungsflugsimulator}
 \date{\today}
 
@@ -46,6 +46,7 @@
 %Deckblatt
 \begin{titleframe}
 	\begin{figure}
+		\vspace{-18pt}
 		\centering
 		\includegraphics[scale=0.21]{simulator_3_intro}
 	\end{figure}
@@ -60,7 +61,8 @@
 	\ftitle
 	\begin{figure}
 		\centering
-		\includegraphics[scale=0.055]{simulator_4}
+		\vspace{-.5cm}
+		\includegraphics[]{sim-small}
 	\end{figure}
 
 	\pnote{Auftraggeber Institut für Flugsysteme und Regelungstechnik}
@@ -77,20 +79,7 @@
 	\node[inner sep=0] at (current page.center)
 	{		\includegraphics[scale=0.23]{aufbau_gesamt}};
 	 \node (round) [line width=0.8pt,color=red, draw, rounded rectangle, yshift=-0.9cm, minimum height=1.3cm, minimum width=10cm] {};
-		\node [color=red, below right= of round, yshift=0.9cm, xshift=-0.6cm] {Rechner};
-	\end{tikzpicture}
-
-\end{frame}
-
-
-\begin{frame}
-	\ftitle
-	\centering
-	\begin{tikzpicture}[remember picture,overlay]
-	\node[inner sep=0] at (current page.center)
-	{		\includegraphics[scale=0.23]{aufbau_gesamt}};
-	 \node (round) [line width=0.8pt,color=blue, draw, rounded rectangle, yshift=-2.2cm, minimum height=1.3cm, minimum width=10cm] {};
-		\node [color=blue, below = of round, yshift=0.9cm, xshift=-0.0cm] {Ein- und Ausgabe};
+		\node [color=red, below right= of round, yshift=0.9cm, xshift=-0.7cm] {Rechner};
 	\end{tikzpicture}
 
 \end{frame}
@@ -98,17 +87,22 @@
 \subsection{Bisheriger Zustand}
 \begin{frame}
 	\ftitle
+	\begin{overlayarea}{\textwidth}{.5\hsize}
+	\begin{minipage}[t]{.7\textwidth}
 	\begin{itemize}
 		\item Jeder Rechner muss per Hand gestartet werden\pause
 		\item Programme müssen einzeln gestartet werden\pause
 			\begin{itemize}
 				\item Nicht immer wird alles benötigt/darf gestartet werden\pause
-				\item Viel Wechsel zwischen den Rechnern nötig\pause
+				\item Viel Wechsel zwischen den Rechnern nötig
 			\end{itemize}
 	\end{itemize}
-	\centering
-	\vspace{0.5cm}
-	\tikz[]\node[draw,minimum width=10cm,minimum height=3cm] {Bild vom KVM Switch};
+	\end{minipage}
+	\begin{minipage}[t]{.2\textwidth}
+		\onslide<1->\includegraphics[scale=0.55]{server-small}
+	\end{minipage}
+
+	\end{overlayarea}
 \end{frame}
 
 \section{Software}
@@ -283,9 +277,9 @@
 \end{tikzpicture}
 	\vspace{-4.5cm}
 	\begin{itemize}
+		\item QS-Ziel: \textbf{Bedienbarkeit}\pause
 		\item Nutzerstudie zum Test der Bedienbarkeit\pause
-		\item Durchführung Anfang 2018\pause
-		\item QS-Ziel: \textbf{Bedienbarkeit}
+		\item Durchführung Anfang 2018
 	\end{itemize}
 \end{frame}
 
