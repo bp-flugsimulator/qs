@@ -109,40 +109,35 @@
 \subsection{Gewünschte Features}
 \begin{frame}
 	\ftitle
-	Features:
-	\begin{itemize}
-		\item Steuern von Rechnern und Programmen über eine Oberfläche\pause
-		\item Erstellen von Ablaufplänen zum automatischen Start\pause
+		Zentrale Oberfläche für...\\
+			\begin{itemize}
+				\item ...Steuern von Rechnern und Programmen\pause
+				\item ...Statusübersicht\pause
+				\item ...Programmierung von Startplänen\pause
 			\begin{itemize}
 				\item Szenarien (Flugplatz, Flugzeug, \dots) wählbar machen\pause
 				\item Plugins laden oder deaktivieren
 			\end{itemize}
-	\end{itemize}
-\end{frame}
-
-\subsection{Anforderungen}
-\begin{frame}
-	\ftitle
-	\begin{itemize}
-		\item Muss auf vielen unterschiedlichen Betriebssystem laufen\pause
-		\item Einfache Bedienung für Mitarbeiter*innen\pause
-		\item Muss weiterentwickelbar sein
-	\end{itemize}
+			\end{itemize}
 \end{frame}
 
 \subsection{Lösung}
 \begin{frame}
 	\ftitle
-	\begin{figure}
-		\begin{overlayarea}{\textwidth}{4cm}
-		\centering
-		\only<1>{\includegraphics[scale=0.42]{1}}
-		\only<2>{\includegraphics[scale=0.42]{2}}
-		\only<3>{\includegraphics[scale=0.42]{3}}
-		\only<4>{\includegraphics[scale=0.42]{4}}
-		\only<5>{\includegraphics[scale=0.42]{6}}
-		\end{overlayarea}
-	\end{figure}
+	\centering
+	\begin{tikzpicture}[node distance=2cm,v/.style={draw=blue, minimum size=7mm}, a/.style={circle,draw=blue!40,fill=blue!5,very thick, minimum size=5mm}, s/.style={circle, draw=green, fill=green!60, very thick, text=white, minimum size=7mm}, n/.style={midway, font=\footnotesize}]
+		\visible<1->{\node[v] (Webinterface) {Webinterface};}
+		\visible<2->{\node[v, draw=red, below = of Webinterface] (master) {Master};}
+		\visible<3->{\node[v, draw=green, below left = of master] (client2) {Client 1};}
+		\visible<3->{\node[v, draw=green, below right = of master] (client3) {Client 2};}
+
+		\visible<4->{\draw[->, red] (Webinterface) to[bend right] node[n, left] {Kommandos} (master) ;}
+		\visible<5->{\draw[->, red] (master.west) to[bend right] node[n, above left=8pt, yshift=-9pt, red] {Kommandos} (client2.north);}
+		\visible<5->{\draw[->, red] (master.east) to[bend left] node[n, above right=8pt, yshift=-9pt, red] {Kommandos} (client3.north);}
+		\visible<7->{\draw[->, blue] (master) to[bend right] node[n, right, blue] {Status} (Webinterface);}
+		\visible<6->{\draw[->, blue] (client2.east) to[bend right] node[n, above left=4pt, yshift=-5pt, blue] {Status} (master.south);}
+		\visible<6->{\draw[->, blue] (client3.west) to[bend left] node[n, above right=4pt, yshift=-5pt, blue] {Status} (master.south);}
+	\end{tikzpicture}
 \end{frame}
 
 
@@ -336,6 +331,20 @@
 	\pnote{in Slaves löschen und Slaves registrieren wurde viel Vorarbeit für Slaves bearbeiten  gemacht}
 \end{frame}
 
+\section{Fragen}
+\begin{frame}
+	\ftitle
+	\vspace{-10pt}
+	\centering
+	\begin{figure}
+		\includegraphics[scale=0.8]{console-small}
+	\end{figure}
+\end{frame}
 
+\section{Table of Contents}
+\begin{frame}[allowframebreaks]
+	\ftitle
+	\tableofcontents
+\end{frame}
 
 \end{document}
