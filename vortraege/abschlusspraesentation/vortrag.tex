@@ -24,7 +24,7 @@
 \graphicspath{ {./img/} }
 
 \title[]{Entwicklung eines zentralen \\Steuerungsprogramms für einen \\Forschungsflugsimulator}
-\subtitle{{\scriptsize Vortragender: Frederik Bark, Heiko Carrasco
+\subtitle{{\scriptsize Vortragender: Heiko Carrasco, Tim Weißmantel
 	\\Team: Frederik Bark, Heiko Carrasco, Jonas Meurer, Tim Weißmantel und Leonardo Zaninelli}}
 \institute{BP WS 2017/18 | Entwicklung eines zentralen Steuerungsprogramms für einen Forschungsflugsimulator}
 \date{\today}
@@ -38,8 +38,9 @@
 	0         &  6   & 29  & 0   \\
     1         &  51  & 26  & 40  \\
     2         &  64  & 17  & 17  \\
-    3         &  88  & 29  & 64  \\
-    4         &  0   & 0   & 0   \\
+    3         &  88  & 29  & 60  \\
+    4         &  104 & 16  & 33   \\
+    5         &  0   & 0   & 0   \\
 }\mydata
 
 \begin{document}
@@ -310,13 +311,13 @@
             		width=\textwidth,
 					height=.5\textwidth,
 					legend style={at={(0.5,1)}, anchor=north,legend columns=-1},
-            		symbolic x coords={0,1,2,3,4},
+            		symbolic x coords={0,1,2,3,4,5},
             		xtick=data,
             		nodes near coords,
             		nodes near coords align={vertical},
             		ylabel={Stunden},
 					xlabel={Iteration},
-					ymax=120,
+					ymax=150,
         		]
         		\addplot table[x=Iteration,y=Implementierung]{\mydata};
         		\addplot table[x=Iteration,y=Sonstiges]{\mydata};
