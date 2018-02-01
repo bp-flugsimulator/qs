@@ -2,12 +2,14 @@
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
 
-\usepackage{amsmath, imakeidx, graphicx, todonotes, hyperref}
+\usepackage[german]{todonotes}
+\usepackage{amsmath, imakeidx, graphicx, hyperref}
 
 %opening
 \title{Bedienungsanleitung Flugsimulator}
 \subtitle{BP-Team 19}
 \subsubtitle{Wintersemester 17/18}
+\makeindex
 
 \newcommand{\ind}[1]{#1\index{#1}}
 \graphicspath{ {img/} }
@@ -15,9 +17,16 @@
 \begin{document}
 	\maketitle
 	\tableofcontents
+	
+	\todototoc
+	\listoftodos
+
 	\chapter{Präambel}
 	\todo[inline]{basic Infos einfügen}
+	\todo[inline]{Präambel zu geschlechtergerechten Sprache}
+	
 	\chapter{Einführung}
+	
 	\section{Aufbau der Software}
 	Aufgrund der Netzwerktopologie ist die Software nach dem sogenannten
 	\ind{Client-Server-System}\footnote{\url{https://en.wikipedia.org/wiki/Client-server\_model}}
@@ -44,15 +53,60 @@
 	\section{Terminologie}
 	Im folgenden werden die einzelnen Begriffe der Software erklärt. Dies dient vor allem dem Verständnis
 	der weiteren Kapitel.
-	\subsection{Client}
-	Ein Client
+	
+	\subsection{\ind{Master}}
+	Der zentrale Steuerungsrechner, auf welchem der Webserver läuft. Zur Zeit ist das der \ind{Simcontrol} Rechner.
+	Im Standardfall wird die Weboberfläche der Anwendung hier geöffnet, sollte sich der Rechner aber im 
+	Institutsnetz befinden, so lässt sich die Ansteuerung und Programmierung des Simulators auch vom
+	Arbeitsplatzrechner erledigen. Wichtig ist aber, dass der Master Server nicht direkt aus dem Internet
+	ansprechbar ist, da von Seiten der Software bisher keinerlei Authentifizierung vorrausgesetzt wird.
+	
+	\subsection{\ind{Client}}
+	\missingfigure{Bild der Software mit einem Client}
+	Ein Client ist jeder Rechner außer dem Master, welcher als Teil des Flugsimulators Programme ausführen muss.
+	Das kann zum Beispiel \ind{Vision} sein, wobei ein Client auch für mehrere Programme verantwortlich
+	sein kann.
+	
+	\subsection{\ind{Program}}
+	\todo[inline]{evt. die deutsche Bezeichnung verwenden}
+	Ein Program ist in dieser Software ein zu startendes Programm auf dem entsprechenden Client, beispielsweise
+	X-Plane. Beim Anlegen in der Software werden unter anderem der Pfad mit der ausführbaren Datei, die Argumente
+	und die Umgebung abgefragt, welche dan zum Starten des Programms verwendet werden.
+	\missingfigure{Bild der Software mit einem Program (inklusive Optionen)}
+	
+	\subsection{\ind{Files}}
+	\missingfigure{Bild der Software mit einem File}
+	Um verschiedene Plugins nutzen zu können ist es manchmal notwendig, dass bestimmte Dateien innerhalb der
+	X-Plane Ordner vor dem Start verschoben werden. Dazu lassen sich für jeden Client beliebig viele 
+	Files
+	definieren, welche die zu verschiebende Datei und ihren Zielort definieren. In einem Script lässt sich
+	dann festlegen zu welchem Zeitpunkt die Datei kopiert werden soll. Sollte eine Datei am Zielort existieren,
+	welche den gleichen Name wie die zu kopierende Datei besitzt, so wird ein Backup erstellt, welches beim
+	Herunterfahren wiederhergestellt wird.
+	
+	\subsection{\ind{Script}}
+	Um den Vorgang eines Startes zu automatisieren steht kann der/die Nutzer*in ein sogenanntes Script erstellen.
+	Ein Script ist eine Liste an Anweisungen bestehend aus Files und Programs, welche in der spezifizierten
+	Reihenfolge abgearbeitet werden. Dabei wird die Beschreibungssprache 
+	\ind{JSON}\footnote{\url{https://en.wikipedia.org/wiki/JSON}} verwendet. Eine Dokumentation dieser Sprache
+	befindet sich im Anhang (\autoref{json-ref}).
 
 	\chapter{Workflows}
 	\todo[inline]{Standardworkflows a la Eine Node Hinzufügen}
+	\section{Eine Node hinzufügen}
+	Nach dem Starten des Webservers muss im Browser die Weboberfläche geöffnet werden.
+	Arbeitet man auf dem \ind{Simcontrol} direkt, so findet sich diese unter
+	\url{http://localhost:8000/slaves}. Ansonsten muss anstatt \textitt{localhost}
+	die \ind{IP-Ardresse} des Masters verwendet werden.
 
+	\chapter{Anhang}
+	\section{Referenz der Scriptsprache}
+	\label{json-ref}
+	\todo[inline]{Referenz für die Scriptsprache}
 
+	\clearpage
+	\addcontentsline{toc}{chapter}{Index}
+	\printindex
 
-	\todototoc
-	\listoftodos
 
 \end{document}
