@@ -7,6 +7,6 @@
 |Akzeptanz   |Sobald der Benutzer die Seite aufruft beginnt ein Countdown. Sobald dieser abgelaufen ist wird das zuletzt ausgeführt Skript gestartet. Sobald der Benutzer ein anderes Skript auswählt wird der Countdown abgebrochen und der Benutzer muss den "Start Vorgang" manuell anstoßen.|
 |Story Points|15|
 |Entwickler  |Jonas|
-|Iteration   |4|
-|Stunden     |25|
-|Velocity    |0.6|
+|Iteration   |4-5|
+|Stunden     |30|
+|Velocity    |0.5|
