@@ -93,12 +93,25 @@
 
 	\chapter{Workflows}
 	\todo[inline]{Standardworkflows a la Eine Node Hinzufügen}
-	\section{Eine Node hinzufügen}
+	\section{Einen Client hinzufügen}
 	Nach dem Starten des Webservers muss im Browser die Weboberfläche geöffnet werden.
 	Arbeitet man auf dem \ind{Simcontrol} direkt, so findet sich diese unter
-	\url{http://localhost:8000/slaves}. Ansonsten muss anstatt \textitt{localhost}
+	\url{http://localhost:8000/slaves}. Ansonsten muss anstatt \texttt{localhost}
 	die \ind{IP-Ardresse} des Masters verwendet werden.
-
+	\\
+	\missingfigure{Weboberfläche ohne konfigurierte Nodes}
+	Über den \texttt{+} Knopf neben dem Client-Schriftzug auf der linken Seite
+	lässt sich ein neuer Client anlegen. Dazu ist ein Name, die IP-Addresse und
+	die MAC-Adresse des Clients notwendig. Diese lassen sich unter Windows
+	mit dem Befehl \texttt{ipconfig} herausfinden. Der Name kann frei gewählt
+	werden und dient nur der Wiedererkennung in der Oberfläche.
+	\\
+	Nach dem Anlegen erscheint der Client in der linken Spalte. Durch Auswählen erhält
+	man eine Übersicht mit den Programmen und Dateien des Clients. Zudem stehen die
+	Knöpfe \texttt{Start}, \texttt{Edit} und \texttt{Delete} zur Verfügung.
+	Während die Letztgenannten relativ selbsterklärend seien sollten, startet der
+	erste Knopf den Rechner über das Netzwerk. Sollte der Befehl erfolgreich
+	versendet worden sein, so wird eine Benachrichtigung angezeigt.
 	\chapter{Anhang}
 	\section{Referenz der Scriptsprache}
 	\label{json-ref}
