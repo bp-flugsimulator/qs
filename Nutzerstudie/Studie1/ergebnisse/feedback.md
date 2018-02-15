@@ -1,7 +1,7 @@
 # Feedback der Nutzer*innen
 
 ## Allgemein
-* Alle Slaves in Nodes umbenennen (gefunden in den Skripten)
+* Alle Slaves in Clients umbenennen (gefunden in den Skripten)
 * Übersichtsseite
     * Events von Clients
 * Tooltips für alle Felder
