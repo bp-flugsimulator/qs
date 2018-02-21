@@ -8,10 +8,10 @@ Die neue Version des Skripteditors wurde gezeigt
 Abgelehnt, da es nicht direkt möglich ist
 
 # Eventlogdateien
-Abgelehnt, da es bereits in der Restui erkennbar ist
+Abgelehnt, da es bereits in der Rest-UI erkennbar ist
 
 # Dateien und Programme über Clients hinweg kopieren
-Abgelehnt, da es schwireig zu implementieren ist und der Mehrwert sehr gering ist
+Abgelehnt, da es schwierig zu implementieren ist und der Mehrwert sehr gering ist
 
 ## Gute Ideen, die besprochen wurden
 # Nachfragen, wenn ein Tab geschlossen werden soll/die Seite verlassen wird
