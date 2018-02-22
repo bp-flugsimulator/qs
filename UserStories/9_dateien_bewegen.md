@@ -8,6 +8,6 @@
 |Story Points|10|
 |Entwickler  |Leonardo, Jonas|
 |Iteration   |3-5|
-|Stunden     |20|
-|Velocity    |0.5|
+|Stunden     |30|
+|Velocity    |0.33|
 
