@@ -7,7 +7,7 @@
 |Akzeptanz   |Nachdem der Benutzer den entsprechenden Kopf betätigt hat wird die Datei auf dem Client verschoben und der Benutzer wird darüber benachrichtigt. Sofern eine Datei bereits bewegt wurde under Benutzer erneut auf den entsprechenden Knopf drückt, wird die Datei wieder entfernt (sofern diese nicht in der zwischen Zeit vom Benutzer manuell überschrieben worden ist). |
 |Story Points|10|
 |Entwickler  |Leonardo, Jonas|
-|Iteration   |3-5|
+|Iteration   |7|
 |Stunden     |30|
 |Velocity    |0.33|
 
