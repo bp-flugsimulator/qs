@@ -8,5 +8,5 @@
 |Story Points|30|
 |Entwickler  |Tim|
 |Iteration   |5-7|
-|Stunden     |30|
-|Velocity    |1|
+|Stunden     |40|
+|Velocity    |0.75|
