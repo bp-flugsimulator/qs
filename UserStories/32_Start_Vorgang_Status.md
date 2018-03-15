@@ -1,6 +1,6 @@
 # User Story
 
-|ID          |31|
+|ID          |32|
 |-|-|
 |Name        |Start Vorgang Status|
 |Beschreibung|Als Benutzer will ich die Möglichkeit haben den momentanen Status des "Start Vorganges" einzusehen. Des weiteren soll die Möglichkeit bestehen zu sehen, wie weit eine einzelne Stufe fortgeschritten ist.| 
