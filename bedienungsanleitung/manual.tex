@@ -85,11 +85,9 @@
 	Herunterfahren wiederhergestellt wird.
 	
 	\subsection{\ind{Script}}
-	Um den Vorgang eines Startes zu automatisieren steht kann der/die Nutzer*in ein sogenanntes Script erstellen.
+	Um den Vorgang eines Starts zu automatisieren steht kann der/die Nutzer*in ein sogenanntes Script erstellen.
 	Ein Script ist eine Liste an Anweisungen bestehend aus Files und Programs, welche in der spezifizierten
-	Reihenfolge abgearbeitet werden. Dabei wird die Beschreibungssprache 
-	\ind{JSON}\footnote{\url{https://en.wikipedia.org/wiki/JSON}} verwendet. Eine Dokumentation dieser Sprache
-	befindet sich im Anhang (\autoref{json-ref}).
+	Reihenfolge abgearbeitet werden. Diese können über den grafischen Editor angelegt werden.
 
 	\chapter{Workflows}
 	\todo[inline]{Standardworkflows a la Eine Node Hinzufügen}
@@ -100,22 +98,79 @@
 	die \ind{IP-Ardresse} des Masters verwendet werden.
 	\\
 	\missingfigure{Weboberfläche ohne konfigurierte Nodes}
-	Über den \texttt{+} Knopf neben dem Client-Schriftzug auf der linken Seite
+	Über den \texttt{+} Knopf neben dem Clients-Schriftzug auf der linken Seite
 	lässt sich ein neuer Client anlegen. Dazu ist ein Name, die IP-Addresse und
 	die MAC-Adresse des Clients notwendig. Diese lassen sich unter Windows
 	mit dem Befehl \texttt{ipconfig} herausfinden. Der Name kann frei gewählt
-	werden und dient nur der Wiedererkennung in der Oberfläche.
+	werden und dient nur der Wiedererkennung innerhalb der Oberfläche.
 	\\
 	Nach dem Anlegen erscheint der Client in der linken Spalte. Durch Auswählen erhält
 	man eine Übersicht mit den Programmen und Dateien des Clients. Zudem stehen die
-	Knöpfe \texttt{Start}, \texttt{Edit} und \texttt{Delete} zur Verfügung.
+	Knöpfe \texttt{Switch On}, \texttt{Edit} und \texttt{Delete} zur Verfügung.
 	Während die Letztgenannten relativ selbsterklärend seien sollten, startet der
 	erste Knopf den Rechner über das Netzwerk. Sollte der Befehl erfolgreich
 	versendet worden sein, so wird eine Benachrichtigung angezeigt.
+
+	\section{Ein Program hinzufügen}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=.4\textwidth]{add_program}
+		\caption{Beispielwerte für das Hinzufügen eines Programms}
+	\end{figure}
+	Um ein Program anzulegen wählt man den entsprechenden Client aus und klickt auf
+	den \texttt{+} Knopf neben dem Program-Schriftzug. Es öffnet sich ein Fenster,
+	welches verschiedene Werte abfragt:\\
+	\begin{center}
+	\begin{tabular}{l|l}
+		Feld & Beschreibung \\\hline
+		Display Name &  Anzeigename des Programms innerhalb der Software\\
+		Path to Executable & Pfad zum auszuführenden Programm inklusive des Programms\\
+		Arguments & Eventuelle Kommandozeilenargumente die beim Start übergeben werden sollen\\
+		Start time & Zeit in Sekunden die nach dem Starten des Programms gewartet werden soll\\
+
+	\end{tabular}
+	\end{center}
+	Start time ist nur bei Verwendung der Skriptfunktion von Bedeutung.
+	Befindet sich ein Programm mit einer Startzeit ungleich -1 in einer Stage,
+	so wartet der Master die spezifizierten Sekunden nach Ausführung des Programms,
+	bevor die nächste Stage gestartet wird. Ist in diesem Feld -1 eingetragen, so
+	wird sofort nach dem Aufruf des Programms mit der weiteren Ausführung fortgefahren.
+
+	\section{Eine Datei-/Ordnerbewegung hinzufügen}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=.4\textwidth]{add_filesystem}
+		\caption{Beispielwerte für das Hinzufügen einer Datei-/Ordnerbewegung}
+		\label{add_program}
+	\end{figure}
+
+	Sollte für es für den Start eines Szenarios notwendig sein, dass zum Beispiel bestimmte
+	Plugins sich im korrekten Ordner befinden, so lässt sich dies über die Filesystem-Funktion
+	realisieren.
+	\\
+	Dazu kann über den \texttt{+} Knopf neben dem Filesystem Schriftzug eine Datei-/Ordnerbewegung
+	hinzugefügt werden. Dabei werden folgende Werte abgefragt:
+	\\
+	\begin{center}
+	\begin{tabular}{l|l}
+		Feld & Beschreibung \\\hline
+		Display Name &  Anzeigename des Programms innerhalb der Software\\
+		Source Path & Pfad zur Ursprungsdatei bzw. -ordner\\
+		Source Type & Typ des zu verschiebenden Objekts\\
+		Destination Path & Zielpfad mit dem Namen des Ziels\\
+		Destination Type & Operation, die beim Kopieren des Ursprungsobjekts durchgeführt werden soll\\
+	\end{tabular}
+	\end{center}
+	Der Destination Type erlaubt zwei Optionen, \texttt{Replace With} und \texttt{Insert Into}.
+	Ersteres benennt das Ursprungsobjekt beim Kopieren um, wobei der letzte Teil des Zielpfades
+	als neuer Name verwendet wird. Beispielsweise wird der Ordner "`heli"' in Bild \ref{add_program}
+	umbenannt in "`helicopter"'.
+	\texttt{Insert Into} hingegen kopiert die Datei oder den Ordner in den angegeben Zielordner.
+	Mit den Beispieldaten im Bild würde dann ein Unterordner "`heli"' im Ordner 
+	"`C:\textbackslash X-Plane\textbackslash plugins\textbackslash helicopter"' mit dem Inhalt vom Ursprungsordner angelegt werden.
+
 	\chapter{Anhang}
-	\section{Referenz der Scriptsprache}
-	\label{json-ref}
-	\todo[inline]{Referenz für die Scriptsprache}
 
 	\clearpage
 	\addcontentsline{toc}{chapter}{Index}
