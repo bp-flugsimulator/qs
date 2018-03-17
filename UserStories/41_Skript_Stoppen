@@ -7,6 +7,6 @@
 |Akzeptanz   |Nachdem der Benutzer den entsprechenden Knopf betätigt hat, wird das Ausführen des Skripts gestoppt. Laufende Programme werden nicht beendet und der Ursprungszustand des Filesystems wird nicht wieder hergestellt.| 
 |Story Points|3|
 |Entwickler  |Frederik|
-|Iteration   ||
-|Stunden     ||
-|Velocity    ||
+|Iteration   |8|
+|Stunden     |2|
+|Velocity    |1.5 Sp/h|
