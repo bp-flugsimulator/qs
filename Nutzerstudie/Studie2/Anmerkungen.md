@@ -22,7 +22,7 @@ In Running oder Running Script umbennen
 
 ## Program
 
-Bei Arguments vermerken, dass \\ statt \ verwendet werden muss.
+Bei Arguments vermerken, dass \\\ statt \ verwendet werden muss.
 
 Zeigt den Status vom Datenpool überall an/Benachrichtigung über Programmabsturz
 
