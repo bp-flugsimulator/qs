@@ -3,10 +3,11 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage[german]{todonotes}
-\usepackage{amsmath, imakeidx, graphicx, hyperref}
+\usepackage[most]{tcolorbox}
+\usepackage{amsmath, imakeidx, graphicx, hyperref, xcolor}
 
 %opening
-\title{Bedienungsanleitung Flugsimulator}
+\title{Manual Flightsim control software}
 \subtitle{BP-Team 19}
 \subsubtitle{Wintersemester 17/18}
 \makeindex
@@ -17,160 +18,152 @@
 \begin{document}
 	\maketitle
 	\tableofcontents
-	
+
 	\todototoc
 	\listoftodos
 
 	\chapter{Präambel}
 	\todo[inline]{basic Infos einfügen}
 	\todo[inline]{Präambel zu geschlechtergerechten Sprache}
-	
-	\chapter{Einführung}
-	
-	\section{Aufbau der Software}
-	Aufgrund der Netzwerktopologie ist die Software nach dem sogenannten
-	\ind{Client-Server-System}\footnote{\url{https://en.wikipedia.org/wiki/Client-server\_model}}
-	aufgebaut.
+
+	\chapter{Introduction}
+
+	\section{Project structure}
+	Based on the network structure the software is based on a
+	\ind{client-server system}\footnote{\url{https://en.wikipedia.org/wiki/Client-server\_model}}.
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=\textwidth]{softwarelayout}
-		\caption{Aufbau der Flugsimulatorsteuerung}
+		\caption{Topology of the software layout}
 	\end{figure}
 	\\
-	Die Nutzer*innen kommunizieren über ein Webinterface mit dem Masterserver,
-	welcher die Befehle dann an die einzelnen Clients weiterleitet.
+	The user communicate with the system using a web interface running on the master which
+	forwards the users input to the clients.
 	\\
-	Die Serverkomponente ist in der Programmiersprache \ind{Python}\footnote{\url{https://www.python.org/}}
-	in der aktuellen Version 3 geschrieben. Um die Menge an notwendigem Code möglichst
-	klein zu halten, wurde auf möglichst verbreitete Frameworks zurückgegriffen.
-	Beispielsweise wird das Webinterface auf Serverseite durch das Framework \ind{Django}\footnote{\url{https://www.djangoproject.com/}}
-	realisiert, welches sich gerade unter Pythonentwickler*innen sich großer Beliebtheit erfreut.
-	Eine Anleitung, wie die Software korrekt aufgesetzt wird, findet sich im Repository des
-	Projekts\footnote{\url{https://github.com/bp-flugsimulator/server/blob/master/README.md}}.
+	Both, the client and the server, are written in \ind{Python 3}\footnote{\url{https://www.python.org/}}.
+	To shrinken the necessary codebase popular frameworks were used during development. For example
+	the website is using the \ind{Django framework}\footnote{\url{https://www.djangoproject.com/}}.
+	A step by step guide for setting up the master software can be found in the project repository
+	\footnote{\url{https://github.com/bp-flugsimulator/server/blob/master/README.md}}.
 	\\
-	Die Clients werden ebenfalls von einer Python Software gesteuert. Diese braucht lokal keine Konfiguration,
-	bis auf die Adresse des Masterservers. Dieser übernimmt dann die komplette Konfiguration und Steuerung.
-	\section{Terminologie}
-	Im folgenden werden die einzelnen Begriffe der Software erklärt. Dies dient vor allem dem Verständnis
-	der weiteren Kapitel.
-	
+	The client is also written in Python and does not need any configuration besides the address of
+	the master server during startup. All further configuration is then handled by the master.
+
+	\section{Nomenclature}
+	There are a few terms needing a more in depth definition. This section describes them in detail
+	to ease the understanding of further chapters.
+
 	\subsection{\ind{Master}}
-	Der zentrale Steuerungsrechner, auf welchem der Webserver läuft. Zur Zeit ist das der \ind{Simcontrol} Rechner.
-	Im Standardfall wird die Weboberfläche der Anwendung hier geöffnet, sollte sich der Rechner aber im 
-	Institutsnetz befinden, so lässt sich die Ansteuerung und Programmierung des Simulators auch vom
-	Arbeitsplatzrechner erledigen. Wichtig ist aber, dass der Master Server nicht direkt aus dem Internet
-	ansprechbar ist, da von Seiten der Software bisher keinerlei Authentifizierung vorrausgesetzt wird.
-	
+	Central computer, which runs the web server. Currently this is the \ind{simcontrol} computer.
+	Usually the user opens the web ui on this computer but if there is network access every other
+	machine inside the institute network can be used to access the web ui. Internet access without
+	a firewall should not be permitted, since there is no authentication for accessing this component.
+
 	\subsection{\ind{Client}}
-	\missingfigure{Bild der Software mit einem Client}
-	Ein Client ist jeder Rechner außer dem Master, welcher als Teil des Flugsimulators Programme ausführen muss.
-	Das kann zum Beispiel \ind{Vision} sein, wobei ein Client auch für mehrere Programme verantwortlich
-	sein kann.
-	
+	Every computer which is part of the network besides the master is called a client in this context.
+	An example would be \ind{Vision}. A client can run multiple programs.
+
 	\subsection{\ind{Program}}
-	\todo[inline]{evt. die deutsche Bezeichnung verwenden}
-	Ein Program ist in dieser Software ein zu startendes Programm auf dem entsprechenden Client, beispielsweise
-	X-Plane. Beim Anlegen in der Software werden unter anderem der Pfad mit der ausführbaren Datei, die Argumente
-	und die Umgebung abgefragt, welche dan zum Starten des Programms verwendet werden.
-	\missingfigure{Bild der Software mit einem Program (inklusive Optionen)}
-	
+	A program in this context is all software which needs to be started when the simulator is used e.g. X-Plane.
+	An example for the config options of a program can be found in figure \ref{add_program}.
+
 	\subsection{\ind{Files}}
-	\missingfigure{Bild der Software mit einem File}
-	Um verschiedene Plugins nutzen zu können ist es manchmal notwendig, dass bestimmte Dateien innerhalb der
-	X-Plane Ordner vor dem Start verschoben werden. Dazu lassen sich für jeden Client beliebig viele 
-	Files
-	definieren, welche die zu verschiebende Datei und ihren Zielort definieren. In einem Script lässt sich
-	dann festlegen zu welchem Zeitpunkt die Datei kopiert werden soll. Sollte eine Datei am Zielort existieren,
-	welche den gleichen Name wie die zu kopierende Datei besitzt, so wird ein Backup erstellt, welches beim
-	Herunterfahren wiederhergestellt wird.
-	
-	\subsection{\ind{Script}}
-	Um den Vorgang eines Starts zu automatisieren steht kann der/die Nutzer*in ein sogenanntes Script erstellen.
-	Ein Script ist eine Liste an Anweisungen bestehend aus Files und Programs, welche in der spezifizierten
-	Reihenfolge abgearbeitet werden. Diese können über den grafischen Editor angelegt werden.
+	Since most simulations require a few plugins it is possible to copy files and folders to freely
+	configurable locations during a script run. An example of possible configuration options can be
+	found in figure \ref{add_filesystem}.
+
+	\subsection{\ind{Script}}\label{script}
+	A script is the combination of Programs and file movements. It can be created by a user to model
+	a scenario necessary for a simulation. The order and the needed programs and files can be configured
+	freely by using the graphical editor inside the web ui.
+	\\
+	A script is divided into several \textit{\ind{stages}}. A stage can consist of multiple programs
+	and file movements. This concept is used to make dependency management between programs more easy.
+	If for example a plugin for a simulation is needed, it is most times necessary to copy it before starting
+	X-Plane. The plugin copy would therefore be done in stage 0 while X-Plane would be started in stage 1.
 
 	\chapter{Workflows}
 	\todo[inline]{Standardworkflows a la Eine Node Hinzufügen}
-	\section{Einen Client hinzufügen}
-	Nach dem Starten des Webservers muss im Browser die Weboberfläche geöffnet werden.
-	Arbeitet man auf dem \ind{Simcontrol} direkt, so findet sich diese unter
-	\url{http://localhost:8000/slaves}. Ansonsten muss anstatt \texttt{localhost}
-	die \ind{IP-Ardresse} des Masters verwendet werden.
+	\section{Adding a client}
+	After starting the web server the ui has to be opened in a browser.
+	If you work on \ind{simcontrol} just type \url{http://localhost:8000/slaves} inside
+	your browser. If you are using a different computer inside the network you
+	have to replace \texttt{localhost} with the ip address of simcontrol.
 	\\
 	\missingfigure{Weboberfläche ohne konfigurierte Nodes}
-	Über den \texttt{+} Knopf neben dem Clients-Schriftzug auf der linken Seite
-	lässt sich ein neuer Client anlegen. Dazu ist ein Name, die IP-Addresse und
-	die MAC-Adresse des Clients notwendig. Diese lassen sich unter Windows
-	mit dem Befehl \texttt{ipconfig} herausfinden. Der Name kann frei gewählt
-	werden und dient nur der Wiedererkennung innerhalb der Oberfläche.
+	Using the \texttt{+} button next to the client header on the left side
+	a new client can be added. Necessary parameters are a name, an ip address,
+	and a MAC adress. Using windows the last two can be retrieved using
+	the command \texttt{ipconfig}. The name is only used for the user interface
+	and can be set freely.
 	\\
-	Nach dem Anlegen erscheint der Client in der linken Spalte. Durch Auswählen erhält
-	man eine Übersicht mit den Programmen und Dateien des Clients. Zudem stehen die
-	Knöpfe \texttt{Switch On}, \texttt{Edit} und \texttt{Delete} zur Verfügung.
-	Während die Letztgenannten relativ selbsterklärend seien sollten, startet der
-	erste Knopf den Rechner über das Netzwerk. Sollte der Befehl erfolgreich
-	versendet worden sein, so wird eine Benachrichtigung angezeigt.
+	After creation a new client appears on the left sidebar. Clicking on its tab
+	opens an overview with the configured programs and files for this node.
+	Additionally using the buttons \texttt{Switch On}, \texttt{Edit}, and \texttt{Delete}
+	the client can be booted up, deleted or its configuration changed.
 
-	\section{Ein Program hinzufügen}
+	\section{Adding a program}
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=.4\textwidth]{add_program}
-		\caption{Beispielwerte für das Hinzufügen eines Programms}
-	\end{figure}
-	Um ein Program anzulegen wählt man den entsprechenden Client aus und klickt auf
-	den \texttt{+} Knopf neben dem Program-Schriftzug. Es öffnet sich ein Fenster,
-	welches verschiedene Werte abfragt:\\
-	\begin{center}
-	\begin{tabular}{l|l}
-		Feld & Beschreibung \\\hline
-		Display Name &  Anzeigename des Programms innerhalb der Software\\
-		Path to Executable & Pfad zum auszuführenden Programm inklusive des Programms\\
-		Arguments & Eventuelle Kommandozeilenargumente die beim Start übergeben werden sollen\\
-		Start time & Zeit in Sekunden die nach dem Starten des Programms gewartet werden soll\\
-
-	\end{tabular}
-	\end{center}
-	Start time ist nur bei Verwendung der Skriptfunktion von Bedeutung.
-	Befindet sich ein Programm mit einer Startzeit ungleich -1 in einer Stage,
-	so wartet der Master die spezifizierten Sekunden nach Ausführung des Programms,
-	bevor die nächste Stage gestartet wird. Ist in diesem Feld -1 eingetragen, so
-	wird sofort nach dem Aufruf des Programms mit der weiteren Ausführung fortgefahren.
-
-	\section{Eine Datei-/Ordnerbewegung hinzufügen}
-
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=.4\textwidth]{add_filesystem}
-		\caption{Beispielwerte für das Hinzufügen einer Datei-/Ordnerbewegung}
 		\label{add_program}
+		\includegraphics[width=.4\textwidth]{add_program}
+		\caption{The add program dialog with example values}
 	\end{figure}
-
-	Sollte für es für den Start eines Szenarios notwendig sein, dass zum Beispiel bestimmte
-	Plugins sich im korrekten Ordner befinden, so lässt sich dies über die Filesystem-Funktion
-	realisieren.
+	To add a program a client has to be selected first. By clicking on the \texttt{+}
+	button next to the program tab a dialog opens. The following fields have to be filled
+	out:
+	\begin{center}
+	\begin{tabular}{l|l}
+		Field & Description \\\hline
+		Display Name &  Display name of the program, can be chosen freely\\
+		Path to Executable & Path to the executable file\\
+		Arguments & Command-line arguments for the program\\
+		Start time & Seconds to wait before executing the next stage during a script run\\
+	\end{tabular}
+		\begin{tcolorbox}[width=\textwidth, colback=red!30, arc=0pt, boxrule=0pt]
+		{\color{red}\textbf{Warning}}\hspace{0.5cm}
+		Windows XP can behave unexpectedly when the Path to the executable contains spaces.
+		\end{tcolorbox}
+	\end{center}
 	\\
-	Dazu kann über den \texttt{+} Knopf neben dem Filesystem Schriftzug eine Datei-/Ordnerbewegung
-	hinzugefügt werden. Dabei werden folgende Werte abgefragt:
+	Start time is only used during script runs. If it is set to -1, there is
+	no wait time after executing this step. For a more complete description of
+	stages please look at section \ref{script}.
+
+	\section{Adding a file/folder movement}
+
+	\begin{figure}[h]
+		\centering
+		\label{add_filesystem}
+		\includegraphics[width=.4\textwidth]{add_filesystem}
+		\caption{The add file dialog with example values}
+	\end{figure}
+	\\
+	If a special plugin is necessary for a simulation scenario, it can be copied by using
+	the file/folder movement function.
+	\\
+	In the client overview a new file movement can be added by clicking the \texttt{+} button
+	next to the file management button. The following fields have to be filled out:
 	\\
 	\begin{center}
 	\begin{tabular}{l|l}
-		Feld & Beschreibung \\\hline
-		Display Name &  Anzeigename des Programms innerhalb der Software\\
-		Source Path & Pfad zur Ursprungsdatei bzw. -ordner\\
-		Source Type & Typ des zu verschiebenden Objekts\\
-		Destination Path & Zielpfad mit dem Namen des Ziels\\
-		Destination Type & Operation, die beim Kopieren des Ursprungsobjekts durchgeführt werden soll\\
+		Field & Description \\\hline
+		Display Name &  Display name of the program, can be chosen freely\\
+		Source Path & Path to the source file/folder\\
+		Source Type & Type of the source\\
+		Destination Path & Destination path (and/or new name)\\
+		Destination Type & Copy mode\\
 	\end{tabular}
 	\end{center}
-	Der Destination Type erlaubt zwei Optionen, \texttt{Replace With} und \texttt{Insert Into}.
-	Ersteres benennt das Ursprungsobjekt beim Kopieren um, wobei der letzte Teil des Zielpfades
-	als neuer Name verwendet wird. Beispielsweise wird der Ordner "`heli"' in Bild \ref{add_program}
-	umbenannt in "`helicopter"'.
-	\texttt{Insert Into} hingegen kopiert die Datei oder den Ordner in den angegeben Zielordner.
-	Mit den Beispieldaten im Bild würde dann ein Unterordner "`heli"' im Ordner 
-	"`C:\textbackslash X-Plane\textbackslash plugins\textbackslash helicopter"' mit dem Inhalt vom Ursprungsordner angelegt werden.
+	The destination type can be one of two options, \texttt{Replace With} or \texttt{Insert Into}.
+	The first one renames the source object during copying. The last name in the destination path
+	is the new name of the source path. For example in figure \ref{add_filesystem} the folder 
+	"heli" will be copied and renamed to "helicopter".
+	\texttt{Insert Into} copies the source into a subfolder. In the figure this would mean that
+	a new folder "heli" below "helicopter" would be created and the contents of the source will
+	be copied inside it.
 
-	\chapter{Anhang}
+	\chapter{Appendix}
 
 	\clearpage
 	\addcontentsline{toc}{chapter}{Index}
