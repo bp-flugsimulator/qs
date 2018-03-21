@@ -3,7 +3,7 @@
 
 \usepackage{todonotes}
 \usepackage[most]{tcolorbox}
-\usepackage{amsmath, imakeidx, graphicx, hyperref, xcolor, float}
+\usepackage{amsmath, imakeidx, graphicx, hyperref, xcolor, float, caption}
 \usepackage{chngcntr}
 \counterwithout{footnote}{chapter}
 
@@ -28,7 +28,7 @@
 	of winter term 17/18. The team members are
 	Frederik Bark, Heiko Carrasco, Jonas Meurer, Tim Weißmantel and Leonardo Zaninelli.
 	\\
-	The complete project infrastructure can be found on 
+	The complete project infrastructure can be found on
 	Github\footnote{\url{https://github.com/bp-flugsimulator}}.
 
 	\chapter{Introduction}
@@ -50,9 +50,9 @@
 	is outlined by figure \ref{layout_topology}.
 	\begin{figure}[h]
 		\centering
-		\label{layout_topology}
 		\includegraphics[width=\textwidth]{softwarelayout}
 		\caption{Topology of the software layout}
+		\label{layout_topology}
 	\end{figure}
 	\\
 	The user communicate with the system using a web interface running on the master which
@@ -119,9 +119,9 @@
 
 	\begin{figure}[H]
 		\centering
-		\label{schedule}
 		\includegraphics[width=.7\textwidth]{schedule}
 		\caption{Flow Chart of a script run}
+		\label{schedule}
 	\end{figure}
 
 	\subsection{Notifications}
@@ -131,7 +131,7 @@
 	({\color{red}red: error}, {\color{blue}blue: info})
 
 	\chapter{Installation}
-	
+
 	\todo[inline]{Installation instructions for Client and Server}
 
 	\chapter{Workflows}
@@ -143,9 +143,9 @@
 	\\
 	\begin{figure}[h]
 		\centering
-		\label{empty_startpage}
 		\includegraphics[width=.9\textwidth]{empty_startpage}
 		\caption{The software without any configured clients}
+		\label{empty_startpage}
 	\end{figure}
 	Using the \texttt{+} button next to the client header on the left side
 	a new client can be added. Necessary parameters are a name, an ip address,
@@ -157,13 +157,12 @@
 	opens an overview with the configured programs and files for this node.
 	Additionally using the buttons \texttt{Switch On}, \texttt{Edit}, and \texttt{Delete}
 	the client can be booted up, deleted or its configuration changed.
-
 	\section{Adding a program}
-	\begin{figure}[H]
+	\begin{figure}[h]
 		\centering
-		\label{startpage_without_programs}
 		\includegraphics[width=.9\textwidth]{startpage_without_programs}
 		\caption{The start page with a configured client but without any programs}
+		\label{startpage_without_programs}
 	\end{figure}
 	To add a program a client has to be selected first. By clicking on the \texttt{+}
 	button next to the program tab a dialog opens. The following fields have to be filled
@@ -181,28 +180,25 @@
 		Windows XP can behave unexpectedly when the Path to the executable contains spaces.
 		\end{tcolorbox}
 	\end{center}
-	\\
 	Start time is only used during script runs. If it is set to -1, there is
 	no wait time after executing this step. For a more complete description of
 	stages please look at section \ref{script}.
 
-	\begin{figure}[H]
+	\begin{figure}[h]
 		\centering
-		\label{add_program}
-		\includegraphics[width=.4\textwidth]{add_program}
+		\includegraphics[width=.3\textwidth]{add_program}
 		\caption{The add program dialog with example values}
+		\label{add_program}
 	\end{figure}
 
 	\section{Adding a file/folder movement}
 
-	\begin{figure}[H]
+	\begin{figure}[h]
 		\centering
-		\label{startpage_without_files}
 		\includegraphics[width=.9\textwidth]{startpage_without_files}
-		\caption{The start page with a configured client but without any programs}
+		\caption{The start page with a configured client but without any files}
+		\label{startpage_without_files}
 	\end{figure}
-
-	\\
 	If a special plugin is necessary for a simulation scenario, it can be copied by using
 	the file/folder movement function.
 	\\
@@ -214,36 +210,75 @@
 		Field & Description \\\hline
 		Display Name &  Display name of the program, can be chosen freely\\
 		Source Path & Path to the source file/folder\\
-		Source Type & Type of the source\\
+		Source Type & Type of the source, file or folder\\
 		Destination Path & Destination path (and/or new name)\\
-		Destination Type & Copy mode\\
+		Destination Type & Copy mode, insert into or replace\\
 	\end{tabular}
 	\end{center}
 	The destination type can be one of two options, \texttt{Replace With} or \texttt{Insert Into}.
 	The first one renames the source object during copying. The last name in the destination path
-	is the new name of the source path. For example in figure \ref{add_filesystem} the folder 
+	is the new name of the source path. For example in figure \ref{add_filesystem} the folder
 	"heli" will be copied and renamed to "helicopter".
 	\texttt{Insert Into} copies the source into a subfolder. In the figure this would mean that
 	a new folder "heli" below "helicopter" would be created and the contents of the source will
 	be copied inside it.
 
-	\begin{figure}[H]
+	\begin{figure}[h]
 		\centering
-		\label{add_filesystem}
-		\includegraphics[width=.4\textwidth]{add_filesystem}
+		\includegraphics[width=.3\textwidth]{add_filesystem}
 		\caption{The add file dialog with example values}
+		\label{add_filesystem}
 	\end{figure}
 
 	\section{Adding a script}
-	\todo[inline]{instructions for adding a script}
+	After adding the necessary programs and files it is possible to create a script
+	to start the simulator.
+	First switch over to the Scripts tab by clicking on \texttt{Scripts}.
+	All created scripts are shown in the list on the left side. An example
+	without any scripts can be seen in figure \ref{scriptpage_without_scripts}.
 	\begin{figure}[H]
 		\centering
-		\label{example_script}
+		\includegraphics[width=.9\textwidth]{scriptpage_without_scripts}
+		\caption{An example script}
+		\label{scriptpage_without_scripts}
+	\end{figure}
+	By clicking the \texttt{+} button a new script can be created. First, a
+	display name has to be chosen. This has no other function than to help
+	the user identify the script during a run.
+	\\\\
+	By clicking the \texttt{+} buttons next to \texttt{Programs} and \texttt{Files} it is possible
+	to add new programs and files to the script. The choices Client, Program, and Files are automatically
+	limited so only valid scripts can be created. The \texttt{Index} defines the stage of the
+	program. It can be a natural number including zero.
+	\\\\
+	Wrongly entered entries can be removed by clicking the trash can. After the script is complete
+	it can be saved by clicking the \texttt{Save} button. An example for a complete script
+	is shown in figure \ref{example_script}. A script can be copied multiple times by using
+	the \texttt{Copy} button. This is particularly useful if you just want to make small modifications
+	on an existing script.
+	\begin{figure}[t]
+		\centering
 		\includegraphics[width=.9\textwidth]{example_script}
 		\caption{An example script}
+		\label{example_script}
 	\end{figure}
 
+	\section{Running a script}
+	Select a script on the script tab and click run. An overview is displayed showing
+	the script in stage form.
+	\missingfigure{Screenshot of the Run Script page}
+
+	\chapter{Using the simulator with scripts}
+	\todo[inline]{Section: What happens if I start the master and nothing else?}
+	\todo[inline]{Section: How can I modify the normal startup behavior}
+	\todo[inline]{Section: Where can I change the startup script?}
+	\todo[inline]{Section: How can I shutdown the simulator?}
+
 	\chapter{FAQ}
+	\section{Interface}
+	\subsection{What does the Download tab do?}
+	The download tab is mostly used for deployments. Usually it is not necessary to change or
+	download anything here.
 
 	\clearpage
 	\addcontentsline{toc}{chapter}{Index}
