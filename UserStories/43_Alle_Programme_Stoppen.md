@@ -9,4 +9,4 @@
 |Entwickler  |Frederik|
 |Iteration   |8|
 |Stunden     |3|
-|Velocity    |0.75|
+|Velocity    |1.33|
