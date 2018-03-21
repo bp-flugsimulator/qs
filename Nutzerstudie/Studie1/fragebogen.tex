@@ -81,6 +81,13 @@
 }
 }
 
+\newcommand{\emptybox}[2][\textwidth]{%
+  \begingroup
+  \setlength{\fboxsep}{-\fboxrule}%
+  \noindent\framebox[#1]{\rule{0pt}{#2}}%
+  \endgroup
+}
+
 \begin{document}
 \maketitle
 
@@ -90,32 +97,30 @@
 \section{Bedienbarkeit}
 \Qitem[a]{ \Qq{Wie fanden Sie das Anlegen von Clients?} \Qtab{3cm}{schwierig \Qrating{5} einfach}}
 \Qitem[b]{Was könnte man verbessern?}
-\framebox(\textwidth,80){}
+\emptybox{80pt}
 \Qitem[c]{ \Qq{Wie fanden Sie das Anlegen von Programs?} \Qtab{3cm}{schwierig \Qrating{5} einfach}}
 \Qitem[d]{Was könnte man verbessern?}
-\framebox(\textwidth,80){}
+\emptybox{80pt}
 \Qitem[e]{ \Qq{Wie fanden Sie das Anlegen von Files?} \Qtab{3cm}{schwierig \Qrating{5} einfach}}
 \Qitem[f]{Was könnte man verbessern?}
-\framebox(\textwidth,80){}
+\emptybox{80pt}
 \section{Design}
 \Qitem[a]{ \Qq{War alles leicht auffindbar?} \Qtab{3cm}{eher nein \Qrating{5} eher ja}}
 \newpage
 \Qitem[b]{Was war nicht leicht auffindbar?}
-\framebox(\textwidth,80){}
-\Qitem[c]{ \Qq{Wie fanden Sie die Farbwahl?} \Qtab{3cm}{sehr schlecht \Qrating{5} sehr gut}}
+\emptybox{80pt}
 \Qitem[d]{Würden Sie Farben ändern? Wenn ja, welche?}
-\framebox(\textwidth,80){}
-\Qitem[e]{ \Qq{Wie fanden Sie das Layout?} \Qtab{3cm}{sehr schlecht \Qrating{5} sehr gut}}
+\emptybox{80pt}
 \Qitem[f]{Was würden Sie am Layout ändern?}
-\framebox(\textwidth,80){}
+\emptybox{80pt}
 \section{Abschließennd}
 \Qitem[a]{Was fanden Sie gut?}
-\framebox(\textwidth,80){}
+\emptybox{80pt}
 \Qitem[b]{Was könnte man verbessern?}
-\framebox(\textwidth,80){}
+\emptybox{80pt}
 \newpage
 \Qitem[c]{Welche Funktionen haben Sie vermisst?}
-\framebox(\textwidth,80){}
+\emptybox{80pt}
 \Qitem[d]{ \Qq{Wie schätzen Sie ihre persönlichen \\Computerkenntnisse ein?} \Qtab{3cm}{sehr schlecht \Qrating{5} sehr gut}}
 \Qitem[e]{ \Qq{Wie häufig arbeiten Sie mit dem Simulator} \Qtab{3cm}{sehr selten \Qrating{5} sehr häufig}}
 
