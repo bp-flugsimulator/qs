@@ -4,6 +4,7 @@
 \usepackage{ngerman}
 \usepackage{parcolumns}
 \usepackage{hyperref}
+\usepackage{pdfpages}
 
 \newcommand{\titlerow}[2]{
 	\begin{parcolumns}[colwidths={1=.17\linewidth}]{2}
@@ -119,7 +120,7 @@
 		Erst wenn alle Punkte der Checkliste erfüllt sind, wird die Userstory den Auftraggebern
 		zur Abnahme empfohlen.
 		\newpage		
-		\section{Bedienbarkeit}
+		\section{Bedienbarkeit}\label{bedienbarkeit_qs}
 		Damit auch weitere, eventuell nicht technisch versierte, Mitarbeiter die Software
 		problemlos verwenden können, muss die 
 		Bedienoberfläche verständlich und leicht bedienbar sein. Eine Benutzung wird ohne
@@ -166,10 +167,28 @@
 
 \appendix
 	\chapter{Anhang}
-		(Am Ende des Projekts nachzureichen)\\
-		Belege für durchgeführte Maßnahmen, bzw. falls nicht durchgeführt eine Begründung 
-		wieso die Durchführung nicht möglich oder nicht erfolgt ist. \\
-		Weitere Anforderungen sind den Unterlagen und der Vorlesung zur Projektbegleitung 
-		zu entnehmen.
+	\section{Nutzer*innenstudien}
+	Wie bereits in der Beschreibung des Qualitätsziels Bedienbarkeit (Abschnitt \ref{bedienbarkeit_qs})
+	erwähnt, wurden während des Projekts zwei Nutzer*innenstudien durchgeführt. Diese wurde sowohl mit
+	Mitarbeiter*innen des Fachgebiets als auch mit Studierenden aus anderen Fachbereichen durchgeführt.
+	Dadurch wurde getestet, ob die Oberfläche sowohl für Personen mit Flugsimulatorefahrung als auch
+	von Laien bedienbar ist.
+	\\\\
+	Beide Nutzer*innenstudien hatten jeweils einen anderen Fokus:
+	Die erste Studie konzentrierte sich auf das Aufsetzen der Software, während in der zweiten Studie
+	die Ablaufprogrammierung von Startsequenzen im Mittelpunkt stand. Daher ergaben sich zwei unterschiedliche
+	Fragebögen. 
+	\\\\
+	Eine Zusammenfassung der Ergebnisse findet sich jeweils nach dem Fragebogen.
+
+	\subsection{Nutzer*innenstudie 1}
+	\includepdf{../Nutzerstudie/Studie1/Aufgaben.pdf}
+	\includepdf{../Nutzerstudie/Studie1/fragebogen.pdf}
+
+	\subsection{Nutzer*innenstudie 2}
+	\includepdf{../Nutzerstudie/Studie2/Aufgaben.pdf}
+	\includepdf{../Nutzerstudie/Studie2/fragebogen.pdf}
+
+
 
 \end{document}
