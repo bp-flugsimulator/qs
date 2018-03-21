@@ -1,10 +1,11 @@
 \documentclass[accentcolor=tud1a, paper=a4, colorback]{tudreport}
-\usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
 
-\usepackage[german]{todonotes}
+\usepackage{todonotes}
 \usepackage[most]{tcolorbox}
-\usepackage{amsmath, imakeidx, graphicx, hyperref, xcolor}
+\usepackage{amsmath, imakeidx, graphicx, hyperref, xcolor, float}
+\usepackage{chngcntr}
+\counterwithout{footnote}{chapter}
 
 %opening
 \title{Flightsim Control Software Manual}
@@ -33,10 +34,23 @@
 	\chapter{Introduction}
 
 	\section{Project structure}
-	Based on the network structure the software is based on a
-	\ind{client-server system}\footnote{\url{https://en.wikipedia.org/wiki/Client-server\_model}}.
+	Using the simulator requires a lot of user inputs during start-up, due to the distributed
+	nature of the infrastructure. Several programs on different computers have to be run in
+	a specific order. In addition, configurations and plugins have to
+	be copied to the right folders before certain programs start. Since this is done by hand,
+	usage of the simulator can be delayed depending on the simulation
+	scenario and its requirements.\\
+	The flightsim control software was developed to automate this cumbersome task.
+	It allows running programs on
+	predefined schedules and also has the ability to move files and folders prior to program
+	execution.
+	\\\\
+	Because of the network structure the software is build as a
+	\ind{client-server system}\footnote{\url{https://en.wikipedia.org/wiki/Client-server\_model}}, which
+	is outlined by figure \ref{layout_topology}.
 	\begin{figure}[h]
 		\centering
+		\label{layout_topology}
 		\includegraphics[width=\textwidth]{softwarelayout}
 		\caption{Topology of the software layout}
 	\end{figure}
@@ -71,10 +85,20 @@
 	A program in this context is all software which needs to be started when the simulator is used e.g. X-Plane.
 	An example for the config options of a program can be found in figure \ref{add_program}.
 
+	\subsection{\ind{Log}}
+	Some programs print their output on the command line. Since it is sometimes necessary to read
+	this (e.g. for debugging purposes), every running program has a log button. Depending on the
+	program\footnote{Some programs do not print debugging output on the command line}, the complete
+	output will be shown here. The log button can be found on the program tab and can only be clicked
+	when a program is running or was run recently.
+
 	\subsection{\ind{Files}}
 	Since most simulations require a few plugins it is possible to copy files and folders to freely
 	configurable locations during a script run. An example of possible configuration options can be
 	found in figure \ref{add_filesystem}.
+	\\\\
+	Files and folder movements are not reset automatically. This means that for example if a script copied
+	a folder, the copy will stay at its new place until a manual reset is triggered.
 
 	\subsection{\ind{Script}}\label{script}
 	A script is the combination of Programs and file movements. It can be created by a user to model
@@ -85,16 +109,44 @@
 	and file movements. This concept is used to make dependency management between programs more easy.
 	If for example a plugin for a simulation is needed, it is most times necessary to copy it before starting
 	X-Plane. The plugin copy would therefore be done in stage 0 while X-Plane would be started in stage 1.
+	\\\\
+	Figure \ref{schedule} further explains this concept. This is based on the script in figure \ref{example_script}.
+	After starting the script contains one stage. All operations (starting the programs PR1 and PR2; moving files FI1 and FI2)
+	are started at the same time. Afterwards, the maximum specified start time (e.g. if PR1 has a start time of 5s and FI2 has
+	10s the system waits 10s) is waited. This is so that a program which
+	needs a few seconds to start has time to finish initializing. After the wait, the next stage is executed until
+	there are no more stages and the script terminates.
+
+	\begin{figure}[H]
+		\centering
+		\label{schedule}
+		\includegraphics[width=.7\textwidth]{schedule}
+		\caption{Flow Chart of a script run}
+	\end{figure}
+
+	\subsection{Notifications}
+	Some actions can trigger a notification. For example when a client is started, a notification will be shown that
+	tells the user if the start command was send. This also happens if something goes wrong like a script crashing
+	or a program does not exist but is executed anyway. The color of the notification classifies it
+	({\color{red}red: error}, {\color{blue}blue: info})
+
+	\chapter{Installation}
+	
+	\todo[inline]{Installation instructions for Client and Server}
 
 	\chapter{Workflows}
-	\todo[inline]{Standardworkflows a la Eine Node Hinzufügen}
 	\section{Adding a client}
 	After starting the web server the ui has to be opened in a browser.
 	If you work on \ind{simcontrol} just type \url{http://localhost:8000/slaves} inside
 	your browser. If you are using a different computer inside the network you
 	have to replace \texttt{localhost} with the ip address of simcontrol.
 	\\
-	\missingfigure{Weboberfläche ohne konfigurierte Nodes}
+	\begin{figure}[h]
+		\centering
+		\label{empty_startpage}
+		\includegraphics[width=.9\textwidth]{empty_startpage}
+		\caption{The software without any configured clients}
+	\end{figure}
 	Using the \texttt{+} button next to the client header on the left side
 	a new client can be added. Necessary parameters are a name, an ip address,
 	and a MAC adress. Using windows the last two can be retrieved using
@@ -107,11 +159,11 @@
 	the client can be booted up, deleted or its configuration changed.
 
 	\section{Adding a program}
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
-		\label{add_program}
-		\includegraphics[width=.4\textwidth]{add_program}
-		\caption{The add program dialog with example values}
+		\label{startpage_without_programs}
+		\includegraphics[width=.9\textwidth]{startpage_without_programs}
+		\caption{The start page with a configured client but without any programs}
 	\end{figure}
 	To add a program a client has to be selected first. By clicking on the \texttt{+}
 	button next to the program tab a dialog opens. The following fields have to be filled
@@ -134,14 +186,22 @@
 	no wait time after executing this step. For a more complete description of
 	stages please look at section \ref{script}.
 
+	\begin{figure}[H]
+		\centering
+		\label{add_program}
+		\includegraphics[width=.4\textwidth]{add_program}
+		\caption{The add program dialog with example values}
+	\end{figure}
+
 	\section{Adding a file/folder movement}
 
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
-		\label{add_filesystem}
-		\includegraphics[width=.4\textwidth]{add_filesystem}
-		\caption{The add file dialog with example values}
+		\label{startpage_without_files}
+		\includegraphics[width=.9\textwidth]{startpage_without_files}
+		\caption{The start page with a configured client but without any programs}
 	\end{figure}
+
 	\\
 	If a special plugin is necessary for a simulation scenario, it can be copied by using
 	the file/folder movement function.
@@ -167,7 +227,23 @@
 	a new folder "heli" below "helicopter" would be created and the contents of the source will
 	be copied inside it.
 
-	\chapter{Appendix}
+	\begin{figure}[H]
+		\centering
+		\label{add_filesystem}
+		\includegraphics[width=.4\textwidth]{add_filesystem}
+		\caption{The add file dialog with example values}
+	\end{figure}
+
+	\section{Adding a script}
+	\todo[inline]{instructions for adding a script}
+	\begin{figure}[H]
+		\centering
+		\label{example_script}
+		\includegraphics[width=.9\textwidth]{example_script}
+		\caption{An example script}
+	\end{figure}
+
+	\chapter{FAQ}
 
 	\clearpage
 	\addcontentsline{toc}{chapter}{Index}
