@@ -8,5 +8,5 @@
 |Story Points|5|
 |Entwickler  |Frederik|
 |Iteration   |9|
-|Stunden     ||
-|Velocity    ||
+|Stunden     |7|
+|Velocity    |0.71 sp/h|
