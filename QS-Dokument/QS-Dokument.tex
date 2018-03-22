@@ -1,9 +1,9 @@
 \documentclass[accentcolor=tud9c,12pt,paper=a4]{tudreport}
 
 \usepackage[utf8]{inputenc}
+\usepackage{hyperref}
 \usepackage{ngerman}
 \usepackage{parcolumns}
-\usepackage{hyperref}
 \usepackage{pdfpages}
 \usepackage{float}
 \usepackage{caption}
@@ -15,6 +15,8 @@
 	\end{parcolumns}
 	\vspace{0.2cm}
 }
+
+\graphicspath{ {img/} }
 
 \title{Steuerungsprogramm für einen Flugsimulator}
 \subtitle{Qualitätssicherungsdokument}
@@ -40,13 +42,13 @@
 	\tableofcontents
 
 	\chapter{Einleitung}
-		Die Auftraggeber sind im Besitz eines Flugsimulators, der aus vielen 
+		Die Auftraggeber sind im Besitz eines Flugsimulators, der aus viele
 		Teilprogrammen besteht. Diese Teilprogramme sind über mehrere Computer im
-		gleichen Netzwerk verteilt und müssen alle in einer komplexen Reihenfolge per Hand 
+		gleichen Netzwerk verteilt und müssen alle in einer komplexen Reihenfolge per Hand
 		gestartet werden. Aus diesem Grund wünschen sich die Auftraggeber eine Software, welche
 		das Starten des Simulators automatisiert.\\[5pt]
-		Es ist dabei zu beachten, dass auf den Computern unterschiedliche 
-		Betriebsysteme benutzt werden (verschiedene Windowsversionen und ggf. Linux). 
+		Es ist dabei zu beachten, dass auf den Computern unterschiedliche
+		Betriebsysteme benutzt werden (verschiedene Windowsversionen und ggf. Linux).
 		Der Nutzer soll neue Ablaufpläne selbst erstellen und verändern können,
 		weswegen die Programmierung dieser Pläne mithilfe von generischen Komponenten
 		wie "`Start eines Programmes"' oder "`Starten eines Computers"' möglich sein sollte.
@@ -61,16 +63,16 @@
 		Master und Slaves beschreibt.
 		\\[5pt]
 		Die Software für Master und Slaves ist in Python geschrieben und benutzt
-		das Django Framework für das Webinterface sowie RPC zur Kommunikation zwischen 
+		das Django Framework für das Webinterface sowie RPC zur Kommunikation zwischen
 		Master und Slaves.
-		
+
 
 	\chapter{Qualitätsziele}
 		\section{Portabilität}
 		Aufgrund der Heterogenität der verwendenten Betriebssysteme im
 		Simulator, muss die Slave Software sowohl unter verschiedenen Windowsversionen
 		(XP bis 10) als auch unter Linux laufen.
-		Mit den Auftraggebern wurde abgesprochen, dass der Master keine 
+		Mit den Auftraggebern wurde abgesprochen, dass der Master keine
 		Betriebsystemversion unter Windows 7 einsetzt, weswegen die Tests für Windows
 		XP hier entfallen.
 		\\[5pt]
@@ -121,16 +123,16 @@
 		Abnahme vorgestellt. Der/die verantwortliche/n Entwickler beheben dann die Anmerkungen.
 		Erst wenn alle Punkte der Checkliste erfüllt sind, wird die Userstory den Auftraggebern
 		zur Abnahme empfohlen.
-		\newpage		
+		\newpage
 		\section{Bedienbarkeit}\label{bedienbarkeit_qs}
 		Damit auch weitere, eventuell nicht technisch versierte, Mitarbeiter die Software
-		problemlos verwenden können, muss die 
+		problemlos verwenden können, muss die
 		Bedienoberfläche verständlich und leicht bedienbar sein. Eine Benutzung wird ohne
 		vorherige, längere Einarbeitung möglich sein.
 		\\[5pt]
 		Durch die Verwendung des Webframeworks Bootstrap\footnote{\url{https://getbootstrap.com/}}
 		wird das Design der Seite vereinheitlicht. Dies wird durch die Checkliste (im Anhang)
-		vor der Präsentation einer Userstory für die Auftraggeber durch den Reviewer überprüft. 
+		vor der Präsentation einer Userstory für die Auftraggeber durch den Reviewer überprüft.
 		Die Icons\footnote{\url{https://material.io/icons/}}
 		stammen aus dem Material Design, welches zur Zeit auf über 79.8\% der Android Geräte
 		verwendet wird\footnote{\url{https://developer.android.com/about/dashboards/index.html#Platform}}. 
@@ -201,47 +203,47 @@
 	\begin{enumerate}
 		\item Alle Slaves in Clients umbenennen (gefunden in den Skripten)
 		\item Übersichtsseite mit allen Events, nach Clients sortiert
-    		\item Tooltips für alle Felder
+		\item Tooltips für alle Felder
 		\item Pluszeichen zu klein/alternatives Symbol oder Satz verwenden
 		\item (Event-)Log-Dateien
-    		\item Inputhints
-    		\item Dateien und Programme über Clientgrenzen kopieren
-    		\item Abtrennung zwischen den Feldern verstärken
-    		\item Breiter Statusbalken
-    		\item Home Button
-    		\item Mehr Bilder/Icons
+		\item Inputhints
+		\item Dateien und Programme über Clientgrenzen kopieren
+		\item Abtrennung zwischen den Feldern verstärken
+		\item Breiter Statusbalken
+		\item Home Button
+		\item Mehr Bilder/Icons
 	\end{enumerate}
 	\item Anlegen eines Programms
 	\begin{enumerate}
-    		\item Startzeit ist nicht erklärt, Wert -1 verwirrt
-   		\item Dateisystembrowser
+		\item Startzeit ist nicht erklärt, Wert -1 verwirrt
+		\item Dateisystembrowser
 	\end{enumerate}
 	\item Anlegen eines Clients
 	\begin{enumerate}
-   		 \item Nach Anlegen eines Clients soll dieser automatisch ausgewählt werden
-   		 \item Verfügbare IP/MAC-Adressen anzeigen
-   		 \item Beschreibungstext
+		\item Nach Anlegen eines Clients soll dieser automatisch ausgewählt werden
+		\item Verfügbare IP/MAC-Adressen anzeigen
+		\item Beschreibungstext
 	\end{enumerate}
 	\item Anlegen einer Datei
 	\begin{enumerate}
-    		\item Anzeigename in Name umbennen
+		\item Anzeigename in Name umbennen
 	\end{enumerate}
 	\item Anlegen eines Scripts
-    	\begin{enumerate}
+	\begin{enumerate}
 		\item Nachfrage bevor Tab/Browser geschlossen wird
-	    	\item alternativ autosave
-	    	\item Apply statt edit
-    	\end{enumerate}
+		\item alternativ autosave
+		\item Apply statt edit
+	\end{enumerate}
 	\item Run Script
-    	\begin{enumerate}
+	\begin{enumerate}
 		\item Run Knopf hervorheben
 		\item Reload nach Klick auf 'Run Script'
 		\item Gesamtprozess in Skript anzeigen
-    	\end{enumerate}
+	\end{enumerate}
 	\item Delete Fenster
-    	\begin{enumerate}
+	\begin{enumerate}
 		\item Statt OK explizit delete schreiben
-    	\end{enumerate}
+	\end{enumerate}
 	\end{enumerate}
 
 	\begin{table}[H]
@@ -300,5 +302,66 @@
 			\item Felder sind teilweise zu groß (Programpfad), wodurch die Form größer als ein Bildschirm ist
 	\end{enumerate}
 	\end{enumerate}
+
+	\section{Automatisierte Tests}
+	Während der Entwicklung wurden diverse automatisierte Tools verwendet, welche direkt mit der Versionskontrollsoftware
+	verbunden waren. Dadurch wurde jeder Commit die, in Tabelle \ref{qs_tools} beschriebenen, Tools überprüft
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|l|p{18em}|l|}
+			\hline
+			\textbf{Tool} & \textbf{Beschreibung} & \textbf{Notwendig für...} \\\hline
+			AppVeyor & Ausführung von Unittests unter verschiedenen Windowsversionen & Portabilität, Korrektheit \\\hline
+			Codacy & Überprüfung der Codequalität basierend auf Styleguides der verschiedenen Sprachen& keine \\\hline
+			Travis CI & Ausführung von Unittests unter verschiedenen Linux- und Pythonversionen & Portabilität, Korrektheit \\\hline
+			coveralls & Überprüfung der Testabdeckung & Korrektheit \\\hline
+			pyup.io & Überprüfung der verwendeten Bibliotheksversionen auf Updates & keine \\\hline
+		\end{tabular}
+		\caption{Automatisierte Tools für die Qualitätssicherung}
+		\label{qs_tools}
+	\end{table}
+
+	Durch die Integration in die Github-Infrastruktur wurde für jeden Pull-Request (in unserem Modell entsprach ein Pull-Request einer Userstory)
+	ein entsprechender Report generiert (Beispiel in Abbildung \ref{github_checks}).
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=.7\textwidth]{github_checks}
+		\caption{Übersicht der durchlaufenden Checks}
+		\label{github_checks}
+	\end{figure}
+
+	Die Unittests, welche von AppVeyor und Travis CI ausgeführt wurden, deckten große Teile des Python Codes ab.
+	Die Abdeckung lag immer bei über 90\% und war ein Kriterium für die Abnahme einer Userstory. Eine Übersicht der Abdeckung
+	findet sich in Abbildung \ref{coverage_pdf}.
+	Die Tests fanden unter folgenden Umgebungen statt:
+	\begin{itemize}
+		\item Windows (Windows Server 2016, jeder Test mit 32 und 64 Bit Versionen)
+			\begin{itemize}
+				\item Python 3.4
+				\item Python 3.5
+				\item Python 3.6
+			\end{itemize}
+		\item Linux (Ubuntu, 64 Bit)
+			\begin{itemize}
+				\item Python 3.4
+				\item Python 3.5
+				\item Python 3.6
+			\end{itemize}
+	\end{itemize}
+	\begin{figure}[t]
+		\centering
+	\includegraphics[width=.8\textwidth]{img/coverage.pdf}
+		\caption{Abdeckungsübersicht am Ende des Projekts}
+		\label{coverage_pdf}
+	\end{figure}
+	Der Stand von Codacy zum Ende des Projekts findet sich in Abbildung \ref{codacy_png}.
+	\begin{figure}[t]
+		\centering
+	\includegraphics[width=.9\textwidth]{codacy}
+		\caption{Stilüberprüfung am Ende des Projekts}
+		\label{codacy_png}
+	\end{figure}
+
 
 \end{document}
