@@ -23,7 +23,7 @@
 	\todototoc
 	\listoftodos
 
-	\chapter{Preamble}
+	\chapter*{Preamble}
 	This is the manual for the flightsim control software written by the BP team 19
 	of winter term 17/18. The team members are
 	Frederik Bark, Heiko Carrasco, Jonas Meurer, Tim Weißmantel and Leonardo Zaninelli.
@@ -32,19 +32,81 @@
 	Github\footnote{\url{https://github.com/bp-flugsimulator}}.
 
 	\chapter{Introduction}
-
-	\section{Project structure}
 	Using the simulator requires a lot of user inputs during start-up, due to the distributed
 	nature of the infrastructure. Several programs on different computers have to be run in
 	a specific order. In addition, configurations and plugins have to
-	be copied to the right folders before certain programs start. Since this is done by hand,
+	be copied to the right folders before certain programs can start. Since this is done by hand,
 	usage of the simulator can be delayed depending on the simulation
 	scenario and its requirements.\\
 	The flightsim control software was developed to automate this cumbersome task.
 	It allows running programs on
 	predefined schedules and also has the ability to move files and folders prior to program
 	execution.
+
+	\section{Nomenclature}
+	There are a few terms needing a more in depth definition. This section describes them in detail
+	to ease the understanding of further chapters.
+
+	\subsection{\ind{Master}}
+	Central computer, which runs the web server. Currently this is the \ind{simcontrol} computer.
+	Usually the user opens the web UI on this computer, but if there is network access every other
+	machine inside the institute network can be used to access the web UI. Internet access without
+	a firewall should not be permitted, since there is no authentication for accessing this component.
+
+	\subsection{\ind{Client}}
+	Every computer which is part of the network, besides the master, is called a client.
+	An example would be \ind{Vision}. A client can run multiple programs.
+
+	\subsection{\ind{Program}}
+	A program in this context is all software which needs to be started when the simulator is used e.g. X-Plane.
+	An example for the config options of a program can be found in figure \ref{add_program}.
+
+	\subsection{\ind{Log}}
+	Some programs print their output on the command line. Since it is sometimes necessary to read
+	this (e.g. for debugging purposes), every running program has a log button. Depending on the
+	program (some programs do not print debugging output on the command line), the complete
+	output will be shown here. The log button can be found on the program tab and can only be clicked
+	when a program ran recently.
+
+	\subsection{\ind{Files}}
+	Since most simulations require a few plugins, it is possible to copy files and folders to freely
+	configurable locations during a script run. An example of possible configuration options can be
+	found in figure \ref{add_filesystem}.
 	\\\\
+	Files and folder movements are not reset automatically. For example this means that if a script copied
+	a folder, the copy will stay at its new place until a manual reset is triggered by the user.
+
+	\subsection{\ind{Script}}\label{script}
+	A script is the combination of programs and file movements. It can be created by a user to model
+	a scenario necessary for a simulation. The order and the needed programs and files can be configured
+	freely by using the graphical editor inside the web UI.
+	\\
+	A script is divided into several \textit{\ind{stages}}. A stage can consist of multiple programs
+	and file movements. This concept is used to make dependency management between programs easier.
+	For example if  a plugin for a simulation is needed, it might be necessary to copy it before starting
+	X-Plane. The plugin copy would therefore be done in stage 0 while X-Plane would be started in stage 1.
+	\\\\
+	Figure \ref{schedule} further illustrates this concept. This is based on the script in figure \ref{example_script}.
+	After starting, the script contains one stage. All operations (starting the programs PR1 and PR2; moving files FI1 and FI2)
+	are run at the same time. Afterwards, the maximum specified start time (e.g. if PR1 has a start time of 5s and FI2 has
+	10s the system waits 10s) is waited. This gives a program which requires a few seconds to start sufficient time for its
+	initialization.
+	After the wait, the next stage is executed until there are no more stages and the script terminates.
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=.7\textwidth]{schedule}
+		\caption{Flow Chart of a script run}
+		\label{schedule}
+	\end{figure}
+
+	\subsection{Notifications}
+	Some actions can trigger a notification. For example, when a client is started, a notification will be shown that
+	tells the user whether the start command was send. This also happens if something goes wrong like a script crashing
+	or a missing program. The color of the notification classifies it
+	({\color{red}red: error}, {\color{blue}blue: info})
+
+	\section{Project structure}
 	Because of the network structure the software is build as a
 	\ind{client-server system}\footnote{\url{https://en.wikipedia.org/wiki/Client-server\_model}}, which
 	is outlined by figure \ref{layout_topology}.
@@ -55,80 +117,18 @@
 		\label{layout_topology}
 	\end{figure}
 	\\
-	The user communicate with the system using a web interface running on the master which
+	The user communicates with the system using a web interface running on a computer serving as the master which
 	forwards the users input to the clients.
 	\\
-	Both, the client and the server, are written in \ind{Python 3}\footnote{\url{https://www.python.org/}}.
-	To shrinken the necessary codebase popular frameworks were used during development. For example
+	Both the client and the server are written in \ind{Python 3}\footnote{\url{https://www.python.org/}}.
+	To shrink the necessary codebase, popular frameworks were used during development. For example,
 	the website is using the \ind{Django framework}\footnote{\url{https://www.djangoproject.com/}}.
 	A step by step guide for setting up the master software can be found in the project repository
 	\footnote{\url{https://github.com/bp-flugsimulator/server/blob/master/README.md}}.
 	\\
-	The client is also written in Python and does not need any configuration besides the address of
+	The client software is also written in Python and does not need any configuration besides the address of
 	the master server during startup. All further configuration is then handled by the master.
 
-	\section{Nomenclature}
-	There are a few terms needing a more in depth definition. This section describes them in detail
-	to ease the understanding of further chapters.
-
-	\subsection{\ind{Master}}
-	Central computer, which runs the web server. Currently this is the \ind{simcontrol} computer.
-	Usually the user opens the web ui on this computer but if there is network access every other
-	machine inside the institute network can be used to access the web ui. Internet access without
-	a firewall should not be permitted, since there is no authentication for accessing this component.
-
-	\subsection{\ind{Client}}
-	Every computer which is part of the network besides the master is called a client in this context.
-	An example would be \ind{Vision}. A client can run multiple programs.
-
-	\subsection{\ind{Program}}
-	A program in this context is all software which needs to be started when the simulator is used e.g. X-Plane.
-	An example for the config options of a program can be found in figure \ref{add_program}.
-
-	\subsection{\ind{Log}}
-	Some programs print their output on the command line. Since it is sometimes necessary to read
-	this (e.g. for debugging purposes), every running program has a log button. Depending on the
-	program\footnote{Some programs do not print debugging output on the command line}, the complete
-	output will be shown here. The log button can be found on the program tab and can only be clicked
-	when a program is running or was run recently.
-
-	\subsection{\ind{Files}}
-	Since most simulations require a few plugins it is possible to copy files and folders to freely
-	configurable locations during a script run. An example of possible configuration options can be
-	found in figure \ref{add_filesystem}.
-	\\\\
-	Files and folder movements are not reset automatically. This means that for example if a script copied
-	a folder, the copy will stay at its new place until a manual reset is triggered.
-
-	\subsection{\ind{Script}}\label{script}
-	A script is the combination of Programs and file movements. It can be created by a user to model
-	a scenario necessary for a simulation. The order and the needed programs and files can be configured
-	freely by using the graphical editor inside the web ui.
-	\\
-	A script is divided into several \textit{\ind{stages}}. A stage can consist of multiple programs
-	and file movements. This concept is used to make dependency management between programs more easy.
-	If for example a plugin for a simulation is needed, it is most times necessary to copy it before starting
-	X-Plane. The plugin copy would therefore be done in stage 0 while X-Plane would be started in stage 1.
-	\\\\
-	Figure \ref{schedule} further explains this concept. This is based on the script in figure \ref{example_script}.
-	After starting the script contains one stage. All operations (starting the programs PR1 and PR2; moving files FI1 and FI2)
-	are started at the same time. Afterwards, the maximum specified start time (e.g. if PR1 has a start time of 5s and FI2 has
-	10s the system waits 10s) is waited. This is so that a program which
-	needs a few seconds to start has time to finish initializing. After the wait, the next stage is executed until
-	there are no more stages and the script terminates.
-
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=.7\textwidth]{schedule}
-		\caption{Flow Chart of a script run}
-		\label{schedule}
-	\end{figure}
-
-	\subsection{Notifications}
-	Some actions can trigger a notification. For example when a client is started, a notification will be shown that
-	tells the user if the start command was send. This also happens if something goes wrong like a script crashing
-	or a program does not exist but is executed anyway. The color of the notification classifies it
-	({\color{red}red: error}, {\color{blue}blue: info})
 
 	\chapter{Installation}
 
@@ -136,10 +136,10 @@
 
 	\chapter{Workflows}
 	\section{Adding a client}
-	After starting the web server the ui has to be opened in a browser.
-	If you work on \ind{simcontrol} just type \url{http://localhost:8000/slaves} inside
-	your browser. If you are using a different computer inside the network you
-	have to replace \texttt{localhost} with the ip address of simcontrol.
+	After starting the web server, the UI has to be opened in a browser.
+	If you work on \ind{simcontrol}, just type \url{http://localhost:8000/slaves} inside
+	your browser. If you are using a different computer inside the network, you
+	have to replace \texttt{localhost} with the IP address of simcontrol.
 	\\
 	\begin{figure}[h]
 		\centering
@@ -147,16 +147,18 @@
 		\caption{The software without any configured clients}
 		\label{empty_startpage}
 	\end{figure}
-	Using the \texttt{+} button next to the client header on the left side
-	a new client can be added. Necessary parameters are a name, an ip address,
-	and a MAC adress. Using windows the last two can be retrieved using
-	the command \texttt{ipconfig}. The name is only used for the user interface
+	Adding a new client is done by clicking the \texttt{+} button in the
+	client header on the left side.
+	The necessary parameters are a name, an IP address,
+	and a MAC address. When using a Windows client, the last two can be retrieved using
+	the command \texttt{ipconfig}. Otherwise the command \texttt{ip a} can be used.
+	The name is only used for the user interface
 	and can be set freely.
 	\\
-	After creation a new client appears on the left sidebar. Clicking on its tab
+	After creation a new client, it appears on the left sidebar. Clicking on its tab
 	opens an overview with the configured programs and files for this node.
-	Additionally using the buttons \texttt{Switch On}, \texttt{Edit}, and \texttt{Delete}
-	the client can be booted up, deleted or its configuration changed.
+	By using the buttons \texttt{Switch On}, \texttt{Edit}, and \texttt{Delete}
+	the client can be booted, deleted or its configuration can be changed.
 	\section{Adding a program}
 	\begin{figure}[h]
 		\centering
@@ -164,8 +166,8 @@
 		\caption{The start page with a configured client but without any programs}
 		\label{startpage_without_programs}
 	\end{figure}
-	To add a program a client has to be selected first. By clicking on the \texttt{+}
-	button next to the program tab a dialog opens. The following fields have to be filled
+	To add a program, a client has to be selected first. By clicking on the \texttt{+}
+	button next to the program tab, a dialog opens. The following fields have to be filled
 	out:
 	\begin{center}
 	\begin{tabular}{l|l}
@@ -180,9 +182,9 @@
 		Windows XP can behave unexpectedly when the Path to the executable contains spaces.
 		\end{tcolorbox}
 	\end{center}
-	Start time is only used during script runs. If it is set to -1, there is
+	"Start time" is only used during script runs. If it is set to -1, there is
 	no wait time after executing this step. For a more complete description of
-	stages please look at section \ref{script}.
+	stages, please look at section \ref{script}.
 
 	\begin{figure}[h]
 		\centering
@@ -202,7 +204,7 @@
 	If a special plugin is necessary for a simulation scenario, it can be copied by using
 	the file/folder movement function.
 	\\
-	In the client overview a new file movement can be added by clicking the \texttt{+} button
+	In the client overview, a new file movement can be added by clicking the \texttt{+} button
 	next to the file management button. The following fields have to be filled out:
 	\\
 	\begin{center}
@@ -215,9 +217,9 @@
 		Destination Type & Copy mode, insert into or replace\\
 	\end{tabular}
 	\end{center}
-	The destination type can be one of two options, \texttt{Replace With} or \texttt{Insert Into}.
+	The "Destination Type" can be one of two options, \texttt{Replace With} or \texttt{Insert Into}.
 	The first one renames the source object during copying. The last name in the destination path
-	is the new name of the source path. For example in figure \ref{add_filesystem} the folder
+	is the new name of the object. For example in figure \ref{add_filesystem} the folder
 	"heli" will be copied and renamed to "helicopter".
 	\texttt{Insert Into} copies the source into a subfolder. In the figure this would mean that
 	a new folder "heli" below "helicopter" would be created and the contents of the source will
@@ -231,7 +233,7 @@
 	\end{figure}
 
 	\section{Adding a script}
-	After adding the necessary programs and files it is possible to create a script
+	After adding the necessary programs and files, it is possible to create a script
 	to start the simulator.
 	First switch over to the Scripts tab by clicking on \texttt{Scripts}.
 	All created scripts are shown in the list on the left side. An example
@@ -239,20 +241,20 @@
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=.9\textwidth]{scriptpage_without_scripts}
-		\caption{An example script}
+		\caption{The script pages without any scripts}
 		\label{scriptpage_without_scripts}
 	\end{figure}
-	By clicking the \texttt{+} button a new script can be created. First, a
-	display name has to be chosen. This has no other function than to help
+	By clicking the \texttt{+} button, a new script can be created. First, a
+	display name has to be chosen. This has no other use than to help
 	the user identify the script during a run.
 	\\\\
 	By clicking the \texttt{+} buttons next to \texttt{Programs} and \texttt{Files} it is possible
-	to add new programs and files to the script. The choices Client, Program, and Files are automatically
+	to add new programs and files to the script. The choices "Client", "Program", and "Files" are automatically
 	limited so only valid scripts can be created. The \texttt{Index} defines the stage of the
 	program. It can be a natural number including zero.
 	\\\\
-	Wrongly entered entries can be removed by clicking the trash can. After the script is complete
-	it can be saved by clicking the \texttt{Save} button. An example for a complete script
+	Wrongly entered entries can be removed by clicking the trash can. After the script is completed,
+	it can be saved by clicking the \texttt{Save} button. An example for a fully functional script
 	is shown in figure \ref{example_script}. A script can be copied multiple times by using
 	the \texttt{Copy} button. This is particularly useful if you just want to make small modifications
 	on an existing script.
@@ -264,7 +266,7 @@
 	\end{figure}
 
 	\section{Running a script}
-	Select a script on the script tab and click run. An overview is displayed showing
+	Select a script on the script tab and click run. An overview is displayed, showing
 	the script in stage form.
 	\missingfigure{Screenshot of the Run Script page}
 
@@ -274,50 +276,39 @@
 	This can be prevented by using the monitor and interrupting the startup routine.
 	\missingfigure{Screen of the automatic startup timer}	
 	All additional clients will be started over the network, it is not necessary to use the
-	front switch on the computer.
+	front switch on the computers.
 
-	A user can change the default script by setting a different script as default.
+	A user can change the default script by setting a different script to be used.
+	This can be done on the edit script page.
 	\missingfigure{Screen of the default script setting}
 
-	Usually after working with the simulator the whole system has to be shut down. In the top
+	Usually, after working with the simulator, the whole system has to be shut down. In the top
 	bar of the program there are several buttons aiding a user in stopping the system.
 	\todo[inline]{Explanation of the shutdown buttons}
 
 	\section{Monitoring the system status}
 	During a script run, a user can use the run script overview to monitor the status of the
-	system. If more in depth information are needed, a user can use the client overview to
-	see the individual status of a client, a program, and/or a file/folder movement.
+	system. If more in-depth information is needed, a user can use the client overview to
+	see the individual status of a client, a program, or a file/folder movement.
 	Every client row contains a few symbols, shown in figure \ref{client_status}.
 	The dot and the plug on the left indicate the current client status. If the dot is
 	green and the plug not crossed out the client is running. The two symbols on the right
-	show the number of running scripts and the amount of errors occurred on this client.
+	show the number of running scripts and the amount of errors which occurred on this client.
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=.3\textwidth]{client_status}
 		\caption{Status of the xplane client}
 		\label{client_status}
 	\end{figure}
-	For programs and files the status bar shows a yellow indicator on the left and a clock symbol
+	For programs and files the status bar shows a green indicator on the left and a clock symbol
 	during a program run as seen in figure \ref{running_program}
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=.6\textwidth]{running_program}
-		\caption{A currently running program}
-		\label{running_program}
-	\end{figure}\\
+	\missingfigure{a currently running program}
 	By clicking the \texttt{Log} button the current program output can be inspected.
-	When the program is finished, a green bar and a checkmark are shown (see figure \ref{finished_program}).
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=.6\textwidth]{finished_program}
-		\caption{A finished program}
-		\label{finished_program}
-	\end{figure}\\
-	If the program did not shut down correctly a red indicator and an alert icon are shown (figure \ref{failed_program}).
+	If the program did not shut down correctly, a red indicator and an alert icon are shown (figure \ref{failed_program}).
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=.6\textwidth]{failed_program}
-		\caption{A program with a errors during shutdown}
+		\caption{A program with a errors during shutdown or execution}
 		\label{failed_program}
 	\end{figure}\\
 
@@ -325,7 +316,7 @@
 	\chapter{FAQ}
 	\section{Interface}
 	\subsection{What does the Download tab do?}
-	The download tab is mostly used for deployments. Usually it is not necessary to change or
+	The download tab is mostly used for deployment. Usually it is not necessary to change or
 	download anything here.
 
 	\clearpage
