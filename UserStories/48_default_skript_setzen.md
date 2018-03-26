@@ -8,5 +8,5 @@
 |Story Points|5|
 |Entwickler  |Jonas|
 |Iteration   |9|
-|Stunden     ||
-|Velocity    ||
+|Stunden     |3|
+|Velocity    |1,6|
