@@ -260,7 +260,7 @@
 	is shown in figure \ref{example_script}. A script can be copied multiple times by using
 	the \texttt{Copy} button. This is particularly useful if you just want to make small modifications
 	on an existing script.
-	\begin{figure}[t]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=.9\textwidth]{example_script}
 		\caption{An example script}
@@ -270,19 +270,34 @@
 	\section{Running a script}
 	Select a script on the script tab and click run. An overview is displayed, showing
 	the script in stage form.
-	\missingfigure{Screenshot of the Run Script page}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=.9\textwidth]{running_script}
+		\caption{A script that is currently running}
+		\label{running_script}
+	\end{figure}
 
 	\chapter{Using the simulator with scripts}
 	The whole simulator can be started by switching on the master server (simcontrol).
 	If there is no user interaction, the default script will be run after a short time.
 	This can be prevented by using the monitor and interrupting the startup routine.
-	\missingfigure{Screen of the automatic startup timer}	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=.9\textwidth]{script_run_with_timer}
+		\caption{A timer showing how long it takes till the default script starts}
+		\label{script_run_with_timer}
+	\end{figure}
 	All additional clients will be started over the network, it is not necessary to use the
 	front switch on the computers.
 
 	A user can change the default script by setting a different script to be used.
 	This can be done on the edit script page.
-	\missingfigure{Screen of the default script setting}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=.9\textwidth]{default_script_setting}
+		\caption{The default script is set with the "set default" button}
+		\label{default_script_setting}
+	\end{figure}
 
 	Usually, after working with the simulator, the whole system has to be shut down. In the top
 	bar of the program there are several buttons aiding a user in stopping the system.
@@ -314,9 +329,13 @@
 		\caption{Status of the xplane client}
 		\label{client_status}
 	\end{figure}
-	For programs and files the status bar shows a green indicator on the left and a clock symbol
-	during a program run as seen in figure \ref{running_program}
-	\missingfigure{a currently running program}
+	For programs and files the status bar shows a green indicator on the left during a program run as seen in figure (figure \ref{running_program}).
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=.6\textwidth]{running_program}
+		\caption{A currently running program}
+		\label{running_program}
+	\end{figure}\\
 	By clicking the \texttt{Log} button the current program output can be inspected.
 	If the program did not shut down correctly, a red indicator and an alert icon are shown (figure \ref{failed_program}).
 	\begin{figure}[h]
