@@ -20,9 +20,6 @@
 	\maketitle
 	\tableofcontents
 
-	\todototoc
-	\listoftodos
-
 	\chapter*{Preamble}
 	This is the manual for the flightsim control software written by the BP team 19
 	of winter term 17/18. The team members are
@@ -195,7 +192,7 @@
 		\label{startpage_without_programs}
 	\end{figure}
 	To add a program, a client has to be selected first. By clicking on the \texttt{+}
-	button next to the program tab, a dialog opens. The following fields have to be filled
+	button next to the program tab, a dialog opens. The following fields can be filled
 	out:
 	\begin{center}
 	\begin{tabular}{l|l}
@@ -343,9 +340,9 @@
 	During a script run, a user can use the run script overview to monitor the status of the
 	system. If more in-depth information is needed, a user can use the client overview to
 	see the individual status of a client, a program, or a file/folder movement.
-	Every client row contains a few symbols, shown in figure \ref{client_status}.
-	The dot and the plug on the left indicate the current client status. If the dot is
-	green and the plug not crossed out the client is running. The two symbols on the right
+	Every client row contains a few buttons and status indicators, shown in figure \ref{client_status}.
+	The dot on the left indicates the current client status. If the dot is
+	green the client is running. The two symbols on the right of a client 
 	show the number of running scripts and the amount of errors which occurred on this client.
 	\begin{figure}[h]
 		\centering
@@ -361,20 +358,13 @@
 		\label{running_program}
 	\end{figure}\\
 	By clicking the \texttt{Log} button the current program output can be inspected.
-	If the program did not shut down correctly, a red indicator and an alert icon are shown (figure \ref{failed_program}).
+	If the program did not shut down correctly, a red indicator is shown (figure \ref{failed_program}).
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=.6\textwidth]{failed_program}
 		\caption{A program with a errors during shutdown or execution}
 		\label{failed_program}
 	\end{figure}\\
-
-
-	\chapter{FAQ}
-	\section{Interface}
-	\subsection{What does the Download tab do?}
-	The download tab is mostly used for deployment. Usually it is not necessary to change or
-	download anything here.
 
 	\clearpage
 	\addcontentsline{toc}{chapter}{Index}
