@@ -47,7 +47,7 @@
 	There are a few terms needing a more in depth definition. This section describes them in detail
 	to ease the understanding of further chapters.
 
-	\subsection{\ind{Master}}
+	\subsection{\ind{Master}}\label{master}
 	Central computer, which runs the web server. Currently this is the \ind{simcontrol} computer.
 	Usually the user opens the web UI on this computer, but if there is network access every other
 	machine inside the institute network can be used to access the web UI. Internet access without
@@ -286,7 +286,19 @@
 
 	Usually, after working with the simulator, the whole system has to be shut down. In the top
 	bar of the program there are several buttons aiding a user in stopping the system.
-	\todo[inline]{Explanation of the shutdown buttons}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=.2\textwidth]{shutdown_dropdown_menu}
+		\caption{The shutdown menu with 4 options}
+		\label{shutdown_dropdown_menu}
+	\end{figure}
+	The options (every option will also execute the above e.g. "Restore Files" also stops all programs ["Stop Programs"]):
+	\begin{itemize}
+		\item "Stop Programs": All programs on every client will be terminated.
+		\item "Restore Files": All moved files and directories will be restored.
+		\item "Shutdown Clients": All clients will be shutdown after all programs are terminated and all files and directories are restored. 
+		\item "Shutdown": Additionally the master (\ref{master}) will be shutdown.
+	\end{itemize}
 
 	\section{Monitoring the system status}
 	During a script run, a user can use the run script overview to monitor the status of the
