@@ -148,7 +148,7 @@
 		\item Open a cmd/terminal
 		\item Create and navigate to the install directory \\{\color{red}(Attention! Spaces in this path can lead to unexpected behavior during runtime)}
 		\begin{itemize}
-			\item On Windows: \\{\texttt{md C:\textbackslash fsim-client \\ cd C:\textbackslash fsim-client\textbackslash}
+			\item On Windows: \\\texttt{md C:\textbackslash fsim-client \\ cd C:\textbackslash fsim-client\textbackslash}
 			\item On Linux/mac os: \\\texttt{mkdir /home/fsim-user/fsim-client \\ cd /home/fsim-user/fsim-client/}
 		\end{itemize}
 		\item Download the Client in one of the following ways:
@@ -335,6 +335,11 @@
 		\item "Shutdown Clients": All clients will be shutdown after all programs are terminated and all files and directories are restored.
 		\item "Shutdown": Additionally the master (\ref{master}) will be shutdown.
 	\end{itemize}
+	\begin{tcolorbox}[width=\textwidth, colback=red!30, arc=0pt, boxrule=0pt]
+	{\color{red}\textbf{Warning}}\hspace{0.5cm}
+		After using one of the above mentioned buttons, please wait at least one minute before interacting with the software again.
+		Otherwise the simulator can be damaged.
+	\end{tcolorbox}
 
 	\section{Monitoring the system status}
 	During a script run, a user can use the run script overview to monitor the status of the
