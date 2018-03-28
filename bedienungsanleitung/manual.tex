@@ -20,9 +20,6 @@
 	\maketitle
 	\tableofcontents
 
-	\todototoc
-	\listoftodos
-
 	\chapter*{Preamble}
 	This is the manual for the flightsim control software written by the BP team 19
 	of winter term 17/18. The team members are
@@ -131,8 +128,36 @@
 
 
 	\chapter{Installation}
+	The up to date installation instructions for the server and the client can be found in the repositories.
+	\section{Server}
 
-	\todo[inline]{Installation instructions for Client and Server}
+	\begin{enumerate}
+		\item Install Python (3.4 or newer) and git
+		\item Clone the Github repository:\\ \texttt{git clone https://github.com/bp-flugsimulator/server.git}
+		\item Run the deploy command which will setup the server and output a zip file with all relevant files:\\\texttt{cd server \\ python manage.py deploy}
+		\item Unzip the resulting file to the desired installation directory (the cloned repository can be deleted at this point) 
+		\begin{itemize}
+			\item Linux:\\ \texttt{mkdir /home/fsim-user/fsim-master \\ unzip ../server.zip /home/fsim-user/fsim-master/}
+			\item Windows: Use the Windows Explorer
+		\end{itemize}
+	\end{enumerate}
+
+	\section{Client}
+	\begin{enumerate}
+		\item Install Python 3
+		\item Open a cmd/terminal
+		\item Create and navigate to the install directory \\{\color{red}(Attention! Spaces in this path can lead to unexpected behavior during runtime)}
+		\begin{itemize}
+			\item On Windows: \\\texttt{md C:\textbackslash fsim-client \\ cd C:\textbackslash fsim-client\textbackslash}
+			\item On Linux/mac os: \\\texttt{mkdir /home/fsim-user/fsim-client \\ cd /home/fsim-user/fsim-client/}
+		\end{itemize}
+		\item Download the Client in one of the following ways:
+		\begin{enumerate}
+			\item Clone the repository from Github (Requires that git is installed):\\\texttt{git clone https://github.com/bp-flugsimulator/client}
+			\item Download it from a running server instance from the local network:\\ To use this option the file install.py is needed from the repository. The example is given with a sever with the ip 0.0.0.0 on port 4242.\\ \texttt{python install.py --download-client 0.0.0.0:4242}
+		\end{enumerate}
+		\item Install the python dependencies with install.py (which comes with the client files):\\ \texttt{python install.py}
+	\end{enumerate}
 
 	\chapter{Workflows}
 	\section{Adding a client}
@@ -167,7 +192,7 @@
 		\label{startpage_without_programs}
 	\end{figure}
 	To add a program, a client has to be selected first. By clicking on the \texttt{+}
-	button next to the program tab, a dialog opens. The following fields have to be filled
+	button next to the program tab, a dialog opens. The following fields can be filled
 	out:
 	\begin{center}
 	\begin{tabular}{l|l}
@@ -177,15 +202,11 @@
 		Arguments & Command-line arguments for the program\\
 		Start time & Seconds to wait before executing the next stage during a script run\\
 	\end{tabular}
-		\begin{tcolorbox}[width=\textwidth, colback=red!30, arc=0pt, boxrule=0pt]
-		{\color{red}\textbf{Warning}}\hspace{0.5cm}
-		Windows XP can behave unexpectedly when the Path to the executable contains spaces.
-		\end{tcolorbox}
 	\end{center}
 	"Start time" is only used during script runs.\\
 	Special examples:\\
-	\indent -1, the script waits for the program to start.\\
-	\indent 0, there is no wait time after executing this program.\\
+	\indent -1, the script waits for the program to terminate.\\
+	\indent 0, there is no wait time after executing this program. (default)\\
 	For a more complete description of stages, please look at section \ref{script}.
 
 	\begin{figure}[h]
@@ -311,17 +332,22 @@
 	\begin{itemize}
 		\item "Stop Programs": All programs on every client will be terminated.
 		\item "Restore Files": All moved files and directories will be restored.
-		\item "Shutdown Clients": All clients will be shutdown after all programs are terminated and all files and directories are restored. 
+		\item "Shutdown Clients": All clients will be shutdown after all programs are terminated and all files and directories are restored.
 		\item "Shutdown": Additionally the master (\ref{master}) will be shutdown.
 	\end{itemize}
+	\begin{tcolorbox}[width=\textwidth, colback=red!30, arc=0pt, boxrule=0pt]
+	{\color{red}\textbf{Warning}}\hspace{0.5cm}
+		After using one of the above mentioned buttons, please wait at least one minute before interacting with the software again.
+		Otherwise the simulator can be damaged.
+	\end{tcolorbox}
 
 	\section{Monitoring the system status}
 	During a script run, a user can use the run script overview to monitor the status of the
 	system. If more in-depth information is needed, a user can use the client overview to
 	see the individual status of a client, a program, or a file/folder movement.
-	Every client row contains a few symbols, shown in figure \ref{client_status}.
-	The dot and the plug on the left indicate the current client status. If the dot is
-	green and the plug not crossed out the client is running. The two symbols on the right
+	Every client row contains a few buttons and status indicators, shown in figure \ref{client_status}.
+	The dot on the left indicates the current client status. If the dot is
+	green the client is running. The two symbols on the right of a client 
 	show the number of running scripts and the amount of errors which occurred on this client.
 	\begin{figure}[h]
 		\centering
@@ -337,20 +363,13 @@
 		\label{running_program}
 	\end{figure}\\
 	By clicking the \texttt{Log} button the current program output can be inspected.
-	If the program did not shut down correctly, a red indicator and an alert icon are shown (figure \ref{failed_program}).
+	If the program did not shut down correctly, a red indicator is shown (figure \ref{failed_program}).
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=.6\textwidth]{failed_program}
 		\caption{A program with a errors during shutdown or execution}
 		\label{failed_program}
 	\end{figure}\\
-
-
-	\chapter{FAQ}
-	\section{Interface}
-	\subsection{What does the Download tab do?}
-	The download tab is mostly used for deployment. Usually it is not necessary to change or
-	download anything here.
 
 	\clearpage
 	\addcontentsline{toc}{chapter}{Index}

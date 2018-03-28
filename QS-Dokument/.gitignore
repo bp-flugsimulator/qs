@@ -3,3 +3,5 @@
 !*.tex
 !/img
 !img/*.*
+!/test_output
+!/test_output/*

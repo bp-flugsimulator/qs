@@ -10,4 +10,4 @@
 |Iteration   |9|
 |Stunden     |2|
 |Velocity    |1.5|
-|Bemerkung   ||
+|Bemerkung   |not merged|

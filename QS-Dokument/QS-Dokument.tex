@@ -7,6 +7,8 @@
 \usepackage{pdfpages}
 \usepackage{float}
 \usepackage{caption}
+\usepackage{todonotes}
+\usepackage{listings}
 
 \newcommand{\titlerow}[2]{
 	\begin{parcolumns}[colwidths={1=.17\linewidth}]{2}
@@ -15,6 +17,15 @@
 	\end{parcolumns}
 	\vspace{0.2cm}
 }
+
+
+\lstdefinestyle{logs}{
+    frame=single,
+    postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+    breaklines=true
+}
+
+\lstset{style=logs}
 
 \graphicspath{ {img/} }
 
@@ -135,7 +146,7 @@
 		vor der Präsentation einer Userstory für die Auftraggeber durch den Reviewer überprüft.
 		Die Icons\footnote{\url{https://material.io/icons/}}
 		stammen aus dem Material Design, welches zur Zeit auf über 79.8\% der Android Geräte
-		verwendet wird\footnote{\url{https://developer.android.com/about/dashboards/index.html#Platform}}. 
+		verwendet wird\footnote{\url{https://developer.android.com/about/dashboards/index.html\#Platform}}.
 		Damit ist es einer Vielzahl an Nutzern bereits bekannt.
 		\\[5pt]
 		Um den Einstieg zu erleichtern erstellt das BP-Team eine Bedienungsanleitung (siehe Anhang),
@@ -151,9 +162,9 @@
 		so verglichen werden kann, wie benutzerfreundlich die Software auf Menschen wirkt, welche nicht täglich
 		mit Flugsimulatoren arbeiten.
 		\\[5pt]
-		Für die Studie erhalten die Nutzer eine Auswahl an Aufgaben (siehe Anhang), 
-		welche sie zunächst ohne Anleitung durchführen sollen. 
-		Gibt es bei einer Aufgabe Probleme, so wird die Bedienungsanleitung 
+		Für die Studie erhalten die Nutzer eine Auswahl an Aufgaben (siehe Anhang),
+		welche sie zunächst ohne Anleitung durchführen sollen.
+		Gibt es bei einer Aufgabe Probleme, so wird die Bedienungsanleitung
 		der Software zur Verfügung gestellt.
 		Am Ende wird ein Fragebogen ausgehändigt (ebenfalls im Anhang),
 		in welchem die Nutzer das Design (z.B. Farbschema, Größe und Beschriftung von Buttons), den
@@ -161,8 +172,8 @@
 		besteht die Möglichkeit allgemeines Feedback abzugeben.
 		\\[5pt]
 		Mithilfe der ausgefüllten Fragebögen erstellt das Team einen Katalog an
-		Maßnahmen bezüglich des Designs, Workflows oder der Anleitung, 
-		welche den Auftraggebern beim nächsten Treffen präsentiert werden. 
+		Maßnahmen bezüglich des Designs, Workflows oder der Anleitung,
+		welche den Auftraggebern beim nächsten Treffen präsentiert werden.
 		Diese entscheiden, welche Maßnahmen umgesetzt werden, woraufhin ein
 		Entwickler diese in der nächsten Iteration umsetzt. Die Abnahme erfolgt dann
 		wiederum durch die Auftraggeber.
@@ -181,7 +192,7 @@
 	Beide Nutzer*innenstudien hatten jeweils einen anderen Fokus:
 	Die erste Studie konzentrierte sich auf das Aufsetzen der Software, während in der zweiten Studie
 	die Ablaufprogrammierung von Startsequenzen im Mittelpunkt stand. Daher ergaben sich zwei unterschiedliche
-	Fragebögen. 
+	Fragebögen.
 	\\\\
 	Eine Zusammenfassung der Ergebnisse findet sich jeweils nach dem Fragebogen.
 
@@ -363,5 +374,290 @@
 		\label{codacy_png}
 	\end{figure}
 
+	\section{QS-Prozess nach Iteration}
+	So wie das Projekt ist auch der QS-Prozess im Projektverlauf angewachsen. Es wurden neue Tools hinzugefügt
+	und neue Testumgebungen entwickelt, da die Auftraggeber ihre Anforderungen geändert haben. Daher gibt
+	es nicht für alle Iterationen vollständige Testausgaben. Zudem haben einige Tools (AppVeyor und Travis CI)
+	die gleichen Tests durchgeführt. Dort wurde dann nur ein Output angehängt.
+
+	Die Iterationslänge betrug zwei Wochen.
+	
+	\subsection{1. Iteration}
+	\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{| l | l |}
+			\hline
+			\textbf{Zeitraum} & 13.11.2017 - 27.11.2017\\\hline
+			\textbf{Abgegebene Userstorys} & 1,2 \\\hline
+			\textbf{Commit Hash} & \texttt{50fb60922adfa02487fce1b10618629b10bf9f37} \\\hline
+		\end{tabular}
+		\caption{Übersicht 1. Iteration}
+	\end{center}
+	\end{table}
+
+	\subsubsection{Testoutput (\texttt{python manage.py test})}
+	\lstinputlisting{test_output/01_iteration_python}
+
+
+	\newpage
+	\section{Code Reviews}
+	Nach der Implementierung einer Userstory mussten alle Änderungen am Code von einem weiteren Entwickler
+	gesichtet werden. Dabei wurde folgende Checkliste als Referenz verwendet:
+	\begin{itemize}
+		\item Test Coverage (auf unseren Dateien) mindestens 90\%
+		\item Jede Klasse und Funktion ist grob Dokumentiert
+		\item Schwierige Codestellen sind dokumentiert
+		\item Alle Test laufen fehlerfrei durch
+		\item Der Code ist korrekt formatiert
+		\item Code erfüllt das Akzeptanzkriterium der Userstory (und dabei spezifisch nur das Akzeptanzkriterium dieser Userstory)
+		\item Die Userstory ist ausgefüllt (Datum, Zeit)
+	\end{itemize}
+	Es folgen die ausgefüllten Checklisten. Da die ersten beiden US in gemeinsamer Arbeit entstanden ist, gibt es keine Checkliste dafür.
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{code_review/us03}
+		\caption{Review zur Userstory 3}
+	\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us04}
+\caption{Review zur Userstory 04}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us05}
+\caption{Review zur Userstory 05}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us06}
+\caption{Review zur Userstory 06}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us07}
+\caption{Review zur Userstory 07}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us08}
+\caption{Review zur Userstory 08}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us09}
+\caption{Review zur Userstory 09}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us14}
+\caption{Review zur Userstory 14}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us15}
+\caption{Review zur Userstory 15}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us16}
+\caption{Review zur Userstory 16}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us17}
+\caption{Review zur Userstory 17}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us19}
+\caption{Review zur Userstory 19}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us20}
+\caption{Review zur Userstory 20}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us21}
+\caption{Review zur Userstory 21}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us22}
+\caption{Review zur Userstory 22}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us23}
+\caption{Review zur Userstory 23}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us24}
+\caption{Review zur Userstory 24}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us25}
+\caption{Review zur Userstory 25}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us26}
+\caption{Review zur Userstory 26}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us27}
+\caption{Review zur Userstory 27}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us28}
+\caption{Review zur Userstory 28}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us29}
+\caption{Review zur Userstory 29}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us30}
+\caption{Review zur Userstory 30}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us31}
+\caption{Review zur Userstory 31}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us32}
+\caption{Review zur Userstory 32}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us33}
+\caption{Review zur Userstory 33}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us34}
+\caption{Review zur Userstory 34}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us35}
+\caption{Review zur Userstory 35}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us36}
+\caption{Review zur Userstory 36}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us37}
+\caption{Review zur Userstory 37}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us38}
+\caption{Review zur Userstory 38}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us39}
+\caption{Review zur Userstory 39}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us40}
+\caption{Review zur Userstory 40}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us41}
+\caption{Review zur Userstory 41}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us42}
+\caption{Review zur Userstory 42}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us43}
+\caption{Review zur Userstory 43}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us44}
+\caption{Review zur Userstory 44}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us45}
+\caption{Review zur Userstory 45}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us46}
+\caption{Review zur Userstory 46}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us47}
+\caption{Review zur Userstory 47}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us48}
+\caption{Review zur Userstory 48}
+\end{figure}
+\missingfigure{Restliche Reviews zu Userstorys hinzufügen}
 
 \end{document}

@@ -1,6 +1,6 @@
 # User Story
 
-| ID         |21|
+| ID         |25|
 |-|-|
 |Name        |Datei löschen|
 |Beschreibung|Als Benutzer will ich die Möglichkeit haben eine bereits registrierte Datei wieder zu löschen (aus der Datenbank). Damit ich veraltet Dateien entfernen kann.|
