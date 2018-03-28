@@ -8,6 +8,7 @@
 \usepackage{float}
 \usepackage{caption}
 \usepackage{todonotes}
+\usepackage{listings}
 
 \newcommand{\titlerow}[2]{
 	\begin{parcolumns}[colwidths={1=.17\linewidth}]{2}
@@ -16,6 +17,15 @@
 	\end{parcolumns}
 	\vspace{0.2cm}
 }
+
+
+\lstdefinestyle{logs}{
+    frame=single,
+    postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+    breaklines=true
+}
+
+\lstset{style=logs}
 
 \graphicspath{ {img/} }
 
@@ -136,7 +146,7 @@
 		vor der Präsentation einer Userstory für die Auftraggeber durch den Reviewer überprüft.
 		Die Icons\footnote{\url{https://material.io/icons/}}
 		stammen aus dem Material Design, welches zur Zeit auf über 79.8\% der Android Geräte
-		verwendet wird\footnote{\url{https://developer.android.com/about/dashboards/index.html#Platform}}.
+		verwendet wird\footnote{\url{https://developer.android.com/about/dashboards/index.html\#Platform}}.
 		Damit ist es einer Vielzahl an Nutzern bereits bekannt.
 		\\[5pt]
 		Um den Einstieg zu erleichtern erstellt das BP-Team eine Bedienungsanleitung (siehe Anhang),
@@ -364,6 +374,32 @@
 		\label{codacy_png}
 	\end{figure}
 
+	\section{QS-Prozess nach Iteration}
+	So wie das Projekt ist auch der QS-Prozess im Projektverlauf angewachsen. Es wurden neue Tools hinzugefügt
+	und neue Testumgebungen entwickelt, da die Auftraggeber ihre Anforderungen geändert haben. Daher gibt
+	es nicht für alle Iterationen vollständige Testausgaben. Zudem haben einige Tools (AppVeyor und Travis CI)
+	die gleichen Tests durchgeführt. Dort wurde dann nur ein Output angehängt.
+
+	Die Iterationslänge betrug zwei Wochen.
+	
+	\subsection{1. Iteration}
+	\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{| l | l |}
+			\hline
+			\textbf{Zeitraum} & 13.11.2017 - 27.11.2017\\\hline
+			\textbf{Abgegebene Userstorys} & 1,2 \\\hline
+			\textbf{Commit Hash} & \texttt{50fb60922adfa02487fce1b10618629b10bf9f37} \\\hline
+		\end{tabular}
+		\caption{Übersicht 1. Iteration}
+	\end{center}
+	\end{table}
+
+	\subsubsection{Testoutput (\texttt{python manage.py test})}
+	\lstinputlisting{test_output/01_iteration_python}
+
+
+	\newpage
 	\section{Code Reviews}
 	Nach der Implementierung einer Userstory mussten alle Änderungen am Code von einem weiteren Entwickler
 	gesichtet werden. Dabei wurde folgende Checkliste als Referenz verwendet:
@@ -521,12 +557,11 @@
 \caption{Review zur Userstory 31}
 \end{figure}
 
-\missingfigure{Review zur Userstory 32}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width=.8\textwidth]{code_review/us32}
-%\caption{Review zur Userstory 32}
-%\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us32}
+\caption{Review zur Userstory 32}
+\end{figure}
 
 \begin{figure}[H]
 \centering
@@ -610,6 +645,12 @@
 \centering
 \includegraphics[width=.8\textwidth]{code_review/us46}
 \caption{Review zur Userstory 46}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{code_review/us47}
+\caption{Review zur Userstory 47}
 \end{figure}
 
 \begin{figure}[H]
