@@ -1,0 +1,416 @@
+python manage.py test
+Creating test database for alias 'default'...
+Compiled sass
+DEBUG 2018-03-28 19:47:23,095 5230 140280683746624 Starting thread `6eb463ddd11b47e8897d2e9c8f86f161` for event loop `140280550823680`.
+DEBUG 2018-03-28 19:47:23,094 5230 140280550823680 Running event loop `6eb463ddd11b47e8897d2e9c8f86f161` in thread 140280550823680.
+..........................WARNING 2018-03-28 19:47:23,983 5230 140280683746624 Error while adding filesystem `file_oxvRJjsUXCLueUoPavaE`: {'__all__': ['Filesystem with this Name and Slave already exists.', 'Filesystem with this Source path, Destination path, Slave, Source type and Destination type already exists.']}
+.WARNING 2018-03-28 19:47:23,990 5230 140280683746624 Error while adding filesystem `file_aQkJzIOjdtmttrwJNEWSnew`: {'__all__': ['Filesystem with this Source path, Destination path, Slave, Source type and Destination type already exists.']}
+.............INFO 2018-03-28 19:47:24,039 5230 140280683746624 Disabling logging for program program_xjvhlobobWFlemzEzROK on slave slave_rFfWPPNOLJsDuGFkkLaJ
+.INFO 2018-03-28 19:47:24,043 5230 140280683746624 Disabling logging for program program_ODFmwpFouOyhfgNChjAL on slave slave_HFbekxakDNdiOnCvOcSw
+..INFO 2018-03-28 19:47:24,050 5230 140280683746624 Enabling logging for program program_OCSMLVNFpQYpPzuxAQGc on slave slave_ZyNmyyaFPXRZJPScqpnA
+.INFO 2018-03-28 19:47:24,054 5230 140280683746624 Enabling logging for program program_QJpPFmFCgoFonLssFAoB on slave slave_QAmjoODqBNdNgtBnahtM
+.INFO 2018-03-28 19:47:24,058 5230 140280683746624 Enabling logging for program program_rfUPbXFhqiedkcWxcdEJ on slave slave_KEKqEaKySMwXlePXSTVo
+..INFO 2018-03-28 19:47:24,065 5230 140280683746624 Requesting log for program program_lnYuxDIqrgSOSpesNyzm on slave slave_MBVFSPtUdZbhGHiMoIgH
+.INFO 2018-03-28 19:47:24,069 5230 140280683746624 Requesting log for program program_UwgGaGIQCMsYebLaRogy on slave slave_BAMqgTnoNExILLMMQjgo
+.............INFO 2018-03-28 19:47:24,127 5230 140280683746624 Starting program program_vysDrPUOZToLVoTwzhgY on slave slave_QnqgeNLDIRgLJEKNrtVa
+.....INFO 2018-03-28 19:47:24,157 5230 140280683746624 Stoping program program_QKACADNAnLPsSrgrAVyp on slave slave_vUnmtHVhxNcKUKOOywtE
+.............................DEBUG 2018-03-28 19:47:24,441 5230 140280508917504 Running event loop `e65fb82f39514666b686d1a6d790dd7e` in thread 140280508917504.
+DEBUG 2018-03-28 19:47:24,441 5230 140280683746624 Starting thread `e65fb82f39514666b686d1a6d790dd7e` for event loop `140280508917504`.
+DEBUG 2018-03-28 19:47:24,441 5230 140280683746624 Starting Scheduler in the event loop `e65fb82f39514666b686d1a6d790dd7e`
+DEBUG 2018-03-28 19:47:24,442 5230 140280683746624 Task in Scheduler event loop is pending.
+DEBUG 2018-03-28 19:47:24,443 5230 140280683746624 Send notify to task in scheduler event loop.
+DEBUG 2018-03-28 19:47:24,443 5230 140280683746624 Spawning function into the event loop `e65fb82f39514666b686d1a6d790dd7e` (in thread 140280508917504)
+DEBUG 2018-03-28 19:47:24,443 5230 140280683746624 Task in Scheduler event loop is pending.
+DEBUG 2018-03-28 19:47:24,444 5230 140280683746624 Send notify to task in scheduler event loop.
+DEBUG 2018-03-28 19:47:24,444 5230 140280683746624 Spawning function into the event loop `e65fb82f39514666b686d1a6d790dd7e` (in thread 140280508917504)
+DEBUG 2018-03-28 19:47:24,444 5230 140280683746624 Spawning function into the event loop `e65fb82f39514666b686d1a6d790dd7e` (in thread 140280508917504)
+DEBUG 2018-03-28 19:47:24,444 5230 140280508917504 Scheduler is waiting for wakeup notification.
+DEBUG 2018-03-28 19:47:24,444 5230 140280508917504 Scheduler is doing a step.
+INFO 2018-03-28 19:47:24,444 5230 140280508917504 Scheduler received interupt event. Exiting scheduler loop.
+INFO 2018-03-28 19:47:24,445 5230 140280683746624 Canceling pending tasks.
+ERROR 2018-03-28 19:47:24,445 5230 140280683746624 <Task finished coro=<Scheduler.__run__() done, defined at /home/heiko/Documents/Uni/BP/server/frontend/scheduler.py:277> result=None>
+INFO 2018-03-28 19:47:24,445 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:24,445 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:24,446 5230 140280508917504 Running event loop `0d79ed3f670c46dca7b14fbee02eda64` in thread 140280508917504.
+DEBUG 2018-03-28 19:47:24,446 5230 140280683746624 Starting thread `0d79ed3f670c46dca7b14fbee02eda64` for event loop `140280508917504`.
+.....INFO 2018-03-28 19:47:24,459 5230 140280683746624 Requesting log for program program_saDPKUaMzrljBEHOqzYg on slave slave_BIjeIQobNvKBtfgIelyj
+................DEBUG 2018-03-28 19:47:24,519 5230 140280683746624 Spawning function into the event loop `0d79ed3f670c46dca7b14fbee02eda64` (in thread 140280508917504)
+INFO 2018-03-28 19:47:24,519 5230 140280683746624 Canceling pending tasks.
+INFO 2018-03-28 19:47:24,519 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:24,519 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:24,520 5230 140280508917504 Running event loop `7bb7b11103af4e938c48e49130e53953` in thread 140280508917504.
+DEBUG 2018-03-28 19:47:24,521 5230 140280683746624 Starting thread `7bb7b11103af4e938c48e49130e53953` for event loop `140280508917504`.
+..........Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: database table is locked: frontend_program
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/home/heiko/Documents/Uni/BP/server/frontend/api.py", line 1107, in run
+    programs = filter(lambda x: x.is_running, programs)
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/models/query.py", line 272, in __iter__
+    self._fetch_all()
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/models/query.py", line 1179, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1066, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: database table is locked: frontend_program
+
+....................................................................ERROR 2018-03-28 19:47:24,830 5230 140280683746624 Rejecting unknown client with ip 0.0.0.120!
+.INFO 2018-03-28 19:47:24,834 5230 140280683746624 client connected with ip 0.0.0.121 on port 00:00:00:00:00:79
+DEBUG 2018-03-28 19:47:24,834 5230 140280683746624 Added client to command group client_1
+INFO 2018-03-28 19:47:24,835 5230 140280683746624 send online request to slave_isKtwgfjxRrKmgkgFlZv
+.INFO 2018-03-28 19:47:24,841 5230 140280683746624 client connected with ip 0.0.0.1 on port 00:00:00:00:00:01
+DEBUG 2018-03-28 19:47:24,841 5230 140280683746624 Added client to command group client_1
+INFO 2018-03-28 19:47:24,841 5230 140280683746624 send online request to slave_HeRhSSCfmglUfUtHsOCj
+ERROR 2018-03-28 19:47:24,848 5230 140280683746624 Disconnected client is not in database. (with IP 0.0.0.1)
+.INFO 2018-03-28 19:47:24,854 5230 140280683746624 client connected with ip 0.0.0.2 on port 00:00:00:00:00:02
+DEBUG 2018-03-28 19:47:24,854 5230 140280683746624 Added client to command group client_1
+INFO 2018-03-28 19:47:24,854 5230 140280683746624 send online request to slave_HcLirIBKojoQNfLEyhIn
+INFO 2018-03-28 19:47:24,861 5230 140280683746624 Client with ip 0.0.0.2 disconnected from /commands!
+.DEBUG 2018-03-28 19:47:24,864 5230 140280683746624 {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': None}, 'uuid': 'b3108570402f4f60bb7f2acbd1473cff'}
+INFO 2018-03-28 19:47:24,864 5230 140280683746624 Handle filesystem moved {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': None}, 'uuid': 'b3108570402f4f60bb7f2acbd1473cff'}
+WARNING 2018-03-28 19:47:24,865 5230 140280683746624 A filesystem moved with id b3108570402f4f60bb7f2acbd1473cff, but is not in the database.
+.DEBUG 2018-03-28 19:47:24,868 5230 140280683746624 {'status': 'ok', 'payload': {'method': 'chain_execution', 'result': [{'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_dbrhdHGthnmyXlBgmUXV'}, 'uuid': '97759bc0ffea4ddf8bcb83c6bb67b314'}, {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_dbrhdHGthnmyXlBgmUXV'}, 'uuid': '97759bc0ffea4ddf8bcb83c6bb67b314'}]}, 'uuid': 'bfa81251bda941808e7347493d0a0487'}
+INFO 2018-03-28 19:47:24,868 5230 140280683746624 Handle chain execution {'status': 'ok', 'payload': {'method': 'chain_execution', 'result': [{'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_dbrhdHGthnmyXlBgmUXV'}, 'uuid': '97759bc0ffea4ddf8bcb83c6bb67b314'}, {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_dbrhdHGthnmyXlBgmUXV'}, 'uuid': '97759bc0ffea4ddf8bcb83c6bb67b314'}]}, 'uuid': 'bfa81251bda941808e7347493d0a0487'}
+INFO 2018-03-28 19:47:24,868 5230 140280683746624 chain_execution results: {'status': 'ok', 'payload': {'method': 'chain_execution', 'result': [{'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_dbrhdHGthnmyXlBgmUXV'}, 'uuid': '97759bc0ffea4ddf8bcb83c6bb67b314'}, {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_dbrhdHGthnmyXlBgmUXV'}, 'uuid': '97759bc0ffea4ddf8bcb83c6bb67b314'}]}, 'uuid': 'bfa81251bda941808e7347493d0a0487'}
+DEBUG 2018-03-28 19:47:24,868 5230 140280683746624 {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_dbrhdHGthnmyXlBgmUXV'}, 'uuid': '97759bc0ffea4ddf8bcb83c6bb67b314'}
+INFO 2018-03-28 19:47:24,868 5230 140280683746624 Handle filesystem moved {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_dbrhdHGthnmyXlBgmUXV'}, 'uuid': '97759bc0ffea4ddf8bcb83c6bb67b314'}
+INFO 2018-03-28 19:47:24,869 5230 140280683746624 Saved filesystem file_PwNfPOUmCAMnenngFhNS with hash value file_dbrhdHGthnmyXlBgmUXV.
+DEBUG 2018-03-28 19:47:24,870 5230 140280683746624 {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_dbrhdHGthnmyXlBgmUXV'}, 'uuid': '97759bc0ffea4ddf8bcb83c6bb67b314'}
+INFO 2018-03-28 19:47:24,870 5230 140280683746624 Handle filesystem moved {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_dbrhdHGthnmyXlBgmUXV'}, 'uuid': '97759bc0ffea4ddf8bcb83c6bb67b314'}
+INFO 2018-03-28 19:47:24,871 5230 140280683746624 Saved filesystem file_PwNfPOUmCAMnenngFhNS with hash value file_dbrhdHGthnmyXlBgmUXV.
+.DEBUG 2018-03-28 19:47:24,874 5230 140280683746624 {'status': 'err', 'payload': {'method': 'chain_execution', 'result': None}, 'uuid': '0272ca39959d4eb3af1c5d1d950ce022'}
+INFO 2018-03-28 19:47:24,874 5230 140280683746624 Handle chain execution {'status': 'err', 'payload': {'method': 'chain_execution', 'result': None}, 'uuid': '0272ca39959d4eb3af1c5d1d950ce022'}
+ERROR 2018-03-28 19:47:24,874 5230 140280683746624 Received Status.err for chain_execution, but this function can not raise errors. (payload: {'method': 'chain_execution', 'result': None})
+.DEBUG 2018-03-28 19:47:24,880 5230 140280683746624 {'status': 'ok', 'payload': {'method': 'execute', 'result': 0}, 'uuid': 'b0168aab805c4fe09ec36aa97342a424'}
+INFO 2018-03-28 19:47:24,880 5230 140280683746624 Handle program execute {'status': 'ok', 'payload': {'method': 'execute', 'result': 0}, 'uuid': 'b0168aab805c4fe09ec36aa97342a424'}
+WARNING 2018-03-28 19:47:24,880 5230 140280683746624 A program finished with id b0168aab805c4fe09ec36aa97342a424, but is not in the database.
+.DEBUG 2018-03-28 19:47:24,885 5230 140280683746624 {'status': 'ok', 'payload': {'method': 'execute', 'result': 0}, 'uuid': 'd2da1f9916414af4814a3368dce62532'}
+INFO 2018-03-28 19:47:24,885 5230 140280683746624 Handle program execute {'status': 'ok', 'payload': {'method': 'execute', 'result': 0}, 'uuid': 'd2da1f9916414af4814a3368dce62532'}
+INFO 2018-03-28 19:47:24,887 5230 140280683746624 Received answer on execute request of function program_cZknuLtmHGGZpVTkEKWG from slave_MbZplbuBpqWpzZfimCEi.
+INFO 2018-03-28 19:47:24,887 5230 140280683746624 Saved status of program_cZknuLtmHGGZpVTkEKWG with code .
+.DEBUG 2018-03-28 19:47:24,892 5230 140280683746624 {'status': 'err', 'payload': {'method': 'execute', 'result': 'foobar'}, 'uuid': 'd7ba1079aabb4b61ac6a0b8d7df933c8'}
+INFO 2018-03-28 19:47:24,892 5230 140280683746624 Handle program execute {'status': 'err', 'payload': {'method': 'execute', 'result': 'foobar'}, 'uuid': 'd7ba1079aabb4b61ac6a0b8d7df933c8'}
+INFO 2018-03-28 19:47:24,894 5230 140280683746624 Received answer on execute request of function program_cBIZKnNdjkQChTVDAaYc from slave_SrlBBWvgjROicgCWSuqG.
+ERROR 2018-03-28 19:47:24,895 5230 140280683746624 Exception in occurred client while executing program_cBIZKnNdjkQChTVDAaYc: 
+ foobar
+.DEBUG 2018-03-28 19:47:24,900 5230 140280683746624 {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_BmrdLOZslurwqmEoAyoz'}, 'uuid': '97bbf07e5cae4813a77fc4cf21a0eb0b'}
+INFO 2018-03-28 19:47:24,900 5230 140280683746624 Handle filesystem moved {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_BmrdLOZslurwqmEoAyoz'}, 'uuid': '97bbf07e5cae4813a77fc4cf21a0eb0b'}
+INFO 2018-03-28 19:47:24,901 5230 140280683746624 Saved filesystem file_jjiEtpCVpJvQNXdzhCMF with hash value file_BmrdLOZslurwqmEoAyoz.
+.DEBUG 2018-03-28 19:47:24,904 5230 140280683746624 {'status': 'err', 'payload': {'method': 'filesystem_move', 'result': 'any kind of string'}, 'uuid': 'd823034732134e76a612d27d6910efa1'}
+INFO 2018-03-28 19:47:24,904 5230 140280683746624 Handle filesystem moved {'status': 'err', 'payload': {'method': 'filesystem_move', 'result': 'any kind of string'}, 'uuid': 'd823034732134e76a612d27d6910efa1'}
+ERROR 2018-03-28 19:47:24,905 5230 140280683746624 Error while moving filesystem: any kind of string
+.DEBUG 2018-03-28 19:47:24,908 5230 140280683746624 {'status': 'ok', 'payload': {'method': 'filesystem_restore', 'result': None}, 'uuid': '31c0487d1f194029ae407a9fb4cc2207'}
+INFO 2018-03-28 19:47:24,908 5230 140280683746624 Handle filesystem restored {'status': 'ok', 'payload': {'method': 'filesystem_restore', 'result': None}, 'uuid': '31c0487d1f194029ae407a9fb4cc2207'}
+WARNING 2018-03-28 19:47:24,908 5230 140280683746624 A filesystem restored with id 31c0487d1f194029ae407a9fb4cc2207, but is not in the database.
+.DEBUG 2018-03-28 19:47:24,911 5230 140280683746624 {'status': 'ok', 'payload': {'method': 'filesystem_restore', 'result': None}, 'uuid': '8b32de3c0a334c598e40c192b53d9997'}
+INFO 2018-03-28 19:47:24,911 5230 140280683746624 Handle filesystem restored {'status': 'ok', 'payload': {'method': 'filesystem_restore', 'result': None}, 'uuid': '8b32de3c0a334c598e40c192b53d9997'}
+INFO 2018-03-28 19:47:24,912 5230 140280683746624 Restored filesystemsystem file_GEVXleXmUieeynAIdoHQ.
+.DEBUG 2018-03-28 19:47:24,916 5230 140280683746624 {'status': 'err', 'payload': {'method': 'filesystem_restore', 'result': 'any kind of string'}, 'uuid': '374e69c9b21e4e808e3b6d389ca5f5e8'}
+INFO 2018-03-28 19:47:24,916 5230 140280683746624 Handle filesystem restored {'status': 'err', 'payload': {'method': 'filesystem_restore', 'result': 'any kind of string'}, 'uuid': '374e69c9b21e4e808e3b6d389ca5f5e8'}
+.DEBUG 2018-03-28 19:47:24,919 5230 140280683746624 {'status': 'ok', 'payload': {'method': 'get_log', 'result': {'log': '', 'uuid': '0'}}, 'uuid': '90a132ddddf74aab80b9055643b3a72c'}
+INFO 2018-03-28 19:47:24,920 5230 140280683746624 Handle log get {'status': 'ok', 'payload': {'method': 'get_log', 'result': {'log': '', 'uuid': '0'}}, 'uuid': '90a132ddddf74aab80b9055643b3a72c'}
+WARNING 2018-03-28 19:47:24,920 5230 140280683746624 A log from a programm with id 90a132ddddf74aab80b9055643b3a72c has arrived, but is not in the database.
+.DEBUG 2018-03-28 19:47:24,924 5230 140280683746624 {'status': 'ok', 'payload': {'method': 'get_log', 'result': {'log': 'this is the content of a logfile', 'uuid': '438ac0c7e8914340a261a0d56a434543'}}, 'uuid': '954a0785a914403eb03804f1d962048a'}
+INFO 2018-03-28 19:47:24,924 5230 140280683746624 Handle log get {'status': 'ok', 'payload': {'method': 'get_log', 'result': {'log': 'this is the content of a logfile', 'uuid': '438ac0c7e8914340a261a0d56a434543'}}, 'uuid': '954a0785a914403eb03804f1d962048a'}
+INFO 2018-03-28 19:47:24,926 5230 140280683746624 Received answer on get_log request of program program_yYUqjdsVAStCjNGlfiZm on slave_qhwEEnplZAoPubkwBAEp.
+INFO 2018-03-28 19:47:24,926 5230 140280683746624 Send log of program_yYUqjdsVAStCjNGlfiZm to the webinterface
+.DEBUG 2018-03-28 19:47:24,928 5230 140280683746624 {'status': 'err', 'payload': {'method': 'get_log', 'result': 'foobar'}, 'uuid': 'c0cd066dcae241c4b51da87e84ac10ae'}
+INFO 2018-03-28 19:47:24,928 5230 140280683746624 Handle log get {'status': 'err', 'payload': {'method': 'get_log', 'result': 'foobar'}, 'uuid': 'c0cd066dcae241c4b51da87e84ac10ae'}
+ERROR 2018-03-28 19:47:24,928 5230 140280683746624 Exception occurred (get_log-request): 
+ foobar
+.ERROR 2018-03-28 19:47:24,930 5230 140280683746624 No content['text'] in received message.
+.DEBUG 2018-03-28 19:47:24,933 5230 140280683746624 {'status': 'ok', 'payload': {'method': 'online'}, 'uuid': '9bed183321a94ef39eb390e0c95257f5'}
+INFO 2018-03-28 19:47:24,933 5230 140280683746624 Handle slave online {'status': 'ok', 'payload': {'method': 'online'}, 'uuid': '9bed183321a94ef39eb390e0c95257f5'}
+WARNING 2018-03-28 19:47:24,934 5230 140280683746624 Slaves online request with uuid 9bed183321a94ef39eb390e0c95257f5, was not asked for it.
+.DEBUG 2018-03-28 19:47:24,936 5230 140280683746624 {'status': 'ok', 'payload': {'method': 'online'}, 'uuid': 'b69f4d4000294e11ac280ac4c17e7ef4'}
+INFO 2018-03-28 19:47:24,936 5230 140280683746624 Handle slave online {'status': 'ok', 'payload': {'method': 'online'}, 'uuid': 'b69f4d4000294e11ac280ac4c17e7ef4'}
+INFO 2018-03-28 19:47:24,938 5230 140280683746624 Slave slave_iBQotiHNMJWfLHNoARaB has connected to the master
+.DEBUG 2018-03-28 19:47:24,940 5230 140280683746624 {'status': 'err', 'payload': {'method': 'online', 'result': 'foobar'}, 'uuid': '224a4089f57341359a6fb3f49bddd924'}
+INFO 2018-03-28 19:47:24,941 5230 140280683746624 Handle slave online {'status': 'err', 'payload': {'method': 'online', 'result': 'foobar'}, 'uuid': '224a4089f57341359a6fb3f49bddd924'}
+ERROR 2018-03-28 19:47:24,941 5230 140280683746624 Exception occurred in client slave_vxFnqbUhJuMJmungZMIW (online-request): 
+ foobar
+.ERROR 2018-03-28 19:47:24,944 5230 140280683746624 Error while parsing json. (cause: Expecting value: line 1 column 1 (char 0))
+ERROR 2018-03-28 19:47:24,944 5230 140280683746624 Could not parse Status from incoming request. (cause: Missing field in encode string. (status))
+.DEBUG 2018-03-28 19:47:24,945 5230 140280683746624 {'status': 'ok', 'payload': {'method': ''}, 'uuid': '49e262a0c227487c9d63f039b6672c6a'}
+WARNING 2018-03-28 19:47:24,945 5230 140280683746624 Client send answer from unknown function .
+.....DEBUG 2018-03-28 19:47:25,173 5230 140280500524800 Running event loop `6ad16f9dddb04b7a8e15e8c0f96177c8` in thread 140280500524800.
+DEBUG 2018-03-28 19:47:25,173 5230 140280683746624 Starting thread `6ad16f9dddb04b7a8e15e8c0f96177c8` for event loop `140280500524800`.
+DEBUG 2018-03-28 19:47:25,174 5230 140280490559232 Running event loop `63a8e361f62c4fc9bb68e1535fa76528` in thread 140280490559232.
+DEBUG 2018-03-28 19:47:25,174 5230 140280683746624 Starting thread `63a8e361f62c4fc9bb68e1535fa76528` for event loop `140280490559232`.
+DEBUG 2018-03-28 19:47:25,174 5230 140280683746624 Starting Scheduler in the event loop `63a8e361f62c4fc9bb68e1535fa76528`
+DEBUG 2018-03-28 19:47:25,175 5230 140280683746624 Task in Scheduler event loop is pending.
+DEBUG 2018-03-28 19:47:25,175 5230 140280683746624 Task in Scheduler event loop is pending.
+DEBUG 2018-03-28 19:47:25,176 5230 140280683746624 Task in Scheduler event loop is pending.
+DEBUG 2018-03-28 19:47:25,176 5230 140280683746624 Send notify to task in scheduler event loop.
+DEBUG 2018-03-28 19:47:25,176 5230 140280683746624 Spawning function into the event loop `63a8e361f62c4fc9bb68e1535fa76528` (in thread 140280490559232)
+DEBUG 2018-03-28 19:47:25,176 5230 140280683746624 Spawning function into the event loop `63a8e361f62c4fc9bb68e1535fa76528` (in thread 140280490559232)
+DEBUG 2018-03-28 19:47:25,177 5230 140280490559232 Scheduler is waiting for wakeup notification.
+DEBUG 2018-03-28 19:47:25,177 5230 140280490559232 Scheduler is doing a step.
+INFO 2018-03-28 19:47:25,177 5230 140280490559232 Scheduler received interupt event. Exiting scheduler loop.
+INFO 2018-03-28 19:47:25,177 5230 140280683746624 Canceling pending tasks.
+ERROR 2018-03-28 19:47:25,177 5230 140280683746624 <Task finished coro=<Scheduler.__run__() done, defined at /home/heiko/Documents/Uni/BP/server/frontend/scheduler.py:277> result=None>
+INFO 2018-03-28 19:47:25,177 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:25,177 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:25,178 5230 140280490559232 Running event loop `db5163f41cc346a2a86232dead03e4f9` in thread 140280490559232.
+DEBUG 2018-03-28 19:47:25,178 5230 140280683746624 Starting thread `db5163f41cc346a2a86232dead03e4f9` for event loop `140280490559232`.
+INFO 2018-03-28 19:47:25,179 5230 140280683746624 Removing tasks from event loop `7bb7b11103af4e938c48e49130e53953` (on thread `140280508917504`)
+DEBUG 2018-03-28 19:47:25,179 5230 140280683746624 Spawning function into the event loop `db5163f41cc346a2a86232dead03e4f9` (in thread 140280490559232)
+INFO 2018-03-28 19:47:25,180 5230 140280683746624 Canceling pending tasks.
+INFO 2018-03-28 19:47:25,180 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:25,180 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:25,181 5230 140280490559232 Running event loop `ca746a717f5b4739a569fe2ee2ff66ab` in thread 140280490559232.
+DEBUG 2018-03-28 19:47:25,181 5230 140280683746624 Starting thread `ca746a717f5b4739a569fe2ee2ff66ab` for event loop `140280490559232`.
+.DEBUG 2018-03-28 19:47:25,194 5230 140280275662592 Running event loop `3affb34be9a041308890b82256fd9b46` in thread 140280275662592.
+DEBUG 2018-03-28 19:47:25,194 5230 140280683746624 Starting thread `3affb34be9a041308890b82256fd9b46` for event loop `140280275662592`.
+INFO 2018-03-28 19:47:25,194 5230 140280683746624 Scheduler is finished. (ERROR)
+INFO 2018-03-28 19:47:25,195 5230 140280683746624 Removing tasks from event loop `7bb7b11103af4e938c48e49130e53953` (on thread `140280508917504`)
+DEBUG 2018-03-28 19:47:25,196 5230 140280683746624 Spawning function into the event loop `3affb34be9a041308890b82256fd9b46` (in thread 140280275662592)
+INFO 2018-03-28 19:47:25,196 5230 140280683746624 Canceling pending tasks.
+INFO 2018-03-28 19:47:25,196 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:25,196 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:25,197 5230 140280275662592 Running event loop `3cd9aab379894652bb10f532291631cd` in thread 140280275662592.
+DEBUG 2018-03-28 19:47:25,198 5230 140280683746624 Starting thread `3cd9aab379894652bb10f532291631cd` for event loop `140280275662592`.
+.DEBUG 2018-03-28 19:47:25,211 5230 140280267269888 Running event loop `5057c2d3b0654ccfa96b22e73e2e0504` in thread 140280267269888.
+DEBUG 2018-03-28 19:47:25,211 5230 140280683746624 Starting thread `5057c2d3b0654ccfa96b22e73e2e0504` for event loop `140280267269888`.
+DEBUG 2018-03-28 19:47:25,213 5230 140280683746624 Send WOL to the slave `slave_qIJRwvvHcjrQFwtYKwbs`.
+DEBUG 2018-03-28 19:47:25,213 5230 140280683746624 Send WOL to the slave `slave_CrXtOyxHiuoLNBPqODbj`.
+DEBUG 2018-03-28 19:47:25,213 5230 140280683746624 Spawning function after 300 into the event loop `5057c2d3b0654ccfa96b22e73e2e0504` (in thread 140280267269888)
+INFO 2018-03-28 19:47:25,214 5230 140280683746624 Removing tasks from event loop `7bb7b11103af4e938c48e49130e53953` (on thread `140280508917504`)
+DEBUG 2018-03-28 19:47:25,215 5230 140280683746624 Send notify to task in scheduler event loop.
+DEBUG 2018-03-28 19:47:25,215 5230 140280683746624 Spawning function into the event loop `5057c2d3b0654ccfa96b22e73e2e0504` (in thread 140280267269888)
+DEBUG 2018-03-28 19:47:25,215 5230 140280683746624 Spawning function into the event loop `5057c2d3b0654ccfa96b22e73e2e0504` (in thread 140280267269888)
+INFO 2018-03-28 19:47:25,215 5230 140280683746624 Canceling pending tasks.
+INFO 2018-03-28 19:47:25,215 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:25,215 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:25,216 5230 140280267269888 Running event loop `41190247074e4353beda2d4e81f705c0` in thread 140280267269888.
+DEBUG 2018-03-28 19:47:25,217 5230 140280683746624 Starting thread `41190247074e4353beda2d4e81f705c0` for event loop `140280267269888`.
+.DEBUG 2018-03-28 19:47:25,230 5230 140280258877184 Running event loop `0591715f32ee4b099a9cb10c24dc3a12` in thread 140280258877184.
+DEBUG 2018-03-28 19:47:25,230 5230 140280683746624 Starting thread `0591715f32ee4b099a9cb10c24dc3a12` for event loop `140280258877184`.
+DEBUG 2018-03-28 19:47:25,232 5230 140280683746624 Scheduler found next index 0
+INFO 2018-03-28 19:47:25,232 5230 140280683746624 Starting programs and moving files for stage `0`
+INFO 2018-03-28 19:47:25,235 5230 140280683746624 Starting program program_dUbiQgolHERPLXfPGIEt on slave slave_kXysRWLEbVOyBLOoaIDm
+INFO 2018-03-28 19:47:25,236 5230 140280683746624 Started program `program_dUbiQgolHERPLXfPGIEt`
+INFO 2018-03-28 19:47:25,240 5230 140280683746624 Moved filesystem `file_sRdfMtReLcdQVOHxLIRx`
+INFO 2018-03-28 19:47:25,240 5230 140280683746624 Started all programs for stage `0`.
+DEBUG 2018-03-28 19:47:25,242 5230 140280683746624 Scheduler found next index 2
+INFO 2018-03-28 19:47:25,242 5230 140280683746624 Starting programs and moving files for stage `2`
+INFO 2018-03-28 19:47:25,245 5230 140280683746624 Starting program program_ovwZSSEdGTspVsYkCyoX on slave slave_RBFwjiuQAhOKQMWlKfrS
+INFO 2018-03-28 19:47:25,248 5230 140280683746624 Started program `program_ovwZSSEdGTspVsYkCyoX`
+INFO 2018-03-28 19:47:25,248 5230 140280683746624 Started all programs for stage `2`.
+DEBUG 2018-03-28 19:47:25,250 5230 140280683746624 Scheduler did not found any more indexes.
+INFO 2018-03-28 19:47:25,250 5230 140280683746624 Starting programs and moving files for stage `-1`
+INFO 2018-03-28 19:47:25,251 5230 140280683746624 Could not find another index after `2` ... done.
+INFO 2018-03-28 19:47:25,251 5230 140280683746624 Removing tasks from event loop `7bb7b11103af4e938c48e49130e53953` (on thread `140280508917504`)
+DEBUG 2018-03-28 19:47:25,251 5230 140280683746624 Spawning function into the event loop `0591715f32ee4b099a9cb10c24dc3a12` (in thread 140280258877184)
+INFO 2018-03-28 19:47:25,252 5230 140280683746624 Canceling pending tasks.
+INFO 2018-03-28 19:47:25,252 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:25,252 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:25,253 5230 140280258877184 Running event loop `7926f90a17f24db381a51eeb7a2210e3` in thread 140280258877184.
+DEBUG 2018-03-28 19:47:25,253 5230 140280683746624 Starting thread `7926f90a17f24db381a51eeb7a2210e3` for event loop `140280258877184`.
+.DEBUG 2018-03-28 19:47:25,266 5230 140280250484480 Running event loop `c2efacace9f54ee7bc8076d4a07a9c24` in thread 140280250484480.
+DEBUG 2018-03-28 19:47:25,266 5230 140280683746624 Starting thread `c2efacace9f54ee7bc8076d4a07a9c24` for event loop `140280250484480`.
+DEBUG 2018-03-28 19:47:25,269 5230 140280683746624 Scheduler found next index 0
+INFO 2018-03-28 19:47:25,269 5230 140280683746624 Starting programs and moving files for stage `0`
+INFO 2018-03-28 19:47:25,272 5230 140280683746624 Program `program_PpBGwtQWUIrypdITRRNa` is already started.
+INFO 2018-03-28 19:47:25,276 5230 140280683746624 Moved filesystem `file_AyxLHQuxYPGOUBNpXZky`
+INFO 2018-03-28 19:47:25,276 5230 140280683746624 Started all programs for stage `0`.
+INFO 2018-03-28 19:47:25,276 5230 140280683746624 Notify myself because some entries are already ready.
+DEBUG 2018-03-28 19:47:25,278 5230 140280683746624 Scheduler found next index 2
+INFO 2018-03-28 19:47:25,278 5230 140280683746624 Starting programs and moving files for stage `2`
+INFO 2018-03-28 19:47:25,281 5230 140280683746624 Program `program_HFhdkXlyCOmeIdgGvirQ` is already started.
+INFO 2018-03-28 19:47:25,282 5230 140280683746624 Started all programs for stage `2`.
+INFO 2018-03-28 19:47:25,282 5230 140280683746624 Notify myself because some entries are already ready.
+DEBUG 2018-03-28 19:47:25,283 5230 140280683746624 Scheduler did not found any more indexes.
+INFO 2018-03-28 19:47:25,283 5230 140280683746624 Starting programs and moving files for stage `-1`
+INFO 2018-03-28 19:47:25,284 5230 140280683746624 Could not find another index after `2` ... done.
+INFO 2018-03-28 19:47:25,284 5230 140280683746624 Removing tasks from event loop `7bb7b11103af4e938c48e49130e53953` (on thread `140280508917504`)
+DEBUG 2018-03-28 19:47:25,285 5230 140280683746624 Spawning function into the event loop `c2efacace9f54ee7bc8076d4a07a9c24` (in thread 140280250484480)
+INFO 2018-03-28 19:47:25,285 5230 140280683746624 Canceling pending tasks.
+INFO 2018-03-28 19:47:25,285 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:25,285 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:25,286 5230 140280250484480 Running event loop `8a8f488b03364e70a51bc1956391b1d8` in thread 140280250484480.
+DEBUG 2018-03-28 19:47:25,287 5230 140280683746624 Starting thread `8a8f488b03364e70a51bc1956391b1d8` for event loop `140280250484480`.
+.DEBUG 2018-03-28 19:47:25,300 5230 140280242091776 Running event loop `cd9b642c7c7244138f0c0eccf8b3254f` in thread 140280242091776.
+DEBUG 2018-03-28 19:47:25,300 5230 140280683746624 Starting thread `cd9b642c7c7244138f0c0eccf8b3254f` for event loop `140280242091776`.
+DEBUG 2018-03-28 19:47:25,304 5230 140280683746624 Scheduler found next index 0
+INFO 2018-03-28 19:47:25,304 5230 140280683746624 Starting programs and moving files for stage `0`
+INFO 2018-03-28 19:47:25,307 5230 140280683746624 Filesystem `file_jEIAmaCJoeFRrOjkmINF` is already moved.
+INFO 2018-03-28 19:47:25,307 5230 140280683746624 Started all programs for stage `0`.
+INFO 2018-03-28 19:47:25,307 5230 140280683746624 Notify myself because some entries are already ready.
+DEBUG 2018-03-28 19:47:25,309 5230 140280683746624 Scheduler found next index 2
+INFO 2018-03-28 19:47:25,309 5230 140280683746624 Starting programs and moving files for stage `2`
+INFO 2018-03-28 19:47:25,312 5230 140280683746624 Program `program_tVWfBukuKjpzMzJDxtMT` is already started.
+INFO 2018-03-28 19:47:25,313 5230 140280683746624 Started all programs for stage `2`.
+INFO 2018-03-28 19:47:25,313 5230 140280683746624 Notify myself because some entries are already ready.
+DEBUG 2018-03-28 19:47:25,315 5230 140280683746624 Scheduler did not found any more indexes.
+INFO 2018-03-28 19:47:25,315 5230 140280683746624 Starting programs and moving files for stage `-1`
+INFO 2018-03-28 19:47:25,315 5230 140280683746624 Could not find another index after `2` ... done.
+INFO 2018-03-28 19:47:25,316 5230 140280683746624 Removing tasks from event loop `7bb7b11103af4e938c48e49130e53953` (on thread `140280508917504`)
+DEBUG 2018-03-28 19:47:25,316 5230 140280683746624 Spawning function into the event loop `cd9b642c7c7244138f0c0eccf8b3254f` (in thread 140280242091776)
+INFO 2018-03-28 19:47:25,316 5230 140280683746624 Canceling pending tasks.
+INFO 2018-03-28 19:47:25,316 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:25,316 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:25,318 5230 140280242091776 Running event loop `980c1add04af4284942987bea63f5f0b` in thread 140280242091776.
+DEBUG 2018-03-28 19:47:25,318 5230 140280683746624 Starting thread `980c1add04af4284942987bea63f5f0b` for event loop `140280242091776`.
+.DEBUG 2018-03-28 19:47:25,330 5230 140280233699072 Running event loop `f14ea81230ce45e68fc787552aac910c` in thread 140280233699072.
+DEBUG 2018-03-28 19:47:25,330 5230 140280683746624 Starting thread `f14ea81230ce45e68fc787552aac910c` for event loop `140280233699072`.
+DEBUG 2018-03-28 19:47:25,333 5230 140280683746624 Scheduler found next index 0
+INFO 2018-03-28 19:47:25,333 5230 140280683746624 Starting programs and moving files for stage `0`
+ERROR 2018-03-28 19:47:25,336 5230 140280683746624 A slave is gone offline while the execution.
+INFO 2018-03-28 19:47:25,336 5230 140280683746624 Removing tasks from event loop `7bb7b11103af4e938c48e49130e53953` (on thread `140280508917504`)
+DEBUG 2018-03-28 19:47:25,336 5230 140280683746624 Spawning function into the event loop `f14ea81230ce45e68fc787552aac910c` (in thread 140280233699072)
+INFO 2018-03-28 19:47:25,336 5230 140280683746624 Canceling pending tasks.
+INFO 2018-03-28 19:47:25,336 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:25,337 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:25,338 5230 140280233699072 Running event loop `5f3491860ec843cfa2e7809560f66103` in thread 140280233699072.
+DEBUG 2018-03-28 19:47:25,338 5230 140280683746624 Starting thread `5f3491860ec843cfa2e7809560f66103` for event loop `140280233699072`.
+.DEBUG 2018-03-28 19:47:25,350 5230 140280225306368 Running event loop `ddb77d339afe45b5b14cefd5d4280a5b` in thread 140280225306368.
+DEBUG 2018-03-28 19:47:25,350 5230 140280683746624 Starting thread `ddb77d339afe45b5b14cefd5d4280a5b` for event loop `140280225306368`.
+DEBUG 2018-03-28 19:47:25,352 5230 140280683746624 Scheduler found next index 0
+INFO 2018-03-28 19:47:25,352 5230 140280683746624 Starting programs and moving files for stage `0`
+INFO 2018-03-28 19:47:25,355 5230 140280683746624 Starting program program_IzBrBFDWKUlRHsjfPefO on slave slave_rVBevOoofzZRTYZgHlsp
+INFO 2018-03-28 19:47:25,356 5230 140280683746624 Started program `program_IzBrBFDWKUlRHsjfPefO`
+INFO 2018-03-28 19:47:25,360 5230 140280683746624 Moved filesystem `file_WFkEvolYKPjNtlEdpCcD`
+INFO 2018-03-28 19:47:25,360 5230 140280683746624 Started all programs for stage `0`.
+DEBUG 2018-03-28 19:47:25,361 5230 140280683746624 Scheduler found next index 2
+INFO 2018-03-28 19:47:25,362 5230 140280683746624 Starting programs and moving files for stage `2`
+ERROR 2018-03-28 19:47:25,364 5230 140280683746624 A slave is gone offline while the execution.
+INFO 2018-03-28 19:47:25,364 5230 140280683746624 Removing tasks from event loop `7bb7b11103af4e938c48e49130e53953` (on thread `140280508917504`)
+DEBUG 2018-03-28 19:47:25,364 5230 140280683746624 Spawning function into the event loop `ddb77d339afe45b5b14cefd5d4280a5b` (in thread 140280225306368)
+INFO 2018-03-28 19:47:25,365 5230 140280683746624 Canceling pending tasks.
+INFO 2018-03-28 19:47:25,365 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:25,365 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:25,366 5230 140280225306368 Running event loop `fb2bf7f97aba4218b9e7c174ef65ae53` in thread 140280225306368.
+DEBUG 2018-03-28 19:47:25,366 5230 140280683746624 Starting thread `fb2bf7f97aba4218b9e7c174ef65ae53` for event loop `140280225306368`.
+.DEBUG 2018-03-28 19:47:25,379 5230 140279671682816 Running event loop `e26624df029e4a49ab950734aede791a` in thread 140279671682816.
+DEBUG 2018-03-28 19:47:25,379 5230 140280683746624 Starting thread `e26624df029e4a49ab950734aede791a` for event loop `140279671682816`.
+INFO 2018-03-28 19:47:25,380 5230 140280683746624 Scheduler is finished. (SUCCESS)
+INFO 2018-03-28 19:47:25,381 5230 140280683746624 Removing tasks from event loop `7bb7b11103af4e938c48e49130e53953` (on thread `140280508917504`)
+DEBUG 2018-03-28 19:47:25,381 5230 140280683746624 Spawning function into the event loop `e26624df029e4a49ab950734aede791a` (in thread 140279671682816)
+INFO 2018-03-28 19:47:25,382 5230 140280683746624 Canceling pending tasks.
+INFO 2018-03-28 19:47:25,382 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:25,382 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:25,383 5230 140279671682816 Running event loop `e81d73135f5142fd8312700d35006ee4` in thread 140279671682816.
+DEBUG 2018-03-28 19:47:25,383 5230 140280683746624 Starting thread `e81d73135f5142fd8312700d35006ee4` for event loop `140279671682816`.
+.DEBUG 2018-03-28 19:47:25,396 5230 140279663290112 Running event loop `191a751d29ea437a8cdd3a0c2a9546c3` in thread 140279663290112.
+DEBUG 2018-03-28 19:47:25,396 5230 140280683746624 Starting thread `191a751d29ea437a8cdd3a0c2a9546c3` for event loop `140279663290112`.
+DEBUG 2018-03-28 19:47:25,397 5230 140280683746624 Waiting for programs and filesystems in stage `0`.
+DEBUG 2018-03-28 19:47:25,401 5230 140280683746624 Error in filesystem: file_WQSyuJkgmcCktgfuJXSp
+INFO 2018-03-28 19:47:25,401 5230 140280683746624 Removing tasks from event loop `7bb7b11103af4e938c48e49130e53953` (on thread `140280508917504`)
+DEBUG 2018-03-28 19:47:25,402 5230 140280683746624 Spawning function into the event loop `191a751d29ea437a8cdd3a0c2a9546c3` (in thread 140279663290112)
+INFO 2018-03-28 19:47:25,402 5230 140280683746624 Canceling pending tasks.
+INFO 2018-03-28 19:47:25,402 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:25,402 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:25,403 5230 140279663290112 Running event loop `6793e0880376434b94c02a1f586dfd98` in thread 140279663290112.
+DEBUG 2018-03-28 19:47:25,403 5230 140280683746624 Starting thread `6793e0880376434b94c02a1f586dfd98` for event loop `140279663290112`.
+.DEBUG 2018-03-28 19:47:25,417 5230 140279654897408 Running event loop `b0cf88597b8e4e189cb7f30f045eed53` in thread 140279654897408.
+DEBUG 2018-03-28 19:47:25,417 5230 140280683746624 Starting thread `b0cf88597b8e4e189cb7f30f045eed53` for event loop `140279654897408`.
+DEBUG 2018-03-28 19:47:25,418 5230 140280683746624 Waiting for programs and filesystems in stage `0`.
+DEBUG 2018-03-28 19:47:25,420 5230 140280683746624 Error in program: program_EwLqUyIDjYXKOPUVcAZD
+INFO 2018-03-28 19:47:25,421 5230 140280683746624 Removing tasks from event loop `7bb7b11103af4e938c48e49130e53953` (on thread `140280508917504`)
+DEBUG 2018-03-28 19:47:25,421 5230 140280683746624 Spawning function into the event loop `b0cf88597b8e4e189cb7f30f045eed53` (in thread 140279654897408)
+INFO 2018-03-28 19:47:25,421 5230 140280683746624 Canceling pending tasks.
+INFO 2018-03-28 19:47:25,421 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:25,421 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:25,423 5230 140279654897408 Running event loop `f92e8e6254414632a051c1517b166b8a` in thread 140279654897408.
+DEBUG 2018-03-28 19:47:25,423 5230 140280683746624 Starting thread `f92e8e6254414632a051c1517b166b8a` for event loop `140279654897408`.
+.DEBUG 2018-03-28 19:47:25,436 5230 140279646504704 Running event loop `57f66c210fa4473093aa18db91996a98` in thread 140279646504704.
+DEBUG 2018-03-28 19:47:25,436 5230 140280683746624 Starting thread `57f66c210fa4473093aa18db91996a98` for event loop `140279646504704`.
+DEBUG 2018-03-28 19:47:25,438 5230 140280683746624 Waiting for programs and filesystems in stage `0`.
+DEBUG 2018-03-28 19:47:25,440 5230 140280683746624 Program program_ARrCSqKIeyYlEnzuTbri is not ready yet.
+DEBUG 2018-03-28 19:47:25,441 5230 140280683746624 Waiting for programs and filesystems in stage `0`.
+DEBUG 2018-03-28 19:47:25,444 5230 140280683746624 Filesystem file_kpNMUitGtGKSRUaetFnY is not ready yet.
+DEBUG 2018-03-28 19:47:25,445 5230 140280683746624 Waiting for programs and filesystems in stage `0`.
+DEBUG 2018-03-28 19:47:25,449 5230 140280683746624 Waiting for programs and filesystems in stage `2`.
+INFO 2018-03-28 19:47:25,451 5230 140280683746624 Removing tasks from event loop `7bb7b11103af4e938c48e49130e53953` (on thread `140280508917504`)
+DEBUG 2018-03-28 19:47:25,452 5230 140280683746624 Spawning function into the event loop `57f66c210fa4473093aa18db91996a98` (in thread 140279646504704)
+INFO 2018-03-28 19:47:25,452 5230 140280683746624 Canceling pending tasks.
+INFO 2018-03-28 19:47:25,452 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:25,452 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:25,454 5230 140279646504704 Running event loop `b189eae3c8314afd9498221fab1da9d8` in thread 140279646504704.
+DEBUG 2018-03-28 19:47:25,454 5230 140280683746624 Starting thread `b189eae3c8314afd9498221fab1da9d8` for event loop `140279646504704`.
+.DEBUG 2018-03-28 19:47:25,467 5230 140279638112000 Running event loop `4d6672e52e6e4f98945e298f43119327` in thread 140279638112000.
+DEBUG 2018-03-28 19:47:25,467 5230 140280683746624 Starting thread `4d6672e52e6e4f98945e298f43119327` for event loop `140279638112000`.
+INFO 2018-03-28 19:47:25,468 5230 140280683746624 Waiting for all slaves to be online.
+INFO 2018-03-28 19:47:25,470 5230 140280683746624 Waiting for all slaves to be online.
+INFO 2018-03-28 19:47:25,471 5230 140280683746624 All slaves are online ... continue with execution.
+INFO 2018-03-28 19:47:25,471 5230 140280683746624 Removing tasks from event loop `7bb7b11103af4e938c48e49130e53953` (on thread `140280508917504`)
+DEBUG 2018-03-28 19:47:25,471 5230 140280683746624 Send notify to task in scheduler event loop.
+DEBUG 2018-03-28 19:47:25,471 5230 140280683746624 Spawning function into the event loop `4d6672e52e6e4f98945e298f43119327` (in thread 140279638112000)
+DEBUG 2018-03-28 19:47:25,472 5230 140280683746624 Spawning function into the event loop `4d6672e52e6e4f98945e298f43119327` (in thread 140279638112000)
+INFO 2018-03-28 19:47:25,472 5230 140280683746624 Canceling pending tasks.
+INFO 2018-03-28 19:47:25,472 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:25,472 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:25,473 5230 140279638112000 Running event loop `2291431a36e94f20a88cf79ed1a2d60d` in thread 140279638112000.
+DEBUG 2018-03-28 19:47:25,473 5230 140280683746624 Starting thread `2291431a36e94f20a88cf79ed1a2d60d` for event loop `140279638112000`.
+.DEBUG 2018-03-28 19:47:25,486 5230 140279629719296 Running event loop `decce3ee99c44f2d812b064c4ec00e76` in thread 140279629719296.
+DEBUG 2018-03-28 19:47:25,486 5230 140280683746624 Starting thread `decce3ee99c44f2d812b064c4ec00e76` for event loop `140279629719296`.
+DEBUG 2018-03-28 19:47:25,487 5230 140279621326592 Running event loop `d25d542c4f6d42cc87bf2d9dbf42cb63` in thread 140279621326592.
+DEBUG 2018-03-28 19:47:25,487 5230 140280683746624 Starting thread `d25d542c4f6d42cc87bf2d9dbf42cb63` for event loop `140279621326592`.
+DEBUG 2018-03-28 19:47:25,488 5230 140280683746624 Starting Scheduler in the event loop `d25d542c4f6d42cc87bf2d9dbf42cb63`
+DEBUG 2018-03-28 19:47:25,488 5230 140280683746624 Task in Scheduler event loop is pending.
+DEBUG 2018-03-28 19:47:25,489 5230 140280683746624 Send notify to task in scheduler event loop.
+DEBUG 2018-03-28 19:47:25,489 5230 140280683746624 Spawning function into the event loop `d25d542c4f6d42cc87bf2d9dbf42cb63` (in thread 140279621326592)
+DEBUG 2018-03-28 19:47:25,489 5230 140280683746624 Spawning function into the event loop `d25d542c4f6d42cc87bf2d9dbf42cb63` (in thread 140279621326592)
+DEBUG 2018-03-28 19:47:25,489 5230 140279621326592 Scheduler is waiting for wakeup notification.
+DEBUG 2018-03-28 19:47:25,489 5230 140279621326592 Scheduler is doing a step.
+INFO 2018-03-28 19:47:25,489 5230 140279621326592 Scheduler received interupt event. Exiting scheduler loop.
+INFO 2018-03-28 19:47:25,489 5230 140280683746624 Canceling pending tasks.
+ERROR 2018-03-28 19:47:25,489 5230 140280683746624 <Task finished coro=<Scheduler.__run__() done, defined at /home/heiko/Documents/Uni/BP/server/frontend/scheduler.py:277> result=None>
+INFO 2018-03-28 19:47:25,489 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:25,490 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:25,491 5230 140279621326592 Running event loop `701e6a7f90c5490cbdff6cfcc8403294` in thread 140279621326592.
+DEBUG 2018-03-28 19:47:25,491 5230 140280683746624 Starting thread `701e6a7f90c5490cbdff6cfcc8403294` for event loop `140279621326592`.
+DEBUG 2018-03-28 19:47:25,492 5230 140280683746624 Spawning function into the event loop `701e6a7f90c5490cbdff6cfcc8403294` (in thread 140279621326592)
+INFO 2018-03-28 19:47:25,492 5230 140280683746624 Canceling pending tasks.
+INFO 2018-03-28 19:47:25,492 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:25,492 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:25,493 5230 140279621326592 Running event loop `0fa9a3ceed2c4073816797fa265bde96` in thread 140279621326592.
+DEBUG 2018-03-28 19:47:25,493 5230 140280683746624 Starting thread `0fa9a3ceed2c4073816797fa265bde96` for event loop `140279621326592`.
+INFO 2018-03-28 19:47:25,494 5230 140280683746624 Removing tasks from event loop `7bb7b11103af4e938c48e49130e53953` (on thread `140280508917504`)
+DEBUG 2018-03-28 19:47:25,494 5230 140280683746624 Spawning function into the event loop `0fa9a3ceed2c4073816797fa265bde96` (in thread 140279621326592)
+INFO 2018-03-28 19:47:25,494 5230 140280683746624 Canceling pending tasks.
+INFO 2018-03-28 19:47:25,494 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:25,494 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:25,496 5230 140279621326592 Running event loop `37e483c5d7ba490baf7a3f9f6b0040df` in thread 140279621326592.
+DEBUG 2018-03-28 19:47:25,496 5230 140280683746624 Starting thread `37e483c5d7ba490baf7a3f9f6b0040df` for event loop `140279621326592`.
+.DEBUG 2018-03-28 19:47:25,509 5230 140279134811904 Running event loop `d2df8a7aae664fbbbe3c1f09fa74d8f8` in thread 140279134811904.
+DEBUG 2018-03-28 19:47:25,509 5230 140280683746624 Starting thread `d2df8a7aae664fbbbe3c1f09fa74d8f8` for event loop `140279134811904`.
+ERROR 2018-03-28 19:47:26,510 5230 140279126419200 Not all salves connected within the time limit.
+INFO 2018-03-28 19:47:26,511 5230 140280683746624 Removing tasks from event loop `7bb7b11103af4e938c48e49130e53953` (on thread `140280508917504`)
+DEBUG 2018-03-28 19:47:26,513 5230 140280683746624 Spawning function into the event loop `d2df8a7aae664fbbbe3c1f09fa74d8f8` (in thread 140279134811904)
+INFO 2018-03-28 19:47:26,514 5230 140280683746624 Canceling pending tasks.
+INFO 2018-03-28 19:47:26,514 5230 140280683746624 Closing event loop.
+INFO 2018-03-28 19:47:26,514 5230 140280683746624 Waiting for thread.
+DEBUG 2018-03-28 19:47:26,519 5230 140279134811904 Running event loop `344a5424f2de45fdae49f6faf7dd9094` in thread 140279134811904.
+DEBUG 2018-03-28 19:47:26,520 5230 140280683746624 Starting thread `344a5424f2de45fdae49f6faf7dd9094` for event loop `140279134811904`.
+.
+----------------------------------------------------------------------
+Ran 237 tests in 2.695s
+
+OK
+System check identified no issues (0 silenced).
+Destroying test database for alias 'default'...

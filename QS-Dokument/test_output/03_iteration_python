@@ -1,0 +1,9 @@
+python manage.py test
+Creating test database for alias 'default'...
+System check identified no issues (0 silenced).
+Compiled sass
+..............................................................................................
+----------------------------------------------------------------------
+Ran 94 tests in 2.030s
+OK
+Destroying test database for alias 'default'...

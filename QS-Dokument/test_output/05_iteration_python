@@ -1,0 +1,93 @@
+python manage.py test
+Creating test database for alias 'default'...
+System check identified no issues (0 silenced).
+Compiled sass
+DEBUG 2018-03-28 19:38:36,593 3906 140287579104576 Starting thread None 
+DEBUG 2018-03-28 19:38:36,594 3906 140287446443776 Running  event loop <_UnixSelectorEventLoop running=False closed=False debug=False> in thread <Thread(Thread-1, started daemon 140287446443776)>.
+DEBUG 2018-03-28 19:38:36,594 3906 140287579104576 Thread started 140287446443776 and is started True. <Thread(Thread-1, started daemon 140287446443776)>
+DEBUG 2018-03-28 19:38:36,594 3906 140287579104576 Thread is <Thread(Thread-1, started daemon 140287446443776)>
+...........INFO 2018-03-28 19:38:37,283 3906 140287579104576 Starting program program_UMjRHHDGupmdnJzJGgLw on slave slave_rmpKIrIJUVJTeCKVHWrn
+.......INFO 2018-03-28 19:38:37,331 3906 140287579104576 Stoping program program_QESzkoOHOIsSQxuFlcpd on slave slave_QotcBKckcPimJHRbccar
+.......................................................................................................INFO 2018-03-28 19:38:37,677 3906 140287579104576 client connected with ip 0.0.0.62 on port 00:00:00:00:00:3e
+DEBUG 2018-03-28 19:38:37,677 3906 140287579104576 Added client to command group client_1
+INFO 2018-03-28 19:38:37,677 3906 140287579104576 send online request to slave_GaHHgjdglinoEzPdBWVP
+.ERROR 2018-03-28 19:38:37,682 3906 140287579104576 Rejecting unknown client with ip 0.0.0.63!
+..INFO 2018-03-28 19:38:37,689 3906 140287579104576 Received answer on execute request of function program_udWVdEqlmXMlPjJvvFRi from slave_fZBUZJFxwABjPTIrZPsd.
+INFO 2018-03-28 19:38:37,689 3906 140287579104576 Saved status of program_udWVdEqlmXMlPjJvvFRi with code .
+DEBUG 2018-03-28 19:38:37,690 3906 140287579104576 Thread is done.
+DEBUG 2018-03-28 19:38:37,690 3906 140287579104576 Task is not running -> no notify!
+.WARNING 2018-03-28 19:38:37,697 3906 140287579104576 A program finished with id 2e73b2df6dab4b39bdbb7b6c02b52c42, but is not in the database.
+DEBUG 2018-03-28 19:38:37,697 3906 140287579104576 Thread is done.
+DEBUG 2018-03-28 19:38:37,697 3906 140287579104576 Task is not running -> no notify!
+.INFO 2018-03-28 19:38:37,702 3906 140287579104576 Received answer on execute request of function program_xrIkXJDUcskoWITfGraw from slave_HdNKCZGgHSIaKKfRhxkR.
+ERROR 2018-03-28 19:38:37,702 3906 140287579104576 Exception in occurred client while executing program_xrIkXJDUcskoWITfGraw: 
+ foobar
+DEBUG 2018-03-28 19:38:37,703 3906 140287579104576 Thread is done.
+DEBUG 2018-03-28 19:38:37,703 3906 140287579104576 Task is not running -> no notify!
+.ERROR 2018-03-28 19:38:37,705 3906 140287579104576 Exception occurred (incoming-request)
+:Traceback (most recent call last):
+  File "/home/heiko/Documents/Uni/BP/server/frontend/consumers.py", line 250, in ws_notifications_receive
+    status = Status.from_json(message.content['text'])
+KeyError: 'text'
+
+.INFO 2018-03-28 19:38:37,708 3906 140287579104576 Slave slave_tPYQmCIwODtbgYofrAHI has connected to the master
+DEBUG 2018-03-28 19:38:37,708 3906 140287579104576 Thread is done.
+DEBUG 2018-03-28 19:38:37,708 3906 140287579104576 Task is not running -> no notify!
+.WARNING 2018-03-28 19:38:37,713 3906 140287579104576 Slaves online request with uuid bd8fc764697e440e8eae0513b186f18a, was not asked for it.
+DEBUG 2018-03-28 19:38:37,713 3906 140287579104576 Thread is done.
+DEBUG 2018-03-28 19:38:37,713 3906 140287579104576 Task is not running -> no notify!
+.ERROR 2018-03-28 19:38:37,716 3906 140287579104576 Exception occurred in client slave_THdrnkdBmBhfWqpEaTQM (online-request): 
+ foobar
+DEBUG 2018-03-28 19:38:37,716 3906 140287579104576 Thread is done.
+DEBUG 2018-03-28 19:38:37,716 3906 140287579104576 Task is not running -> no notify!
+.INFO 2018-03-28 19:38:37,718 3906 140287579104576 Client send answer from unknown function .
+.INFO 2018-03-28 19:38:37,723 3906 140287579104576 client connected with ip 0.0.0.4 on port 00:00:00:00:00:04
+DEBUG 2018-03-28 19:38:37,723 3906 140287579104576 Added client to command group client_1
+INFO 2018-03-28 19:38:37,723 3906 140287579104576 send online request to slave_BleMfJWZQspcerUOynxa
+DEBUG 2018-03-28 19:38:37,730 3906 140287579104576 Thread is done.
+DEBUG 2018-03-28 19:38:37,730 3906 140287579104576 Task is not running -> no notify!
+INFO 2018-03-28 19:38:37,730 3906 140287579104576 Client with ip 0.0.0.4 disconnected from /commands!
+.INFO 2018-03-28 19:38:37,736 3906 140287579104576 client connected with ip 0.0.0.5 on port 00:00:00:00:00:05
+DEBUG 2018-03-28 19:38:37,736 3906 140287579104576 Added client to command group client_1
+INFO 2018-03-28 19:38:37,737 3906 140287579104576 send online request to slave_LAMjTVawZUFJILIcNJSq
+ERROR 2018-03-28 19:38:37,743 3906 140287579104576 Disconnected client is not in database. (with IP 0.0.0.5)
+....DEBUG 2018-03-28 19:38:37,978 3906 140287579104576 Thread is done.
+DEBUG 2018-03-28 19:38:37,978 3906 140287579104576 Starting task in event loop.
+DEBUG 2018-03-28 19:38:37,978 3906 140287579104576 Spawn task into event loop.
+DEBUG 2018-03-28 19:38:37,979 3906 140287579104576 Task started
+DEBUG 2018-03-28 19:38:37,979 3906 140287579104576 Task is pending.
+DEBUG 2018-03-28 19:38:37,979 3906 140287579104576 Task is pending.
+DEBUG 2018-03-28 19:38:37,979 3906 140287579104576 Task is pending.
+DEBUG 2018-03-28 19:38:37,979 3906 140287579104576 Task is running -> notify!
+DEBUG 2018-03-28 19:38:37,979 3906 140287579104576 Spawn function callback into event loop without timeout.
+.INFO 2018-03-28 19:38:37,979 3906 140287579104576 Scheduler is already finished. (ERROR)
+.DEBUG 2018-03-28 19:38:37,981 3906 140287579104576 Starting slave `1`
+DEBUG 2018-03-28 19:38:37,982 3906 140287579104576 Starting slave `2`
+DEBUG 2018-03-28 19:38:37,983 3906 140287579104576 Spawned task in event loop in thread <Thread(Thread-1, started daemon 140287446443776)>
+.INFO 2018-03-28 19:38:37,983 3906 140287579104576 Starting program for stage -1
+DEBUG 2018-03-28 19:38:37,984 3906 140287579104576 Scheduler found next index 0
+INFO 2018-03-28 19:38:37,987 3906 140287579104576 Starting program for stage 0
+DEBUG 2018-03-28 19:38:37,988 3906 140287579104576 Scheduler found next index 2
+INFO 2018-03-28 19:38:37,991 3906 140287579104576 Starting program for stage 2
+DEBUG 2018-03-28 19:38:37,991 3906 140287579104576 Scheduler done
+INFO 2018-03-28 19:38:37,992 3906 140287579104576 Everything done ... scheduler done
+.INFO 2018-03-28 19:38:37,992 3906 140287579104576 Scheduler is already finished. (SUCCESS)
+.DEBUG 2018-03-28 19:38:37,997 3906 140287579104576 Program test_program1 is not ready yet.
+INFO 2018-03-28 19:38:37,997 3906 140287579104576 Not all programs are finished.
+.DEBUG 2018-03-28 19:38:38,005 3906 140287579104576 Program test_program1 is not ready yet.
+INFO 2018-03-28 19:38:38,005 3906 140287579104576 Not all programs are finished.
+DEBUG 2018-03-28 19:38:38,010 3906 140287579104576 Error in program test_program2
+INFO 2018-03-28 19:38:38,010 3906 140287579104576 Not all programs are finished.
+.INFO 2018-03-28 19:38:38,011 3906 140287579104576 Waiting for all slaves to be online.
+INFO 2018-03-28 19:38:38,013 3906 140287579104576 Waiting for all slaves to be online.
+INFO 2018-03-28 19:38:38,014 3906 140287579104576 All slaves online
+.DEBUG 2018-03-28 19:38:39,015 3906 140287403624192 Slave timeout call back.
+DEBUG 2018-03-28 19:38:39,015 3906 140287403624192 Scheduler for slaves timeouted
+.DEBUG 2018-03-28 19:38:39,016 3906 140287579104576 Thread is done.
+DEBUG 2018-03-28 19:38:39,016 3906 140287579104576 Task is not running -> no notify!
+
+--------------------------------------------------
+Ran 146 tests in 1.814s
+
+OK
+Destroying test database for alias 'default'...

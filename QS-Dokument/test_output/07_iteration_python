@@ -1,0 +1,582 @@
+python manage.py test
+Creating test database for alias 'default'...
+DEBUG 2018-03-28 19:42:39,592 4399 139754899191104 Using selector: EpollSelector
+Compiled sass
+DEBUG 2018-03-28 19:42:39,592 4399 139754899191104 Starting thread None 
+DEBUG 2018-03-28 19:42:39,593 4399 139754766530304 Running  event loop <_UnixSelectorEventLoop running=False closed=False debug=False> in thread <Thread(Thread-1, started daemon 139754766530304)>.
+DEBUG 2018-03-28 19:42:39,593 4399 139754899191104 Thread started 139754766530304 and is started True. <Thread(Thread-1, started daemon 139754766530304)>
+DEBUG 2018-03-28 19:42:40,405 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=0
+DEBUG 2018-03-28 19:42:40,405 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=0
+DEBUG 2018-03-28 19:42:40,406 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aba1198>
+DEBUG 2018-03-28 19:42:40,406 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=1
+DEBUG 2018-03-28 19:42:40,406 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=1
+DEBUG 2018-03-28 19:42:40,406 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aba1198>>
+.DEBUG 2018-03-28 19:42:40,420 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=2
+DEBUG 2018-03-28 19:42:40,420 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=2
+DEBUG 2018-03-28 19:42:40,421 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2ab06d68>
+DEBUG 2018-03-28 19:42:40,421 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=3
+DEBUG 2018-03-28 19:42:40,421 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=3
+DEBUG 2018-03-28 19:42:40,421 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2ab06d68>>
+.DEBUG 2018-03-28 19:42:40,425 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2ab22e48>
+DEBUG 2018-03-28 19:42:40,425 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=4
+DEBUG 2018-03-28 19:42:40,425 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=4
+DEBUG 2018-03-28 19:42:40,426 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2ab22e48>>
+WARNING 2018-03-28 19:42:40,431 4399 139754899191104 Error while adding filesystem `file_lSujkNVxmQXLAvovZQTcnew`: {'__all__': ['Filesystem with this Source path, Destination path, Slave, Source type and Destination type already exists.']}
+..DEBUG 2018-03-28 19:42:40,433 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aab1630>
+DEBUG 2018-03-28 19:42:40,433 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=5
+DEBUG 2018-03-28 19:42:40,434 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=5
+DEBUG 2018-03-28 19:42:40,434 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aab1630>>
+WARNING 2018-03-28 19:42:40,439 4399 139754899191104 Error while adding filesystem `file_gGiQoLvlWnGzWsycBdsr`: {'__all__': ['Filesystem with this Name and Slave already exists.', 'Filesystem with this Source path, Destination path, Slave, Source type and Destination type already exists.']}
+.WARNING 2018-03-28 19:42:40,443 4399 139754899191104 Not Found: /api/filesystem
+.DEBUG 2018-03-28 19:42:40,444 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aabda20>
+DEBUG 2018-03-28 19:42:40,444 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=6
+DEBUG 2018-03-28 19:42:40,444 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=6
+DEBUG 2018-03-28 19:42:40,444 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aabda20>>
+.DEBUG 2018-03-28 19:42:40,449 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aabdd30>
+DEBUG 2018-03-28 19:42:40,449 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=7
+DEBUG 2018-03-28 19:42:40,449 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=7
+DEBUG 2018-03-28 19:42:40,449 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aabdd30>>
+.DEBUG 2018-03-28 19:42:40,453 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aacd588>
+DEBUG 2018-03-28 19:42:40,453 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=8
+DEBUG 2018-03-28 19:42:40,453 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=8
+DEBUG 2018-03-28 19:42:40,453 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aacd588>>
+DEBUG 2018-03-28 19:42:40,454 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aacd470>>
+...DEBUG 2018-03-28 19:42:40,465 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aacdfd0>
+DEBUG 2018-03-28 19:42:40,465 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=9
+DEBUG 2018-03-28 19:42:40,465 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=9
+DEBUG 2018-03-28 19:42:40,466 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aacdfd0>>
+..DEBUG 2018-03-28 19:42:40,471 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aabd0b8>
+DEBUG 2018-03-28 19:42:40,471 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=10
+DEBUG 2018-03-28 19:42:40,471 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=10
+DEBUG 2018-03-28 19:42:40,472 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aabd0b8>>
+.DEBUG 2018-03-28 19:42:40,479 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aabdac8>
+DEBUG 2018-03-28 19:42:40,479 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=11
+DEBUG 2018-03-28 19:42:40,479 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=11
+DEBUG 2018-03-28 19:42:40,479 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aabdac8>>
+.DEBUG 2018-03-28 19:42:40,483 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=12
+DEBUG 2018-03-28 19:42:40,483 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=12
+DEBUG 2018-03-28 19:42:40,484 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aacdf28>>
+.DEBUG 2018-03-28 19:42:40,490 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=13
+DEBUG 2018-03-28 19:42:40,490 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=13
+DEBUG 2018-03-28 19:42:40,491 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2ab06e48>>
+DEBUG 2018-03-28 19:42:40,492 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2ab06588>>
+..DEBUG 2018-03-28 19:42:40,500 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=14
+DEBUG 2018-03-28 19:42:40,500 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=14
+DEBUG 2018-03-28 19:42:40,500 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aacdbe0>>
+.DEBUG 2018-03-28 19:42:40,506 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aab15c0>
+DEBUG 2018-03-28 19:42:40,506 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=15
+DEBUG 2018-03-28 19:42:40,506 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=15
+DEBUG 2018-03-28 19:42:40,506 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aab15c0>>
+..DEBUG 2018-03-28 19:42:40,511 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=16
+DEBUG 2018-03-28 19:42:40,511 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=16
+DEBUG 2018-03-28 19:42:40,512 4399 139754899191104 LazyAttribute: Evaluating <function MovedFileFactory.<lambda> at 0x7f1b2bd87d90> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aad8d68>>
+.DEBUG 2018-03-28 19:42:40,515 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=17
+DEBUG 2018-03-28 19:42:40,515 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=17
+DEBUG 2018-03-28 19:42:40,516 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aad8eb8>>
+.DEBUG 2018-03-28 19:42:40,522 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aabd2b0>
+DEBUG 2018-03-28 19:42:40,523 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=18
+DEBUG 2018-03-28 19:42:40,523 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=18
+DEBUG 2018-03-28 19:42:40,523 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aabd2b0>>
+.DEBUG 2018-03-28 19:42:40,525 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aacda58>
+DEBUG 2018-03-28 19:42:40,525 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=19
+DEBUG 2018-03-28 19:42:40,525 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=19
+DEBUG 2018-03-28 19:42:40,525 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aacda58>>
+....DEBUG 2018-03-28 19:42:40,537 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=20
+DEBUG 2018-03-28 19:42:40,537 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=20
+DEBUG 2018-03-28 19:42:40,538 4399 139754899191104 LazyAttribute: Evaluating <function MovedFileFactory.<lambda> at 0x7f1b2bd87d90> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aad8ef0>>
+..DEBUG 2018-03-28 19:42:40,543 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=21
+DEBUG 2018-03-28 19:42:40,543 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=21
+DEBUG 2018-03-28 19:42:40,544 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aae5ac8>>
+.DEBUG 2018-03-28 19:42:40,547 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=22
+DEBUG 2018-03-28 19:42:40,548 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=22
+.DEBUG 2018-03-28 19:42:40,553 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=23
+DEBUG 2018-03-28 19:42:40,553 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=23
+.DEBUG 2018-03-28 19:42:40,562 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=24
+DEBUG 2018-03-28 19:42:40,562 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=24
+..DEBUG 2018-03-28 19:42:40,572 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aaea1d0>
+DEBUG 2018-03-28 19:42:40,572 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=25
+DEBUG 2018-03-28 19:42:40,572 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=25
+.DEBUG 2018-03-28 19:42:40,579 4399 139754899191104 Sequence: Computing next value of <function SlaveOnlineFactory.<lambda> at 0x7f1b2bd87b70> for seq=0
+DEBUG 2018-03-28 19:42:40,579 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=0
+DEBUG 2018-03-28 19:42:40,579 4399 139754899191104 LazyAttribute: Evaluating <function SlaveOnlineFactory.<lambda> at 0x7f1b2bd87bf8> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aaee898>>
+INFO 2018-03-28 19:42:40,583 4399 139754899191104 Starting program program_bsAHOTucSDWvhXwWqqIw on slave slave_yuRkVnCBtRxFLxTPIgza
+DEBUG 2018-03-28 19:42:40,585 4399 139754899191104 started timeout on program_bsAHOTucSDWvhXwWqqIw, for 0 seconds
+DEBUG 2018-03-28 19:42:40,585 4399 139754899191104 <class 'int'>
+DEBUG 2018-03-28 19:42:40,585 4399 139754899191104 Spawned task in event loop in thread <Thread(Thread-1, started daemon 139754766530304)>
+.DEBUG 2018-03-28 19:42:40,588 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aaeafd0>
+DEBUG 2018-03-28 19:42:40,588 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=26
+DEBUG 2018-03-28 19:42:40,588 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=26
+..ERROR 2018-03-28 19:42:40,592 4399 139754766530304 Exception in callback timer_timeout_program(1) at /home/heiko/Documents/Uni/BP/server/frontend/controller.py:43
+handle: <TimerHandle when=52185.044732576 timer_timeout_program(1) at /home/heiko/Documents/Uni/BP/server/frontend/controller.py:43>
+Traceback (most recent call last):
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: database table is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/home/heiko/Documents/Uni/BP/server/frontend/controller.py", line 52, in timer_timeout_program
+    timeouted=True)
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/models/query.py", line 692, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1375, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heiko/Documents/Uni/BP/server/pyenv/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: database table is locked
+DEBUG 2018-03-28 19:42:40,593 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2b1a3470>
+DEBUG 2018-03-28 19:42:40,595 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=27
+DEBUG 2018-03-28 19:42:40,595 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=27
+.DEBUG 2018-03-28 19:42:40,600 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aae5518>
+DEBUG 2018-03-28 19:42:40,600 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=28
+DEBUG 2018-03-28 19:42:40,600 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=28
+.DEBUG 2018-03-28 19:42:40,609 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa576d8>
+DEBUG 2018-03-28 19:42:40,609 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=29
+DEBUG 2018-03-28 19:42:40,609 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=29
+.DEBUG 2018-03-28 19:42:40,614 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=30
+DEBUG 2018-03-28 19:42:40,614 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=30
+DEBUG 2018-03-28 19:42:40,615 4399 139754899191104 LazyAttribute: Evaluating <function ProgramStatusFactory.<lambda> at 0x7f1b2bd87c80> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a9f46d8>>
+INFO 2018-03-28 19:42:40,621 4399 139754899191104 Disabling logging for program program_GesrEEEDvEqSAQRWAXyA on slave slave_OJRkonqTMSvFPXqHguXe
+.DEBUG 2018-03-28 19:42:40,623 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aaee128>
+DEBUG 2018-03-28 19:42:40,623 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=31
+DEBUG 2018-03-28 19:42:40,623 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=31
+INFO 2018-03-28 19:42:40,626 4399 139754899191104 Disabling logging for program program_tkfYAMDTQpKKxKobSpqs on slave slave_aaCPLMjzmVkhwyduUFcc
+...DEBUG 2018-03-28 19:42:40,629 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=32
+DEBUG 2018-03-28 19:42:40,629 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=32
+DEBUG 2018-03-28 19:42:40,630 4399 139754899191104 LazyAttribute: Evaluating <function ProgramStatusFactory.<lambda> at 0x7f1b2bd87c80> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a9f47f0>>
+INFO 2018-03-28 19:42:40,633 4399 139754899191104 Enabling logging for program program_uWuXAPEkfcVxeVuVUhDG on slave slave_oYDkZaSEVGajctMZCoyo
+.DEBUG 2018-03-28 19:42:40,635 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a9f4d68>
+DEBUG 2018-03-28 19:42:40,635 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=33
+DEBUG 2018-03-28 19:42:40,635 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=33
+INFO 2018-03-28 19:42:40,638 4399 139754899191104 Enabling logging for program program_gUXFziDXdGnGSLmXVhwL on slave slave_hJyikNoqglLWmmtRlGuy
+...DEBUG 2018-03-28 19:42:40,641 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=34
+DEBUG 2018-03-28 19:42:40,641 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=34
+DEBUG 2018-03-28 19:42:40,643 4399 139754899191104 LazyAttribute: Evaluating <function ProgramStatusFactory.<lambda> at 0x7f1b2bd87c80> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aa14400>>
+INFO 2018-03-28 19:42:40,646 4399 139754899191104 Requesting log for program program_BcATtGKDaOvesmqugyQQ on slave slave_kSbdvpusyqbOPSTFfYVN
+.DEBUG 2018-03-28 19:42:40,648 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa0cc18>
+DEBUG 2018-03-28 19:42:40,648 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=35
+DEBUG 2018-03-28 19:42:40,648 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=35
+INFO 2018-03-28 19:42:40,651 4399 139754899191104 Requesting log for program program_jpeUTQMAkLrAOVHzNZVp on slave slave_iaAIJstMYoblgrUzkybE
+...DEBUG 2018-03-28 19:42:40,655 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aad8b38>
+DEBUG 2018-03-28 19:42:40,655 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=36
+DEBUG 2018-03-28 19:42:40,655 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=36
+.DEBUG 2018-03-28 19:42:40,657 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aaee128>
+DEBUG 2018-03-28 19:42:40,658 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=37
+DEBUG 2018-03-28 19:42:40,658 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=37
+...DEBUG 2018-03-28 19:42:40,669 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa57a58>
+DEBUG 2018-03-28 19:42:40,669 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=38
+DEBUG 2018-03-28 19:42:40,669 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=38
+DEBUG 2018-03-28 19:42:40,670 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa575c0>
+DEBUG 2018-03-28 19:42:40,670 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=39
+DEBUG 2018-03-28 19:42:40,670 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=39
+DEBUG 2018-03-28 19:42:40,671 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aaee240>
+DEBUG 2018-03-28 19:42:40,671 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=40
+DEBUG 2018-03-28 19:42:40,671 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=40
+.DEBUG 2018-03-28 19:42:40,680 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=41
+DEBUG 2018-03-28 19:42:40,680 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=41
+DEBUG 2018-03-28 19:42:40,682 4399 139754899191104 LazyAttribute: Evaluating <function ProgramStatusFactory.<lambda> at 0x7f1b2bd87c80> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a9f4630>>
+..DEBUG 2018-03-28 19:42:40,687 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aae50f0>
+DEBUG 2018-03-28 19:42:40,687 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=42
+DEBUG 2018-03-28 19:42:40,687 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=42
+.DEBUG 2018-03-28 19:42:40,690 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=43
+DEBUG 2018-03-28 19:42:40,690 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=43
+DEBUG 2018-03-28 19:42:40,692 4399 139754899191104 LazyAttribute: Evaluating <function ProgramStatusFactory.<lambda> at 0x7f1b2bd87c80> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2bd8eeb8>>
+INFO 2018-03-28 19:42:40,695 4399 139754899191104 Stoping program program_gidBwQjzVLbqLpTAXiDC on slave slave_zKgDpcyEvLMujiwDDZPY
+.DEBUG 2018-03-28 19:42:40,696 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=44
+DEBUG 2018-03-28 19:42:40,696 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=44
+DEBUG 2018-03-28 19:42:40,697 4399 139754899191104 LazyAttribute: Evaluating <function ProgramStatusFactory.<lambda> at 0x7f1b2bd87c80> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a9f4748>>
+...DEBUG 2018-03-28 19:42:40,704 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aad8198>
+DEBUG 2018-03-28 19:42:40,704 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=45
+DEBUG 2018-03-28 19:42:40,704 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=45
+.....DEBUG 2018-03-28 19:42:40,715 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2bd8e710>
+DEBUG 2018-03-28 19:42:40,716 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=46
+DEBUG 2018-03-28 19:42:40,716 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=46
+..DEBUG 2018-03-28 19:42:40,732 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.ProgramFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa0c240>
+DEBUG 2018-03-28 19:42:40,733 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aaea240>
+DEBUG 2018-03-28 19:42:40,733 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=47
+DEBUG 2018-03-28 19:42:40,733 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=47
+DEBUG 2018-03-28 19:42:40,734 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.FileFactory(), create=<factory.builder.BuildStep object at 0x7f1b2bd9f550>
+DEBUG 2018-03-28 19:42:40,735 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2bd9f048>
+DEBUG 2018-03-28 19:42:40,735 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=48
+DEBUG 2018-03-28 19:42:40,735 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=48
+DEBUG 2018-03-28 19:42:40,735 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2bd9f048>>
+....DEBUG 2018-03-28 19:42:40,805 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.ProgramFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa18940>
+DEBUG 2018-03-28 19:42:40,805 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa18ac8>
+DEBUG 2018-03-28 19:42:40,806 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=49
+DEBUG 2018-03-28 19:42:40,806 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=49
+DEBUG 2018-03-28 19:42:40,807 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.FileFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa13828>
+DEBUG 2018-03-28 19:42:40,807 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa13198>
+DEBUG 2018-03-28 19:42:40,807 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=50
+DEBUG 2018-03-28 19:42:40,807 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=50
+DEBUG 2018-03-28 19:42:40,808 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aa13198>>
+DEBUG 2018-03-28 19:42:40,808 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=51
+DEBUG 2018-03-28 19:42:40,808 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=51
+DEBUG 2018-03-28 19:42:40,809 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aae5a20>>
+.DEBUG 2018-03-28 19:42:40,834 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.ProgramFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa09908>
+DEBUG 2018-03-28 19:42:40,834 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa09ef0>
+DEBUG 2018-03-28 19:42:40,835 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=52
+DEBUG 2018-03-28 19:42:40,835 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=52
+DEBUG 2018-03-28 19:42:40,836 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.FileFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa09668>
+DEBUG 2018-03-28 19:42:40,836 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa0d080>
+DEBUG 2018-03-28 19:42:40,836 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=53
+DEBUG 2018-03-28 19:42:40,836 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=53
+DEBUG 2018-03-28 19:42:40,837 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aa0d080>>
+.DEBUG 2018-03-28 19:42:40,844 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.ProgramFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa0d860>
+DEBUG 2018-03-28 19:42:40,845 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa0d9e8>
+DEBUG 2018-03-28 19:42:40,845 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=54
+DEBUG 2018-03-28 19:42:40,845 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=54
+DEBUG 2018-03-28 19:42:40,846 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.FileFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa0d9b0>
+DEBUG 2018-03-28 19:42:40,846 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa0dc50>
+DEBUG 2018-03-28 19:42:40,847 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=55
+DEBUG 2018-03-28 19:42:40,847 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=55
+DEBUG 2018-03-28 19:42:40,847 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aa0dc50>>
+.DEBUG 2018-03-28 19:42:40,862 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=56
+DEBUG 2018-03-28 19:42:40,862 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=56
+DEBUG 2018-03-28 19:42:40,863 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aa200f0>>
+.DEBUG 2018-03-28 19:42:40,877 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=57
+DEBUG 2018-03-28 19:42:40,877 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=57
+DEBUG 2018-03-28 19:42:40,879 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aa24320>>
+.DEBUG 2018-03-28 19:42:40,893 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa25048>
+DEBUG 2018-03-28 19:42:40,893 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=58
+DEBUG 2018-03-28 19:42:40,893 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=58
+.DEBUG 2018-03-28 19:42:40,903 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=59
+DEBUG 2018-03-28 19:42:40,903 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=59
+DEBUG 2018-03-28 19:42:40,905 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aa24518>>
+.DEBUG 2018-03-28 19:42:40,918 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=60
+DEBUG 2018-03-28 19:42:40,919 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=60
+DEBUG 2018-03-28 19:42:40,920 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aa1e400>>
+.DEBUG 2018-03-28 19:42:40,934 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=61
+DEBUG 2018-03-28 19:42:40,934 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=61
+DEBUG 2018-03-28 19:42:40,935 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aa2d9e8>>
+.DEBUG 2018-03-28 19:42:40,950 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa25198>
+DEBUG 2018-03-28 19:42:40,950 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=62
+DEBUG 2018-03-28 19:42:40,950 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=62
+..DEBUG 2018-03-28 19:42:40,961 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=63
+DEBUG 2018-03-28 19:42:40,961 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=63
+DEBUG 2018-03-28 19:42:40,962 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aa2e470>>
+.......DEBUG 2018-03-28 19:42:40,982 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=64
+DEBUG 2018-03-28 19:42:40,982 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=64
+...DEBUG 2018-03-28 19:42:40,991 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=66
+DEBUG 2018-03-28 19:42:40,991 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=66
+.DEBUG 2018-03-28 19:42:41,025 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=67
+DEBUG 2018-03-28 19:42:41,026 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=67
+DEBUG 2018-03-28 19:42:41,026 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=68
+DEBUG 2018-03-28 19:42:41,026 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=68
+.DEBUG 2018-03-28 19:42:41,032 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=69
+DEBUG 2018-03-28 19:42:41,032 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=69
+DEBUG 2018-03-28 19:42:41,033 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=70
+DEBUG 2018-03-28 19:42:41,033 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=70
+..DEBUG 2018-03-28 19:42:41,049 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a9982e8>
+DEBUG 2018-03-28 19:42:41,049 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=71
+DEBUG 2018-03-28 19:42:41,049 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=71
+DEBUG 2018-03-28 19:42:41,049 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a9982e8>>
+.DEBUG 2018-03-28 19:42:41,055 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a9840f0>
+DEBUG 2018-03-28 19:42:41,056 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=72
+DEBUG 2018-03-28 19:42:41,056 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=72
+..DEBUG 2018-03-28 19:42:41,060 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=73
+DEBUG 2018-03-28 19:42:41,060 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=73
+.DEBUG 2018-03-28 19:42:41,062 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=74
+DEBUG 2018-03-28 19:42:41,062 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=74
+DEBUG 2018-03-28 19:42:41,062 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=75
+DEBUG 2018-03-28 19:42:41,062 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=75
+DEBUG 2018-03-28 19:42:41,063 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=76
+DEBUG 2018-03-28 19:42:41,063 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=76
+.DEBUG 2018-03-28 19:42:41,073 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=77
+DEBUG 2018-03-28 19:42:41,073 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=77
+..DEBUG 2018-03-28 19:42:41,078 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=78
+DEBUG 2018-03-28 19:42:41,078 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=78
+..DEBUG 2018-03-28 19:42:41,082 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=79
+DEBUG 2018-03-28 19:42:41,082 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=79
+..DEBUG 2018-03-28 19:42:41,088 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=80
+DEBUG 2018-03-28 19:42:41,088 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=80
+.DEBUG 2018-03-28 19:42:41,089 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=81
+DEBUG 2018-03-28 19:42:41,089 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=81
+..DEBUG 2018-03-28 19:42:41,092 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a998c88>
+DEBUG 2018-03-28 19:42:41,092 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=82
+DEBUG 2018-03-28 19:42:41,092 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=82
+DEBUG 2018-03-28 19:42:41,093 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a998c88>>
+DEBUG 2018-03-28 19:42:41,094 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a998908>
+DEBUG 2018-03-28 19:42:41,094 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=83
+DEBUG 2018-03-28 19:42:41,094 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=83
+DEBUG 2018-03-28 19:42:41,094 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a998908>>
+DEBUG 2018-03-28 19:42:41,095 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a9a7208>
+DEBUG 2018-03-28 19:42:41,095 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=84
+DEBUG 2018-03-28 19:42:41,095 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=84
+DEBUG 2018-03-28 19:42:41,095 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a9a7208>>
+.DEBUG 2018-03-28 19:42:41,096 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a9a7be0>
+DEBUG 2018-03-28 19:42:41,097 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=85
+DEBUG 2018-03-28 19:42:41,097 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=85
+DEBUG 2018-03-28 19:42:41,097 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a9a7be0>>
+.DEBUG 2018-03-28 19:42:41,098 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=86
+DEBUG 2018-03-28 19:42:41,098 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=86
+DEBUG 2018-03-28 19:42:41,099 4399 139754899191104 LazyAttribute: Evaluating <function ProgramStatusFactory.<lambda> at 0x7f1b2bd87c80> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a9a7dd8>>
+.DEBUG 2018-03-28 19:42:41,100 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=87
+DEBUG 2018-03-28 19:42:41,100 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=87
+........DEBUG 2018-03-28 19:42:41,105 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.ProgramFactory(), create=<factory.builder.BuildStep object at 0x7f1b2bda9be0>
+DEBUG 2018-03-28 19:42:41,105 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a9a75f8>
+DEBUG 2018-03-28 19:42:41,105 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=88
+DEBUG 2018-03-28 19:42:41,106 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=88
+DEBUG 2018-03-28 19:42:41,106 4399 139754899191104 LazyAttribute: Evaluating <function ProgramStatusFactory.<lambda> at 0x7f1b2bd87c80> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2bda9be0>>
+.DEBUG 2018-03-28 19:42:41,110 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2bda9c88>
+DEBUG 2018-03-28 19:42:41,110 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=89
+DEBUG 2018-03-28 19:42:41,110 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=89
+.DEBUG 2018-03-28 19:42:41,111 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.ProgramFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a97ee80>
+DEBUG 2018-03-28 19:42:41,112 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a9a7f28>
+DEBUG 2018-03-28 19:42:41,112 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=90
+DEBUG 2018-03-28 19:42:41,112 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=90
+DEBUG 2018-03-28 19:42:41,113 4399 139754899191104 LazyAttribute: Evaluating <function ProgramStatusFactory.<lambda> at 0x7f1b2bd87c80> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a97ee80>>
+.DEBUG 2018-03-28 19:42:41,116 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.ProgramFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a998ba8>
+DEBUG 2018-03-28 19:42:41,117 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a9840f0>
+DEBUG 2018-03-28 19:42:41,117 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=91
+DEBUG 2018-03-28 19:42:41,117 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=91
+DEBUG 2018-03-28 19:42:41,117 4399 139754899191104 LazyAttribute: Evaluating <function ProgramStatusFactory.<lambda> at 0x7f1b2bd87c80> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a998ba8>>
+.DEBUG 2018-03-28 19:42:41,121 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.ProgramFactory(), create=<factory.builder.BuildStep object at 0x7f1b2aa202b0>
+DEBUG 2018-03-28 19:42:41,121 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2bd9fc18>
+DEBUG 2018-03-28 19:42:41,121 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=92
+DEBUG 2018-03-28 19:42:41,121 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=92
+DEBUG 2018-03-28 19:42:41,122 4399 139754899191104 LazyAttribute: Evaluating <function ProgramStatusFactory.<lambda> at 0x7f1b2bd87c80> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2aa202b0>>
+..DEBUG 2018-03-28 19:42:41,127 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=93
+DEBUG 2018-03-28 19:42:41,127 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=93
+..DEBUG 2018-03-28 19:42:41,132 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=94
+DEBUG 2018-03-28 19:42:41,132 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=94
+.DEBUG 2018-03-28 19:42:41,137 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2bd9fe10>
+DEBUG 2018-03-28 19:42:41,138 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=95
+DEBUG 2018-03-28 19:42:41,138 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=95
+DEBUG 2018-03-28 19:42:41,138 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2bd9fe10>>
+...DEBUG 2018-03-28 19:42:41,141 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=96
+DEBUG 2018-03-28 19:42:41,141 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=96
+............DEBUG 2018-03-28 19:42:41,168 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=97
+DEBUG 2018-03-28 19:42:41,168 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=97
+DEBUG 2018-03-28 19:42:41,169 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a92ff60>>
+.DEBUG 2018-03-28 19:42:41,195 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=98
+DEBUG 2018-03-28 19:42:41,195 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=98
+..DEBUG 2018-03-28 19:42:41,218 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a8ff630>
+DEBUG 2018-03-28 19:42:41,219 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=99
+DEBUG 2018-03-28 19:42:41,219 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=99
+DEBUG 2018-03-28 19:42:41,219 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a8ff630>>
+.DEBUG 2018-03-28 19:42:41,227 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a8ff898>
+DEBUG 2018-03-28 19:42:41,227 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=100
+DEBUG 2018-03-28 19:42:41,227 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=100
+..DEBUG 2018-03-28 19:42:41,236 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=101
+DEBUG 2018-03-28 19:42:41,236 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=101
+..DEBUG 2018-03-28 19:42:41,238 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=102
+DEBUG 2018-03-28 19:42:41,238 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=102
+..DEBUG 2018-03-28 19:42:41,241 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a8f6dd8>
+DEBUG 2018-03-28 19:42:41,241 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=103
+DEBUG 2018-03-28 19:42:41,241 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=103
+.DEBUG 2018-03-28 19:42:41,248 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=104
+DEBUG 2018-03-28 19:42:41,248 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=104
+DEBUG 2018-03-28 19:42:41,250 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a90ceb8>>
+.DEBUG 2018-03-28 19:42:41,259 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=105
+DEBUG 2018-03-28 19:42:41,259 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=105
+DEBUG 2018-03-28 19:42:41,261 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a90c828>>
+...DEBUG 2018-03-28 19:42:41,272 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=106
+DEBUG 2018-03-28 19:42:41,272 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=106
+.....DEBUG 2018-03-28 19:42:41,279 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=107
+DEBUG 2018-03-28 19:42:41,280 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=107
+.DEBUG 2018-03-28 19:42:41,286 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=108
+DEBUG 2018-03-28 19:42:41,286 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=108
+INFO 2018-03-28 19:42:41,290 4399 139754899191104 client connected with ip 0.0.0.108 on port 00:00:00:00:00:6c
+DEBUG 2018-03-28 19:42:41,290 4399 139754899191104 Added client to command group client_1
+INFO 2018-03-28 19:42:41,291 4399 139754899191104 send online request to slave_GadFBRHfqvPXLivViCfS
+.DEBUG 2018-03-28 19:42:41,292 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=109
+DEBUG 2018-03-28 19:42:41,292 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=109
+ERROR 2018-03-28 19:42:41,295 4399 139754899191104 Rejecting unknown client with ip 0.0.0.109!
+...DEBUG 2018-03-28 19:42:41,300 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a8fffd0>
+DEBUG 2018-03-28 19:42:41,300 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=110
+DEBUG 2018-03-28 19:42:41,300 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=110
+DEBUG 2018-03-28 19:42:41,301 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a8fffd0>>
+DEBUG 2018-03-28 19:42:41,302 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a8ffc50>
+DEBUG 2018-03-28 19:42:41,302 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=111
+DEBUG 2018-03-28 19:42:41,302 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=111
+DEBUG 2018-03-28 19:42:41,302 4399 139754899191104 LazyAttribute: Evaluating <function MovedFileFactory.<lambda> at 0x7f1b2bd87d90> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a8ffc50>>
+ERROR 2018-03-28 19:42:41,303 4399 139754899191104 {'status': 'ok', 'payload': {'method': 'chain_execution', 'result': [{'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_kkTDwaKXuJbOOjOPmCXY'}, 'uuid': '59b4f55e6ac3446ca1932b36c64cbb91'}, {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_kkTDwaKXuJbOOjOPmCXY'}, 'uuid': '59b4f55e6ac3446ca1932b36c64cbb91'}]}, 'uuid': 'f0efa4617bba4c55b211624dfee27ca5'}
+INFO 2018-03-28 19:42:41,303 4399 139754899191104 chain_execution results: {'status': 'ok', 'payload': {'method': 'chain_execution', 'result': [{'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_kkTDwaKXuJbOOjOPmCXY'}, 'uuid': '59b4f55e6ac3446ca1932b36c64cbb91'}, {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_kkTDwaKXuJbOOjOPmCXY'}, 'uuid': '59b4f55e6ac3446ca1932b36c64cbb91'}]}, 'uuid': 'f0efa4617bba4c55b211624dfee27ca5'}
+ERROR 2018-03-28 19:42:41,303 4399 139754899191104 {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_kkTDwaKXuJbOOjOPmCXY'}, 'uuid': '59b4f55e6ac3446ca1932b36c64cbb91'}
+INFO 2018-03-28 19:42:41,303 4399 139754899191104 Handle filesystem moved {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_kkTDwaKXuJbOOjOPmCXY'}, 'uuid': '59b4f55e6ac3446ca1932b36c64cbb91'}
+INFO 2018-03-28 19:42:41,305 4399 139754899191104 Saved filesystem file_DPujxpVFQEEtovvdzuvE with hash value file_kkTDwaKXuJbOOjOPmCXY.
+ERROR 2018-03-28 19:42:41,305 4399 139754899191104 {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_kkTDwaKXuJbOOjOPmCXY'}, 'uuid': '59b4f55e6ac3446ca1932b36c64cbb91'}
+INFO 2018-03-28 19:42:41,305 4399 139754899191104 Handle filesystem moved {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_kkTDwaKXuJbOOjOPmCXY'}, 'uuid': '59b4f55e6ac3446ca1932b36c64cbb91'}
+INFO 2018-03-28 19:42:41,306 4399 139754899191104 Saved filesystem file_DPujxpVFQEEtovvdzuvE with hash value file_kkTDwaKXuJbOOjOPmCXY.
+.ERROR 2018-03-28 19:42:41,308 4399 139754899191104 {'status': 'err', 'payload': {'method': 'chain_execution', 'result': None}, 'uuid': '708b6f4ae08d44acbb679e62d7db9303'}
+ERROR 2018-03-28 19:42:41,308 4399 139754899191104 Received Status.err for chain_execution, but this function can not raise errors. (payload: {'method': 'chain_execution', 'result': None})
+.DEBUG 2018-03-28 19:42:41,309 4399 139754899191104 Sequence: Computing next value of <function SlaveOnlineFactory.<lambda> at 0x7f1b2bd87b70> for seq=1
+DEBUG 2018-03-28 19:42:41,309 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=1
+DEBUG 2018-03-28 19:42:41,309 4399 139754899191104 LazyAttribute: Evaluating <function SlaveOnlineFactory.<lambda> at 0x7f1b2bd87bf8> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a92f400>>
+DEBUG 2018-03-28 19:42:41,309 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.ProgramFactory(slave=<Slave: Slave object (1)>), create=<factory.builder.BuildStep object at 0x7f1b2a8ffe10>
+DEBUG 2018-03-28 19:42:41,310 4399 139754899191104 LazyAttribute: Evaluating <function ProgramStatusFactory.<lambda> at 0x7f1b2bd87c80> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a8ffe10>>
+INFO 2018-03-28 19:42:41,313 4399 139754899191104 client connected with ip 0.0.0.1 on port 00:00:00:00:00:01
+DEBUG 2018-03-28 19:42:41,313 4399 139754899191104 Added client to command group client_1
+INFO 2018-03-28 19:42:41,314 4399 139754899191104 send online request to slave_lNcMEOJGDnDHelopQFpd
+INFO 2018-03-28 19:42:41,320 4399 139754899191104 Client with ip 0.0.0.1 disconnected from /commands!
+.DEBUG 2018-03-28 19:42:41,322 4399 139754899191104 Sequence: Computing next value of <function SlaveOnlineFactory.<lambda> at 0x7f1b2bd87b70> for seq=2
+DEBUG 2018-03-28 19:42:41,322 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=2
+DEBUG 2018-03-28 19:42:41,322 4399 139754899191104 LazyAttribute: Evaluating <function SlaveOnlineFactory.<lambda> at 0x7f1b2bd87bf8> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a944b00>>
+DEBUG 2018-03-28 19:42:41,323 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.ProgramFactory(slave=<Slave: Slave object (1)>), create=<factory.builder.BuildStep object at 0x7f1b2a9980b8>
+DEBUG 2018-03-28 19:42:41,323 4399 139754899191104 LazyAttribute: Evaluating <function ProgramStatusFactory.<lambda> at 0x7f1b2bd87c80> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a9980b8>>
+INFO 2018-03-28 19:42:41,327 4399 139754899191104 client connected with ip 0.0.0.2 on port 00:00:00:00:00:02
+DEBUG 2018-03-28 19:42:41,327 4399 139754899191104 Added client to command group client_1
+INFO 2018-03-28 19:42:41,327 4399 139754899191104 send online request to slave_aSUKqCPxtsarXgrxHUbD
+ERROR 2018-03-28 19:42:41,334 4399 139754899191104 Disconnected client is not in database. (with IP 0.0.0.2)
+.ERROR 2018-03-28 19:42:41,336 4399 139754899191104 {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': None}, 'uuid': 'cee9d59caabf4d0fb93b1cb5af8dc78c'}
+INFO 2018-03-28 19:42:41,336 4399 139754899191104 Handle filesystem moved {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': None}, 'uuid': 'cee9d59caabf4d0fb93b1cb5af8dc78c'}
+WARNING 2018-03-28 19:42:41,337 4399 139754899191104 A filesystem moved with id cee9d59caabf4d0fb93b1cb5af8dc78c, but is not in the database.
+.DEBUG 2018-03-28 19:42:41,338 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2bd4a1d0>
+DEBUG 2018-03-28 19:42:41,338 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=112
+DEBUG 2018-03-28 19:42:41,338 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=112
+DEBUG 2018-03-28 19:42:41,338 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2bd4a1d0>>
+ERROR 2018-03-28 19:42:41,340 4399 139754899191104 {'status': 'err', 'payload': {'method': 'filesystem_move', 'result': 'any kind of string'}, 'uuid': '4a14743aedc54f02a14880cdf0697e5a'}
+INFO 2018-03-28 19:42:41,340 4399 139754899191104 Handle filesystem moved {'status': 'err', 'payload': {'method': 'filesystem_move', 'result': 'any kind of string'}, 'uuid': '4a14743aedc54f02a14880cdf0697e5a'}
+ERROR 2018-03-28 19:42:41,341 4399 139754899191104 Error while moving filesystem: any kind of string
+.DEBUG 2018-03-28 19:42:41,342 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2bd4a208>
+DEBUG 2018-03-28 19:42:41,342 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=113
+DEBUG 2018-03-28 19:42:41,342 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=113
+DEBUG 2018-03-28 19:42:41,343 4399 139754899191104 LazyAttribute: Evaluating <function FileFactory.<lambda> at 0x7f1b2bd87d08> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2bd4a208>>
+DEBUG 2018-03-28 19:42:41,343 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2bdbd198>
+DEBUG 2018-03-28 19:42:41,344 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=114
+DEBUG 2018-03-28 19:42:41,344 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=114
+DEBUG 2018-03-28 19:42:41,344 4399 139754899191104 LazyAttribute: Evaluating <function MovedFileFactory.<lambda> at 0x7f1b2bd87d90> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2bdbd198>>
+ERROR 2018-03-28 19:42:41,345 4399 139754899191104 {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_jPmVNKxGUeVKymXjenfh'}, 'uuid': '76f16835344c4ffd90c36337c44d48a0'}
+INFO 2018-03-28 19:42:41,345 4399 139754899191104 Handle filesystem moved {'status': 'ok', 'payload': {'method': 'filesystem_move', 'result': 'file_jPmVNKxGUeVKymXjenfh'}, 'uuid': '76f16835344c4ffd90c36337c44d48a0'}
+INFO 2018-03-28 19:42:41,346 4399 139754899191104 Saved filesystem file_dNoeLXYZFdzAohIhuZAD with hash value file_jPmVNKxGUeVKymXjenfh.
+.DEBUG 2018-03-28 19:42:41,347 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.ProgramFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a95fcf8>
+DEBUG 2018-03-28 19:42:41,348 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a8f6cc0>
+DEBUG 2018-03-28 19:42:41,348 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=115
+DEBUG 2018-03-28 19:42:41,348 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=115
+DEBUG 2018-03-28 19:42:41,349 4399 139754899191104 LazyAttribute: Evaluating <function ProgramStatusFactory.<lambda> at 0x7f1b2bd87c80> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a95fcf8>>
+ERROR 2018-03-28 19:42:41,351 4399 139754899191104 {'status': 'ok', 'payload': {'method': 'execute', 'result': 0}, 'uuid': '762b1c713b5d4596bce04ea531153c54'}
+INFO 2018-03-28 19:42:41,353 4399 139754899191104 Received answer on execute request of function program_rtgrQeCjuOfrjkmrcXtF from slave_iJWFMKMMdTWUCKBWldLA.
+INFO 2018-03-28 19:42:41,353 4399 139754899191104 Saved status of program_rtgrQeCjuOfrjkmrcXtF with code .
+.DEBUG 2018-03-28 19:42:41,356 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.ProgramFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a8f6f28>
+DEBUG 2018-03-28 19:42:41,356 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a8f6470>
+DEBUG 2018-03-28 19:42:41,356 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=116
+DEBUG 2018-03-28 19:42:41,356 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=116
+DEBUG 2018-03-28 19:42:41,357 4399 139754899191104 LazyAttribute: Evaluating <function ProgramStatusFactory.<lambda> at 0x7f1b2bd87c80> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a8f6f28>>
+ERROR 2018-03-28 19:42:41,361 4399 139754899191104 {'status': 'ok', 'payload': {'method': 'execute', 'result': 0}, 'uuid': '4ae556df779247a3aec41f49f702fb6f'}
+WARNING 2018-03-28 19:42:41,361 4399 139754899191104 A program finished with id 4ae556df779247a3aec41f49f702fb6f, but is not in the database.
+.DEBUG 2018-03-28 19:42:41,362 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.ProgramFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a8f6cc0>
+DEBUG 2018-03-28 19:42:41,363 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2bdb2978>
+DEBUG 2018-03-28 19:42:41,363 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=117
+DEBUG 2018-03-28 19:42:41,363 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=117
+DEBUG 2018-03-28 19:42:41,363 4399 139754899191104 LazyAttribute: Evaluating <function ProgramStatusFactory.<lambda> at 0x7f1b2bd87c80> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a8f6cc0>>
+ERROR 2018-03-28 19:42:41,365 4399 139754899191104 {'status': 'err', 'payload': {'method': 'execute', 'result': 'foobar'}, 'uuid': '64478dca5e744977b89784987674e01e'}
+INFO 2018-03-28 19:42:41,367 4399 139754899191104 Received answer on execute request of function program_iBftxuuqmeYEiprNfwFp from slave_SFTaSqHLEXXxVgTzroKI.
+ERROR 2018-03-28 19:42:41,367 4399 139754899191104 Exception in occurred client while executing program_iBftxuuqmeYEiprNfwFp: 
+ foobar
+.ERROR 2018-03-28 19:42:41,370 4399 139754899191104 No content['text'] in received message.
+.DEBUG 2018-03-28 19:42:41,370 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.ProgramFactory(), create=<factory.builder.BuildStep object at 0x7f1b2a963f60>
+DEBUG 2018-03-28 19:42:41,370 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2bdbd198>
+DEBUG 2018-03-28 19:42:41,371 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=118
+DEBUG 2018-03-28 19:42:41,371 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=118
+DEBUG 2018-03-28 19:42:41,371 4399 139754899191104 LazyAttribute: Evaluating <function ProgramStatusFactory.<lambda> at 0x7f1b2bd87c80> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a963f60>>
+ERROR 2018-03-28 19:42:41,373 4399 139754899191104 {'status': 'ok', 'payload': {'method': 'get_log', 'result': {'log': 'this is the content of a logfile', 'uuid': '4ec05c7cb35a4b3d8b97e456b57ead34'}}, 'uuid': 'c417adcd5c1f4fcabfe7d75b2ca70e18'}
+INFO 2018-03-28 19:42:41,374 4399 139754899191104 Received answer on get_log request of program program_YjIrgDFtSFfYUojArJSr on slave_UhixhOrIDRIuigVDfvKJ.
+INFO 2018-03-28 19:42:41,375 4399 139754899191104 Send log of program_YjIrgDFtSFfYUojArJSr to the webinterface
+.ERROR 2018-03-28 19:42:41,376 4399 139754899191104 {'status': 'err', 'payload': {'method': 'get_log', 'result': 'foobar'}, 'uuid': '03ceabf58b2147629f23c1cb9e2151e7'}
+ERROR 2018-03-28 19:42:41,376 4399 139754899191104 Exception occurred (get_log-request): 
+ foobar
+.ERROR 2018-03-28 19:42:41,378 4399 139754899191104 {'status': 'ok', 'payload': {'method': 'get_log', 'result': {'log': '', 'uuid': '0'}}, 'uuid': 'fbaf09f2c996474fbff95a9bbe93b225'}
+WARNING 2018-03-28 19:42:41,379 4399 139754899191104 A log from a programm with id fbaf09f2c996474fbff95a9bbe93b225 has arrived, but is not in the database.
+.DEBUG 2018-03-28 19:42:41,379 4399 139754899191104 Sequence: Computing next value of <function SlaveOnlineFactory.<lambda> at 0x7f1b2bd87b70> for seq=3
+DEBUG 2018-03-28 19:42:41,379 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=3
+DEBUG 2018-03-28 19:42:41,380 4399 139754899191104 LazyAttribute: Evaluating <function SlaveOnlineFactory.<lambda> at 0x7f1b2bd87bf8> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2a998978>>
+ERROR 2018-03-28 19:42:41,381 4399 139754899191104 {'status': 'ok', 'payload': {'method': 'online'}, 'uuid': '94a4b48ae80c4b3582edf7377330dece'}
+INFO 2018-03-28 19:42:41,382 4399 139754899191104 Slave slave_cyhwZoEOuFjrpodvHgtY has connected to the master
+.DEBUG 2018-03-28 19:42:41,383 4399 139754899191104 Sequence: Computing next value of <function SlaveOnlineFactory.<lambda> at 0x7f1b2bd87b70> for seq=4
+DEBUG 2018-03-28 19:42:41,383 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=4
+DEBUG 2018-03-28 19:42:41,383 4399 139754899191104 LazyAttribute: Evaluating <function SlaveOnlineFactory.<lambda> at 0x7f1b2bd87bf8> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2bd4a128>>
+ERROR 2018-03-28 19:42:41,386 4399 139754899191104 {'status': 'ok', 'payload': {'method': 'online'}, 'uuid': 'edafc9e635c740428d2394f4752f0681'}
+WARNING 2018-03-28 19:42:41,387 4399 139754899191104 Slaves online request with uuid edafc9e635c740428d2394f4752f0681, was not asked for it.
+.DEBUG 2018-03-28 19:42:41,388 4399 139754899191104 Sequence: Computing next value of <function SlaveOnlineFactory.<lambda> at 0x7f1b2bd87b70> for seq=5
+DEBUG 2018-03-28 19:42:41,388 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=5
+DEBUG 2018-03-28 19:42:41,388 4399 139754899191104 LazyAttribute: Evaluating <function SlaveOnlineFactory.<lambda> at 0x7f1b2bd87bf8> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2bd4a2b0>>
+ERROR 2018-03-28 19:42:41,389 4399 139754899191104 {'status': 'err', 'payload': {'method': 'online', 'result': 'foobar'}, 'uuid': '53751b27d1e74029942a445f34364e47'}
+ERROR 2018-03-28 19:42:41,390 4399 139754899191104 Exception occurred in client slave_xhkhkHEeIUCGjhgqoUPG (online-request): 
+ foobar
+.ERROR 2018-03-28 19:42:41,392 4399 139754899191104 {'status': 'ok', 'payload': {'method': ''}, 'uuid': '7c15ab5c5133426eb78deda972d37f47'}
+WARNING 2018-03-28 19:42:41,392 4399 139754899191104 Client send answer from unknown function .
+.DEBUG 2018-03-28 19:42:41,393 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2bd4a208>
+DEBUG 2018-03-28 19:42:41,393 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=119
+DEBUG 2018-03-28 19:42:41,393 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=119
+DEBUG 2018-03-28 19:42:41,393 4399 139754899191104 LazyAttribute: Evaluating <function MovedFileFactory.<lambda> at 0x7f1b2bd87d90> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2bd4a208>>
+ERROR 2018-03-28 19:42:41,395 4399 139754899191104 {'status': 'err', 'payload': {'method': 'filesystem_restore', 'result': 'any kind of string'}, 'uuid': '99346c3dd253470fa26b08db0c7fa6ea'}
+INFO 2018-03-28 19:42:41,395 4399 139754899191104 Handle filesystem restored {'status': 'err', 'payload': {'method': 'filesystem_restore', 'result': 'any kind of string'}, 'uuid': '99346c3dd253470fa26b08db0c7fa6ea'}
+.ERROR 2018-03-28 19:42:41,398 4399 139754899191104 {'status': 'ok', 'payload': {'method': 'filesystem_restore', 'result': None}, 'uuid': '24a764e92ad94a24a5db2bb7cabae6e2'}
+INFO 2018-03-28 19:42:41,398 4399 139754899191104 Handle filesystem restored {'status': 'ok', 'payload': {'method': 'filesystem_restore', 'result': None}, 'uuid': '24a764e92ad94a24a5db2bb7cabae6e2'}
+WARNING 2018-03-28 19:42:41,399 4399 139754899191104 A filesystem restored with id 24a764e92ad94a24a5db2bb7cabae6e2, but is not in the database.
+.DEBUG 2018-03-28 19:42:41,400 4399 139754899191104 SubFactory: Instantiating frontend.tests.factory.SlaveFactory(), create=<factory.builder.BuildStep object at 0x7f1b2bd4a198>
+DEBUG 2018-03-28 19:42:41,400 4399 139754899191104 Sequence: Computing next value of <function SlaveFactory.<lambda> at 0x7f1b2bd87ae8> for seq=120
+DEBUG 2018-03-28 19:42:41,400 4399 139754899191104 Sequence: Computing next value of <function int_to_mac at 0x7f1b30230730> for seq=120
+DEBUG 2018-03-28 19:42:41,400 4399 139754899191104 LazyAttribute: Evaluating <function MovedFileFactory.<lambda> at 0x7f1b2bd87d90> on <Resolver for <factory.builder.BuildStep object at 0x7f1b2bd4a198>>
+ERROR 2018-03-28 19:42:41,402 4399 139754899191104 {'status': 'ok', 'payload': {'method': 'filesystem_restore', 'result': None}, 'uuid': 'b1f824ec4b3b4319b71a1418707ed8d5'}
+INFO 2018-03-28 19:42:41,402 4399 139754899191104 Handle filesystem restored {'status': 'ok', 'payload': {'method': 'filesystem_restore', 'result': None}, 'uuid': 'b1f824ec4b3b4319b71a1418707ed8d5'}
+INFO 2018-03-28 19:42:41,403 4399 139754899191104 Restored filesystemsystem file_bqXRqlblreIZXSZPMTiB.
+.ERROR 2018-03-28 19:42:41,405 4399 139754899191104 Error while parsing json. (cause: Expecting value: line 1 column 1 (char 0))
+ERROR 2018-03-28 19:42:41,405 4399 139754899191104 Could not parse Status from incoming request. (cause: Missing field in encode string. (status))
+.....DEBUG 2018-03-28 19:42:41,655 4399 139754899191104 Using selector: EpollSelector
+DEBUG 2018-03-28 19:42:41,656 4399 139754899191104 Starting thread None 
+DEBUG 2018-03-28 19:42:41,657 4399 139754654852864 Running  event loop <_UnixSelectorEventLoop running=False closed=False debug=False> in thread <Thread(Thread-2, started daemon 139754654852864)>.
+DEBUG 2018-03-28 19:42:41,657 4399 139754899191104 Thread started 139754654852864 and is started True. <Thread(Thread-2, started daemon 139754654852864)>
+DEBUG 2018-03-28 19:42:41,657 4399 139754899191104 Adding task to scheduler event loop
+DEBUG 2018-03-28 19:42:41,657 4399 139754899191104 Spawn task into event loop.
+DEBUG 2018-03-28 19:42:41,658 4399 139754899191104 Task in Scheduler event loop is pending.
+DEBUG 2018-03-28 19:42:41,658 4399 139754899191104 Task in Scheduler event loop is pending.
+DEBUG 2018-03-28 19:42:41,658 4399 139754899191104 Task in Scheduler event loop is pending.
+DEBUG 2018-03-28 19:42:41,658 4399 139754899191104 Send notify to task in scheduler event loop.
+DEBUG 2018-03-28 19:42:41,658 4399 139754899191104 Spawn function callback into event loop without timeout.
+.INFO 2018-03-28 19:42:41,658 4399 139754899191104 Scheduler is finished. (ERROR)
+.DEBUG 2018-03-28 19:42:41,661 4399 139754899191104 Send WOL to the slave `test_slav21`.
+DEBUG 2018-03-28 19:42:41,662 4399 139754899191104 Send WOL to the slave `test_sl1ve2`.
+DEBUG 2018-03-28 19:42:41,662 4399 139754899191104 Spawned task in event loop in thread <Thread(Thread-2, started daemon 139754654852864)>
+.DEBUG 2018-03-28 19:42:41,664 4399 139754899191104 Scheduler found next index 0
+INFO 2018-03-28 19:42:41,664 4399 139754899191104 Starting programs and moving files for stage `0`
+INFO 2018-03-28 19:42:41,667 4399 139754899191104 Starting program test_program1 on slave test_slav21
+INFO 2018-03-28 19:42:41,669 4399 139754899191104 Started program `test_program1`
+INFO 2018-03-28 19:42:41,669 4399 139754899191104 Started all programs for stage `0`.
+DEBUG 2018-03-28 19:42:41,671 4399 139754899191104 Scheduler found next index 2
+INFO 2018-03-28 19:42:41,671 4399 139754899191104 Starting programs and moving files for stage `2`
+INFO 2018-03-28 19:42:41,674 4399 139754899191104 Starting program test_program2 on slave test_sl1ve2
+DEBUG 2018-03-28 19:42:41,675 4399 139754899191104 started timeout on test_program2, for 1 seconds
+DEBUG 2018-03-28 19:42:41,675 4399 139754899191104 <class 'int'>
+DEBUG 2018-03-28 19:42:41,676 4399 139754899191104 Spawned task in event loop in thread <Thread(Thread-1, started daemon 139754766530304)>
+INFO 2018-03-28 19:42:41,676 4399 139754899191104 Started program `test_program2`
+INFO 2018-03-28 19:42:41,676 4399 139754899191104 Started all programs for stage `2`.
+DEBUG 2018-03-28 19:42:41,678 4399 139754899191104 Scheduler done
+INFO 2018-03-28 19:42:41,678 4399 139754899191104 Starting programs and moving files for stage `-1`
+INFO 2018-03-28 19:42:41,679 4399 139754899191104 Could not find another index after `2` ... done.
+.INFO 2018-03-28 19:42:41,679 4399 139754899191104 Scheduler is finished. (SUCCESS)
+.DEBUG 2018-03-28 19:42:41,682 4399 139754899191104 Waiting for programs and filesystems in stage `0`.
+DEBUG 2018-03-28 19:42:41,684 4399 139754899191104 Program test_program1 is not ready yet.
+DEBUG 2018-03-28 19:42:41,685 4399 139754899191104 Waiting for programs and filesystems in stage `0`.
+DEBUG 2018-03-28 19:42:41,688 4399 139754899191104 Waiting for programs and filesystems in stage `2`.
+.DEBUG 2018-03-28 19:42:41,691 4399 139754899191104 Waiting for programs and filesystems in stage `0`.
+DEBUG 2018-03-28 19:42:41,694 4399 139754899191104 Program test_program1 is not ready yet.
+DEBUG 2018-03-28 19:42:41,695 4399 139754899191104 Waiting for programs and filesystems in stage `0`.
+DEBUG 2018-03-28 19:42:41,701 4399 139754899191104 Waiting for programs and filesystems in stage `2`.
+DEBUG 2018-03-28 19:42:41,707 4399 139754899191104 Error in program: test_program2
+.DEBUG 2018-03-28 19:42:42,708 4399 139754646460160 Slave timeout call back.
+DEBUG 2018-03-28 19:42:42,708 4399 139754646460160 Scheduler for slaves timeouted
+.
+----------------------------------------------------------------------
+Ran 210 tests in 2.339s
+
+System check identified no issues (0 silenced).
+OK
+Destroying test database for alias 'default'...
