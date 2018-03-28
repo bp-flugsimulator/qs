@@ -10,6 +10,7 @@
 \usepackage{todonotes}
 \usepackage{listings}
 
+
 \newcommand{\titlerow}[2]{
 	\begin{parcolumns}[colwidths={1=.17\linewidth}]{2}
 		\colchunk[1]{#1:}
@@ -182,6 +183,9 @@
 
 \appendix
 	\chapter{Anhang}
+	\todo[inline]{Userstorys mit Kommentaren}
+	\todo[inline]{Drei Klassen}
+	\todo[inline]{Manual}
 	% Details zu allen Nutzer*innenstudien
 	\include{nutzerstudien}
 	% Automatische Tests und wie sie aufgebaut sind
@@ -190,6 +194,8 @@
 	\include{iterations}
 	% Ausgefüllte Code Reviews
 	\include{codereviews}
+	% Projekttagebuch
+	\include{projekttagebuch}
 
 
 \end{document}
