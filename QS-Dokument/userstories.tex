@@ -1,3 +1,27 @@
+\section{Userstorys}
+
+\begin{table}[htbp]
+\begin{minipage}{\linewidth}
+\setlength{\tymax}{0.5\linewidth}
+\centering
+\small
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &10\\\hline
+
+
+Name  &Dateien herunterladen\\\hline
+Beschreibung&Über das Kontextmenü kann eine Datei vom Master auf den Slave geladen werden.\\\hline
+Akzeptanz &Die Datei wird vollständig ohne Fehler auf den richtigen Slave geladen\\\hline
+Story Points&?\\\hline
+Entwickler &?\\\hline
+Iteration &?\\\hline
+Stunden  &?\\\hline
+Velocity &?\\\hline
+Bemerkung &Obsolet\\\hline
+\end{tabulary}
+\end{minipage}
+\caption{Userstory XX}
+\end{table}
 
 
 
@@ -6,21 +30,43 @@
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &10\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &11\\\hline
 
 
-Name  &Dateien herunterladen\\
-Beschreibung&Über das Kontextmenü kann eine Datei vom Master auf den Slave geladen werden.\\
-Akzeptanz &Die Datei wird vollständig ohne Fehler auf den richtigen Slave geladen\\
-Story Points&?\\
-Entwickler &?\\
-Iteration &?\\
-Stunden  &?\\
-Velocity &?\\
-Bemerkung &Obsolet\\
-\bottomrule
+Name  &Datei löschen\\\hline
+Beschreibung&Über das Kontextmenü kann der User Dateien auf den Slaves Löschen. Zusätzlich wird eine Warnung bei jedem Löschvorgang angezeigt\\\hline
+Akzeptanz &Der Pfad zur datei wird über ein Popup eingegeben. Nur die Angegebene Datei wird gelöscht, und die Warnung wird korrekt angezeigt\\\hline
+Story Points&4\\\hline
+Entwickler &?\\\hline
+Iteration &?\\\hline
+Stunden  &?\\\hline
+Velocity &?\\\hline
+Bemerkung &Obsolet\\\hline
+\end{tabulary}
+\end{minipage}
+\caption{Userstory XX}
+\end{table}
 
+
+
+\begin{table}[htbp]
+\begin{minipage}{\linewidth}
+\setlength{\tymax}{0.5\linewidth}
+\centering
+\small
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &12\\\hline
+
+
+Name  &Interface am Start\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben ein Webbrowser meiner Wahl automatisch zu öffnen sobald ich die Master Software starte. Der Webbrowser soll auch auf die Seite des Webinterfaces navigieren, damit ich diese nicht manuell tun muss.\\\hline
+Akzeptanz &Die Master Software wird gestartet und das Webbrowser Fenster öffnet sich zu der passenden Seite.\\\hline
+Story Points&2\\\hline
+Entwickler &?\\\hline
+Iteration &?\\\hline
+Stunden  &?\\\hline
+Velocity &?\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -32,21 +78,18 @@ Bemerkung &Obsolet\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &11\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &14\\\hline
 
 
-Name  &Datei löschen\\
-Beschreibung&Über das Kontextmenü kann der User Dateien auf den Slaves Löschen. Zusätzlich wird eine Warnung bei jedem Löschvorgang angezeigt\\
-Akzeptanz &Der Pfad zur datei wird über ein Popup eingegeben. Nur die Angegebene Datei wird gelöscht, und die Warnung wird korrekt angezeigt\\
-Story Points&4\\
-Entwickler &?\\
-Iteration &?\\
-Stunden  &?\\
-Velocity &?\\
-Bemerkung &Obsolet\\
-\bottomrule
-
+Name  &Client löschen\\\hline
+Beschreibung&Als Benutzer will die Möglichkeit haben einen bereits registrierten Client wieder zu entfernen, damit ich nicht mehr vorhandende Komponenten löschen kann.\\\hline
+Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat öffnet sich ein Dialog. In diesem Dialog muss der Benutzer den Löschvorgang bestätigen. Nach der Bestätigung ist der Client nicht mehr für den Benutzer im Webinterface zu sehen.\\\hline
+Story Points&4\\\hline
+Entwickler &Frederik, Leonardo, Tim\\\hline
+Iteration &1\\\hline
+Stunden  &9\\\hline
+Velocity &0.444 sp\slash std\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -58,20 +101,18 @@ Bemerkung &Obsolet\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &12\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &15\\\hline
 
 
-Name  &Interface am Start\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben ein Webbrowser meiner Wahl automatisch zu öffnen sobald ich die Master Software starte. Der Webbrowser soll auch auf die Seite des Webinterfaces navigieren, damit ich diese nicht manuell tun muss.\\
-Akzeptanz &Die Master Software wird gestartet und das Webbrowser Fenster öffnet sich zu der passenden Seite.\\
-Story Points&2\\
-Entwickler &?\\
-Iteration &?\\
-Stunden  &?\\
-Velocity &?\\
-\bottomrule
-
+Name  &Client bearbeiten\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben eine bereits registrierten Client zu bearbeiten, damit ich Änderung einfach übernehmen kann.\\\hline
+Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, öffnet sich ein Dialog in dem sich momentanen Daten des Clients befinden. Der Benutzer kann nur korrekte Daten angeben. Bei nicht korrekten Daten wir der Benutzer auf die Fehler hingewiesen.\\\hline
+Story Points&4\\\hline
+Entwickler &Tim\\\hline
+Iteration &1\\\hline
+Stunden  &3\\\hline
+Velocity &1.333\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -83,20 +124,18 @@ Velocity &?\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &14\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &16\\\hline
 
 
-Name  &Client löschen\\
-Beschreibung&Als Benutzer will die Möglichkeit haben einen bereits registrierten Client wieder zu entfernen, damit ich nicht mehr vorhandende Komponenten löschen kann.\\
-Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat öffnet sich ein Dialog. In diesem Dialog muss der Benutzer den Löschvorgang bestätigen. Nach der Bestätigung ist der Client nicht mehr für den Benutzer im Webinterface zu sehen.\\
-Story Points&4\\
-Entwickler &Frederik, Leonardo, Tim\\
-Iteration &1\\
-Stunden  &9\\
-Velocity &0.444 sp\slash std\\
-\bottomrule
-
+Name  &Client Anzeigen\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben einen Client mit seiner IP Adresse und seiner MAC Adresse, im Webinterface zu sehen. Da ich so eine besseren Überblick über das aktuell System bekomme.\\\hline
+Akzeptanz &Der Benutzer sieht die Ip Adresse und die MAC Adresse des entsprechenden Clients und dessen Status.\\\hline
+Story Points&4\\\hline
+Entwickler &Jonas, Tim\\\hline
+Iteration &1\\\hline
+Stunden  &4\\\hline
+Velocity &1\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -108,20 +147,18 @@ Velocity &0.444 sp\slash std\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &15\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ID   &17\\\hline
 
 
-Name  &Client bearbeiten\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben eine bereits registrierten Client zu bearbeiten, damit ich Änderung einfach übernehmen kann.\\
-Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, öffnet sich ein Dialog in dem sich momentanen Daten des Clients befinden. Der Benutzer kann nur korrekte Daten angeben. Bei nicht korrekten Daten wir der Benutzer auf die Fehler hingewiesen.\\
-Story Points&4\\
-Entwickler &Tim\\
-Iteration &1\\
-Stunden  &3\\
-Velocity &1.333\\
-\bottomrule
-
+Name  &Website Navigation\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben die verschiedenen Seiten über eine Navigationsleiste zu erreichen. Damit ich mich einfach durch das Webinterface navigieren kann.\\\hline
+Akzeptanz &Der Benutzer sieht alle für ihn zugängliche Seiten in der Navigationsleiste und kann mit diesen auch zu den Seiten navigieren.\\\hline
+Story Points&1\\\hline
+Entwickler &Jonas\\\hline
+Iteration &3\\\hline
+Stunden  &1\\\hline
+Velocity &1\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -133,20 +170,39 @@ Velocity &1.333\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &16\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &19\\\hline
 
 
-Name  &Client Anzeigen\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben einen Client mit seiner IP Adresse und seiner MAC Adresse, im Webinterface zu sehen. Da ich so eine besseren Überblick über das aktuell System bekomme.\\
-Akzeptanz &Der Benutzer sieht die Ip Adresse und die MAC Adresse des entsprechenden Clients und dessen Status.\\
-Story Points&4\\
-Entwickler &Jonas, Tim\\
-Iteration &1\\
-Stunden  &4\\
-Velocity &1\\
-\bottomrule
+Name  &Programm anzeigen\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben alle registrierten Programme, zugeordnet zu ihrem jeweiligen Client, einzusehen. Damit ich nachvollziehen kann welche Programme registriert sind.\\\hline
+Akzeptanz &Die Programme werden korrekt zu dem zugehörigen Client angezeigt. Auch sind alle Programme, die der Benutzer registriert hat, zu sehen.\\\hline
+Story Points&8\\\hline
+Entwickler &Leonardo,Tim\\\hline
+Iteration &2\\\hline
+Stunden  &6\\\hline
+Velocity &1.3\\\hline
+\end{tabulary}
+\end{minipage}
+\end{table}
+\begin{table}[htbp]
+\begin{minipage}{\linewidth}
+\setlength{\tymax}{0.5\linewidth}
+\centering
+\small
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   & 1 \\\hline
 
+
+Name  & Willkommensnachricht\\\hline
+Beschreibung& Wenn sich der User mithilfe eines Browsers mit dem Master verbindet wird eine Willkommensnachricht angezeigt \\\hline
+Akzeptanz &Nach dem Senden einer Korrekten Anfrage an \texttt{\slash welcome} gibt der Server eine Webpage mit dem Inhalt ``welcome'' zurück\\\hline
+Story Points&10\\\hline
+Entwickler &Heiko\\\hline
+Iteration &1\\\hline
+Stunden  &2\\\hline
+Velocity &5 sp\slash std\\\hline
+Bemerkung &Der Master Server wird aufgesetzt\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -158,20 +214,18 @@ Velocity &1\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-ID   &17\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &20\\\hline
 
 
-Name  &Website Navigation\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben die verschiedenen Seiten über eine Navigationsleiste zu erreichen. Damit ich mich einfach durch das Webinterface navigieren kann.\\
-Akzeptanz &Der Benutzer sieht alle für ihn zugängliche Seiten in der Navigationsleiste und kann mit diesen auch zu den Seiten navigieren.\\
-Story Points&1\\
-Entwickler &Jonas\\
-Iteration &3\\
-Stunden  &1\\
-Velocity &1\\
-\bottomrule
-
+Name  &Programm hinzufügen\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben ein Programm, welches auf einem Client liegt, mit bestimmten Parametern zu registrieren. Damit ich neue Programme hinzufügen kann.\\\hline
+Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat öffnet sich ein Dialog welches die entsprechenden Felder beinhaltet, die die benötigten Information abfragen. Falls der Benutzer invalide Dateien angibt, wird dies dem Benutzer mitgeteilt.\\\hline
+Story Points&6\\\hline
+Entwickler &Tim\\\hline
+Iteration &2\\\hline
+Stunden  &5\\\hline
+Velocity &1.2 sp\slash std\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -183,43 +237,18 @@ Velocity &1\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &19\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &21\\\hline
 
 
-Name  &Programm anzeigen\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben alle registrierten Programme, zugeordnet zu ihrem jeweiligen Client, einzusehen. Damit ich nachvollziehen kann welche Programme registriert sind.\\
-Akzeptanz &Die Programme werden korrekt zu dem zugehörigen Client angezeigt. Auch sind alle Programme, die der Benutzer registriert hat, zu sehen.\\
-Story Points&8\\
-Entwickler &Leonardo,Tim\\
-Iteration &2\\
-Stunden  &6\\
-Velocity &1.3\\
-\bottomrule
-
-\end{tabulary}
-\end{minipage}
-\end{table}
-\begin{table}[htbp]
-\begin{minipage}{\linewidth}
-\setlength{\tymax}{0.5\linewidth}
-\centering
-\small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   & 1 \\
-
-
-Name  & Willkommensnachricht\\
-Beschreibung& Wenn sich der User mithilfe eines Browsers mit dem Master verbindet wird eine Willkommensnachricht angezeigt \\
-Akzeptanz &Nach dem Senden einer Korrekten Anfrage an \texttt{\slash welcome} gibt der Server eine Webpage mit dem Inhalt ``welcome'' zurück\\
-Story Points&10\\
-Entwickler &Heiko\\
-Iteration &1\\
-Stunden  &2\\
-Velocity &5 sp\slash std\\
-Bemerkung &Der Master Server wird aufgesetzt\\
-\bottomrule
-
+Name  &Programm löschen\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein bereits registriete Programm wieder zu entfernen. Damit ich nicht mehr vorhandene Programme löschen kann.\\\hline
+Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat öffnet sich Dialog, indem der Benutzer den Löschvorgang bestätigen muss.\\\hline
+Story Points&4\\\hline
+Entwickler &Frederik\\\hline
+Iteration &2\\\hline
+Stunden  &4,5\\\hline
+Velocity &0.89\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -231,20 +260,18 @@ Bemerkung &Der Master Server wird aufgesetzt\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &20\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &22\\\hline
 
 
-Name  &Programm hinzufügen\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben ein Programm, welches auf einem Client liegt, mit bestimmten Parametern zu registrieren. Damit ich neue Programme hinzufügen kann.\\
-Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat öffnet sich ein Dialog welches die entsprechenden Felder beinhaltet, die die benötigten Information abfragen. Falls der Benutzer invalide Dateien angibt, wird dies dem Benutzer mitgeteilt.\\
-Story Points&6\\
-Entwickler &Tim\\
-Iteration &2\\
-Stunden  &5\\
-Velocity &1.2 sp\slash std\\
-\bottomrule
-
+Name  &Programm bearbeiten\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben ein bereits registriertes Programm zu bearbeiten. Damit ich nicht mehr aktuelle Konfigurationen ändern kann.\\\hline
+Akzeptanz &Nachdem betätigen des entsprechenden Knopfes öffnet sich ein Dialog in dem die momentane Konfiguration angezeigt wird. Die Änderungen werden nur gespeichert sofern die Änderung immer noch eine korrekte Konfiguration darstellt. Bei fehlerhaften Daten wird der Benutzer drauf hingewiesen.\\\hline
+Story Points&5\\\hline
+Entwickler &Tim\\\hline
+Iteration &3\\\hline
+Stunden  &3\\\hline
+Velocity &1.7 StoryPoints\slash Stunde\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -256,20 +283,18 @@ Velocity &1.2 sp\slash std\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &21\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &23\\\hline
 
 
-Name  &Programm löschen\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein bereits registriete Programm wieder zu entfernen. Damit ich nicht mehr vorhandene Programme löschen kann.\\
-Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat öffnet sich Dialog, indem der Benutzer den Löschvorgang bestätigen muss.\\
-Story Points&4\\
-Entwickler &Frederik\\
-Iteration &2\\
-Stunden  &4,5\\
-Velocity &0.89\\
-\bottomrule
-
+Name  &Datei anzeigen\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben eine registrierte Datei, die zu einem Client gehört, im Webinterface einzusehen. Damit ich einen Überblick über alle Dateien habe.\\\hline
+Akzeptanz &Der Benutzer sieht die Dateien korrekt bei dem dazugehörigen Client.\\\hline
+Story Points&3\\\hline
+Entwickler &Frederik\\\hline
+Iteration &3\\\hline
+Stunden  &3\\\hline
+Velocity &1 Sp\slash h\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -281,20 +306,18 @@ Velocity &0.89\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &22\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &24\\\hline
 
 
-Name  &Programm bearbeiten\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben ein bereits registriertes Programm zu bearbeiten. Damit ich nicht mehr aktuelle Konfigurationen ändern kann.\\
-Akzeptanz &Nachdem betätigen des entsprechenden Knopfes öffnet sich ein Dialog in dem die momentane Konfiguration angezeigt wird. Die Änderungen werden nur gespeichert sofern die Änderung immer noch eine korrekte Konfiguration darstellt. Bei fehlerhaften Daten wird der Benutzer drauf hingewiesen.\\
-Story Points&5\\
-Entwickler &Tim\\
-Iteration &3\\
-Stunden  &3\\
-Velocity &1.7 StoryPoints\slash Stunde\\
-\bottomrule
-
+Name  &Datei hinzufügen\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben eine Datei für einen Client zu registrieren (in der Datenbank). Damit ich neue Dateien registrieren kann.\\\hline
+Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat öffnet sich ein Dialog. Es werden nur korrekte Eingaben gespeichert. Falls der Benutzer nicht korrekte Daten angibt wird dies ihm mitgeteilt.\\\hline
+Story Points&4\\\hline
+Entwickler &Frederik\\\hline
+Iteration &3\\\hline
+Stunden  &4\\\hline
+Velocity &1 Sp\slash h\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -306,20 +329,18 @@ Velocity &1.7 StoryPoints\slash Stunde\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &23\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &25\\\hline
 
 
-Name  &Datei anzeigen\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben eine registrierte Datei, die zu einem Client gehört, im Webinterface einzusehen. Damit ich einen Überblick über alle Dateien habe.\\
-Akzeptanz &Der Benutzer sieht die Dateien korrekt bei dem dazugehörigen Client.\\
-Story Points&3\\
-Entwickler &Frederik\\
-Iteration &3\\
-Stunden  &3\\
-Velocity &1 Sp\slash h\\
-\bottomrule
-
+Name  &Datei löschen\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben eine bereits registrierte Datei wieder zu löschen (aus der Datenbank). Damit ich veraltet Dateien entfernen kann.\\\hline
+Akzeptanz &Nachdem Betätigten des entsprechenden Knopfes öffnet sich ein Dialog, indem der Benutzer den Löschvorgang bestätigen muss. Nur falls der Benutzer den Löschvorgang bestätigt wird die registrierte Datei aus der Datenbank gelöscht.\\\hline
+Story Points&3\\\hline
+Entwickler &Frederik\\\hline
+Iteration &5\\\hline
+Stunden  &1.5\\\hline
+Velocity &2sp\slash h\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -331,20 +352,18 @@ Velocity &1 Sp\slash h\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &24\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ID   &26\\\hline
 
 
-Name  &Datei hinzufügen\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben eine Datei für einen Client zu registrieren (in der Datenbank). Damit ich neue Dateien registrieren kann.\\
-Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat öffnet sich ein Dialog. Es werden nur korrekte Eingaben gespeichert. Falls der Benutzer nicht korrekte Daten angibt wird dies ihm mitgeteilt.\\
-Story Points&4\\
-Entwickler &Frederik\\
-Iteration &3\\
-Stunden  &4\\
-Velocity &1 Sp\slash h\\
-\bottomrule
-
+Name  &Datei editieren\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben eine bereits registrierte Datei (in der Datenbank) zu bearbeiten. Damit ich auch nur kleine Änderungen einfach einspielen kann.\\\hline
+Akzeptanz &Nachdem betätigen des Knopfes öffnet sich das Dialog mit den momentanen Informationen. Nur wenn der Benutzer korrekte Änderungen angibt werden diese gespeichert. Fehlerhafte Änderungen werden dem Benutzer angezeigt.\\\hline
+Story Points&5\\\hline
+Entwickler &Frederik\\\hline
+Iteration &7\\\hline
+Stunden  &2\\\hline
+Velocity &2.5 Sp\slash h\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -356,20 +375,18 @@ Velocity &1 Sp\slash h\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &25\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &27\\\hline
 
 
-Name  &Datei löschen\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben eine bereits registrierte Datei wieder zu löschen (aus der Datenbank). Damit ich veraltet Dateien entfernen kann.\\
-Akzeptanz &Nachdem Betätigten des entsprechenden Knopfes öffnet sich ein Dialog, indem der Benutzer den Löschvorgang bestätigen muss. Nur falls der Benutzer den Löschvorgang bestätigt wird die registrierte Datei aus der Datenbank gelöscht.\\
-Story Points&3\\
-Entwickler &Frederik\\
-Iteration &5\\
-Stunden  &1.5\\
-Velocity &2sp\slash h\\
-\bottomrule
-
+Name  &Skript anzeigen\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben ein registriertes Skript im Webinterface einzusehen. Damit ich einen Überblick über alle vorhanden Skripte bekomme.\\\hline
+Akzeptanz &Das Skript wird korrekt angezeigt.\\\hline
+Story Points&15\\\hline
+Entwickler &Jonas\\\hline
+Iteration &3\\\hline
+Stunden  &20\\\hline
+Velocity &0,75\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -381,20 +398,18 @@ Velocity &2sp\slash h\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-ID   &26\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ID   &28\\\hline
 
 
-Name  &Datei editieren\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben eine bereits registrierte Datei (in der Datenbank) zu bearbeiten. Damit ich auch nur kleine Änderungen einfach einspielen kann.\\
-Akzeptanz &Nachdem betätigen des Knopfes öffnet sich das Dialog mit den momentanen Informationen. Nur wenn der Benutzer korrekte Änderungen angibt werden diese gespeichert. Fehlerhafte Änderungen werden dem Benutzer angezeigt.\\
-Story Points&5\\
-Entwickler &Frederik\\
-Iteration &7\\
-Stunden  &2\\
-Velocity &2.5 Sp\slash h\\
-\bottomrule
-
+Name  &Skript hinzufügen\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben ein Skript hinzuzufügen, damit ich neue Szenarien auch mit dem System laufen lassen kann.\\\hline
+Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, wird der Benutzer auf eine weitere Seite geleitet, wo er ein Skript erstellen kann. Bei fehlerhaften Eingaben wird der Benutzer darauf hingewiesen. Es können keine fehlerhafte Skripte hinzugefügt werden.\\\hline
+Story Points&7\\\hline
+Entwickler &Jonas\\\hline
+Iteration &4\\\hline
+Stunden  &5\\\hline
+Velocity &1.4\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -406,20 +421,18 @@ Velocity &2.5 Sp\slash h\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &27\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ID   &29\\\hline
 
 
-Name  &Skript anzeigen\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben ein registriertes Skript im Webinterface einzusehen. Damit ich einen Überblick über alle vorhanden Skripte bekomme.\\
-Akzeptanz &Das Skript wird korrekt angezeigt.\\
-Story Points&15\\
-Entwickler &Jonas\\
-Iteration &3\\
-Stunden  &20\\
-Velocity &0,75\\
-\bottomrule
-
+Name  &Skript löschen\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben ein bereits registrierte Skript zu löschen. Damit ich veraltete Skripte entfernen kann.\\\hline
+Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt wird ein Dialog geöffnet, indem der Benutzer den Löschvorgang bestätigen muss. Sofern der Benutzer den Löschvorgang bestätigt wird das Skript gelöscht, ansonsten geschiet nichts.\\\hline
+Story Points&5\\\hline
+Entwickler &Jonas\\\hline
+Iteration &4\\\hline
+Stunden  &5\\\hline
+Velocity &1\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -431,20 +444,18 @@ Velocity &0,75\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-ID   &28\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &2\\\hline
 
 
-Name  &Skript hinzufügen\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben ein Skript hinzuzufügen, damit ich neue Szenarien auch mit dem System laufen lassen kann.\\
-Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, wird der Benutzer auf eine weitere Seite geleitet, wo er ein Skript erstellen kann. Bei fehlerhaften Eingaben wird der Benutzer darauf hingewiesen. Es können keine fehlerhafte Skripte hinzugefügt werden.\\
-Story Points&7\\
-Entwickler &Jonas\\
-Iteration &4\\
-Stunden  &5\\
-Velocity &1.4\\
-\bottomrule
-
+Name  &Client Registrieren\\\hline
+Beschreibung&Als Benutzer muss ich die Möglichkeit haben einen Client zu registieren, um diese später verwalten zu können.\\\hline
+Akzeptanz &Durch das betätigen des entsprechenden Knopfes öffnet sich ein Dialog. In diesem Dialog befinden sich Felder in die der Benutzer die Daten des Clients eintragen kann. Ungültige Eingaben werden abgewiesen und der Benutzer wird darauf hingewiesen.\\\hline
+Story Points&8\\\hline
+Entwickler &Tim, Jonas, Frederik\\\hline
+Iteration &1\\\hline
+Stunden  &30\\\hline
+Velocity &0,26\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -456,20 +467,18 @@ Velocity &1.4\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-ID   &29\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ID   &30\\\hline
 
 
-Name  &Skript löschen\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben ein bereits registrierte Skript zu löschen. Damit ich veraltete Skripte entfernen kann.\\
-Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt wird ein Dialog geöffnet, indem der Benutzer den Löschvorgang bestätigen muss. Sofern der Benutzer den Löschvorgang bestätigt wird das Skript gelöscht, ansonsten geschiet nichts.\\
-Story Points&5\\
-Entwickler &Jonas\\
-Iteration &4\\
-Stunden  &5\\
-Velocity &1\\
-\bottomrule
-
+Name  &Skript bearbeiten\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben ein bereits registriertes Skript zu bearbeiten. Damit ich auch kleine Änderungen einfach anpassen kann.\\\hline
+Akzeptanz &Der Benutzer wird auf die Seite weitergeleitet, nachdem der Benutzer den entsprechenden Knopf betätigt hat. Auf dieser Seite kann der der Benutzer das Skript bearbeiten kann. Falls die Änderungen des Benutzers korrekt sind, wird das Skript gespeichert. Falls das nicht der Fall ist wird dem Benutzer das mitgeteilt.\\\hline
+Story Points&5\\\hline
+Entwickler &Leonardo\\\hline
+Iteration &7\\\hline
+Stunden  &7\\\hline
+Velocity &0.71428571428\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -481,20 +490,18 @@ Velocity &1\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &2\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ID   &31\\\hline
 
 
-Name  &Client Registrieren\\
-Beschreibung&Als Benutzer muss ich die Möglichkeit haben einen Client zu registieren, um diese später verwalten zu können.\\
-Akzeptanz &Durch das betätigen des entsprechenden Knopfes öffnet sich ein Dialog. In diesem Dialog befinden sich Felder in die der Benutzer die Daten des Clients eintragen kann. Ungültige Eingaben werden abgewiesen und der Benutzer wird darauf hingewiesen.\\
-Story Points&8\\
-Entwickler &Tim, Jonas, Frederik\\
-Iteration &1\\
-Stunden  &30\\
-Velocity &0,26\\
-\bottomrule
-
+Name  &Start Vorgang\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben ein Skript meiner wahl nach einer bestimmten Zeit automatisch starten zu lassen, sobald ich auf diese Seite gehe. Damit ich nicht gezwungen bin anwesend zu sein, sobald ich den Master Rechner starte.\\\hline
+Akzeptanz &Sobald der Benutzer die Seite aufruft beginnt ein Countdown. Sobald dieser abgelaufen ist wird das zuletzt ausgeführt Skript gestartet. Sobald der Benutzer ein anderes Skript auswählt wird der Countdown abgebrochen und der Benutzer muss den ``Start Vorgang'' manuell anstoßen.\\\hline
+Story Points&15\\\hline
+Entwickler &Jonas\\\hline
+Iteration &4--5\\\hline
+Stunden  &30\\\hline
+Velocity &0.5\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -506,20 +513,18 @@ Velocity &0,26\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-ID   &30\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ID   &32\\\hline
 
 
-Name  &Skript bearbeiten\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben ein bereits registriertes Skript zu bearbeiten. Damit ich auch kleine Änderungen einfach anpassen kann.\\
-Akzeptanz &Der Benutzer wird auf die Seite weitergeleitet, nachdem der Benutzer den entsprechenden Knopf betätigt hat. Auf dieser Seite kann der der Benutzer das Skript bearbeiten kann. Falls die Änderungen des Benutzers korrekt sind, wird das Skript gespeichert. Falls das nicht der Fall ist wird dem Benutzer das mitgeteilt.\\
-Story Points&5\\
-Entwickler &Leonardo\\
-Iteration &7\\
-Stunden  &7\\
-Velocity &0.71428571428\\
-\bottomrule
-
+Name  &Start Vorgang Status\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben den momentanen Status des ``Start Vorganges'' einzusehen. Des weiteren soll die Möglichkeit bestehen zu sehen, wie weit eine einzelne Stufe fortgeschritten ist.\\\hline
+Akzeptanz &Für jede Stufe wird ein Dropdown-Menü angezeigt. Das Menü der derzeit ausgeführten Stufe wird automatisch geöffnet. In diesem Menü wird jedes Program \slash  jede Datei angezeigt, das\slash die Teil dieser Stufe ist. Falls ein Fehler während des Vorgangs entsteht wird korrekt angezeigt welches Program \slash  welche Datei ihn erzeugt hat.\\\hline
+Story Points&10\\\hline
+Entwickler &Tim\\\hline
+Iteration &9\\\hline
+Stunden  &10\\\hline
+Velocity &1\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -531,20 +536,18 @@ Velocity &0.71428571428\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-ID   &31\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &33\\\hline
 
 
-Name  &Start Vorgang\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben ein Skript meiner wahl nach einer bestimmten Zeit automatisch starten zu lassen, sobald ich auf diese Seite gehe. Damit ich nicht gezwungen bin anwesend zu sein, sobald ich den Master Rechner starte.\\
-Akzeptanz &Sobald der Benutzer die Seite aufruft beginnt ein Countdown. Sobald dieser abgelaufen ist wird das zuletzt ausgeführt Skript gestartet. Sobald der Benutzer ein anderes Skript auswählt wird der Countdown abgebrochen und der Benutzer muss den ``Start Vorgang'' manuell anstoßen.\\
-Story Points&15\\
-Entwickler &Jonas\\
-Iteration &4--5\\
-Stunden  &30\\
-Velocity &0.5\\
-\bottomrule
-
+Name  &beenden eines Programmes\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein bereits registriertes und gestartetes Programm beenden zu können, damit ich diese nicht manuell beenden muss.\\\hline
+Akzeptanz &Nachdem der Benutzer das Programm seiner Wahl beendet hat, in dem er den entsprechenden Knopf betätigt hat, ändert sich der Status des Programmes und der Benutzer bekommt ggf. eine Rückmeldung über den Endstatus des Programmes.\\\hline
+Story Points&8\\\hline
+Entwickler &Tim\\\hline
+Iteration &4\\\hline
+Stunden  &9\\\hline
+Velocity &0.888 Storypoints\slash Stunde\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -556,20 +559,19 @@ Velocity &0.5\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-ID   &32\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &34\\\hline
 
 
-Name  &Start Vorgang Status\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben den momentanen Status des ``Start Vorganges'' einzusehen. Des weiteren soll die Möglichkeit bestehen zu sehen, wie weit eine einzelne Stufe fortgeschritten ist.\\
-Akzeptanz &Für jede Stufe wird ein Dropdown-Menü angezeigt. Das Menü der derzeit ausgeführten Stufe wird automatisch geöffnet. In diesem Menü wird jedes Program \slash  jede Datei angezeigt, das\slash die Teil dieser Stufe ist. Falls ein Fehler während des Vorgangs entsteht wird korrekt angezeigt welches Program \slash  welche Datei ihn erzeugt hat.\\
-Story Points&10\\
-Entwickler &Tim\\
-Iteration &9\\
-Stunden  &10\\
-Velocity &1\\
-\bottomrule
-
+Name  &Bootuptime eines Programmes\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben, für eine Programm einzutragen wie lange dieses zum Starten braucht, um das gleichzeitige starten zweier Programme die voneinander abhängen zu verhindern.\\\hline
+Akzeptanz &Nachdem der Benutzer das Programm seiner Wahl beendet hat, in dem er den entsprechenden Knopf betätigt hat, ändert sich der Status des Programmes und der Benutzer bekommt ggf. eine Rückmeldung über den Endstatus des Programmes.\\\hline
+Story Points&1\\\hline
+Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf zum hinzufügen\slash editieren eines Programmes betätigt hat, gibt es in dem jeweiligen Dialog ein weiteres Feld, in dem die Zeit in Sekunden eingetragen werden kann. Nach dem dies bestätigen wurde, wird der Eingrag korrekt in der Datenbank gespeichert.\\\hline
+Entwickler &Jonas\\\hline
+Iteration &4\\\hline
+Stunden  &1\\\hline
+Velocity &1\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -581,20 +583,18 @@ Velocity &1\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &33\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &35\\\hline
 
 
-Name  &beenden eines Programmes\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein bereits registriertes und gestartetes Programm beenden zu können, damit ich diese nicht manuell beenden muss.\\
-Akzeptanz &Nachdem der Benutzer das Programm seiner Wahl beendet hat, in dem er den entsprechenden Knopf betätigt hat, ändert sich der Status des Programmes und der Benutzer bekommt ggf. eine Rückmeldung über den Endstatus des Programmes.\\
-Story Points&8\\
-Entwickler &Tim\\
-Iteration &4\\
-Stunden  &9\\
-Velocity &0.888 Storypoints\slash Stunde\\
-\bottomrule
-
+Name  &Überprüfen von Argumenten in Programmen\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben, beim Eintragen von Argumenten eines Programmes daraufhingewiesen zu werden, wenn eine nicht parsbare Argumentenliste eingegeben wird.\\\hline
+Akzeptanz &Nachdem der Benutzer eine nicht parsbare Argumentenliste in das entsprechenden Feld während dem Hinzufügen\slash Editieren eine Programmeintrages eingetragen und bestätigt hat, erscheint eine entprechende Fehlermeldung.\\\hline
+Story Points&1\\\hline
+Entwickler &Tim\\\hline
+Iteration &4\\\hline
+Stunden  &1\\\hline
+Velocity &1 Storypoints\slash Stunde\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -606,21 +606,18 @@ Velocity &0.888 Storypoints\slash Stunde\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &34\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &36\\\hline
 
 
-Name  &Bootuptime eines Programmes\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben, für eine Programm einzutragen wie lange dieses zum Starten braucht, um das gleichzeitige starten zweier Programme die voneinander abhängen zu verhindern.\\
-Akzeptanz &Nachdem der Benutzer das Programm seiner Wahl beendet hat, in dem er den entsprechenden Knopf betätigt hat, ändert sich der Status des Programmes und der Benutzer bekommt ggf. eine Rückmeldung über den Endstatus des Programmes.\\
-Story Points&1\\
-Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf zum hinzufügen\slash editieren eines Programmes betätigt hat, gibt es in dem jeweiligen Dialog ein weiteres Feld, in dem die Zeit in Sekunden eingetragen werden kann. Nach dem dies bestätigen wurde, wird der Eingrag korrekt in der Datenbank gespeichert.\\
-Entwickler &Jonas\\
-Iteration &4\\
-Stunden  &1\\
-Velocity &1\\
-\bottomrule
-
+Name  &Dateien vom Server herunterladen\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben, Dateien, die auf dem Server in einem definierten Ordner liegen herunterzuladen.\\\hline
+Akzeptanz &Nachdem der Benutzer in der Navigationsleiste auf den ensprechenden Knopf gedrückt hat, werden alle Dateien die in dem definierten Ordner liegen mit ihrer Größe zusammen angezeigt. Diese wird dann nach dem Drücken des entsprechenden Knopfes heruntergeladen.\\\hline
+Story Points&3\\\hline
+Entwickler &Tim\\\hline
+Iteration &4\\\hline
+Stunden  &3\\\hline
+Velocity &1 Storypoints\slash Stunde\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -632,20 +629,18 @@ Velocity &1\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &35\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &37\\\hline
 
 
-Name  &Überprüfen von Argumenten in Programmen\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben, beim Eintragen von Argumenten eines Programmes daraufhingewiesen zu werden, wenn eine nicht parsbare Argumentenliste eingegeben wird.\\
-Akzeptanz &Nachdem der Benutzer eine nicht parsbare Argumentenliste in das entsprechenden Feld während dem Hinzufügen\slash Editieren eine Programmeintrages eingetragen und bestätigt hat, erscheint eine entprechende Fehlermeldung.\\
-Story Points&1\\
-Entwickler &Tim\\
-Iteration &4\\
-Stunden  &1\\
-Velocity &1 Storypoints\slash Stunde\\
-\bottomrule
-
+Name  &Logs von Programmen\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben, den Log eines Programmes im Webinterface einzusehen.\\\hline
+Akzeptanz &Nachdem der Benutzer den ensprechenden Knopf neben einem Programmeintrag gedrückt hat, wird unter dem Programmeintrag die zuletzt gespeicherte Logdatei in einem Textfeld angezeigt.\\\hline
+Story Points&30\\\hline
+Entwickler &Tim\\\hline
+Iteration &5--7\\\hline
+Stunden  &40\\\hline
+Velocity &0.75\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -657,20 +652,18 @@ Velocity &1 Storypoints\slash Stunde\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &36\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ID   &38\\\hline
 
 
-Name  &Dateien vom Server herunterladen\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben, Dateien, die auf dem Server in einem definierten Ordner liegen herunterzuladen.\\
-Akzeptanz &Nachdem der Benutzer in der Navigationsleiste auf den ensprechenden Knopf gedrückt hat, werden alle Dateien die in dem definierten Ordner liegen mit ihrer Größe zusammen angezeigt. Diese wird dann nach dem Drücken des entsprechenden Knopfes heruntergeladen.\\
-Story Points&3\\
-Entwickler &Tim\\
-Iteration &4\\
-Stunden  &3\\
-Velocity &1 Storypoints\slash Stunde\\
-\bottomrule
-
+Name  &Skript für Dateien\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben auch Dateien in ein Skript mit zu bewegen.\\\hline
+Akzeptanz &Nachdem der Benutzer das Skript gestartet hat, wird werden auch die gewünschten Dateien bewegt. Falls eine kritischer Fehler bei den Dateien auftritt wird der Prozess gestoppt.\\\hline
+Story Points&5\\\hline
+Entwickler &Jonas\\\hline
+Iteration &7\\\hline
+Stunden  &12\\\hline
+Velocity &0.41\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -682,20 +675,18 @@ Velocity &1 Storypoints\slash Stunde\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &37\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ID   &39\\\hline
 
 
-Name  &Logs von Programmen\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben, den Log eines Programmes im Webinterface einzusehen.\\
-Akzeptanz &Nachdem der Benutzer den ensprechenden Knopf neben einem Programmeintrag gedrückt hat, wird unter dem Programmeintrag die zuletzt gespeicherte Logdatei in einem Textfeld angezeigt.\\
-Story Points&30\\
-Entwickler &Tim\\
-Iteration &5--7\\
-Stunden  &40\\
-Velocity &0.75\\
-\bottomrule
-
+Name  &Skript bearbeiten\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben ein bereits erstelltes Skript zu kopieren dann zu bearbeiten und dann zu speichern.\\\hline
+Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf für das Kopieren gedrückt hat, wird die Kopie in einem seperatem Menüeintrag angezeigt. Der Name der Kopie ist der originale Name mit dem Suffix ``\_copy''. Namenskonflikte werden mit aufsteigenden Zahlen als Zusatz zum Suffix gehandhabt.\\\hline
+Story Points&3\\\hline
+Entwickler &Tim\\\hline
+Iteration &7\\\hline
+Stunden  &1.5\\\hline
+Velocity &2\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -707,20 +698,18 @@ Velocity &0.75\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-ID   &38\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &3\\\hline
 
 
-Name  &Skript für Dateien\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben auch Dateien in ein Skript mit zu bewegen.\\
-Akzeptanz &Nachdem der Benutzer das Skript gestartet hat, wird werden auch die gewünschten Dateien bewegt. Falls eine kritischer Fehler bei den Dateien auftritt wird der Prozess gestoppt.\\
-Story Points&5\\
-Entwickler &Jonas\\
-Iteration &7\\
-Stunden  &12\\
-Velocity &0.41\\
-\bottomrule
-
+Name  &Hochfahren eines Clients\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben einen Client mit der Hilfe des Webinterfaces hoch zu fahren, um später Programme auf diesem Client zu starten.\\\hline
+Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, wird der Client dazu aufgefordert zu starten und fährt ggf. dann hoch.\\\hline
+Story Points&3\\\hline
+Entwickler &Heiko\\\hline
+Iteration &2\\\hline
+Stunden  &7\\\hline
+Velocity &0.42\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -732,20 +721,18 @@ Velocity &0.41\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-ID   &39\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ID   &40\\\hline
 
 
-Name  &Skript bearbeiten\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben ein bereits erstelltes Skript zu kopieren dann zu bearbeiten und dann zu speichern.\\
-Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf für das Kopieren gedrückt hat, wird die Kopie in einem seperatem Menüeintrag angezeigt. Der Name der Kopie ist der originale Name mit dem Suffix ``\_copy''. Namenskonflikte werden mit aufsteigenden Zahlen als Zusatz zum Suffix gehandhabt.\\
-Story Points&3\\
-Entwickler &Tim\\
-Iteration &7\\
-Stunden  &1.5\\
-Velocity &2\\
-\bottomrule
-
+Name  &Ungespeicherte Inhalte Warnung\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben gewarnt zu werden sobald ich eine Eingabe verwerfen werde.\\\hline
+Akzeptanz &Der Benutzer wird mit eine Pop-Up Dialog gewarnt ob er fortfahren will sobald er eine ungespeicherte Eingabe verwerfen will.\\\hline
+Story Points&5\\\hline
+Entwickler &Heiko\\\hline
+Iteration &7\\\hline
+Stunden  &4\\\hline
+Velocity &1.25\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -757,20 +744,18 @@ Velocity &2\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &3\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ID   &41\\\hline
 
 
-Name  &Hochfahren eines Clients\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben einen Client mit der Hilfe des Webinterfaces hoch zu fahren, um später Programme auf diesem Client zu starten.\\
-Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, wird der Client dazu aufgefordert zu starten und fährt ggf. dann hoch.\\
-Story Points&3\\
-Entwickler &Heiko\\
-Iteration &2\\
-Stunden  &7\\
-Velocity &0.42\\
-\bottomrule
-
+Name  &Skript stoppen\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben ein Skript während der Ausführung zu stoppen, falls es nicht gestarttet werden sollte\slash es zu Fehlern kam.\\\hline
+Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, wird das Ausführen des Skripts gestoppt. Laufende Programme werden nicht beendet und der Ursprungszustand des Filesystems wird nicht wieder hergestellt.\\\hline
+Story Points&3\\\hline
+Entwickler &Frederik\\\hline
+Iteration &8\\\hline
+Stunden  &2\\\hline
+Velocity &1.5 Sp\slash h\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -782,20 +767,18 @@ Velocity &0.42\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-ID   &40\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &42\\\hline
 
 
-Name  &Ungespeicherte Inhalte Warnung\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben gewarnt zu werden sobald ich eine Eingabe verwerfen werde.\\
-Akzeptanz &Der Benutzer wird mit eine Pop-Up Dialog gewarnt ob er fortfahren will sobald er eine ungespeicherte Eingabe verwerfen will.\\
-Story Points&5\\
-Entwickler &Heiko\\
-Iteration &7\\
-Stunden  &4\\
-Velocity &1.25\\
-\bottomrule
-
+Name  &Automatisches starten eines Skriptes\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben beim Aufruf einer bestimmten Seite automatisch ein Skript starten zu lassen.\\\hline
+Akzeptanz &Sobald man die Seite aufruft wird ein sichtbarer Kurzeitwecker angezeigt. Sobald dieser abgelaufen ist wird das zuletzt erfolgreich getartet Skript gestartet.\\\hline
+Story Points&4\\\hline
+Entwickler &Jonas\\\hline
+Iteration &9\\\hline
+Stunden  &3\\\hline
+Velocity &1.3\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -807,20 +790,18 @@ Velocity &1.25\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-ID   &41\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ID   &43\\\hline
 
 
-Name  &Skript stoppen\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben ein Skript während der Ausführung zu stoppen, falls es nicht gestarttet werden sollte\slash es zu Fehlern kam.\\
-Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, wird das Ausführen des Skripts gestoppt. Laufende Programme werden nicht beendet und der Ursprungszustand des Filesystems wird nicht wieder hergestellt.\\
-Story Points&3\\
-Entwickler &Frederik\\
-Iteration &8\\
-Stunden  &2\\
-Velocity &1.5 Sp\slash h\\
-\bottomrule
-
+Name  &Alle Programme stoppen\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben alle laufende Programme zu stoppen.\\\hline
+Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, werden alle derzeit laufenden Programme beendet. Verschobene Dateien werden dabei nicht verändert. Falls ein Skript ausgeführt wird, wird es beendet.\\\hline
+Story Points&4\\\hline
+Entwickler &Frederik\\\hline
+Iteration &9\\\hline
+Stunden  &3\\\hline
+Velocity &1.33\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -832,20 +813,18 @@ Velocity &1.5 Sp\slash h\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &42\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ID   &44\\\hline
 
 
-Name  &Automatisches starten eines Skriptes\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben beim Aufruf einer bestimmten Seite automatisch ein Skript starten zu lassen.\\
-Akzeptanz &Sobald man die Seite aufruft wird ein sichtbarer Kurzeitwecker angezeigt. Sobald dieser abgelaufen ist wird das zuletzt erfolgreich getartet Skript gestartet.\\
-Story Points&4\\
-Entwickler &Jonas\\
-Iteration &9\\
-Stunden  &3\\
-Velocity &1.3\\
-\bottomrule
-
+Name  &Alle Dateien zurücksetzen\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben alle vom Interface aus verschobenen Dateien zu entfernen und den Ursprungszustand des Systems wieder herzustellen.\\\hline
+Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, werden alle derzeit verschobenen Dateien entfernt. Wurde eine Datei beim ursprünglichen Kopieren ersetzt, soll sie wieder hergestellt werden. Ein laufendes Skript wird ebenfalls beendet.\\\hline
+Story Points&4\\\hline
+Entwickler &Frederik\\\hline
+Iteration &9\\\hline
+Stunden  &3.5\\\hline
+Velocity &1.14 sp\slash h\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -857,20 +836,18 @@ Velocity &1.3\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-ID   &43\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ID   &45\\\hline
 
 
-Name  &Alle Programme stoppen\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben alle laufende Programme zu stoppen.\\
-Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, werden alle derzeit laufenden Programme beendet. Verschobene Dateien werden dabei nicht verändert. Falls ein Skript ausgeführt wird, wird es beendet.\\
-Story Points&4\\
-Entwickler &Frederik\\
-Iteration &9\\
-Stunden  &3\\
-Velocity &1.33\\
-\bottomrule
-
+Name  &Hilfstexte für Formularfelder\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben mir zu allen Formularfeldern einen kleinen Hilfetext anzeigen zu lassen.\\\hline
+Akzeptanz &Nachdem der Nutzer auf das Hilfsicon geklickt hat öffnet sich ein Popup mit einem Hinweistext\\\hline
+Story Points&4\\\hline
+Entwickler &Leonardo\\\hline
+Iteration &8\\\hline
+Stunden  &4\\\hline
+Velocity &1\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -882,20 +859,18 @@ Velocity &1.33\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-ID   &44\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ID   &46\\\hline
 
 
-Name  &Alle Dateien zurücksetzen\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben alle vom Interface aus verschobenen Dateien zu entfernen und den Ursprungszustand des Systems wieder herzustellen.\\
-Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, werden alle derzeit verschobenen Dateien entfernt. Wurde eine Datei beim ursprünglichen Kopieren ersetzt, soll sie wieder hergestellt werden. Ein laufendes Skript wird ebenfalls beendet.\\
-Story Points&4\\
-Entwickler &Frederik\\
-Iteration &9\\
-Stunden  &3.5\\
-Velocity &1.14 sp\slash h\\
-\bottomrule
-
+Name  &Dropdown für Shutdown Funktionen\\\hline
+Beschreibung&Nach dem Klick auf ein Schutdownicon wird eine Liste aller möglichen Shutdown-Aktionen angezeigt.\\\hline
+Akzeptanz &Nachdem der Nutzer auf das Schutdownicon gelickt hat öffnet sich ein Dropdown mit Auswahlmöglichkeiten\\\hline
+Story Points&1\\\hline
+Entwickler &Leonardo\\\hline
+Iteration &9\\\hline
+Stunden  &1\\\hline
+Velocity &1\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -907,20 +882,18 @@ Velocity &1.14 sp\slash h\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-ID   &45\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ID   &47\\\hline
 
 
-Name  &Hilfstexte für Formularfelder\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben mir zu allen Formularfeldern einen kleinen Hilfetext anzeigen zu lassen.\\
-Akzeptanz &Nachdem der Nutzer auf das Hilfsicon geklickt hat öffnet sich ein Popup mit einem Hinweistext\\
-Story Points&4\\
-Entwickler &Leonardo\\
-Iteration &8\\
-Stunden  &4\\
-Velocity &1\\
-\bottomrule
-
+Name  &Alles Ausschalten\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben alle laufenden Clients und den Master über das Webinterface auszuschalten.\\\hline
+Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, werden alle Clients und der Master heruntergefahren. Falls ein Skript läuft wird dieses beendet, verschobene Dateien werden zurüchgesetzt und laufende Programme werden beendet.\\\hline
+Story Points&8\\\hline
+Entwickler &Frederik, Heiko\\\hline
+Iteration &9\\\hline
+Stunden  &20\\\hline
+Velocity &0.4 sp\slash h\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -932,20 +905,18 @@ Velocity &1\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-ID   &46\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ID   &48\\\hline
 
 
-Name  &Dropdown für Shutdown Funktionen\\
-Beschreibung&Nach dem Klick auf ein Schutdownicon wird eine Liste aller möglichen Shutdown-Aktionen angezeigt.\\
-Akzeptanz &Nachdem der Nutzer auf das Schutdownicon gelickt hat öffnet sich ein Dropdown mit Auswahlmöglichkeiten\\
-Story Points&1\\
-Entwickler &Leonardo\\
-Iteration &9\\
-Stunden  &1\\
-Velocity &1\\
-\bottomrule
-
+Name  &Default Skript setzten\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben ein Skript manuell zu setzten welches automatisch gestartet werden kann.\\\hline
+Akzeptanz &Nachdem der Benutzer den entsprechen Knopf gedrückt hat, wird beim nächsten Neustart das ausgewählte Skript gestartet.\\\hline
+Story Points&5\\\hline
+Entwickler &Jonas\\\hline
+Iteration &9\\\hline
+Stunden  &3\\\hline
+Velocity &1,6\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -957,20 +928,19 @@ Velocity &1\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-ID   &47\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &49\\\hline
 
 
-Name  &Alles Ausschalten\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben alle laufenden Clients und den Master über das Webinterface auszuschalten.\\
-Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, werden alle Clients und der Master heruntergefahren. Falls ein Skript läuft wird dieses beendet, verschobene Dateien werden zurüchgesetzt und laufende Programme werden beendet.\\
-Story Points&8\\
-Entwickler &Frederik, Heiko\\
-Iteration &9\\
-Stunden  &20\\
-Velocity &0.4 sp\slash h\\
-\bottomrule
-
+Name  &automatische Neuverbindung eines Clients\\\hline
+Beschreibung&Der Nutzer will nicht einen Client neustarten, falls dieser für eine kurze Zeit die Verbindung verloren hat. Daher soll der Client selbst versuchen die Verbing neu aufzubauen.\\\hline
+Akzeptanz &Nachdem der Client die Verbindung verloren hat, versucht dieser die Verbindung neu aufzubauen. Falls der Verbindungsaufbau fehlschlägt wird der Vorgang wiederhohlt. Danach ist der Client wieder uneingeschränkt nutzbar.\\\hline
+Story Points&3\\\hline
+Entwickler &Tim\\\hline
+Iteration &9\\\hline
+Stunden  &2\\\hline
+Velocity &1.5\\\hline
+Bemerkung &not merged\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -982,20 +952,18 @@ Velocity &0.4 sp\slash h\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-ID   &48\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &4\\\hline
 
 
-Name  &Default Skript setzten\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben ein Skript manuell zu setzten welches automatisch gestartet werden kann.\\
-Akzeptanz &Nachdem der Benutzer den entsprechen Knopf gedrückt hat, wird beim nächsten Neustart das ausgewählte Skript gestartet.\\
-Story Points&5\\
-Entwickler &Jonas\\
-Iteration &9\\
-Stunden  &3\\
-Velocity &1,6\\
-\bottomrule
-
+Name  &Status eines Clients\\\hline
+Beschreibung&Als Benutzer will ich den Status jedes bereits registrierten Clients einsehen können, um mit diesen entsprechend Interagieren zu können.\\\hline
+Akzeptanz &Der Status wird korrekt angezeigt und wird erneuert sobald sich der Status des Clients geändert hat.\\\hline
+Story Points&4\\\hline
+Entwickler &Tim\\\hline
+Iteration &3 und 4\\\hline
+Stunden  &6\\\hline
+Velocity &0.666 Storypoints\slash Stunde\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -1007,21 +975,18 @@ Velocity &1,6\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &49\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ID   &5\\\hline
 
 
-Name  &automatische Neuverbindung eines Clients\\
-Beschreibung&Der Nutzer will nicht einen Client neustarten, falls dieser für eine kurze Zeit die Verbindung verloren hat. Daher soll der Client selbst versuchen die Verbing neu aufzubauen.\\
-Akzeptanz &Nachdem der Client die Verbindung verloren hat, versucht dieser die Verbindung neu aufzubauen. Falls der Verbindungsaufbau fehlschlägt wird der Vorgang wiederhohlt. Danach ist der Client wieder uneingeschränkt nutzbar.\\
-Story Points&3\\
-Entwickler &Tim\\
-Iteration &9\\
-Stunden  &2\\
-Velocity &1.5\\
-Bemerkung &not merged\\
-\bottomrule
-
+Name  &Client herunterfahren\\\hline
+Beschreibung&Als Benutzer will einen Client per Webinterface herunterfahren, um mir Arbeit zu sparen.\\\hline
+Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat wird der Client ordnungsgemäß heruntergefahren. D.h. alle Programm die durch den Benutzer gestartet worden sind werden gestoppt und dann wird das System dazu angehalten herunter zu fahren.\\\hline
+Story Points&5\\\hline
+Entwickler &Tim\\\hline
+Iteration &3\\\hline
+Stunden  &4\\\hline
+Velocity &1.25 Storypoints\slash Stunde\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -1033,20 +998,19 @@ Bemerkung &not merged\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &4\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &6\\\hline
 
 
-Name  &Status eines Clients\\
-Beschreibung&Als Benutzer will ich den Status jedes bereits registrierten Clients einsehen können, um mit diesen entsprechend Interagieren zu können.\\
-Akzeptanz &Der Status wird korrekt angezeigt und wird erneuert sobald sich der Status des Clients geändert hat.\\
-Story Points&4\\
-Entwickler &Tim\\
-Iteration &3 und 4\\
-Stunden  &6\\
-Velocity &0.666 Storypoints\slash Stunde\\
-\bottomrule
-
+Name  &Kontextmenü\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben alle Befehle für einen Client einzusehen, damit ich eine passende Aktion wählen kann.\\\hline
+Akzeptanz &Alle Befehle sind visuell mit einem Client assoziiert.\\\hline
+Story Points&10\\\hline
+Entwickler &Leonardo, Jonas, Tim\\\hline
+Iteration &1\\\hline
+Stunden  &10\\\hline
+Velocity &1\\\hline
+Bemerkung &Obsolet\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -1058,20 +1022,18 @@ Velocity &0.666 Storypoints\slash Stunde\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-ID   &5\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &7\\\hline
 
 
-Name  &Client herunterfahren\\
-Beschreibung&Als Benutzer will einen Client per Webinterface herunterfahren, um mir Arbeit zu sparen.\\
-Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat wird der Client ordnungsgemäß heruntergefahren. D.h. alle Programm die durch den Benutzer gestartet worden sind werden gestoppt und dann wird das System dazu angehalten herunter zu fahren.\\
-Story Points&5\\
-Entwickler &Tim\\
-Iteration &3\\
-Stunden  &4\\
-Velocity &1.25 Storypoints\slash Stunde\\
-\bottomrule
-
+Name  &Starten eines Programmes\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein bereits registriertes Programm starten zu können, damit ich diese nicht manuell starten muss.\\\hline
+Akzeptanz &Nachdem der Benutzer das Programm seiner Wahl gestartet hat, in dem er den entsprechenden Knopf betätigt hat, ändert sich der Status des Programmes und der Benutzer bekommt ggf. eine Rückmeldung über den Endstatus des Programmes.\\\hline
+Story Points&25\\\hline
+Entwickler &Jonas, Tim\\\hline
+Iteration &3\\\hline
+Stunden  &50\\\hline
+Velocity &0.5\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -1083,21 +1045,18 @@ Velocity &1.25 Storypoints\slash Stunde\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &6\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &8\\\hline
 
 
-Name  &Kontextmenü\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben alle Befehle für einen Client einzusehen, damit ich eine passende Aktion wählen kann.\\
-Akzeptanz &Alle Befehle sind visuell mit einem Client assoziiert.\\
-Story Points&10\\
-Entwickler &Leonardo, Jonas, Tim\\
-Iteration &1\\
-Stunden  &10\\
-Velocity &1\\
-Bemerkung &Obsolet\\
-\bottomrule
-
+Name  &Statusabfrage von Programmen auf einem Client\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben den Status eines registrierten Programmes einzusehen, damit ich mir einen Überblick verschaffen kann.\\\hline
+Akzeptanz &Der Status des Prozesses ist aktuell, korrekt und wird bei dem entsprechenden Programm, auf dem Webinterface angezeigt wird.\\\hline
+Story Points&4\\\hline
+Entwickler &Tim\\\hline
+Iteration &3 und 4\\\hline
+Stunden  &6\\\hline
+Velocity &0.666 Storypoints\slash Stunde\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -1109,70 +1068,18 @@ Bemerkung &Obsolet\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &7\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+ ID   &9\\\hline
 
 
-Name  &Starten eines Programmes\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein bereits registriertes Programm starten zu können, damit ich diese nicht manuell starten muss.\\
-Akzeptanz &Nachdem der Benutzer das Programm seiner Wahl gestartet hat, in dem er den entsprechenden Knopf betätigt hat, ändert sich der Status des Programmes und der Benutzer bekommt ggf. eine Rückmeldung über den Endstatus des Programmes.\\
-Story Points&25\\
-Entwickler &Jonas, Tim\\
-Iteration &3\\
-Stunden  &50\\
-Velocity &0.5\\
-\bottomrule
-
-\end{tabulary}
-\end{minipage}
-\end{table}
-
-
-
-\begin{table}[htbp]
-\begin{minipage}{\linewidth}
-\setlength{\tymax}{0.5\linewidth}
-\centering
-\small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &8\\
-
-
-Name  &Statusabfrage von Programmen auf einem Client\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben den Status eines registrierten Programmes einzusehen, damit ich mir einen Überblick verschaffen kann.\\
-Akzeptanz &Der Status des Prozesses ist aktuell, korrekt und wird bei dem entsprechenden Programm, auf dem Webinterface angezeigt wird.\\
-Story Points&4\\
-Entwickler &Tim\\
-Iteration &3 und 4\\
-Stunden  &6\\
-Velocity &0.666 Storypoints\slash Stunde\\
-\bottomrule
-
-\end{tabulary}
-\end{minipage}
-\end{table}
-
-
-
-\begin{table}[htbp]
-\begin{minipage}{\linewidth}
-\setlength{\tymax}{0.5\linewidth}
-\centering
-\small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
- ID   &9\\
-
-
-Name  &Datei bewegen\\
-Beschreibung&Als Benutzer will ich die Möglichkeit haben eine registrierte Datei auf einem registrierten Client zu bewegen, damit ich einfach Konfigurationen austauschen kann. Auch soll es Möglich sein den Prozess wieder rückgänig zu machen.\\
-Akzeptanz &Nachdem der Benutzer den entsprechenden Kopf betätigt hat wird die Datei auf dem Client verschoben und der Benutzer wird darüber benachrichtigt. Sofern eine Datei bereits bewegt wurde under Benutzer erneut auf den entsprechenden Knopf drückt, wird die Datei wieder entfernt (sofern diese nicht in der zwischen Zeit vom Benutzer manuell überschrieben worden ist). \\
-Story Points&10\\
-Entwickler &Leonardo, Jonas\\
-Iteration &7\\
-Stunden  &30\\
-Velocity &0.33\\
-\bottomrule
-
+Name  &Datei bewegen\\\hline
+Beschreibung&Als Benutzer will ich die Möglichkeit haben eine registrierte Datei auf einem registrierten Client zu bewegen, damit ich einfach Konfigurationen austauschen kann. Auch soll es Möglich sein den Prozess wieder rückgänig zu machen.\\\hline
+Akzeptanz &Nachdem der Benutzer den entsprechenden Kopf betätigt hat wird die Datei auf dem Client verschoben und der Benutzer wird darüber benachrichtigt. Sofern eine Datei bereits bewegt wurde under Benutzer erneut auf den entsprechenden Knopf drückt, wird die Datei wieder entfernt (sofern diese nicht in der zwischen Zeit vom Benutzer manuell überschrieben worden ist). \\\hline
+Story Points&10\\\hline
+Entwickler &Leonardo, Jonas\\\hline
+Iteration &7\\\hline
+Stunden  &30\\\hline
+Velocity &0.33\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -1181,23 +1088,21 @@ Velocity &0.33\\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{@{}lll@{}} \toprule
-Iteration&Zeitraum&User Stories\\
+\begin{tabulary}{\textwidth}{@{}lll@{}} \hline
+Iteration&Zeitraum&User Stories\\\hline
 
 
-1&13.11--26.11&1, 2, 6, 14, 15, 16, \\
-2&27.11--10.12&3, 19, 20, 21, \\
-3&11.12--07.01&5, 7, 17, 22, 23, 24, 27, \\
-4&08.01--21.01&4, 8, 28, 29, 33, 34, 35, 36, \\
-5&22.01--04.02&25, 31, \\
-6&\multicolumn{2}{c}{05.02--18.02}\\
-7&19.02--04.03&9, 26, 30, 37, 38, 39, 40, \\
-8&05.03--18.03&41, 45, \\
-9&19.03--28.03&32, 42, 43, 44, 46, 47, 48\\
-Deprecated&inf&10, 11, 12, (49)\\
-doesn't exist&error 404&13, 18, \\
-\bottomrule
-
+1&13.11--26.11&1, 2, 6, 14, 15, 16, \\\hline
+2&27.11--10.12&3, 19, 20, 21, \\\hline
+3&11.12--07.01&5, 7, 17, 22, 23, 24, 27, \\\hline
+4&08.01--21.01&4, 8, 28, 29, 33, 34, 35, 36, \\\hline
+5&22.01--04.02&25, 31, \\\hline
+6&\multicolumn{2}{c}{05.02--18.02}\\\hline
+7&19.02--04.03&9, 26, 30, 37, 38, 39, 40, \\\hline
+8&05.03--18.03&41, 45, \\\hline
+9&19.03--28.03&32, 42, 43, 44, 46, 47, 48\\\hline
+Deprecated&inf&10, 11, 12, (49)\\\hline
+doesn't exist&error 404&13, 18, \\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
@@ -1206,21 +1111,19 @@ doesn't exist&error 404&13, 18, \\
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{|l|p{10cm}|} \toprule
-\multicolumn{2}{c}{ ID   }\\
+\begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
+\multicolumn{2}{c}{ ID   }\\\hline
 
 
-\multicolumn{2}{c}{Name  }\\
-\multicolumn{2}{c}{Beschreibung}\\
-\multicolumn{2}{c}{Akzeptanz }\\
-Story Points&?\\
-Entwickler &?\\
-Iteration &?\\
-Stunden  &?\\
-Velocity &?\\
-\multicolumn{2}{c}{Bemerkung }\\
-\bottomrule
-
+\multicolumn{2}{c}{Name  }\\\hline
+\multicolumn{2}{c}{Beschreibung}\\\hline
+\multicolumn{2}{c}{Akzeptanz }\\\hline
+Story Points&?\\\hline
+Entwickler &?\\\hline
+Iteration &?\\\hline
+Stunden  &?\\\hline
+Velocity &?\\\hline
+\multicolumn{2}{c}{Bemerkung }\\\hline
 \end{tabulary}
 \end{minipage}
 \end{table}
