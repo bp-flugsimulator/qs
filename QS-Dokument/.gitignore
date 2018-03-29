@@ -2,6 +2,6 @@
 !.gitignore
 !*.tex
 !/img
-!img/*.*
+!img/**
 !/test_output
 !/test_output/*
