@@ -1,29 +1,44 @@
 \section{Quellcodeauszug}
+
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{string-color}{rgb}{0.901, 0.290, 0.098}
+
 \lstset
 {
     language=Python,
     basicstyle=\footnotesize,
+    otherkeywords={self},             % Add keywords here
+    keywordstyle=\color{deepblue},
+    commentstyle=\color{string-color},
+    emph={MyClass,__init__},          % Custom highlighting
+    emphstyle=\color{deepred},    % Custom highlighting style
+    stringstyle=\color{deepgreen},
     numbers=left,
     stepnumber=1,
     tabsize=2,
     breaklines=true,
 }
 
-\textbf{Das Modul Api.py}\\\\
+Da wir uns entschieden haben, das Projekt größtenteils funktional zu programmieren, befinden sich im Folgenden
+drei Dateien, welche Ähnlichkeiten zu einer Klasse in einer rein objektorientierten Sprache
+haben.
+
+\subsection{Das Modul Api.py}
 %Description
-Das Modul Api.py enthält Methoden, die sich um die Anfragen an die REST API kümmern. 
+Das Modul Api.py enthält Funktionen, die sich um die Anfragen an die REST API kümmern. 
 Da das Webinterface seine Anfragen direkt an die REST API sendet, ist diese Modul ein essentieller
 Bestandteil des Backends.
 \lstinputlisting[language=Python]{api.py}
 
-\newpage
-\textbf{Das Modul Consumers.py}\\\\
+\subsection{Das Modul Consumers.py}
+\todo[inline]{Beschreibung von consumers.py}
 %Description
 
 \lstinputlisting[language=Python]{consumers.py}
 
-\newpage
-\textbf{Das Modul Controller.py}\\\\
-%Description
+\subsection{Das Modul Controller.py}
+\todo[inline]{Beschreibung von controller.py}
 
 \lstinputlisting[language=Python]{controller.py}
