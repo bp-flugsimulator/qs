@@ -26,18 +26,24 @@ entschieden, weswegen wir drei Module angehängt haben, die repräsentativ für 
 
 \subsection{Das Modul Api.py}
 %Description
-Das Modul Api.py enthält Funktionen, die sich um die Anfragen an die REST API kümmern. 
+Das Modul Api.py enthält Funktionen, die sich um die Anfragen an die REST API kümmern.
 Da das Webinterface seine Anfragen direkt an die REST API sendet, ist diese Modul ein essentieller
 Bestandteil des Backends.
 \lstinputlisting[language=Python]{api.py}
 
 \subsection{Das Modul Consumers.py}
-\todo[inline]{Beschreibung von consumers.py}
-%Description
+Da sowohl für die Kommunikation zwischen Clients und Master als auch zwischen Browser und
+Master \textit{websockets}\footnote{\url{https://tools.ietf.org/html/rfc6455}} verwendet werden,
+ist die Behandlung von eingehenden Websocketrequests ein zentraler Bestandteil. Dies ist die
+Aufgabe des Moduls "`consumer.py"', welches als erste Instanz Nachrichten an den Master annimmt und
+weiter verteilt.
 
 \lstinputlisting[language=Python]{consumers.py}
 
 \subsection{Das Modul Controller.py}
-\todo[inline]{Beschreibung von controller.py}
+Die Steuerung der angeschlossenen Clients ist einer der Hauptaufgaben des Masters, da die komplette
+Ausführungslogik nur hier ausgeführt wird. Um weitere Komponenten der Mastersoftware die Arbeit mit den
+Clients zu erleichtern, wurden die möglichen Aktionen im "`controller.py"'-Modul implementiert. Dort können
+sie von allen Stellen im Code des Masterservers einfach aufgerufen werden.
 
 \lstinputlisting[language=Python]{controller.py}
