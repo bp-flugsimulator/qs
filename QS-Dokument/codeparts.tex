@@ -30,7 +30,10 @@ anderen Module des Projekts stehen.
 Das Modul Api.py enthält Funktionen, die sich um die Anfragen an die REST API kümmern.
 Da das Webinterface seine Anfragen direkt an die REST API sendet, ist diese Modul ein essentieller
 Bestandteil des Backends.
-\lstinputlisting[language=Python]{api.py}
+
+Da das Modul sehr groß ist, wurde hier nur ein kleiner Ausschnitt angehängt.
+Die vollständige Fassung ist im Repository zu finden\footnote{\url{https://github.com/bp-flugsimulator/server/blob/master/frontend/api.py}}.
+\lstinputlisting[language=Python, lastline=308]{api.py}
 
 \subsection{Das Modul Consumers.py}
 Da sowohl für die Kommunikation zwischen Clients und Master als auch zwischen Browser und
@@ -38,8 +41,10 @@ Master \textit{websockets}\footnote{\url{https://tools.ietf.org/html/rfc6455}} v
 ist die Behandlung von eingehenden Websocketrequests ein zentraler Bestandteil. Dies ist die
 Aufgabe des Moduls "`consumer.py"', welches als erste Instanz Nachrichten an den Master annimmt und
 weiter verteilt.
+Da das Modul sehr groß ist, wurde hier nur ein kleiner Ausschnitt angehängt.
+Die vollständige Fassung ist im Repository zu finden\footnote{\url{https://github.com/bp-flugsimulator/server/blob/master/frontend/consumers.py}}.
 
-\lstinputlisting[language=Python]{consumers.py}
+\lstinputlisting[language=Python, lastline=336]{consumers.py}
 
 \subsection{Das Modul Controller.py}
 Die Steuerung der angeschlossenen Clients ist einer der Hauptaufgaben des
@@ -49,4 +54,7 @@ Komponenten der Mastersoftware, die Arbeit mit den Clients zu erleichtern,
 wurden die möglichen Aktionen im "`controller.py"'-Modul implementiert. Dies
 entspricht dem Model-View-Controller Konzept.
 
-\lstinputlisting[language=Python]{controller.py}
+Da das Modul sehr groß ist, wurde hier nur ein kleiner Ausschnitt angehängt.
+Die vollständige Fassung ist im Repository zu finden\footnote{\url{https://github.com/bp-flugsimulator/server/blob/master/frontend/controller.py}}.
+
+\lstinputlisting[language=Python,lastline=232]{controller.py}
