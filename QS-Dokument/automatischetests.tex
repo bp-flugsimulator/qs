@@ -1,6 +1,6 @@
 \section{Automatisierte Tests}
 Während der Entwicklung wurden diverse automatisierte Tools verwendet, welche direkt mit der Versionskontrollsoftware
-verbunden waren. Dadurch wurde jeder Commit die, in Tabelle \ref{qs_tools} beschriebenen, Tools überprüft
+verbunden waren. Dadurch wurde jeder Commit mit den beschriebenen Tools (siehe Tabelle \ref{qs_tools}) überprüft.
 \begin{table}[H]
 	\centering
 	\begin{tabular}{|l|p{18em}|l|}
@@ -50,10 +50,31 @@ Die Tests fanden unter folgenden Umgebungen statt:
 	\caption{Abdeckungsübersicht am Ende des Projekts}
 	\label{coverage_pdf}
 \end{figure}
-Der Stand von Codacy zum Ende des Projekts findet sich in Abbildung \ref{codacy_png}.
+Der Stand von Codacy zum Ende des Projekts findet sich in Abbildung \ref{codacy_png}. Während
+es keine stilistischen Fehler gibt ('Issues 0\%'), gibt es sehr viel doppelten Code, da viele Methoden
+in der API einen ähnlichen bis gleichen Anfang haben.
+
+Ein erfolgreicher Testrun von Travis\footnote{\url{https://travis-ci.org/bp-flugsimulator}} ist in Abbildung \ref{travis_png} zu sehen, von AppVeyor\footnote{\url{https://ci.appveyor.com/project/GreenM0nst3r/server/history}} in Abbildung \ref{appveyor_png}.
+Die Ergebnisse finden sich unter 
+
+
 \begin{figure}[t]
 	\centering
 \includegraphics[width=.9\textwidth]{codacy}
 	\caption{Stilüberprüfung am Ende des Projekts}
 	\label{codacy_png}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+\includegraphics[width=.9\textwidth]{travis}
+	\caption{Erfolgreicher Testdurchlauf von Travis}
+	\label{travis_png}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+\includegraphics[width=.9\textwidth]{appveyor}
+	\caption{Erfolgreicher Testdurchlauf von AppVeyor}
+	\label{appveyor_png}
 \end{figure}
