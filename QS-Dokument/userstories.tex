@@ -57,12 +57,8 @@
             Entwickler &Heiko\\\hline
             Iteration &2\\\hline
             Stunden  &7\\\hline
-            <<<<<<< Updated upstream
-            Velocity &0.42 SP\slash h\\\hline
-            =======
             Velocity &0.42 SP\slash h\\\hline
             Bemerkung &Der Benutzer muss eine Autostart Datei anlegen, welche die Client Software startet. Damit sich der Client mit dem Server automatisch verbindet.\\\hline
-            >>>>>>> Stashed changes
         \end{tabulary}
     \end{minipage}
 \end{table}
@@ -184,7 +180,8 @@
             Name  &Datei bewegen\\\hline
             Beschreibung&Als Benutzer will ich die Möglichkeit haben, eine auf dem Server registrierte Datei auf einem ebenfalls auf dem Server registrierten Client zu bewegen.
             Dadurch kann ich einfacher Dateien innerhalb des Systems austauschen. Auch will ich, den Ausgangsstatus wiederherstellen können.\\\hline
-            Akzeptanz &Nachdem der Benutzer den entsprechenden Kopf betätigt hat, wird die Datei auf dem Client verschoben und der Benutzer wird darüber benachrichtigt (Erfolg oder Misserfolg). Falls am Zielort bereits eine Datei existiert, wird diese separat gespeichert. Der Knopf ändert nach dem Bewegen seinen Anzeigetext auf ''restore''. Sofern eine Datei bereits bewegt wurde und der Benutzer auf den Zurücksetzen Knopf drückt, wird die Datei entfernt. Dies ist nur möglich, wenn die Datei in der Zwischenzeit nicht verändert wurde. Es ist nicht mögliche die Aktion Datei bewegen auszuführen, falls die Datei bereits bewegt worden ist. Ebenfalls ist es nicht möglich eine Datei zurückzusetzten, wenn sie nicht verschoben, oder bereits zurückgesetzt wurde.\\\hline
+            Akzeptanz &Nachdem der Benutzer den entsprechenden Kopf betätigt hat, wird die Datei auf dem Client verschoben und der Benutzer wird darüber benachrichtigt (Erfolg oder Misserfolg). Falls am Zielort bereits eine Datei existiert, wird diese separat gespeichert. Der Knopf ändert nach dem Bewegen seinen Anzeigetext auf ''restore''. Sofern eine Datei bereits bewegt wurde und der Benutzer auf den Zurücksetzen Knopf drückt, wird die Datei entfernt. Dies ist nur möglich, wenn die Datei in der Zwischenzeit nicht verändert wurde. Es ist nicht mögliche die Aktion Datei bewegen auszuführen, falls die Datei bereits bewegt worden ist. Ebenfalls ist es nicht möglich eine Datei zurückzusetzten, wenn sie nicht verschoben, oder bereits zurückgesetzt wurde.
+	    Um dies zu ermöglichen, müssen dem Dialog aus Userstory 24 die Felder ''Source Type'' und ''Destination Type'' hinzugefügt werden. ''Source Type'' spezifiziert dabei, ob es sich um eine Datei oder einen Ordner handelt und ''Destination Type'' definiert dabei, ob der Name Datei/des Ordners behalten oderr geändert werden soll.\\\hline
             Story Points&10\\\hline
             Entwickler &Leonardo, Jonas\\\hline
             Iteration &7\\\hline
@@ -334,9 +331,9 @@
         \small
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &17\\\hline
-            Name  &Wechsel zwischen Unterseiten\\\hline
-            Beschreibung&Als Benutzer will ich die Möglichkeit haben, die verschiedenen Seiten über eine Navigationsleiste zu erreichen.\\\hline
-            Akzeptanz &Der Benutzer sieht alle für ihn zugängliche Seiten in der Navigationsleiste und kann zu diesen, durch ein betätigen des Knopfes, navigieren.\\\hline
+	    Name  &Navigation im Webinterface\\\hline
+	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, die verschiedenen Seiten über eine Navigationsleiste zu erreichen. Dadurch wird die Navigation im Webinterface deutlich erleichtert.\\\hline
+	    Akzeptanz &Der Benutzer sieht alle für ihn zugängliche Seiten in der Navigationsleiste und kann zu diesen navigieren, indem er auf den entsprechenden Eintrag klickt.\\\hline
             Story Points&1\\\hline
             Entwickler &Jonas\\\hline
             Iteration &3\\\hline
@@ -346,7 +343,7 @@
     \end{minipage}
 \end{table}
 
-
+\todo[inline]{keine us 18}
 
 \begin{table}[htbp]
     \begin{minipage}{\linewidth}
@@ -356,8 +353,8 @@
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &19\\\hline
             Name  &Programm anzeigen\\\hline
-            Beschreibung&Als Benutzer will ich die Möglichkeit haben, alle registrierten Programme, zugeordnet zu ihrem jeweiligen Client, einzusehen.\\\hline
-            Akzeptanz &Die Programme werden korrekt zu dem zugehörigen Client angezeigt. Auch sind alle Programme die der Benutzer registriert hat zu sehen.\\\hline
+	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, alle registrierten Programme, zugeordnet zu ihrem jeweiligen Client, einzusehen. Dadurch ist es leichter einen Überblick über die vorhandenen Programme der Clients zu erhalten.\\\hline
+	    Akzeptanz &Die Programme werden korrekt zu dem zugehörigen Client angezeigt, dabei wird für jedes registrierte Programm nur sein Name genannt.\\\hline
             Story Points&8\\\hline
             Entwickler &Leonardo, Tim\\\hline
             Iteration &2\\\hline
@@ -377,8 +374,8 @@
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &20\\\hline
             Name  &Programm hinzufügen\\\hline
-            Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein Programm, welches auf einem Client liegt, mit bestimmten Parametern zu registrieren.\\\hline
-            Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, öffnet sich ein Dialog, welcher Felder für Programmnamen, Pfad zur ausführbaren Datei und Aufrufargumenten beinhaltet. Falls der Benutzer fehlerhafte Werte angibt, wird dies mitgeteilt, sonst wird das Programm in der Datenbank gespeichert.\\\hline
+	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein Programm, welches auf einem Client liegt, mit bestimmten Argumenten zu registrieren. Dadurch ist es später möglich Programme über das Webinterface zu verwalten. (starten, bearbeiten, löschen, etc.)\\\hline
+	    Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, öffnet sich ein Dialog, welcher Felder für Programmnamen, Pfad zur ausführbaren Datei und Aufrufargumenten beinhaltet. Falls der Benutzer fehlerhafte Werte angibt, wird ihm dies mitgeteilt. Ansonsten wird das Programm in der Datenbank gespeichert.\\\hline
             Story Points&6\\\hline
             Entwickler &Tim\\\hline
             Iteration &2\\\hline
@@ -398,8 +395,8 @@
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &21\\\hline
             Name  &Programm löschen\\\hline
-            Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein bereits registriertes Programm wieder zu entfernen.\\\hline
-            Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat öffnet sich Dialog, indem der Benutzer den Löschvorgang bestätigen muss. Nach Bestätigung wird das Programm aus der Datenbank entfernt und dem Benutzer nicht mehr angezeigt.\\\hline
+	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein bereits registriertes Programm wieder zu entfernen. Dies ist nötig, falls ein Programm nicht mehr benötigt wird.\\\hline
+	    Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat öffnet sich Bestätigungsdialog für den Löschvorgang. Nach der Bestätigung wird das Programm aus der Datenbank entfernt und dem Benutzer im Webinterface nicht mehr angezeigt.\\\hline
             Story Points&4\\\hline
             Entwickler &Frederik\\\hline
             Iteration &2\\\hline
@@ -419,8 +416,8 @@
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &22\\\hline
             Name  &Programm bearbeiten\\\hline
-            Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein bereits registriertes Programm zu bearbeiten.\\\hline
-            Akzeptanz &Nach dem Betätigen des entsprechenden Knopfes öffnet sich ein Dialog, in welchem die letzte Konfiguration angezeigt wird. Die Änderungen werden nur gespeichert, sofern sie immer noch eine korrekte Konfiguration bilden. Auf fehlerhafte Eingaben wird hingewiesen und das Programm lässt sich nicht speichern.\\\hline
+	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein bereits registriertes Programm zu bearbeiten. Dadurch muss bei einer Änderungen nicht ein neues Programm registriert werden.\\\hline
+	    Akzeptanz &Nach dem Betätigen des entsprechenden Knopfes öffnet sich ein Dialog, in welchem die letzte Konfiguration angezeigt wird. Die Änderungen werden nur gespeichert, wenn sie keine fehlerhaften Werte beinhalten. Der Nutzer wird daher auf fehlerhafte Werte hingewiesen.\\\hline
             Story Points&5\\\hline
             Entwickler &Tim\\\hline
             Iteration &3\\\hline
@@ -439,9 +436,9 @@
         \small
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &23\\\hline
-            Name  &Datei anzeigen\\\hline
-            Beschreibung&Als Benutzer will ich die Möglichkeit haben, eine registrierte Datei, die zu einem Client gehört, im Webinterface einzusehen.\\\hline
-            Akzeptanz &Der Benutzer sieht alle konfigurierten Dateien für den dazugehörigen Client, nachdem er in der Clientübersicht den Programmreiter im zugehörigen Programm geöffnet hat.\\\hline
+	    Name  &Datei/Ordner anzeigen\\\hline
+	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, eine registrierte Datei, die zu einem Client gehört, oder einen registrierten Ordner, der zu einem Client gehört, im Webinterface einzusehen. Dadurch ist es leichter eine Übersicht über die registrierten Dateien und Ordner zu erhalten\\\hline
+	    Akzeptanz &Die Dateien und Ordner werden für jeden Client im Webinterface angezeigt, dabei wird jeweils nur der Name des Ordners oder der Datei angezeigt.\\\hline
             Story Points&3\\\hline
             Entwickler &Frederik\\\hline
             Iteration &3\\\hline
@@ -460,9 +457,9 @@
         \small
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &24\\\hline
-            Name  &Datei hinzufügen\\\hline
-            Beschreibung&Als Benutzer will ich die Möglichkeit haben, eine Datei für einen Client zu registrieren.\\\hline
-            Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, öffnet sich ein Dialog, welcher Dateiname, Quell- und Zielpfad sowie der Typ (Ordner oder Datei) abfragt. Es werden nur korrekte Eingaben gespeichert. Falls der Benutzer keine korrekte Daten angibt, wird dies ihm beim Klick auf den Speichern Knopf mitgeteilt und es kann erst fortgefahren werden, wenn die Fehler behoben wurden.\\\hline
+	    Name  &Datei/Ordner hinzufügen\\\hline
+	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, eine Datei oder einen Ornder für einen Client zu registrieren. Dadurch ist es später möglich Dateien und Ordner über das Webinterface zu verwalten. (bewegen, löschen, editieren, etc.)\\\hline
+	    Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, öffnet sich ein Dialog, welcher Dateiname/Ordnername, Quell- und Zielpfad abfragt. Es werden nur korrekte Eingaben gespeichert. Falls der Benutzer keine korrekte Daten angibt, wird ihm dies beim Betätigen des Speichern Knopfs mitgeteilt und die Daten werden nicht übernommen. Sind die Eingaben korrekt, wird ein Eintrag in der Datenbank erstellt.\\\hline
             Story Points&4\\\hline
             Entwickler &Frederik\\\hline
             Iteration &3\\\hline
@@ -481,9 +478,9 @@
         \small
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &25\\\hline
-            Name  &Datei löschen\\\hline
-            Beschreibung&Als Benutzer will ich die Möglichkeit haben, eine bereits registrierte Datei wieder zu löschen.\\\hline
-            Akzeptanz &Nachdem Betätigten des entsprechenden Knopfes öffnet sich ein Dialog, indem der Benutzer den Löschvorgang bestätigen muss. Nur falls der Benutzer den Löschvorgang bestätigt wird die registrierte Datei aus der Datenbank gelöscht.\\\hline
+	    Name  &Datei/Ordner löschen\\\hline
+	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, eine registrierte Datei oder einen registrierten Ordner zu löschen.\\\hline
+	    Akzeptanz &Nach dem Betätigten des entsprechenden Knopfes öffnet sich ein Bestätigungsdialog für den Löschvorgang. Nur wenn der Benutzer den Löschvorgang bestätigt, wird die registrierte Datei/ der registrierte Ordner aus der Datenbank gelöscht und nicht mehr im Webinterface angezeigt.\\\hline
             Story Points&3\\\hline
             Entwickler &Frederik\\\hline
             Iteration &5\\\hline
@@ -502,9 +499,9 @@
         \small
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &26\\\hline
-            Name  &Datei editieren\\\hline
-            Beschreibung&Als Benutzer will ich die Möglichkeit haben, eine bereits registrierte Datei zu bearbeiten.\\\hline
-            Akzeptanz &Nach dem Betätigen des Knopfes, öffnet sich das Dialog mit den momentanen Informationen. Nur wenn der Benutzer korrekte Änderungen angibt, werden diese gespeichert. Fehlerhafte Änderungen werden dem Benutzer angezeigt.\\\hline
+	    Name  &Datei/Ordner editieren\\\hline
+	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, eine registrierte Datei oder einen registrierten Ordner zu bearbeiten.\\\hline
+	    Akzeptanz &Nach dem Betätigen des Knopfes, öffnet sich ein Dialog mit den momentanen Werten. Nur wenn der Benutzer korrekte Änderungen angibt, werden diese gespeichert. Fehlerhafte Änderungen werden dem Benutzer angezeigt.\\\hline
             Story Points&5\\\hline
             Entwickler &Frederik\\\hline
             Iteration &7\\\hline
@@ -525,7 +522,7 @@
             ID   &27\\\hline
             Name  &Skript anzeigen\\\hline
             Beschreibung&Als Benutzer will ich die Möglichkeit haben ein registriertes Skript im Webinterface einzusehen.\\\hline
-            Akzeptanz &Das Skript wird korrekt angezeigt, wenn der Benutzer das Skript in der Skriptübersicht auswählt.\\\hline
+	    Akzeptanz &Wenn der Benutzer das Skript auswählt, wird es mit seinem Namen, seinen Programmen und seinen Datei- und Ordneroperationen korrekt im Webinterface angezeigt.\\\hline
             Story Points&15\\\hline
             Entwickler &Jonas\\\hline
             Iteration &3\\\hline
@@ -545,8 +542,8 @@
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &28\\\hline
             Name  &Skript hinzufügen\\\hline
-            Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein Skript hinzuzufügen. In einem Skript kann ich Dateien und Programme mit einer Startreihenfolge spezifizieren.\\\hline
-            Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, wird er auf eine weitere Seite geleitet, wo er ein Skript erstellen kann. Bei fehlerhaften Eingaben wird der Benutzer darauf hingewiesen. Es können keine fehlerhafte Skripte hinzugefügt werden.\\\hline
+	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein Skript hinzuzufügen. In einem Skript kann ich Dateien, Ordner und Programme mit einer Startreihenfolge spezifizieren. Um ein Skript erstellen zu können, muss ein Skripteditor hinzugefügt werden.\\\hline
+	    Akzeptanz &Im Skripteditor ist es möglich aus den registrierten Programmen, Dateien und Ordnern zu wählen und den gewählten Elementen eine Startreihenfolge zu geben. Um eine Startreihenfolge zu realisieren, vergibt der Nutzer Startindizes an die Elemente. Ebenfalls muss ein Skript einen Namen besitzen. Falls ein Nutzer ein Skript mit einem bereits vorhandenen Namen erstellt, kann es nicht gespeichert werden und der Nutzer wird darüber informiert. Beim Betätigen des Speichern Knopfes wird das Skript in die Datenbank hinzugefügt. Falls das geänderte Skript Fehler enthält, wird es nicht hinzugefügt und der Nutzer wird über die Fehler informiert.\\\hline
             Story Points&7\\\hline
             Entwickler &Jonas\\\hline
             Iteration &4\\\hline
@@ -567,7 +564,7 @@
             ID   &29\\\hline
             Name  &Skript löschen\\\hline
             Beschreibung&Als Benutzer will ich die Möglichkeit haben ein bereits registrierte Skript zu löschen.\\\hline
-            Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt, wird ein Dialog geöffnet, in dem der Benutzer den Löschvorgang bestätigen muss. Sofern der Benutzer den Löschvorgang bestätigt, wird das Skript gelöscht.\\\hline
+	    Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt, wird ein Bestätigungsdialog für den Löschvorgang geöffnet. Wenn der Benutzer den Löschvorgang bestätigt, wird das Skript gelöscht.\\\hline
             Story Points&5\\\hline
             Entwickler &Jonas\\\hline
             Iteration &4\\\hline
@@ -588,7 +585,7 @@
             ID   &30\\\hline
             Name  &Skript bearbeiten\\\hline
             Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein bereits registriertes Skript zu bearbeiten.\\\hline
-            Akzeptanz &Der Benutzer wird auf die Bearbeitungsseite weitergeleitet, nachdem er den entsprechenden Knopf betätigt hat. Auf dieser Seite kann der der Benutzer das Skript bearbeiten kann. Falls die Änderungen des Benutzers korrekt sind, wird das Skript gespeichert. Falls das nicht der Fall ist, wird dem Benutzer das mitgeteilt.\\\hline
+	    Akzeptanz &Zum Bearbeiten eines Skriptes wird der Skripteditor mit den bereits definierten Werten des Skripts geöffnet. Der Benutzer kann die vorhandenen Einträge ändern, oder neue Einträge hinzufügen. Beim Betätigen des Speichern Knopfes wird das Skript in der Datenbank aktualisiert. Falls das geänderte Skript fehler enthält, wird es nicht aktualisiert und der Nutzer wird über die Fehler informiert.\\\hline
             Story Points&5\\\hline
             Entwickler &Leonardo\\\hline
             Iteration &7\\\hline
@@ -609,7 +606,7 @@
             ID   &31\\\hline
             Name  &Starten von Skripten\\\hline
             Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein Skript meiner Wahl zu starten.\\\hline
-            Akzeptanz &Auf der Skriptübersicht kann ein Benutzer ein Skript durch Klick auf den Startknopf starten lassen. Das Skript wird im Hintergrund ausgeführt und er wird zur Skriptstatusseite weitergeleitet\\\hline
+	    Akzeptanz &Der Benutzer kann ein ausgewähltes Skript durch Betätigen des Startknopfes starten. Es kann maximal ein Skript gleichzeitig ausgeführt werden.\\\hline
             Story Points&15\\\hline
             Entwickler &Jonas\\\hline
             Iteration &5\\\hline
@@ -628,9 +625,9 @@
         \small
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &32\\\hline
-            Name  &Status eines Startvorgangs\\\hline
-            Beschreibung&Als Benutzer will ich die Möglichkeit haben, den momentanen Status des ``Startvorganges'' einzusehen. Des Weiteren soll der aktuelle Fortschritt der einzelnen Skriptstufen angezeigt werden.\\\hline
-            Akzeptanz &Für jede Stufe wird ein Dropdown-Menü angezeigt. Das Menü der derzeit ausgeführten Stufe wird automatisch geöffnet. In diesem Menü wird jedes Programm und jede Datei angezeigt, welche/s Teil dieser Stufe ist. Falls ein Fehler während des Vorgangs auftritt, wird korrekt angezeigt, welches Programm \slash  welche Datei ihn erzeugt hat.\\\hline
+	    Name  &Status eines Skripts\\\hline
+	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, den momentanen Status eines Skripts einzusehen. Des Weiteren soll der aktuelle Fortschritt der einzelnen Skriptstufen angezeigt werden.\\\hline
+	    Akzeptanz &Für jede Skriptstufe gibt es ein Dropdown-Menü. Das Menü der derzeit ausgeführten Skriptstufe wird automatisch geöffnet. In diesem Menü wird jedes Programm, jeder Ordner und jede Datei angezeigt, welche/s/r Teil dieser Stufe ist. Falls ein Fehler während des Vorgangs auftritt, wird korrekt angezeigt, welches Programm \slash  welche Datei \slash welcher Ordner ihn erzeugt hat.\\\hline
             Story Points&10\\\hline
             Entwickler &Tim\\\hline
             Iteration &9\\\hline
@@ -650,8 +647,8 @@
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &33\\\hline
             Name  &Beenden eines Programmes\\\hline
-            Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein bereits registriertes und gestartetes Programm beenden zu können.\\\hline
-            Akzeptanz &Nachdem der Benutzer das Programm seiner Wahl beendet hat, in dem er den entsprechenden Knopf betätigt hat, ändert sich der Status des Programmes und der Benutzer bekommt eine Rückmeldung über den Endstatus des Programmes.\\\hline
+	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein registriertes und gestartetes Programm beenden zu können.\\\hline
+	    Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, wird der Status des Programmes entsprechend in der Datenbank aktualisiert und der Benutzer bekommt eine Rückmeldung über den Endstatus des Programmes.\\\hline
             Story Points&8\\\hline
             Entwickler &Tim\\\hline
             Iteration &4\\\hline
@@ -671,8 +668,8 @@
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &34\\\hline
             Name  &Startzeit eines Programmes\\\hline
-            Beschreibung&Als Benutzer will ich die Möglichkeit haben, für eine Programm einzutragen, wie lange dieses zum Starten braucht, um das gleichzeitige Starten zweier Programme, die Abhängigkeiten zueinander besitzen, zu verhindern.\\\hline
-            Akzeptanz &Beim Anlegen und beim Editieren eines Programmes kann der Nutzer über das "`Startzeit"' Feld die Startzeit des Programms in Sekunden angeben.\\\hline
+	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, für eine Programm einzutragen, wie lange es zum Starten braucht, um das gleichzeitige Starten zweier Programme, die Abhängigkeiten zueinander besitzen, zu verhindern.\\\hline
+	    Akzeptanz &Beim Anlegen und beim Editieren eines Programmes kann der Nutzer über das ''Startzeit'' Feld die Startzeit des Programms in Sekunden angeben. Werte < 0 geben an, dass der Startprozess des Programmes erst terminieren muss und sind daher ebenfalls valide.\\\hline
             Story Points&1\\\hline
             Entwickler &Jonas\\\hline
             Iteration &4\\\hline
@@ -693,7 +690,7 @@
             ID   &35\\\hline
             Name  &Überprüfen von Argumenten in Programmen\\\hline
             Beschreibung&Als Benutzer möchte ich beim Eintragen von Argumenten eines Programmes darauf hingewiesen werden, wenn ein Argument Sonderzeichen enthält, welche vom System nicht unterstützt werden.\\\hline
-            Akzeptanz &Nachdem der Benutzer eine Argumentenliste mit Sonderzeichen in das entsprechenden Feld während dem Hinzufügen oder dem Editieren eines Programmes eingetragen und bestätigt hat, erscheint eine entsprechende Fehlermeldung und die Änderung wird nicht abgespeichert.\\\hline
+	    Akzeptanz &Nachdem der Benutzer eine Argumentenliste mit Sonderzeichen in das entsprechenden Feld, während dem Hinzufügen oder dem Editieren eines Programmes eingetragen und bestätigt hat, erscheint eine entsprechende Fehlermeldung und die Änderung wird nicht abgespeichert.\\\hline
             Story Points&1\\\hline
             Entwickler &Tim\\\hline
             Iteration &4\\\hline
@@ -714,7 +711,7 @@
             ID   &36\\\hline
             Name  &Dateien vom Server herunterladen\\\hline
             Beschreibung&Als Benutzer will ich die Möglichkeit haben, Dateien, die auf dem Server in einem bestimmten Ordner liegen, herunterzuladen.\\\hline
-            Akzeptanz &Über einen Eintrag in der Navigationsleiste kann der Benutzer auf die Downloadseite wechseln. Dort werden ihm alle Dateien in einem vorher eingestellten Ordner mit Namen und Größe angezeigt. Über einen Klick auf den Dateinamen kann die Datei heruntergeladen werden.\\\hline
+	    Akzeptanz &Über einen Eintrag in der Navigationsleiste kann der Benutzer auf die Downloadseite wechseln. Dort werden ihm alle Dateien in einem vorher festgelegten Ordner mit Namen und Größe angezeigt. Über einen Klick auf den Dateinamen kann die Datei heruntergeladen werden.\\\hline
             Story Points&3\\\hline
             Entwickler &Tim\\\hline
             Iteration &4\\\hline
@@ -735,7 +732,7 @@
             ID   &37\\\hline
             Name  &Anzeige von Programmausgaben\\\hline
             Beschreibung&Als Benutzer will ich die Möglichkeit haben, die Ausgaben eines Programmes während und nach seiner Ausführung im Webinterface einzusehen.\\\hline
-            Akzeptanz &Nachdem der Benutzer den ensprechenden Knopf neben einem Programmeintrag gedrückt hat, wird unter dem Programmeintrag die zuletzt gespeicherte Logdatei in einem Textfeld angezeigt.\\\hline
+	    Akzeptanz &Nachdem der Benutzer den ensprechenden Knopf neben einem Programmeintrag gedrückt hat, wird unter dem Programmeintrag die zuletzt gespeicherte Logdatei in einem Textfeld angezeigt. Falls keine Logdatei vorhanden ist, kann der Knopf nicht betätigt werden.\\\hline
             Story Points&30\\\hline
             Entwickler &Tim\\\hline
             Iteration &7\\\hline
@@ -776,8 +773,8 @@
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &39\\\hline
             Name  &Skripte duplizieren\\\hline
-            Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein bereits erstelltes Skript duplizieren, editieren und abspeichern zu können.\\\hline
-            Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf für das Duplizieren gedrückt hat, wird die Kopie in einem separaten Menüeintrag angezeigt und im Editor geöffnet. Der Name der Kopie ist der originale Name mit dem Suffix ``\_copy''. Namenskonflikte werden mit aufsteigenden Zahlen als Zusatz zum Suffix gehandhabt.\\\hline
+	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein bereits erstelltes Skript zu duplizieren.\\\hline
+	    Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf für das Duplizieren gedrückt hat, wird das Duplikat in einem separaten Menüeintrag angezeigt und im Editor geöffnet. Der Name des Duplikats ist der Name des Originals mit dem Suffix ``\_copy''. Namenskonflikte werden mit aufsteigenden Zahlen als Zusatz zum Suffix gehandhabt.\\\hline
             Story Points&3\\\hline
             Entwickler &Tim\\\hline
             Iteration &7\\\hline
@@ -798,7 +795,7 @@
             ID   &40\\\hline
             Name  &Warnung vor Datenverlust\\\hline
             Beschreibung&Benutzer sollen gewarnt werden, wenn sie Dialoge bzw. Browsertabs schließen, welche ungespeicherte Daten enthalten.\\\hline
-            Akzeptanz &Der Benutzer wird mit einem Pop-Up Dialog gewarnt, sollte seine Aktion eine ungespeicherte Eingabe verwerfen. Erst nach expliziter Bestätigung, wird die Aktion durchgeführt.\\\hline
+	    Akzeptanz &Der Benutzer wird mit einem Dialog gewarnt, falls seine Aktion ungespeicherte Eingaben verwerfen würde. Erst nach expliziter Bestätigung des Dialogs, wird die Aktion durchgeführt.\\\hline
             Story Points&5\\\hline
             Entwickler &Heiko\\\hline
             Iteration &7\\\hline
@@ -819,7 +816,7 @@
             ID   &41\\\hline
             Name  &Skript stoppen\\\hline
             Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein Skript während der Ausführung zu stoppen.\\\hline
-            Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, wird das Ausführen des Skripts gestoppt. Bereits geschehene Änderungen (gestartete Programme und bewegte Dateien) werden nicht rückgängig gemacht.\\\hline
+	    Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, wird das Ausführen des Skripts gestoppt. Bereits geschehene Änderungen (gestartete Programme und bewegte Dateien und Ordner) werden nicht rückgängig gemacht.\\\hline
             Story Points&3\\\hline
             Entwickler &Frederik\\\hline
             Iteration &8\\\hline
@@ -838,9 +835,9 @@
         \small
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &42\\\hline
-            Name  &Starten eines Skriptes\\\hline
-            Beschreibung&Als Benutzer will ich die Möglichkeit haben, beim Aufruf einer bestimmten Seite automatisch ein Skript starten zu lassen.\\\hline
-            Akzeptanz &Sobald man die Seite aufruft wird ein sichtbarer Timer angezeigt. Sobald dieser abgelaufen ist, wird das Defaultskript gestartet.\\\hline
+	    Name  &Automatisches Starten eines Skriptes\\\hline
+	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, beim Aufruf der Startseite automatisch ein Skript starten zu lassen, falls nicht bereits ein Skript läuft.\\\hline
+	    Akzeptanz &Sobald man die Startseite aufruft, wird ein Timer angezeigt. Sobald dieser abgelaufen ist, wird das Standardskript gestartet.\\\hline
             Story Points&4\\\hline
             Entwickler &Jonas\\\hline
             Iteration &9\\\hline
@@ -861,8 +858,8 @@
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &43\\\hline
             Name  &Alle Programme stoppen\\\hline
-            Beschreibung&Als Benutzer will ich die Möglichkeit haben, alle laufende Programme auf allen Clients zu stoppen.\\\hline
-            Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, werden alle derzeit laufenden Programme beendet. Verschobene Dateien werden dabei nicht zurückgesetzt. Falls ein Skript ausgeführt wird, wird es beendet.\\\hline
+	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, alle über das Webinterface gestarteten Programme auf allen Clients zu stoppen.\\\hline
+	    Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, werden alle registrierten Programme, die ausgeführt werden, beendet. Falls ein Skript ausgeführt wird, wird es vor dem Stoppen der Programme beendet.\\\hline
             Story Points&4\\\hline
             Entwickler &Frederik\\\hline
             Iteration &9\\\hline
@@ -881,9 +878,9 @@
         \small
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &44\\\hline
-            Name  &Alle Dateien zurücksetzen\\\hline
-            Beschreibung&Als Benutzer will ich die Möglichkeit haben, alle verschobenen Dateien zu entfernen und den Ursprungszustand aller Clients wiederherzustellen.\\\hline
-            Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, werden alle derzeit verschobenen Dateien entfernt. Wurde eine Datei beim ursprünglichen Kopieren ersetzt, wird sie wieder hergestellt werden. Ein laufendes Skript wird ebenfalls beendet.\\\hline
+	    Name  &Alle Dateien und Ordner zurücksetzen\\\hline
+	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, alle über das Webinterface auf den Clients verschobenen Dateien und Ordner in ihren Ursprungszustand zu versetzen.\\\hline
+	    Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, werden alle registrierten und derzeit verschobenen Dateien und Ordner zurückgesetzt. Wurde eine Datei beim ursprünglichen Bewegen ersetzt, wird sie wiederhergestellt. Laufende Programme und Skripte werden vor dem Zurücksetzen der Dateien und Ordner gestoppt.\\\hline
             Story Points&4\\\hline
             Entwickler &Frederik\\\hline
             Iteration &9\\\hline
@@ -904,7 +901,7 @@
             ID   &45\\\hline
             Name  &Hilfstexte für Formularfelder\\\hline
             Beschreibung&Als Benutzer will ich die Möglichkeit haben, mir zu allen Formularfeldern einen kleinen Hilfetext anzeigen zu lassen.\\\hline
-            Akzeptanz &Nachdem der Nutzer auf das Hilfsicon, welches sich neben jedem Formularfeld befindet, geklickt hat, öffnet sich ein Popup mit einem Hinweistext\\\hline
+	    Akzeptanz &Nachdem der Nutzer auf das Hilfssymbol, welches sich neben jedem Formularfeld befindet, geklickt hat, öffnet sich ein Popup mit einem Hinweistex.\\\hline
             Story Points&4\\\hline
             Entwickler &Leonardo\\\hline
             Iteration &8\\\hline
@@ -924,8 +921,8 @@
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &46\\\hline
             Name  &Zentrales Ausschaltmenü\\\hline
-            Beschreibung&Als Benutzer möchte ich alle Aktionen, welche auf allen Clients ausgeführt werden können (alle Programme und Dateien zurücksetzen, alle Clients herunterfahren) über ein zentrales Menü steuern können.\\\hline
-            Akzeptanz &Nachdem der Nutzer auf das Schutdownicon geklickt hat, öffnet sich ein Dropdown mit allen verfügbaren Auswahlmöglichkeiten\\\hline
+	    Beschreibung&Als Benutzer möchte ich die Aktionen ''Stop Programs'', ''Restore Files'', ''Shutdown Clients'' und ''Shutdown'' über ein zentrales Menü wählen können.\\\hline
+	    Akzeptanz &Nachdem der Nutzer auf das Menüsymbol geklickt hat, öffnet sich ein Dropdown-Dialog mit allen verfügbaren Aktionen. Ein Benutzer kann diese Aktionen ausführen, indem er sie anklickt.\\\hline
             Story Points&1\\\hline
             Entwickler &Leonardo\\\hline
             Iteration &9\\\hline
@@ -945,8 +942,8 @@
         \begin{tabulary}{\textwidth}{|l|p{10cm}|} \hline
             ID   &47\\\hline
             Name  &Alles ausschalten\\\hline
-            Beschreibung&Als Benutzer will ich die Möglichkeit haben, alle laufenden Clients und den Server über das Webinterface auszuschalten.\\\hline
-            Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, werden alle Clients und der Server heruntergefahren. Falls ein Skript läuft, wird dieses beendet, verschobene Dateien werden zurückgesetzt und laufende Programme werden beendet.\\\hline
+	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, alle laufenden Clients und auch den Server über das Webinterface auszuschalten.\\\hline
+	    Akzeptanz &Nachdem der Benutzer den entsprechenden Knopf betätigt hat, werden alle Clients und der Server heruntergefahren. Falls ein Skript läuft, wird dieses beendet, verschobene Dateien werden zurückgesetzt und laufende Programme werden beendet. Ebenfalls gibt es einen weiteren Knopf, welcher dieselben Aktionen ohne das Ausschalten des Servers realisiert. \\\hline
             Story Points&8\\\hline
             Entwickler &Frederik, Heiko\\\hline
             Iteration &9\\\hline
@@ -967,7 +964,7 @@
             ID   &48\\\hline
             Name  &Standardskript setzen\\\hline
             Beschreibung&Als Benutzer will ich die Möglichkeit haben, ein Skript festzulegen, welches automatisch beim nächsten Start des Servers gestartet wird.\\\hline
-            Akzeptanz &Nachdem der Benutzer den entsprechen Knopf gedrückt hat, wird bei jedem Start des Servers das ausgewählte Skript gestartet.\\\hline
+	    Akzeptanz &Nachdem der Benutzer den entsprechen Knopf gedrückt hat, wird das ausgewählte Skript als Standardskript festgelegt.\\\hline
             Story Points&5\\\hline
             Entwickler &Jonas\\\hline
             Iteration &9\\\hline
