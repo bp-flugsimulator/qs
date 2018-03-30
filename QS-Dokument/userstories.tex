@@ -668,7 +668,7 @@ Die Userstory 13 wurde in Absprache mit den Auftraggebern wieder verworfen.
             ID   &34\\\hline
             Name  &Startzeit eines Programmes\\\hline
 	    Beschreibung&Als Benutzer will ich die Möglichkeit haben, für eine Programm einzutragen, wie lange es zum Starten braucht, um das gleichzeitige Starten zweier Programme, die Abhängigkeiten zueinander besitzen, zu verhindern.\\\hline
-	    Akzeptanz &Beim Anlegen und beim Editieren eines Programmes kann der Nutzer über das ''Startzeit'' Feld die Startzeit des Programms in Sekunden angeben. Werte < 0 geben an, dass der Startprozess des Programmes erst terminieren muss und sind daher ebenfalls valide.\\\hline
+	    Akzeptanz &Beim Anlegen und beim Editieren eines Programmes kann der Nutzer über das ''Startzeit'' Feld die Startzeit des Programms in Sekunden angeben. Werte < Null geben an, dass der Startprozess des Programmes erst terminieren muss und sind daher ebenfalls valide. Bei einem Wert >= Null wird nicht auf das Terminieren des Programmes gewartet, sonder nur den angegebenen Wert in Sekunden.\\\hline
             Story Points&1\\\hline
             Entwickler &Jonas\\\hline
             Iteration &4\\\hline
