@@ -42,9 +42,11 @@ weiter verteilt.
 \lstinputlisting[language=Python]{consumers.py}
 
 \subsection{Das Modul Controller.py}
-Die Steuerung der angeschlossenen Clients ist einer der Hauptaufgaben des Masters, da die komplette
-Ausführungslogik nur hier ausgeführt wird. Um weitere Komponenten der Mastersoftware, vorrangig den Viewmodulen, die Arbeit mit den
-Clients zu erleichtern, wurden die möglichen Aktionen im "`controller.py"'-Modul implementiert. Dort können
-sie von allen Stellen im Code des Masterservers einfach aufgerufen werden. Dies entspricht dem Model-View-Controler Konzept.
+Die Steuerung der angeschlossenen Clients ist einer der Hauptaufgaben des
+Master. Dies besteht vorallem daraus Datenbankeinträge zu modifizieren und
+basierend darauf Nachrichten über die Websockets zu verschicken. Um weiteren
+Komponenten der Mastersoftware, die Arbeit mit den Clients zu erleichtern,
+wurden die möglichen Aktionen im "`controller.py"'-Modul implementiert. Dies
+entspricht dem Model-View-Controller Konzept.
 
 \lstinputlisting[language=Python]{controller.py}
