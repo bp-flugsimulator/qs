@@ -22,7 +22,7 @@ KW | QS | IM
 10 | - | 24
 11 | - | 3
 12 | 5 | 11
-13 | 3 | 28
+13 | 6 | 28
 
 ### Legende:
 * **KW** = Kalenderwoche
