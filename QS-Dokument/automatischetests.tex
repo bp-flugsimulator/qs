@@ -7,6 +7,7 @@ verbunden waren. Dadurch wurde jeder Commit mit den beschriebenen Tools (siehe T
 		\hline
 		\textbf{Tool} & \textbf{Beschreibung} & \textbf{Notwendig für...} \\\hline
 		AppVeyor & Ausführung von Unittests unter verschiedenen Windowsversionen & Portabilität, Korrektheit \\\hline
+		Jenkins & Ausführung von Unittests unter Windows XP& Portabilität \\\hline
 		Codacy & Überprüfung der Codequalität basierend auf Styleguides der verschiedenen Sprachen& keine \\\hline
 		Travis CI & Ausführung von Unittests unter verschiedenen Linux- und Pythonversionen & Portabilität, Korrektheit \\\hline
 		coveralls & Überprüfung der Testabdeckung & Korrektheit \\\hline
@@ -26,7 +27,7 @@ ein entsprechender Report generiert (Beispiel in Abbildung \ref{github_checks}).
 	\label{github_checks}
 \end{figure}
 
-Die Unittests, welche von AppVeyor und Travis CI ausgeführt wurden, deckten große Teile des Python Codes ab. Sie sind im Github Repo
+Die Unittests, welche von AppVeyor, Jenkins und Travis CI ausgeführt wurden, deckten große Teile des Python Codes ab. Sie sind im Github Repo
 zu finden\footnote{\url{https://github.com/bp-flugsimulator/server/tree/master/frontend/tests}} und aufgrund ihrer Anzahl (~200) nicht
 Teil des Anhangs.
 Die Abdeckung lag immer bei über 90\% und war ein Kriterium für die Abnahme einer Userstory. Eine Übersicht der Abdeckung
